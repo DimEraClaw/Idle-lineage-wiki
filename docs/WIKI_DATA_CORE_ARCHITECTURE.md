@@ -841,7 +841,64 @@ WikiDataCore.registerDataset({
 - Feature flag 預設 false。
 - 不改現有 UI、URL 或資料檔。
 
-## 18. 明確不做的事項
+## 18. Equipment Interaction Repository 規劃
+
+裝備互動是 Equipment Domain 與 Mechanics Layer 之間的一級 Relation。完整契約見 `docs/EQUIPMENT_INTERACTION_CONTRACT.md`。本節只定義未來 WikiDataCore 接入邊界，不代表目前已實作。
+
+### 19.1 Repository
+
+未來新增 `interactions` repository，沿用共通 API，並規劃 `getByEntity`、`getBetween`、`getCompatibleWith`、`getConflictsWith`、`getUnresolvedFor`、`getByMechanicId`。
+
+Repository 不依賴 DOM、history 或 UI state，不把中文名稱作為 key，也不得從裝備描述自行推導 Interaction。
+
+### 19.2 Indexes
+
+- `interactionsByEntityKey`
+- `interactionsByPairKey`
+- `interactionsByStatus`
+- `interactionsByType`
+- `interactionsByMechanicId`
+- `unresolvedInteractionsByEntityKey`
+
+索引只保存 Interaction ID／不可變引用。對稱 Relation 使用 canonical pair key；非對稱 Relation 保留 from／to。重複 pair、缺少 EntityRef、缺少 Evidence、方向矛盾及無法解析 Mechanic 必須產生 structured diagnostic。
+
+### 19.3 接入順序
+
+1. 完成 equipment ID、Mechanic 與 Evidence 盤點。
+2. 定案 Interaction Schema、生成與驗證規則。
+3. 建立 repository fixture、索引一致性與方向測試。
+4. 以 feature flag 接入 WikiDataCore，預設不改 UI。
+5. 完成 parity、fallback 與 baseline 後，才評估受控 UI 呈現。
+
+Evidence、版本範圍或正式 ID 不足時應保留 unresolved，不得以 `compatible` 作為 fallback。
+
+## 19. Release Hub Dataset 規劃
+
+Release Hub 以獨立 `releases` Dataset 提供 GameVersion、Release、ChangeRecord、SyncStatus 與 DatasetSyncStatus 的唯讀發布視圖。完整契約見 `docs/RELEASE_HUB_CONTRACT.md`。本節不代表目前已建立資料或 consumer。
+
+### 19.1 Repository 與索引
+
+規劃 `gameVersions`、`releases`、`changeRecords`、`syncStatus`、`datasetSyncStatuses` repositories，並建立 release/game version、change/release、change/EntityRef、change type 及 dataset/status 索引。
+
+Release Hub 不直接讀寫各 Domain Entity，不以名稱連結，也不從 Git diff 自動生成玩家可見結論。ChangeRecord 只保存 EntityRef，跳轉交由 Navigation Helper。
+
+### 19.2 狀態與載入隔離
+
+- gameVersion、wikiVersion、schemaVersion 分別保存。
+- Dataset 層的 partial、review_required、failed、unknown 必須原樣提供 consumer。
+- Releases Dataset 載入失敗不得破壞 Equipment、Craft、Monster 等其他 Dataset。
+- sync-status 缺失時為 unknown，不得從最新 Release 推算 up_to_date。
+- unresolved EntityRef 保留診斷與顯示能力，不得虛構目標。
+
+### 19.3 接入順序
+
+1. 定案版本來源、semantic diff 與人工 review 契約。
+2. 經另行核准後建立資料、Schema、生成與 validator。
+3. 建立 deterministic fixture、repository、index 與 navigation tests。
+4. 以 feature flag 接入首頁 consumer。
+5. 完成 fallback、Console、Network 與 baseline 後才發布。
+
+## 20. 明確不做的事項
 
 - 不使用 dependency injection framework。
 - 不使用 Redux、GraphQL 或前端框架。

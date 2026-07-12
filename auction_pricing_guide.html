@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放置天堂 v3.1.23 交易所稀有熱門物品定價與存錢攻略</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --panel-bg: rgba(30, 41, 59, 0.7);
+            --border-color: rgba(71, 85, 105, 0.4);
+            --text-color: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-relic: #38bdf8;
+            --accent-gold: #fbbf24;
+            --accent-green: #4ade80;
+            --accent-disabled: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', 'Noto Sans TC', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background-image: radial-gradient(circle at center top, rgba(251, 191, 36, 0.06), transparent 700px);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 25px rgba(251, 191, 36, 0.25);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Controls Section */
+        .toolbar {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(8px);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            position: relative;
+            flex-grow: 1;
+            min-width: 250px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            padding-left: 45px;
+            background-color: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 12px rgba(251, 191, 36, 0.2);
+        }
+
+        .search-box svg {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            fill: var(--text-secondary);
+            width: 18px;
+            height: 18px;
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 10px 16px;
+            background-color: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover, .tab-btn.active {
+            color: #fff;
+            background-color: rgba(251, 191, 36, 0.15);
+            border-color: var(--accent-gold);
+        }
+
+        /* Pricing Table */
+        .table-container {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            padding: 16px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border-color);
+            background-color: rgba(15, 23, 42, 0.4);
+        }
+
+        td {
+            padding: 18px 16px;
+            border-bottom: 1px solid rgba(71, 85, 105, 0.2);
+            font-size: 0.95rem;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr.item-row:hover {
+            background-color: rgba(30, 41, 59, 0.3);
+        }
+
+        .item-name {
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .category-badge.skills { background-color: rgba(56, 189, 248, 0.15); color: var(--accent-relic); }
+        .category-badge.armors { background-color: rgba(74, 222, 128, 0.15); color: var(--accent-green); }
+        .category-badge.accessories { background-color: rgba(251, 191, 36, 0.15); color: var(--accent-gold); }
+        .category-badge.weapons { background-color: rgba(248, 113, 113, 0.15); color: #f87171; }
+        .category-badge.panaceas { background-color: rgba(244, 114, 182, 0.15); color: #f472b6; }
+
+        .price-val {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+        }
+
+        .price-val.min { color: var(--accent-green); }
+        .price-val.max { color: var(--accent-disabled); opacity: 0.8; }
+        
+        .target-val {
+            color: var(--accent-gold);
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .weight-val {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .remarks-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .weight-desc {
+            font-size: 0.8rem;
+            color: var(--accent-disabled);
+            display: block;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>⚖️ 潘朵拉交易所稀有物件與存錢攻略</h1>
+            <p>本攻略整理了拍賣場（交易所）中所有極難刷出、最熱門的技能書、防具、首飾及萬能藥。幫助您了解理論最低價，並設定合理的金幣儲備目標，確保刷出超值低價時能第一時間入手！</p>
+        </header>
+
+        <!-- Controls/Search -->
+        <div class="toolbar">
+            <div class="search-box">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <input type="text" id="search-input" placeholder="搜尋物品名稱、說明、定位..." oninput="filterItems()">
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="tab-btn active" onclick="switchCategory('all', this)">顯示全部</button>
+                <button class="tab-btn" onclick="switchCategory('skills', this)">法術與技能書</button>
+                <button class="tab-btn" onclick="switchCategory('armors', this)">神級防具/龍鱗甲</button>
+                <button class="tab-btn" onclick="switchCategory('accessories', this)">頂級首飾</button>
+                <button class="tab-btn" onclick="switchCategory('weapons', this)">終極武器</button>
+                <button class="tab-btn" onclick="switchCategory('panaceas', this)">萬能藥專區</button>
+            </div>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">物品名稱 / 類型</th>
+                        <th style="width: 15%;">理論最低價</th>
+                        <th style="width: 20%;">建議存錢買入目標</th>
+                        <th style="width: 12%;">拍賣權重</th>
+                        <th style="width: 28%;">掛機來源 / 功能備註</th>
+                    </tr>
+                </thead>
+                <tbody id="items-table-body">
+                    
+    <tr class="item-row" data-name="魔法書(冰雪暴)" data-remarks="法師核心大範圍冰屬性魔法，需要魔法等級 32。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(冰雪暴)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">1540 萬</span>
+            <br><span class="price-val max">最高 22600 萬</span>
+        </td>
+        <td>
+            <span class="target-val">2,000 萬 ~ 2,800 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 54,000</span>
+        </td>
+        <td class="remarks-text">
+            法師核心大範圍冰屬性魔法，需要魔法等級 32。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="魔法書(冰雪颶風)" data-remarks="法師頂級冰屬性魔法，學習前置要求必須先學會《冰雪暴》。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(冰雪颶風)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">2024 萬</span>
+            <br><span class="price-val max">最高 41960 萬</span>
+        </td>
+        <td>
+            <span class="target-val">2,500 萬 ~ 4,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 102,400</span>
+        </td>
+        <td class="remarks-text">
+            法師頂級冰屬性魔法，學習前置要求必須先學會《冰雪暴》。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="魔法書(火牢)" data-remarks="法師火屬性控場與灼燒魔法，打王、拉怪神技，降抗效果好。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(火牢)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">1256 萬</span>
+            <br><span class="price-val max">最高 11240 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,500 萬 ~ 2,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 25,600</span>
+        </td>
+        <td class="remarks-text">
+            法師火屬性控場與灼燒魔法，打王、拉怪神技，降抗效果好。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="魔法書(雷霆風暴)" data-remarks="權重為 10，在拍賣上架的頻率是其他魔法書的 10 倍！極容易遇到低價版。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(雷霆風暴)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">2001 萬</span>
+            <br><span class="price-val max">最高 44589 萬</span>
+        </td>
+        <td>
+            <span class="target-val">2,500 萬 ~ 5,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-relic);">中等 (10)</span>
+            <span class="weight-desc">基礎價: 120,000</span>
+        </td>
+        <td class="remarks-text">
+            權重為 10，在拍賣上架的頻率是其他魔法書的 10 倍！極容易遇到低價版。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="魔法書(流星雨)" data-remarks="法師終極範圍隕石魔法，基礎價格極高，隨便一個低倍數也是 3500 萬起跳。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(流星雨)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">3500 萬</span>
+            <br><span class="price-val max">最高 101000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 8,000 萬 (保底 3,500 萬)</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 250,000</span>
+        </td>
+        <td class="remarks-text">
+            法師終極範圍隕石魔法，基礎價格極高，隨便一個低倍數也是 3500 萬起跳。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="魔法書(聖結界)" data-remarks="法師靈魂技能！提供超高額百分比防護與組隊核心減傷，刷到 2500 萬內必秒。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(聖結界)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">2200 萬</span>
+            <br><span class="price-val max">最高 49000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">2,500 萬 ~ 3,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 220,000</span>
+        </td>
+        <td class="remarks-text">
+            法師靈魂技能！提供超高額百分比防護與組隊核心減傷，刷到 2500 萬內必秒。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="魔法書(究極光裂術)" data-remarks="法師單體輸出天花板，無視魔防高傷，後期秒殺怪物的靈魂魔法。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(究極光裂術)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">3500 萬</span>
+            <br><span class="price-val max">最高 101000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 8,000 萬 (保底 3,500 萬)</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 250,000</span>
+        </td>
+        <td class="remarks-text">
+            法師單體輸出天花板，無視魔防高傷，後期秒殺怪物的靈魂魔法。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="魔法書(絕對屏障)" data-remarks="法師終極防護，施展後進入短暫的無敵免疫狀態，保命避戰的不二之選。" data-category="skills">
+        <td>
+            <div class="item-name">
+                魔法書(絕對屏障)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">2024 萬</span>
+            <br><span class="price-val max">最高 41960 萬</span>
+        </td>
+        <td>
+            <span class="target-val">3,000 萬 ~ 5,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 102,400</span>
+        </td>
+        <td class="remarks-text">
+            法師終極防護，施展後進入短暫的無敵免疫狀態，保命避戰的不二之選。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="技術書(反擊屏障)" data-remarks="騎士核心畢業神技！受創時概率格擋並反彈雙倍傷害，有此技能騎士才是完全體。" data-category="skills">
+        <td>
+            <div class="item-name">
+                技術書(反擊屏障)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">1300 萬</span>
+            <br><span class="price-val max">最高 13000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,500 萬 ~ 2,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 13,000</span>
+        </td>
+        <td class="remarks-text">
+            騎士核心畢業神技！受創時概率格擋並反彈雙倍傷害，有此技能騎士才是完全體。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="黑暗精靈水晶(破壞盔甲)" data-remarks="黑妖最強破防爆發技能，大幅削弱目標防禦力，打王輸出質變。" data-category="skills">
+        <td>
+            <div class="item-name">
+                黑暗精靈水晶(破壞盔甲)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">1125 萬</span>
+            <br><span class="price-val max">最高 6000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,200 萬 ~ 2,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 11,250</span>
+        </td>
+        <td class="remarks-text">
+            黑妖最強破防爆發技能，大幅削弱目標防禦力，打王輸出質變。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="精靈水晶(烈焰之魂)" data-remarks="火屬性妖精究極近戰被動，使每一次物理揮刀均能打出最大隨機上限傷害。" data-category="skills">
+        <td>
+            <div class="item-name">
+                精靈水晶(烈焰之魂)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">1160 萬</span>
+            <br><span class="price-val max">最高 7400 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,300 萬 ~ 2,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 11,600</span>
+        </td>
+        <td class="remarks-text">
+            火屬性妖精究極近戰被動，使每一次物理揮刀均能打出最大隨機上限傷害。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="戰士的印記(亡命之徒)" data-remarks="戰士遠程拉人神技，束縛目標並使其無法移動與瞬移，PvP、拉精英怪必備。" data-category="skills">
+        <td>
+            <div class="item-name">
+                戰士的印記(亡命之徒)
+            </div>
+            <span class="category-badge skills">技能書</span>
+        </td>
+        <td>
+            <span class="price-val min">1432 萬</span>
+            <br><span class="price-val max">最高 18280 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,600 萬 ~ 2,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 14,320</span>
+        </td>
+        <td class="remarks-text">
+            戰士遠程拉人神技，束縛目標並使其無法移動與瞬移，PvP、拉精英怪必備。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="水龍鱗盔甲" data-remarks="極限防禦與高魔防，水屬性抗性 +15% 且完全免疫「冰凍」狀態，打冰之女王標配。" data-category="armors">
+        <td>
+            <div class="item-name">
+                水龍鱗盔甲
+            </div>
+            <span class="category-badge armors">防具</span>
+        </td>
+        <td>
+            <span class="price-val min">4360 萬</span>
+            <br><span class="price-val max">最高 135400 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 7,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 43,600</span>
+        </td>
+        <td class="remarks-text">
+            極限防禦與高魔防，水屬性抗性 +15% 且完全免疫「冰凍」狀態，打冰之女王標配。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="地龍鱗盔甲" data-remarks="極限防禦，地屬性抗性 +15%，物理職業最終畢業盔甲首選之一。" data-category="armors">
+        <td>
+            <div class="item-name">
+                地龍鱗盔甲
+            </div>
+            <span class="category-badge armors">防具</span>
+        </td>
+        <td>
+            <span class="price-val min">4360 萬</span>
+            <br><span class="price-val max">最高 135400 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 7,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 43,600</span>
+        </td>
+        <td class="remarks-text">
+            極限防禦，地屬性抗性 +15%，物理職業最終畢業盔甲首選之一。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="火龍鱗盔甲" data-remarks="極限防禦，火屬性抗性 +15%，火龍窟掛機抗高溫燒傷神裝。" data-category="armors">
+        <td>
+            <div class="item-name">
+                火龍鱗盔甲
+            </div>
+            <span class="category-badge armors">防具</span>
+        </td>
+        <td>
+            <span class="price-val min">4360 萬</span>
+            <br><span class="price-val max">最高 135400 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 7,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 43,600</span>
+        </td>
+        <td class="remarks-text">
+            極限防禦，火屬性抗性 +15%，火龍窟掛機抗高溫燒傷神裝。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="風龍鱗盔甲" data-remarks="極限防禦，風屬性抗性 +15%，提供出色的遠程迴避。" data-category="armors">
+        <td>
+            <div class="item-name">
+                風龍鱗盔甲
+            </div>
+            <span class="category-badge armors">防具</span>
+        </td>
+        <td>
+            <span class="price-val min">4360 萬</span>
+            <br><span class="price-val max">最高 135400 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 7,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 43,600</span>
+        </td>
+        <td class="remarks-text">
+            極限防禦，風屬性抗性 +15%，提供出色的遠程迴避。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="巫妖斗篷" data-remarks="法力系頂級防甲，提供高防禦 AC、魔防 MR 與驚人的 MP 自然恢復量。" data-category="armors">
+        <td>
+            <div class="item-name">
+                巫妖斗篷
+            </div>
+            <span class="category-badge armors">防具</span>
+        </td>
+        <td>
+            <span class="price-val min">4630 萬</span>
+            <br><span class="price-val max">最高 146200 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 7,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 46,300</span>
+        </td>
+        <td class="remarks-text">
+            法力系頂級防甲，提供高防禦 AC、魔防 MR 與驚人的 MP 自然恢復量。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="木乃伊王的王冠" data-remarks="傲慢之塔 Boss 木乃伊王限定掉落，超高防禦加成與出色的面板點數。" data-category="armors">
+        <td>
+            <div class="item-name">
+                木乃伊王的王冠
+            </div>
+            <span class="category-badge armors">防具</span>
+        </td>
+        <td>
+            <span class="price-val min">2630 萬</span>
+            <br><span class="price-val max">最高 66200 萬</span>
+        </td>
+        <td>
+            <span class="target-val">3,000 萬 ~ 4,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 26,300</span>
+        </td>
+        <td class="remarks-text">
+            傲慢之塔 Boss 木乃伊王限定掉落，超高防禦加成與出色的面板點數。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="隱身斗篷" data-remarks="功能性斗篷，使用後進入隱身避戰或突襲，冰之女王 Boss 0.1% 掉落。" data-category="armors">
+        <td>
+            <div class="item-name">
+                隱身斗篷
+            </div>
+            <span class="category-badge armors">防具</span>
+        </td>
+        <td>
+            <span class="price-val min">2000 萬</span>
+            <br><span class="price-val max">最高 41000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">2,500 萬 ~ 3,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 20,000</span>
+        </td>
+        <td class="remarks-text">
+            功能性斗篷，使用後進入隱身避戰或突襲，冰之女王 Boss 0.1% 掉落。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="底比斯賀洛斯戒指" data-remarks="法術系與智力流的畢業神戒，底比斯 Boss 限定掉落，極難刷出低價。" data-category="accessories">
+        <td>
+            <div class="item-name">
+                底比斯賀洛斯戒指
+            </div>
+            <span class="category-badge accessories">飾品</span>
+        </td>
+        <td>
+            <span class="price-val min">7000 萬</span>
+            <br><span class="price-val max">最高 241000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">8,000 萬 ~ 1.5 億</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 70,000</span>
+        </td>
+        <td class="remarks-text">
+            法術系與智力流的畢業神戒，底比斯 Boss 限定掉落，極難刷出低價。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="底比斯阿努比斯戒指" data-remarks="物理流與力量系（戰士/騎士）畢業神戒，交易所最昂貴的首飾。" data-category="accessories">
+        <td>
+            <div class="item-name">
+                底比斯阿努比斯戒指
+            </div>
+            <span class="category-badge accessories">飾品</span>
+        </td>
+        <td>
+            <span class="price-val min">7000 萬</span>
+            <br><span class="price-val max">最高 241000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">8,000 萬 ~ 1.5 億</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 70,000</span>
+        </td>
+        <td class="remarks-text">
+            物理流與力量系（戰士/騎士）畢業神戒，交易所最昂貴的首飾。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="古代巨人戒指" data-remarks="近戰爆發必備首飾，提供高額力量 STR 與物理傷害加成。" data-category="accessories">
+        <td>
+            <div class="item-name">
+                古代巨人戒指
+            </div>
+            <span class="category-badge accessories">飾品</span>
+        </td>
+        <td>
+            <span class="price-val min">4520 萬</span>
+            <br><span class="price-val max">最高 141800 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 8,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 45,200</span>
+        </td>
+        <td class="remarks-text">
+            近戰爆發必備首飾，提供高額力量 STR 與物理傷害加成。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="底比斯歐西里斯腰帶" data-remarks="時空裂痕特產，提供極高的防禦力 AC 與大額的背包負重上限加成。" data-category="accessories">
+        <td>
+            <div class="item-name">
+                底比斯歐西里斯腰帶
+            </div>
+            <span class="category-badge accessories">飾品</span>
+        </td>
+        <td>
+            <span class="price-val min">4260 萬</span>
+            <br><span class="price-val max">最高 131400 萬</span>
+        </td>
+        <td>
+            <span class="target-val">5,000 萬 ~ 8,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 42,600</span>
+        </td>
+        <td class="remarks-text">
+            時空裂痕特產，提供極高的防禦力 AC 與大額的背包負重上限加成。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="艾莉絲項鍊" data-remarks="傲慢之塔艾莉絲 Boss 掉落物，近戰力量項鍊，AC 減免高。" data-category="accessories">
+        <td>
+            <div class="item-name">
+                艾莉絲項鍊
+            </div>
+            <span class="category-badge accessories">飾品</span>
+        </td>
+        <td>
+            <span class="price-val min">4000 萬</span>
+            <br><span class="price-val max">最高 121000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">4,500 萬 ~ 7,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 40,000</span>
+        </td>
+        <td class="remarks-text">
+            傲慢之塔艾莉絲 Boss 掉落物，近戰力量項鍊，AC 減免高。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="傳送控制戒指" data-remarks="解鎖大地圖定點自由飛行傳送，不再消耗傳送卷軸，掛機與移動極其方便。" data-category="accessories">
+        <td>
+            <div class="item-name">
+                傳送控制戒指
+            </div>
+            <span class="category-badge accessories">飾品</span>
+        </td>
+        <td>
+            <span class="price-val min">2500 萬</span>
+            <br><span class="price-val max">最高 61000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">3,000 萬 ~ 4,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 25,000</span>
+        </td>
+        <td class="remarks-text">
+            解鎖大地圖定點自由飛行傳送，不再消耗傳送卷軸，掛機與移動極其方便。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="變形控制戒指" data-remarks="解鎖頂級限時特殊變身，不需要消耗變身卷軸，是刷圖攻城必備利器。" data-category="accessories">
+        <td>
+            <div class="item-name">
+                變形控制戒指
+            </div>
+            <span class="category-badge accessories">飾品</span>
+        </td>
+        <td>
+            <span class="price-val min">2500 萬</span>
+            <br><span class="price-val max">最高 61000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">3,000 萬 ~ 4,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 25,000</span>
+        </td>
+        <td class="remarks-text">
+            解鎖頂級限時特殊變身，不需要消耗變身卷軸，是刷圖攻城必備利器。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="惡魔王弓" data-remarks="妖精最強畢業神弓！攻擊概率觸發惡魔詛咒，基礎命中與攻擊極高。" data-category="weapons">
+        <td>
+            <div class="item-name">
+                惡魔王弓
+            </div>
+            <span class="category-badge weapons">武器</span>
+        </td>
+        <td>
+            <span class="price-val min">6473 萬</span>
+            <br><span class="price-val max">最高 219920 萬</span>
+        </td>
+        <td>
+            <span class="target-val">7,500 萬 ~ 9,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 64,730</span>
+        </td>
+        <td class="remarks-text">
+            妖精最強畢業神弓！攻擊概率觸發惡魔詛咒，基礎命中與攻擊極高。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="惡魔王魔杖" data-remarks="法師畢業物理法杖，兼顧近戰敲擊與法術加成。" data-category="weapons">
+        <td>
+            <div class="item-name">
+                惡魔王魔杖
+            </div>
+            <span class="category-badge weapons">武器</span>
+        </td>
+        <td>
+            <span class="price-val min">5945 萬</span>
+            <br><span class="price-val max">最高 198804 萬</span>
+        </td>
+        <td>
+            <span class="target-val">7,000 萬 ~ 9,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 59,451</span>
+        </td>
+        <td class="remarks-text">
+            法師畢業物理法杖，兼顧近戰敲擊與法術加成。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="惡魔王雙刀" data-remarks="黑妖畢業高傷害雙刀，爆發威力驚人。" data-category="weapons">
+        <td>
+            <div class="item-name">
+                惡魔王雙刀
+            </div>
+            <span class="category-badge weapons">武器</span>
+        </td>
+        <td>
+            <span class="price-val min">5200 萬</span>
+            <br><span class="price-val max">最高 169000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">6,000 萬 ~ 8,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 52,000</span>
+        </td>
+        <td class="remarks-text">
+            黑妖畢業高傷害雙刀，爆發威力驚人。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="屠龍劍" data-remarks="雙手劍。超高基礎面板傷害，打大怪有巨額加成，龍騎與騎士畢業物。" data-category="weapons">
+        <td>
+            <div class="item-name">
+                屠龍劍
+            </div>
+            <span class="category-badge weapons">武器</span>
+        </td>
+        <td>
+            <span class="price-val min">4000 萬</span>
+            <br><span class="price-val max">最高 121000 萬</span>
+        </td>
+        <td>
+            <span class="target-val">4,500 萬 ~ 6,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val">極稀有 (1)</span>
+            <span class="weight-desc">基礎價: 40,000</span>
+        </td>
+        <td class="remarks-text">
+            雙手劍。超高基礎面板傷害，打大怪有巨額加成，龍騎與騎士畢業物。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="奧里哈魯根短劍" data-remarks="權重為 10 較容易刷出。單手匕首，泛用性極高，附帶不死系與狼人加成。" data-category="weapons">
+        <td>
+            <div class="item-name">
+                奧里哈魯根短劍
+            </div>
+            <span class="category-badge weapons">武器</span>
+        </td>
+        <td>
+            <span class="price-val min">1637 萬</span>
+            <br><span class="price-val max">最高 30029 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,800 萬 ~ 3,000 萬</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-relic);">中等 (10)</span>
+            <span class="weight-desc">基礎價: 80,000</span>
+        </td>
+        <td class="remarks-text">
+            權重為 10 較容易刷出。單手匕首，泛用性極高，附帶不死系與狼人加成。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="萬能藥 (STR)" data-remarks="永久提升力量 STR +1，Lv50+ 可服用。黑暗妖精力兵 1% 掉落。" data-category="panaceas">
+        <td>
+            <div class="item-name">
+                萬能藥 (STR)
+            </div>
+            <span class="category-badge panaceas">萬能藥</span>
+        </td>
+        <td>
+            <span class="price-val min">1001 萬</span>
+            <br><span class="price-val max">最高 4549 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,200 萬 ~ 1,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-relic);">中等 (10)</span>
+            <span class="weight-desc">基礎價: 10,000</span>
+        </td>
+        <td class="remarks-text">
+            永久提升力量 STR +1，Lv50+ 可服用。黑暗妖精力兵 1% 掉落。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="萬能藥 (DEX)" data-remarks="永久提升敏捷 DEX +1，Lv50+ 可服用。黑暗妖精敏兵 1% 掉落。" data-category="panaceas">
+        <td>
+            <div class="item-name">
+                萬能藥 (DEX)
+            </div>
+            <span class="category-badge panaceas">萬能藥</span>
+        </td>
+        <td>
+            <span class="price-val min">1001 萬</span>
+            <br><span class="price-val max">最高 4549 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,200 萬 ~ 1,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-relic);">中等 (10)</span>
+            <span class="weight-desc">基礎價: 10,000</span>
+        </td>
+        <td class="remarks-text">
+            永久提升敏捷 DEX +1，Lv50+ 可服用。黑暗妖精敏兵 1% 掉落。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="萬能藥 (CON)" data-remarks="永久提升體質 CON +1，Lv50+ 可服用。黑暗妖精防兵 1% 掉落。" data-category="panaceas">
+        <td>
+            <div class="item-name">
+                萬能藥 (CON)
+            </div>
+            <span class="category-badge panaceas">萬能藥</span>
+        </td>
+        <td>
+            <span class="price-val min">1001 萬</span>
+            <br><span class="price-val max">最高 4549 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,200 萬 ~ 1,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-relic);">中等 (10)</span>
+            <span class="weight-desc">基礎價: 10,000</span>
+        </td>
+        <td class="remarks-text">
+            永久提升體質 CON +1，Lv50+ 可服用。黑暗妖精防兵 1% 掉落。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="萬能藥 (INT)" data-remarks="永久提升智力 INT +1，Lv50+ 可服用。黑暗妖精法兵 1% 掉落。" data-category="panaceas">
+        <td>
+            <div class="item-name">
+                萬能藥 (INT)
+            </div>
+            <span class="category-badge panaceas">萬能藥</span>
+        </td>
+        <td>
+            <span class="price-val min">1001 萬</span>
+            <br><span class="price-val max">最高 4549 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,200 萬 ~ 1,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-relic);">中等 (10)</span>
+            <span class="weight-desc">基礎價: 10,000</span>
+        </td>
+        <td class="remarks-text">
+            永久提升智力 INT +1，Lv50+ 可服用。黑暗妖精法兵 1% 掉落。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="萬能藥 (WIS)" data-remarks="永久提升精神 WIS +1，Lv50+ 可服用。歐熊 1% 掉落。" data-category="panaceas">
+        <td>
+            <div class="item-name">
+                萬能藥 (WIS)
+            </div>
+            <span class="category-badge panaceas">萬能藥</span>
+        </td>
+        <td>
+            <span class="price-val min">1001 萬</span>
+            <br><span class="price-val max">最高 4549 萬</span>
+        </td>
+        <td>
+            <span class="target-val">1,200 萬 ~ 1,500 萬</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-relic);">中等 (10)</span>
+            <span class="weight-desc">基礎價: 10,000</span>
+        </td>
+        <td class="remarks-text">
+            永久提升精神 WIS +1，Lv50+ 可服用。歐熊 1% 掉落。
+        </td>
+    </tr>
+    
+    <tr class="item-row" data-name="萬能藥 (CHA)" data-remarks="無法在交易所出現！獨角獸 1% 掉落。或在象牙塔 NPC 塔斯處以 3 個「純白的萬能藥」製作。" data-category="panaceas">
+        <td>
+            <div class="item-name">
+                萬能藥 (CHA)
+            </div>
+            <span class="category-badge panaceas">萬能藥</span>
+        </td>
+        <td>
+            <span class="price-val min">無法上架</span>
+            
+        </td>
+        <td>
+            <span class="target-val">無法上架 (只能掛機/重置製作)</span>
+        </td>
+        <td>
+            <span class="weight-val" style="color:var(--accent-disabled);">不上架</span>
+            <span class="weight-desc">基礎價: 10,000</span>
+        </td>
+        <td class="remarks-text">
+            無法在交易所出現！獨角獸 1% 掉落。或在象牙塔 NPC 塔斯處以 3 個「純白的萬能藥」製作。
+        </td>
+    </tr>
+    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let currentCategory = 'all';
+
+        function switchCategory(cat, btn) {
+            currentCategory = cat;
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterItems();
+        }
+
+        function filterItems() {
+            let q = document.getElementById('search-input').value.toLowerCase().trim();
+            let rows = document.querySelectorAll('.item-row');
+            
+            rows.forEach(r => {
+                let name = r.dataset.name.toLowerCase();
+                let remarks = r.dataset.remarks.toLowerCase();
+                let cat = r.dataset.category;
+                
+                let matchesQuery = name.includes(q) || remarks.includes(q);
+                let matchesCategory = currentCategory === 'all' || cat === currentCategory;
+                
+                if (matchesQuery && matchesCategory) {
+                    r.style.display = '';
+                } else {
+                    r.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

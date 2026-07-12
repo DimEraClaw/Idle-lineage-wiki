@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Craft NPCs",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name", "locationText", "regionId", "description", "linkStatus", "dataStatus", "sortOrder"],
+    "properties": {
+      "id": {"type": "string", "pattern": "^npc_[a-z0-9_]+$"},
+      "name": {"type": ["string", "null"]},
+      "locationText": {"type": ["string", "null"]},
+      "regionId": {"type": ["string", "null"]},
+      "description": {"type": ["string", "null"]},
+      "linkStatus": {"enum": ["resolved", "unresolved"]},
+      "dataStatus": {"enum": ["complete", "stub"]},
+      "sortOrder": {"type": "integer", "minimum": 0}
+    }
+  }
+}

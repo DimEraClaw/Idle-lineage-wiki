@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Craft source records",
+  "description": "Legacy drop rates use percentage values; every source declares rateUnit=percent.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["itemId", "sourceStatus", "sources"],
+    "properties": {
+      "itemId": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+      "sourceStatus": {"enum": ["verified", "unresolved", "unknown"]},
+      "sources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sourceType", "monsterId", "monsterNameText", "rate", "rateUnit", "locationTexts"],
+          "properties": {
+            "sourceType": {"enum": ["monster_drop", "shop", "quest", "craft", "exchange", null]},
+            "monsterId": {"type": ["string", "null"]},
+            "monsterNameText": {"type": ["string", "null"]},
+            "rate": {"type": ["number", "null"]},
+            "rateUnit": {"const": "percent"},
+            "locationTexts": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    }
+  }
+}

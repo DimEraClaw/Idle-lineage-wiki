@@ -1,0 +1,8073 @@
+[
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_clk_pride_earth_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_cursed_leather_earth",
+        "quantity": 100
+      },
+      {
+        "itemId": "new_item_151",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_191",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "clk_pride_earth",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_clk_pride_fire_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_cursed_leather_fire",
+        "quantity": 100
+      },
+      {
+        "itemId": "new_item_157",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_192",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "clk_pride_fire",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_clk_pride_water_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_cursed_leather_water",
+        "quantity": 100
+      },
+      {
+        "itemId": "new_item_154",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_190",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "clk_pride_water",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_clk_pride_wind_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_cursed_leather_wind",
+        "quantity": 100
+      },
+      {
+        "itemId": "new_item_160",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_193",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "clk_pride_wind",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_mat_cursed_leather_earth_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_chimera_snake",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "mat_cursed_leather_earth",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_mat_cursed_leather_fire_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_chimera_lion",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "mat_cursed_leather_fire",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_mat_cursed_leather_water_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_chimera_dragon",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "mat_cursed_leather_water",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bamut_mat_cursed_leather_wind_01",
+    "isSpecial": false,
+    "npcId": "npc_bamut",
+    "requirements": [
+      {
+        "itemId": "mat_chimera_goat",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "mat_cursed_leather_wind",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bartel_item_kukulkan_box_basic_01",
+    "isSpecial": false,
+    "npcId": "npc_bartel",
+    "requirements": [
+      {
+        "itemId": "mat_kukulkan_basic_down",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_kukulkan_basic_up",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "item_kukulkan_box_basic",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bartel_item_kukulkan_box_high_01",
+    "isSpecial": false,
+    "npcId": "npc_bartel",
+    "requirements": [
+      {
+        "itemId": "mat_kukulkan_high_down",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_kukulkan_high_up",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "item_kukulkan_box_high",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bartel_item_osiris_box_basic_01",
+    "isSpecial": false,
+    "npcId": "npc_bartel",
+    "requirements": [
+      {
+        "itemId": "mat_osiris_basic_down",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_osiris_basic_up",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "item_osiris_box_basic",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bartel_item_osiris_box_high_01",
+    "isSpecial": false,
+    "npcId": "npc_bartel",
+    "requirements": [
+      {
+        "itemId": "mat_osiris_high_down",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_osiris_high_up",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "item_osiris_box_high",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bartel_mat_crack_core_01",
+    "isSpecial": false,
+    "npcId": "npc_bartel",
+    "requirements": [
+      {
+        "itemId": "mat_rift_shard",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "mat_crack_core",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 1000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_bartel_wpn_qigu_obsidian_01",
+    "isSpecial": false,
+    "npcId": "npc_bartel",
+    "requirements": [
+      {
+        "itemId": "mat_crack_core",
+        "quantity": 2
+      },
+      {
+        "itemId": "mat_rough_stone",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_170",
+        "quantity": 30
+      }
+    ],
+    "result": {
+      "itemId": "wpn_qigu_obsidian",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_brabo_wpn_34_01",
+    "isSpecial": false,
+    "npcId": "npc_brabo",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_elfwing",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_34",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_brabo_wpn_35_01",
+    "isSpecial": false,
+    "npcId": "npc_brabo",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 150
+      },
+      {
+        "itemId": "new_item_elfwing",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "wpn_35",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_brabo_wpn_36_01",
+    "isSpecial": false,
+    "npcId": "npc_brabo",
+    "requirements": [
+      {
+        "itemId": "new_item_157",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 150
+      },
+      {
+        "itemId": "new_item_elfwing",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "wpn_36",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_brabo_wpn_40_01",
+    "isSpecial": false,
+    "npcId": "npc_brabo",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 80
+      },
+      {
+        "itemId": "wpn_39",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "wpn_40",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_brabo_wpn_41_01",
+    "isSpecial": false,
+    "npcId": "npc_brabo",
+    "requirements": [
+      {
+        "itemId": "new_item_157",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 80
+      },
+      {
+        "itemId": "wpn_39",
+        "quantity": 4
+      }
+    ],
+    "result": {
+      "itemId": "wpn_41",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_brave_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_ear_rage",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_brave",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_dominate_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_ear_truth",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_dominate",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_honor_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_ear_passion",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_honor",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_passion_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "new_item_151",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_157",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_158",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_passion",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_rage_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "new_item_151",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_154",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_rage",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_tolerance_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_ear_honor",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_tolerance",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_truth_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_ear_wisdom",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_truth",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_undead_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_ear_brave",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_undead",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_ear_wisdom_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "new_item_151",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_160",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_161",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_wisdom",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_1_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_0",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_1",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_2_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_1",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_2",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_3_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_2",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_3",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_4_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_3",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_4",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_5_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_4",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_5",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_6_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_5",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_6",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_7_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_6",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_7",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_8_cha_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_7",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_8_cha",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_8_con_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_7",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_8_con",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_8_dex_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_7",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_8_dex",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_8_int_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_7",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_8_int",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_8_str_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_7",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_8_str",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_david_acc_icequeen_ear_8_wis_01",
+    "isSpecial": false,
+    "npcId": "npc_david",
+    "requirements": [
+      {
+        "itemId": "acc_icequeen_ear_7",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_ice_crystal",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_icequeen_ear_8_wis",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_dytite_amr_old_leather_01",
+    "isSpecial": false,
+    "npcId": "npc_dytite",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_forgotten_leather",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "amr_old_leather",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_dytite_amr_old_plate_01",
+    "isSpecial": false,
+    "npcId": "npc_dytite",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_forgotten_plate",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "amr_old_plate",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_dytite_amr_old_robe_01",
+    "isSpecial": false,
+    "npcId": "npc_dytite",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_forgotten_robe",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "amr_old_robe",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_dytite_amr_old_scale_01",
+    "isSpecial": false,
+    "npcId": "npc_dytite",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_forgotten_scale",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "amr_old_scale",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_dytite_wpn_old_greatsword_01",
+    "isSpecial": false,
+    "npcId": "npc_dytite",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_forgotten_greatsword",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_old_greatsword",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_dytite_wpn_old_sword_01",
+    "isSpecial": false,
+    "npcId": "npc_dytite",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_forgotten_sword",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_old_sword",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_dytite_wpn_old_xbow_01",
+    "isSpecial": false,
+    "npcId": "npc_dytite",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_forgotten_xbow",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_old_xbow",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_elf_new_item_169_01",
+    "isSpecial": false,
+    "npcId": "npc_elf",
+    "requirements": [
+      {
+        "itemId": "new_item_164",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "new_item_169",
+      "quantity": 20
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_elf_new_item_170_01",
+    "isSpecial": false,
+    "npcId": "npc_elf",
+    "requirements": [
+      {
+        "itemId": "new_item_165",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "new_item_170",
+      "quantity": 20
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_elf_new_item_elfwing_01",
+    "isSpecial": false,
+    "npcId": "npc_elf",
+    "requirements": [
+      {
+        "itemId": "new_item_165",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "new_item_elfwing",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_elfqueen_new_item_173_01",
+    "isSpecial": false,
+    "npcId": "npc_elfqueen",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "new_item_173",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_elfqueen_wpn_shaha_bow_01",
+    "isSpecial": false,
+    "npcId": "npc_elfqueen",
+    "requirements": [
+      {
+        "itemId": "item_wind_tear",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_griffon_feather",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_193",
+        "quantity": 15
+      },
+      {
+        "itemId": "wpn_29",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_shaha_bow",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ent_new_item_172_01",
+    "isSpecial": false,
+    "npcId": "npc_ent",
+    "requirements": [
+      {
+        "itemId": "new_item_166",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "new_item_172",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_falin_arm_112_01",
+    "isSpecial": false,
+    "npcId": "npc_falin",
+    "requirements": [
+      {
+        "itemId": "arm_111",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "arm_112",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_falin_arm_77_01",
+    "isSpecial": false,
+    "npcId": "npc_falin",
+    "requirements": [
+      {
+        "itemId": "arm_75",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "arm_77",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_falin_arm_92_01",
+    "isSpecial": false,
+    "npcId": "npc_falin",
+    "requirements": [
+      {
+        "itemId": "arm_91",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 12
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "arm_92",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_falin_hlm_silver_01",
+    "isSpecial": false,
+    "npcId": "npc_falin",
+    "requirements": [
+      {
+        "itemId": "arm_48",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "hlm_silver",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_finn_arm_112_01",
+    "isSpecial": false,
+    "npcId": "npc_finn",
+    "requirements": [
+      {
+        "itemId": "arm_111",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "arm_112",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_finn_arm_77_01",
+    "isSpecial": false,
+    "npcId": "npc_finn",
+    "requirements": [
+      {
+        "itemId": "arm_75",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "arm_77",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_finn_arm_92_01",
+    "isSpecial": false,
+    "npcId": "npc_finn",
+    "requirements": [
+      {
+        "itemId": "arm_91",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 12
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "arm_92",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_finn_hlm_silver_01",
+    "isSpecial": false,
+    "npcId": "npc_finn",
+    "requirements": [
+      {
+        "itemId": "arm_48",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "hlm_silver",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_clan_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "acc_ear_phantom",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 1000
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_clan",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_dance_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_dance",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_festival_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "acc_ear_twin",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 40
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_festival",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_peak_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "acc_ear_festival",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 200
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_peak",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_phantom_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "acc_ear_rampage",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 750
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_phantom",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_rampage_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "acc_ear_peak",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 500
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_rampage",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_slave_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "acc_ear_clan",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 2500
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_slave",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_aide_acc_ear_twin_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_aide",
+    "requirements": [
+      {
+        "itemId": "acc_ear_dance",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "acc_ear_twin",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_shadow_clk_flame_blood_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_shadow",
+    "requirements": [
+      {
+        "itemId": "mat_fallen_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_fallen_scythe",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "clk_flame_blood",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_shadow_wpn_demonking_2hsword_01",
+    "isSpecial": true,
+    "npcId": "npc_flame_shadow",
+    "requirements": [
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_chaos_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_death_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 300
+      },
+      {
+        "itemId": "wpn_demon_sword",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demonking_2hsword",
+      "quantity": 1
+    },
+    "specialNote": "需要額外消耗 +11 以上「惡魔之劍」×1 作為媒介 (繼承強化與席琳套裝)"
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_shadow_wpn_demonking_bow_01",
+    "isSpecial": true,
+    "npcId": "npc_flame_shadow",
+    "requirements": [
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_chaos_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_death_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 300
+      },
+      {
+        "itemId": "wpn_demon_xbow",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demonking_bow",
+      "quantity": 1
+    },
+    "specialNote": "需要額外消耗 +11 以上「惡魔十字弓」×1 作為媒介 (繼承強化與席琳套裝)"
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_shadow_wpn_demonking_dual_01",
+    "isSpecial": true,
+    "npcId": "npc_flame_shadow",
+    "requirements": [
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_chaos_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_death_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 300
+      },
+      {
+        "itemId": "wpn_demon_dual",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demonking_dual",
+      "quantity": 1
+    },
+    "specialNote": "需要額外消耗 +11 以上「惡魔雙刀」×1 作為媒介 (繼承強化與席琳套裝)"
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_shadow_wpn_demonking_spear_01",
+    "isSpecial": true,
+    "npcId": "npc_flame_shadow",
+    "requirements": [
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_chaos_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_death_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 300
+      },
+      {
+        "itemId": "wpn_demon_xbow",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demonking_spear",
+      "quantity": 1
+    },
+    "specialNote": "需要額外消耗 +11 以上「惡魔十字弓」×1 作為媒介 (繼承強化與席琳套裝)"
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_shadow_wpn_demonking_wand_01",
+    "isSpecial": true,
+    "npcId": "npc_flame_shadow",
+    "requirements": [
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_chaos_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_death_head",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 300
+      },
+      {
+        "itemId": "wpn_demon_sword",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demonking_wand",
+      "quantity": 1
+    },
+    "specialNote": "需要額外消耗 +11 以上「惡魔之劍」×1 作為媒介 (繼承強化與席琳套裝)"
+  },
+  {
+    "currencyCost": {
+      "amount": 1000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_smith_item_shadow_temple_key_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_smith",
+    "requirements": [
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "item_shadow_temple_key",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 10000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_smith_mat_blackmithril_plate_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_smith",
+    "requirements": [
+      {
+        "itemId": "mat_black_mithril",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_silver_plate",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_177",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_178",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "mat_blackmithril_plate",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 1000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_flame_smith_mat_silver_plate_01",
+    "isSpecial": false,
+    "npcId": "npc_flame_smith",
+    "requirements": [
+      {
+        "itemId": "mat_silver",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "mat_silver_plate",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 50000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_amr_frost_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "amr_icequeen_charm",
+        "quantity": 1
+      },
+      {
+        "itemId": "amr_plate",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "amr_frost",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 25000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_arm_100_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "glv_glove",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 150
+      }
+    ],
+    "result": {
+      "itemId": "arm_100",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 16000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_arm_113_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "arm_108",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 200
+      }
+    ],
+    "result": {
+      "itemId": "arm_113",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 30000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_arm_79_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "amr_plate",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 450
+      }
+    ],
+    "result": {
+      "itemId": "arm_79",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 8000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_arm_94_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "arm_90",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 160
+      }
+    ],
+    "result": {
+      "itemId": "arm_94",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 50000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_bot_frost_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "arm_90",
+        "quantity": 1
+      },
+      {
+        "itemId": "bot_icequeen_charm",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bot_frost",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 50000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_hlm_frost_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "arm_43",
+        "quantity": 1
+      },
+      {
+        "itemId": "hlm_icequeen_charm",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "hlm_frost",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 16500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_hector_hlm_steel_01",
+    "isSpecial": false,
+    "npcId": "npc_hector",
+    "requirements": [
+      {
+        "itemId": "arm_43",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 120
+      }
+    ],
+    "result": {
+      "itemId": "hlm_steel",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 20000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_herbert_arm_87_01",
+    "isSpecial": false,
+    "npcId": "npc_herbert",
+    "requirements": [
+      {
+        "itemId": "new_item_187",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_188",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_189",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "arm_87",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 1000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_herbert_clk_mr_01",
+    "isSpecial": false,
+    "npcId": "npc_herbert",
+    "requirements": [
+      {
+        "itemId": "new_item_187",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_188",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_189",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "clk_mr",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 30000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_herbert_tsh_tshirt_01",
+    "isSpecial": false,
+    "npcId": "npc_herbert",
+    "requirements": [
+      {
+        "itemId": "new_item_187",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_188",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_189",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "tsh_tshirt",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ibelbin_arm_80_01",
+    "isSpecial": false,
+    "npcId": "npc_ibelbin",
+    "requirements": [
+      {
+        "itemId": "new_item_153",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 1000
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 500
+      },
+      {
+        "itemId": "new_item_190",
+        "quantity": 15
+      },
+      {
+        "itemId": "new_item_194",
+        "quantity": 150
+      }
+    ],
+    "result": {
+      "itemId": "arm_80",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ibelbin_arm_81_01",
+    "isSpecial": false,
+    "npcId": "npc_ibelbin",
+    "requirements": [
+      {
+        "itemId": "new_item_153",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 1000
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 500
+      },
+      {
+        "itemId": "new_item_191",
+        "quantity": 15
+      },
+      {
+        "itemId": "new_item_194",
+        "quantity": 150
+      }
+    ],
+    "result": {
+      "itemId": "arm_81",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ibelbin_arm_82_01",
+    "isSpecial": false,
+    "npcId": "npc_ibelbin",
+    "requirements": [
+      {
+        "itemId": "new_item_153",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 1000
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 500
+      },
+      {
+        "itemId": "new_item_192",
+        "quantity": 15
+      },
+      {
+        "itemId": "new_item_194",
+        "quantity": 150
+      }
+    ],
+    "result": {
+      "itemId": "arm_82",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ibelbin_arm_83_01",
+    "isSpecial": false,
+    "npcId": "npc_ibelbin",
+    "requirements": [
+      {
+        "itemId": "new_item_153",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 1000
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 500
+      },
+      {
+        "itemId": "new_item_193",
+        "quantity": 15
+      },
+      {
+        "itemId": "new_item_194",
+        "quantity": 150
+      }
+    ],
+    "result": {
+      "itemId": "arm_83",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ibelbin_wpn_siruge_01",
+    "isSpecial": false,
+    "npcId": "npc_ibelbin",
+    "requirements": [
+      {
+        "itemId": "new_item_153",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 500
+      },
+      {
+        "itemId": "new_item_192",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_194",
+        "quantity": 300
+      }
+    ],
+    "result": {
+      "itemId": "wpn_siruge",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_imp_wpn_demon_claw_01",
+    "isSpecial": false,
+    "npcId": "npc_imp",
+    "requirements": [
+      {
+        "itemId": "mat_demon_anklet_black",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_blue",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_red",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_white",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_fallen_hand",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demon_claw",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_imp_wpn_demon_dual_01",
+    "isSpecial": false,
+    "npcId": "npc_imp",
+    "requirements": [
+      {
+        "itemId": "mat_demon_anklet_black",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_blue",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_demon_anklet_red",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_white",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_fallen_fang",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demon_dual",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_imp_wpn_demon_sword_01",
+    "isSpecial": false,
+    "npcId": "npc_imp",
+    "requirements": [
+      {
+        "itemId": "mat_demon_anklet_black",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_blue",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_red",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_demon_anklet_white",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_fallen_poison",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demon_sword",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_imp_wpn_demon_xbow_01",
+    "isSpecial": false,
+    "npcId": "npc_imp",
+    "requirements": [
+      {
+        "itemId": "mat_demon_anklet_black",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_demon_anklet_blue",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_red",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_demon_anklet_white",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_fallen_tongue",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demon_xbow",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_joel_amr_bone_01",
+    "isSpecial": false,
+    "npcId": "npc_joel",
+    "requirements": [
+      {
+        "itemId": "arm_78",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_183",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "amr_bone",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 800,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_joel_hlm_bone_01",
+    "isSpecial": false,
+    "npcId": "npc_joel",
+    "requirements": [
+      {
+        "itemId": "arm_49",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_183",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "hlm_bone",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 800,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_joel_shd_bone_01",
+    "isSpecial": false,
+    "npcId": "npc_joel",
+    "requirements": [
+      {
+        "itemId": "arm_112",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_183",
+        "quantity": 15
+      }
+    ],
+    "result": {
+      "itemId": "shd_bone",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_keluya_wpn_ancient_axe_01",
+    "isSpecial": false,
+    "npcId": "npc_keluya",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 500
+      },
+      {
+        "itemId": "mat_unknown_axe",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_177",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_phoenix_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_ancient_axe",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_keluya_wpn_ancient_spear_01",
+    "isSpecial": false,
+    "npcId": "npc_keluya",
+    "requirements": [
+      {
+        "itemId": "item_ancient_scroll",
+        "quantity": 10
+      },
+      {
+        "itemId": "item_unknown_spear",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_soulstone_shard",
+        "quantity": 500
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_178",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_phoenix_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_ancient_spear",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kororanz_mat_rasta_codex_01",
+    "isSpecial": false,
+    "npcId": "npc_kororanz",
+    "requirements": [
+      {
+        "itemId": "mat_history_1",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_history_2",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_history_3",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_history_4",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_history_5",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_history_6",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_history_7",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_history_8",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "mat_rasta_codex",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kororanz_wpn_beastking_claw_01",
+    "isSpecial": false,
+    "npcId": "npc_kororanz",
+    "requirements": [
+      {
+        "itemId": "mat_black_blood",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_black_powder",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_holy_relic",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_rasta_codex",
+        "quantity": 1
+      },
+      {
+        "itemId": "wpn_baranka_claw",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_beastking_claw",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kororanz_wpn_emperor_blade_01",
+    "isSpecial": false,
+    "npcId": "npc_kororanz",
+    "requirements": [
+      {
+        "itemId": "mat_black_blood",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_black_powder",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_holy_relic",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_rasta_codex",
+        "quantity": 1
+      },
+      {
+        "itemId": "wpn_official_2h",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_emperor_blade",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kororanz_wpn_holycrystal_wand_01",
+    "isSpecial": false,
+    "npcId": "npc_kororanz",
+    "requirements": [
+      {
+        "itemId": "mat_black_blood",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_black_powder",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_holy_relic",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_rasta_codex",
+        "quantity": 1
+      },
+      {
+        "itemId": "wpn_priest_wand",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_holycrystal_wand",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kororanz_wpn_redshadow_dual_01",
+    "isSpecial": false,
+    "npcId": "npc_kororanz",
+    "requirements": [
+      {
+        "itemId": "mat_black_blood",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_black_powder",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_holy_relic",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_rasta_codex",
+        "quantity": 1
+      },
+      {
+        "itemId": "wpn_assassin_mark",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_redshadow_dual",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kororanz_wpn_windblade_dagger_01",
+    "isSpecial": false,
+    "npcId": "npc_kororanz",
+    "requirements": [
+      {
+        "itemId": "mat_black_blood",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_black_powder",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_holy_relic",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_rasta_codex",
+        "quantity": 1
+      },
+      {
+        "itemId": "wpn_official_blade",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_windblade_dagger",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_mat_silver_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_silverore",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "mat_silver",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_claw_dark_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone2",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_blackstone3",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "wpn_claw_dark",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_claw_gloom_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone3",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_blackstone4",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 10
+      },
+      {
+        "itemId": "wpn_claw_dark",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_claw_gloom",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_claw_silver_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone2",
+        "quantity": 40
+      },
+      {
+        "itemId": "mat_blackstone4",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_silver",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_151",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 10
+      },
+      {
+        "itemId": "wpn_claw_dark",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_claw_silver",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_dual_dark_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone2",
+        "quantity": 100
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "wpn_dual_dark",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_dual_gloom_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone3",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_blackstone4",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 20
+      },
+      {
+        "itemId": "wpn_dual_dark",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_dual_gloom",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_dual_silver_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone2",
+        "quantity": 50
+      },
+      {
+        "itemId": "mat_blackstone4",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_silver",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_151",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 20
+      },
+      {
+        "itemId": "wpn_dual_dark",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_dual_silver",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_xbow_dark_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone2",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_blackstone3",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 30
+      }
+    ],
+    "result": {
+      "itemId": "wpn_xbow_dark",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_kupu_wpn_xbow_gloom_01",
+    "isSpecial": false,
+    "npcId": "npc_kupu",
+    "requirements": [
+      {
+        "itemId": "mat_blackstone3",
+        "quantity": 100
+      },
+      {
+        "itemId": "mat_blackstone4",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 30
+      },
+      {
+        "itemId": "wpn_xbow_dark",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_xbow_gloom",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lentis_rng_earth_01",
+    "isSpecial": false,
+    "npcId": "npc_lentis",
+    "requirements": [
+      {
+        "itemId": "mat_crest_beast",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_legion_assassin",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_beast",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_law",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_necro",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "rng_earth",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lentis_rng_fire_01",
+    "isSpecial": false,
+    "npcId": "npc_lentis",
+    "requirements": [
+      {
+        "itemId": "mat_crest_necro",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_legion_assassin",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_beast",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_law",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_necro",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "rng_fire",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lentis_rng_water_01",
+    "isSpecial": false,
+    "npcId": "npc_lentis",
+    "requirements": [
+      {
+        "itemId": "mat_crest_law",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_legion_assassin",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_beast",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_law",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_necro",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "rng_water",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lentis_rng_wind_01",
+    "isSpecial": false,
+    "npcId": "npc_lentis",
+    "requirements": [
+      {
+        "itemId": "mat_crest_assassin",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_legion_assassin",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_beast",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_law",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_legion_necro",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "rng_wind",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 50000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_acc_130_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "acc_128",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_151",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_154",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_157",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_160",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "acc_130",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 50000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_acc_131_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "acc_129",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_151",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_154",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_157",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_160",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "acc_131",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_acc_135_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "blt_body",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_158",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_161",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "acc_135",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_acc_136_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "acc_130",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_158",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_161",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "acc_136",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_acc_137_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "acc_131",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_158",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_161",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "acc_137",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_arm_107_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "arm_108",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_190",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_mermaid_scale",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "arm_107",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_arm_95_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "arm_90",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_mermaid_scale",
+        "quantity": 30
+      }
+    ],
+    "result": {
+      "itemId": "arm_95",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 50000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_blt_body_01",
+    "isSpecial": false,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "acc_127",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_151",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_154",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_157",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_160",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "blt_body",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_clk_holy_corps_01",
+    "isSpecial": true,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "clk_warrior_corps",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_151",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_157",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_161",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "clk_holy_corps",
+      "quantity": 1
+    },
+    "specialNote": "需要額外消耗 +7 以上「戰士團斗篷」×1 作為媒介 (繼承強化與席琳套裝)"
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_lumiel_hlm_holy_corps_01",
+    "isSpecial": true,
+    "npcId": "npc_lumiel",
+    "requirements": [
+      {
+        "itemId": "hlm_warrior_corps",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_154",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_158",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_160",
+        "quantity": 30
+      }
+    ],
+    "result": {
+      "itemId": "hlm_holy_corps",
+      "quantity": 1
+    },
+    "specialNote": "需要額外消耗 +7 以上「戰士團頭盔」×1 作為媒介 (繼承強化與席琳套裝)"
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_111_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "new_item_179",
+        "quantity": 7
+      }
+    ],
+    "result": {
+      "itemId": "arm_111",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_48_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "new_item_179",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_48",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_49_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "arm_42",
+        "quantity": 1
+      },
+      {
+        "itemId": "arm_48",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "arm_49",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_75_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "new_item_179",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "arm_75",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_76_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "arm_75",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_181",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_76",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_78_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "arm_77",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 15
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 15
+      }
+    ],
+    "result": {
+      "itemId": "arm_78",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_91_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "new_item_179",
+        "quantity": 6
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "arm_91",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 300,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_arm_93_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "arm_92",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "arm_93",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_new_item_181_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "new_item_180",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "new_item_181",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moli_new_item_182_01",
+    "isSpecial": false,
+    "npcId": "npc_moli",
+    "requirements": [
+      {
+        "itemId": "new_item_179",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "new_item_182",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moliya_amr_magerobe_01",
+    "isSpecial": false,
+    "npcId": "npc_moliya",
+    "requirements": [
+      {
+        "itemId": "new_item_150",
+        "quantity": 25
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_187",
+        "quantity": 4
+      },
+      {
+        "itemId": "new_item_189",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "amr_magerobe",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_moliya_hlm_mage_01",
+    "isSpecial": false,
+    "npcId": "npc_moliya",
+    "requirements": [
+      {
+        "itemId": "new_item_150",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_187",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_188",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_189",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "hlm_mage",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_nalien_new_item_176_01",
+    "isSpecial": false,
+    "npcId": "npc_nalien",
+    "requirements": [
+      {
+        "itemId": "new_item_172",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "new_item_176",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_109_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_171",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_172",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "arm_109",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_44_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "hlm_elf",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_150",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_161",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 150
+      },
+      {
+        "itemId": "new_item_178",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "arm_44",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_70_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_163",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_172",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "arm_70",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_71_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_168",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "arm_71",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_72_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_153",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_178",
+        "quantity": 8
+      }
+    ],
+    "result": {
+      "itemId": "arm_72",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_73_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_174",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_177",
+        "quantity": 4
+      }
+    ],
+    "result": {
+      "itemId": "arm_73",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_74_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_168",
+        "quantity": 6
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "arm_74",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_90_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_168",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "arm_90",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_98_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_172",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "arm_98",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_arm_99_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_152",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_167",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "arm_99",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_bot_short_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_168",
+        "quantity": 4
+      },
+      {
+        "itemId": "new_item_172",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "bot_short",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_clk_elf_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_150",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_165",
+        "quantity": 6
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "clk_elf",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_hlm_elf_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_163",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_172",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_elfwing",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "hlm_elf",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_shd_elf_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "arm_109",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_177",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "shd_elf",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_10_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_171",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "wpn_10",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_15_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 90
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      },
+      {
+        "itemId": "wpn_34",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_15",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_24_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_171",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      },
+      {
+        "itemId": "wpn_40",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_24",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_29_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_152",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 40
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_178",
+        "quantity": 6
+      },
+      {
+        "itemId": "wpn_41",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_29",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_30_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_30",
+      "quantity": 10
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_31_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_171",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_178",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_elfwing",
+        "quantity": 8
+      }
+    ],
+    "result": {
+      "itemId": "wpn_31",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_3_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_168",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_3",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_5_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "wpn_5",
+      "quantity": 100
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_battleaxe_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_164",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      },
+      {
+        "itemId": "wpn_34",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_battleaxe",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_dagger2_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_164",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_dagger2",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_elfbow_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_164",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_168",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "wpn_elfbow",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_elfsword_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 150
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 5
+      },
+      {
+        "itemId": "wpn_35",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_elfsword",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_halberd_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_158",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 60
+      },
+      {
+        "itemId": "wpn_24",
+        "quantity": 1
+      },
+      {
+        "itemId": "wpn_41",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_halberd",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_mailbreaker_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_151",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_237",
+        "quantity": 10
+      },
+      {
+        "itemId": "wpn_34",
+        "quantity": 1
+      },
+      {
+        "itemId": "wpn_40",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_mailbreaker",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_narupa_wpn_rapier_01",
+    "isSpecial": false,
+    "npcId": "npc_narupa",
+    "requirements": [
+      {
+        "itemId": "new_item_158",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 25
+      },
+      {
+        "itemId": "new_item_173",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_elfwing",
+        "quantity": 2
+      },
+      {
+        "itemId": "wpn_36",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_rapier",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 20000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_item_evo_fruit_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "new_item_154",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_221",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_evo_fruit",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_item_victory_fruit_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "item_dragon_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "item_victory_fruit",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 50000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_arm_bone_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "new_item_182",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_183",
+        "quantity": 20
+      },
+      {
+        "itemId": "pet_arm_leather",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "pet_arm_bone",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 200000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_arm_chain_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "mat_steel_chunk",
+        "quantity": 100
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 50
+      },
+      {
+        "itemId": "pet_arm_steel",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "pet_arm_chain",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 200000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_arm_cross_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "mat_steel_chunk",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 50
+      },
+      {
+        "itemId": "pet_arm_steel",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "pet_arm_cross",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 10000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_arm_leather_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "new_item_182",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "pet_arm_leather",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 300000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_arm_mithril_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "mat_dragon_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_177",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 50
+      },
+      {
+        "itemId": "pet_arm_cross",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "pet_arm_mithril",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_arm_steel_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "mat_steel_chunk",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "pet_arm_steel",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_fang_hound_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "new_item_152",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "pet_fang_hound",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 1000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_fang_ruin_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "mat_black_mithril",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_phoenix_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "pet_fang_hound",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "pet_fang_ruin",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 100000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_fang_steel_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "new_item_161",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "pet_fang_steel",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 1000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_norse_pet_fang_victory_01",
+    "isSpecial": false,
+    "npcId": "npc_norse",
+    "requirements": [
+      {
+        "itemId": "new_item_161",
+        "quantity": 2
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_180",
+        "quantity": 50
+      },
+      {
+        "itemId": "pet_fang_steel",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "pet_fang_victory",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_pan_new_item_177_01",
+    "isSpecial": false,
+    "npcId": "npc_pan",
+    "requirements": [
+      {
+        "itemId": "new_item_169",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "new_item_177",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_pan_new_item_178_01",
+    "isSpecial": false,
+    "npcId": "npc_pan",
+    "requirements": [
+      {
+        "itemId": "new_item_173",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "new_item_178",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_pan_wpn_39_01",
+    "isSpecial": false,
+    "npcId": "npc_pan",
+    "requirements": [
+      {
+        "itemId": "new_item_176",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_39",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_pir_armguard_archer_01",
+    "isSpecial": false,
+    "npcId": "npc_pir",
+    "requirements": [
+      {
+        "itemId": "item_forgotten_leather",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 3
+      },
+      {
+        "itemId": "new_item_172",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 50
+      },
+      {
+        "itemId": "new_item_175",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_elfwing",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "armguard_archer",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 1000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_pir_armguard_fighter_01",
+    "isSpecial": false,
+    "npcId": "npc_pir",
+    "requirements": [
+      {
+        "itemId": "item_forgotten_plate",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_174",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "armguard_fighter",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 1000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_pir_wpn_chain_destroyer_01",
+    "isSpecial": false,
+    "npcId": "npc_pir",
+    "requirements": [
+      {
+        "itemId": "item_forgotten_greatsword",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_171",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_182",
+        "quantity": 20
+      },
+      {
+        "itemId": "new_item_192",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_chain_destroyer",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【黑妖 45 級試煉任務】向沉默洞穴的布魯迪卡接取。擊殺「雪怪」取得「雪怪首級」，交付後獲得影子長靴。",
+    "id": "recipe_npc_q_dark_arm_shadowboots_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dark",
+    "requirements": [
+      {
+        "itemId": "item_yeti_head",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_shadowboots",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【黑妖 30 級試煉任務】向沉默洞穴的倫得接取。擊殺「強盜」取得「死亡誓約」，交付後獲得影子手套。",
+    "id": "recipe_npc_q_dark_arm_shadowglove_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dark",
+    "requirements": [
+      {
+        "itemId": "item_death_oath",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_shadowglove",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【黑妖 15 級試煉任務】向沉默洞穴的康接取。擊殺「妖魔法師」取得「妖魔長老首級」，交付後獲得影子面具。",
+    "id": "recipe_npc_q_dark_arm_shadowmask_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dark",
+    "requirements": [
+      {
+        "itemId": "item_orc_elder_head",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_shadowmask",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【黑妖 50 級試煉任務】向沉默洞穴的布魯迪卡接取。擊殺「黑暗棲林者」取得「混沌鑰匙」，擊殺「墮落的司祭」取得「墮落鑰匙」，交付後獲得死亡之指。",
+    "id": "recipe_npc_q_dark_wpn_death_finger_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dark",
+    "requirements": [
+      {
+        "itemId": "item_chaos_key",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_fallen_key",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_death_finger",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【龍騎士 30 級試煉任務】向貝希摩斯的普洛凱爾接取。擊殺「蛇女」取得「妖魔密使首領間諜書」，交付後獲得龍鱗臂甲及血之渴望書板。",
+    "id": "recipe_npc_q_dragon_armguard_dragonscale_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dragon",
+    "requirements": [
+      {
+        "itemId": "item_demon_spy",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "armguard_dragonscale",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【龍騎士 15 級試煉任務】向貝希摩斯的普洛凱爾接取。收集甘地/都達瑪拉/羅孚/阿吐巴妖魔掉落的「妖魔搜索文件」x3，交付後獲得龍騎士雙手劍及龍之護鎧書板。",
+    "id": "recipe_npc_q_dragon_bk_dragon_armor_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dragon",
+    "requirements": [
+      {
+        "itemId": "item_demon_search",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "bk_dragon_armor",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【龍騎士 30 級試煉任務】向貝希摩斯的普洛凱爾接取。擊殺「蛇女」取得「妖魔密使首領間諜書」，交付後獲得龍鱗臂甲及血之渴望書板。",
+    "id": "recipe_npc_q_dragon_bk_dragon_bloodlust_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dragon",
+    "requirements": [
+      {
+        "itemId": "item_demon_spy",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_dragon_bloodlust",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【龍騎士 45 級試煉任務】向貝希摩斯的普洛凱爾接取。擊殺「雪怪」取得「雪怪之心」x10，交付後獲得龍騎士斗篷。",
+    "id": "recipe_npc_q_dragon_clk_dragon_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dragon",
+    "requirements": [
+      {
+        "itemId": "item_yeti_heart",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "clk_dragon",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【龍騎士 50 級試煉任務】向貝希摩斯的普洛凱爾接取。在底比斯地區擊殺怪物取得「時空裂痕碎片」x100，擊殺「火焰之靈魂」取得「靈魂之火灰燼」x1，交付後獲得消滅者鎖鏈劍。",
+    "id": "recipe_npc_q_dragon_wpn_chain_annihilator_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dragon",
+    "requirements": [
+      {
+        "itemId": "item_soulfire_ash",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_rift_shard",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "wpn_chain_annihilator",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【龍騎士 15 級試煉任務】向貝希摩斯的普洛凱爾接取。收集甘地/都達瑪拉/羅孚/阿吐巴妖魔掉落的「妖魔搜索文件」x3，交付後獲得龍騎士雙手劍及龍之護鎧書板。",
+    "id": "recipe_npc_q_dragon_wpn_dragon_2h_01",
+    "isSpecial": false,
+    "npcId": "npc_q_dragon",
+    "requirements": [
+      {
+        "itemId": "item_demon_search",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "wpn_dragon_2h",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 45 級試煉任務】向威頓村的馬沙接取。擊殺「黑暗精靈」取得「藍色長笛」，擊殺「鋼鐵高崙」取得「古代鑰匙」，交付後獲得保護者手套及精靈水晶(召喚強力屬性精靈)。",
+    "id": "recipe_npc_q_elf_arm_102_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "item_ancientkey",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_blueflute",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_102",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 15 級試煉任務】向妖精森林的歐斯接取。收集都達瑪拉妖魔魔法書、那魯加妖魔魔法書、甘地妖魔魔法書、阿吐巴妖魔魔法書（分別由對應名字的妖魔掉落），交付後獲得精靈敏捷頭盔及精靈體質頭盔。",
+    "id": "recipe_npc_q_elf_arm_50_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "new_item_199",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_200",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_201",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_202",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_50",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 15 級試煉任務】向妖精森林的歐斯接取。收集都達瑪拉妖魔魔法書、那魯加妖魔魔法書、甘地妖魔魔法書、阿吐巴妖魔魔法書（分別由對應名字的妖魔掉落），交付後獲得精靈敏捷頭盔及精靈體質頭盔。",
+    "id": "recipe_npc_q_elf_arm_51_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "new_item_199",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_200",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_201",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_202",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_51",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 30 級試煉任務】向妖精森林的迷幻森林之母接取。擊殺「希爾黛斯」取得「受詛咒的精靈書」，交付後獲得精靈水晶(召喚屬性精靈)與精靈T恤。",
+    "id": "recipe_npc_q_elf_arm_85_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "new_item_213",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_85",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 45 級試煉任務】向威頓村的馬沙接取。擊殺「黑暗精靈」取得「藍色長笛」，擊殺「鋼鐵高崙」取得「古代鑰匙」，交付後獲得保護者手套及精靈水晶(召喚強力屬性精靈)。",
+    "id": "recipe_npc_q_elf_bk_elf_summon2_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "item_ancientkey",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_blueflute",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_elf_summon2",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 30 級試煉任務】向妖精森林的迷幻森林之母接取。擊殺「希爾黛斯」取得「受詛咒的精靈書」，交付後獲得精靈水晶(召喚屬性精靈)與精靈T恤。",
+    "id": "recipe_npc_q_elf_bk_elf_summon_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "new_item_213",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_elf_summon",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 50 級試煉任務】向奇岩的迪嘉勒廷接取。擊殺「巨大兵蟻」取得「古代黑妖之秘笈」，在大洞穴隱遁者地區擊殺「魔族暗殺團」取得「密封的情報書」，擊殺「炎魔的惡魔」取得「炎魔之爪」，交付後獲得赤焰之弓、赤焰之劍、賽菲亞長靴。",
+    "id": "recipe_npc_q_elf_bot_sephia_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "item_ancient_book",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_sealed_intel",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_flame_claw",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bot_sephia",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 50 級試煉任務】向奇岩的迪嘉勒廷接取。擊殺「巨大兵蟻」取得「古代黑妖之秘笈」，在大洞穴隱遁者地區擊殺「魔族暗殺團」取得「密封的情報書」，擊殺「炎魔的惡魔」取得「炎魔之爪」，交付後獲得赤焰之弓、赤焰之劍、賽菲亞長靴。",
+    "id": "recipe_npc_q_elf_wpn_redflame_bow_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "item_ancient_book",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_sealed_intel",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_flame_claw",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_redflame_bow",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【妖精 50 級試煉任務】向奇岩的迪嘉勒廷接取。擊殺「巨大兵蟻」取得「古代黑妖之秘笈」，在大洞穴隱遁者地區擊殺「魔族暗殺團」取得「密封的情報書」，擊殺「炎魔的惡魔」取得「炎魔之爪」，交付後獲得赤焰之弓、赤焰之劍、賽菲亞長靴。",
+    "id": "recipe_npc_q_elf_wpn_redflame_sword_01",
+    "isSpecial": false,
+    "npcId": "npc_q_elf",
+    "requirements": [
+      {
+        "itemId": "item_ancient_book",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_sealed_intel",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_flame_claw",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_redflame_sword",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【幻術士 45 級試煉任務】向希培利亞的希蓮恩接取。擊殺「熔岩高崙」取得「完成的時間水晶球」，交付後獲得幻術士斗篷。",
+    "id": "recipe_npc_q_illusion_clk_illu_01",
+    "isSpecial": false,
+    "npcId": "npc_q_illusion",
+    "requirements": [
+      {
+        "itemId": "item_time_orb",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "clk_illu",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【幻術士 15 級試煉任務】向希培利亞的希蓮恩接取。擊殺「污染的安特」取得「污濁安特的水果」、「污濁安特的樹枝」與「污濁安特的樹皮」，交付後獲得幻術士魔杖及立方燃燒水晶。",
+    "id": "recipe_npc_q_illusion_mem_cube_burn_01",
+    "isSpecial": false,
+    "npcId": "npc_q_illusion",
+    "requirements": [
+      {
+        "itemId": "item_ant_bark",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_ant_branch",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_ant_fruit",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "mem_cube_burn",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【幻術士 30 級試煉任務】向希培利亞的希蓮恩接取。擊殺「艾爾摩將軍」取得「艾爾摩將軍之心」，交付後獲得幻術士法書及立方衝擊水晶。",
+    "id": "recipe_npc_q_illusion_mem_cube_shock_01",
+    "isSpecial": false,
+    "npcId": "npc_q_illusion",
+    "requirements": [
+      {
+        "itemId": "item_elmore_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "mem_cube_shock",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【幻術士 30 級試煉任務】向希培利亞的希蓮恩接取。擊殺「艾爾摩將軍」取得「艾爾摩將軍之心」，交付後獲得幻術士法書及立方衝擊水晶。",
+    "id": "recipe_npc_q_illusion_shd_illu_book_01",
+    "isSpecial": false,
+    "npcId": "npc_q_illusion",
+    "requirements": [
+      {
+        "itemId": "item_elmore_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "shd_illu_book",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【幻術士 15 級試煉任務】向希培利亞的希蓮恩接取。擊殺「污染的安特」取得「污濁安特的水果」、「污濁安特的樹枝」與「污濁安特的樹皮」，交付後獲得幻術士魔杖及立方燃燒水晶。",
+    "id": "recipe_npc_q_illusion_wpn_illu_wand_01",
+    "isSpecial": false,
+    "npcId": "npc_q_illusion",
+    "requirements": [
+      {
+        "itemId": "item_ant_bark",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_ant_branch",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_ant_fruit",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_illu_wand",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【幻術士 50 級試煉任務】向希培利亞的希蓮恩接取。在底比斯地區擊殺怪物取得「時空裂痕碎片」x100，擊殺「遺忘之島飛龍」取得「翼龍之血」x5，交付後獲得藍寶石奇古獸。",
+    "id": "recipe_npc_q_illusion_wpn_qigu_sapphire_01",
+    "isSpecial": false,
+    "npcId": "npc_q_illusion",
+    "requirements": [
+      {
+        "itemId": "item_wyvern_blood",
+        "quantity": 5
+      },
+      {
+        "itemId": "mat_rift_shard",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "wpn_qigu_sapphire",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【騎士 45 級試煉任務】向威頓村的馬沙接取。擊殺「強盜頭目」取得「夜之視野」，擊殺「鋼鐵高崙」取得「古代鑰匙」，交付後獲得勇敢皮帶。",
+    "id": "recipe_npc_q_knight_acc_134_01",
+    "isSpecial": false,
+    "npcId": "npc_q_knight",
+    "requirements": [
+      {
+        "itemId": "item_ancientkey",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_nightvision",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_134",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【騎士 15 級試煉任務】向銀騎士村的瑞奇接取。擊殺「黑騎士」取得「古老的交易文件」與「黑騎士的誓約」，擊殺「龍龜」取得「龍龜甲」，交付後獲得紅騎士頭巾。",
+    "id": "recipe_npc_q_knight_arm_53_01",
+    "isSpecial": false,
+    "npcId": "npc_q_knight",
+    "requirements": [
+      {
+        "itemId": "new_item_196",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_198",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_206",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_53",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【騎士 50 級試煉任務】向奇岩的迪嘉勒廷接取。擊殺「黑暗妖精將軍」取得「丹特斯的召書」，擊殺精靈墓穴的怪物取得「精靈的私語」x10，擊殺「炎魔的惡魔」取得「炎魔之劍」，交付後獲得黑燄之劍及勇氣長靴。",
+    "id": "recipe_npc_q_knight_bot_courage_01",
+    "isSpecial": false,
+    "npcId": "npc_q_knight",
+    "requirements": [
+      {
+        "itemId": "item_dantes_letter",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_elf_whisper",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_flame_sword",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bot_courage",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【騎士 30 級試煉任務】向甘特洞穴的甘特接取。擊殺「夏洛伯」取得「夏洛伯之爪」，擊殺「蛇女」取得「蛇女之鱗」，交付後獲得紅騎士之劍及紅騎士盾牌。",
+    "id": "recipe_npc_q_knight_shd_redknight_01",
+    "isSpecial": false,
+    "npcId": "npc_q_knight",
+    "requirements": [
+      {
+        "itemId": "new_item_144",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_208",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "shd_redknight",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【騎士 50 級試煉任務】向奇岩的迪嘉勒廷接取。擊殺「黑暗妖精將軍」取得「丹特斯的召書」，擊殺精靈墓穴的怪物取得「精靈的私語」x10，擊殺「炎魔的惡魔」取得「炎魔之劍」，交付後獲得黑燄之劍及勇氣長靴。",
+    "id": "recipe_npc_q_knight_wpn_blackflame_sword_01",
+    "isSpecial": false,
+    "npcId": "npc_q_knight",
+    "requirements": [
+      {
+        "itemId": "item_dantes_letter",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_elf_whisper",
+        "quantity": 10
+      },
+      {
+        "itemId": "mat_flame_sword",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_blackflame_sword",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【騎士 30 級試煉任務】向甘特洞穴的甘特接取。擊殺「夏洛伯」取得「夏洛伯之爪」，擊殺「蛇女」取得「蛇女之鱗」，交付後獲得紅騎士之劍及紅騎士盾牌。",
+    "id": "recipe_npc_q_knight_wpn_redknight_01",
+    "isSpecial": false,
+    "npcId": "npc_q_knight",
+    "requirements": [
+      {
+        "itemId": "new_item_144",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_208",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_redknight",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【法師 15 級試煉任務】向說話之島的詹姆接取。擊殺「食屍鬼」取得「食屍鬼的指甲」與「食屍鬼的牙齒」，擊殺「骷髏」取得「骷髏頭」，交付後獲得魔法能量之書。",
+    "id": "recipe_npc_q_mage_arm_115_01",
+    "isSpecial": false,
+    "npcId": "npc_q_mage",
+    "requirements": [
+      {
+        "itemId": "new_item_203",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_204",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_205",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_115",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【法師 45 級試煉任務】向象牙塔 3 樓的塔拉斯接取。擊殺「變形怪\" 或 \"變形怪首領」取得「變形怪的血」，交付後獲得瑪那魔杖及瑪那斗篷。",
+    "id": "recipe_npc_q_mage_arm_89_01",
+    "isSpecial": false,
+    "npcId": "npc_q_mage",
+    "requirements": [
+      {
+        "itemId": "new_item_240",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "arm_89",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【法師 50 級試煉任務】向奇岩的迪嘉勒廷接取。在大洞穴隱遁者村莊地區擊殺「魔族暗殺團」取得「間諜報告書」，擊殺「炎魔的惡魔」取得「炎魔之眼」，交付後獲得瑪那水晶球及瑪那長靴。",
+    "id": "recipe_npc_q_mage_bot_mana_01",
+    "isSpecial": false,
+    "npcId": "npc_q_mage",
+    "requirements": [
+      {
+        "itemId": "item_spy_report",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_flame_eye",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bot_mana",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【法師 30 級試煉任務】向象牙塔 3 樓的塔拉斯接取。擊殺「骷髏」取得「不死族的鑰匙」，擊殺「骷髏神射手」或「骷髏警衛」取得「不死族的骨頭」，交付後獲得水晶魔杖。",
+    "id": "recipe_npc_q_mage_wpn_crystalwand_01",
+    "isSpecial": false,
+    "npcId": "npc_q_mage",
+    "requirements": [
+      {
+        "itemId": "new_item_212",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_214",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_crystalwand",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【法師 50 級試煉任務】向奇岩的迪嘉勒廷接取。在大洞穴隱遁者村莊地區擊殺「魔族暗殺團」取得「間諜報告書」，擊殺「炎魔的惡魔」取得「炎魔之眼」，交付後獲得瑪那水晶球及瑪那長靴。",
+    "id": "recipe_npc_q_mage_wpn_mana_orb_01",
+    "isSpecial": false,
+    "npcId": "npc_q_mage",
+    "requirements": [
+      {
+        "itemId": "item_spy_report",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_flame_eye",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_mana_orb",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【法師 45 級試煉任務】向象牙塔 3 樓的塔拉斯接取。擊殺「變形怪」或「變形怪首領」取得「變形怪的血」，交付後獲得瑪那魔杖及瑪那斗篷。",
+    "id": "recipe_npc_q_mage_wpn_manawand_01",
+    "isSpecial": false,
+    "npcId": "npc_q_mage",
+    "requirements": [
+      {
+        "itemId": "new_item_240",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_manawand",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【王族 45 級試煉任務】向威頓村的馬沙接取。擊殺「鬼魂」或「紅鬼魂」取得「失去光明的靈魂」，交付後獲得守護者的戒指。",
+    "id": "recipe_npc_q_royal_acc_royal_guard_01",
+    "isSpecial": false,
+    "npcId": "npc_q_royal",
+    "requirements": [
+      {
+        "itemId": "item_lost_soul",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "acc_royal_guard",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【王族 30 級試煉任務：君主的威嚴 / 呼喚盟友】向甘特洞穴的甘特接取。擊殺「巨大兵蟻」取得「村民的遺物」，交付後獲得君主的威嚴及呼喚盟友魔法書。",
+    "id": "recipe_npc_q_royal_bk_royal_callally_01",
+    "isSpecial": false,
+    "npcId": "npc_q_royal",
+    "requirements": [
+      {
+        "itemId": "new_item_211",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_royal_callally",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【王族 15 級試煉任務：紅色斗篷 / 精準目標】向甘特洞穴的甘特接取。擊殺「黑騎士搜索隊」取得「搜索狀」，交付後獲得紅色斗篷及精準目標魔法書。",
+    "id": "recipe_npc_q_royal_bk_royal_precise_01",
+    "isSpecial": false,
+    "npcId": "npc_q_royal",
+    "requirements": [
+      {
+        "itemId": "new_item_197",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_royal_precise",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【王族 50 級試煉任務】向奇岩的迪嘉勒廷接取。擊殺「小惡魔」取得「調職命令書」，擊殺「炎魔的惡魔」取得「炎魔之心」，交付後獲得黃金權杖及神意長靴。",
+    "id": "recipe_npc_q_royal_bot_divine_will_01",
+    "isSpecial": false,
+    "npcId": "npc_q_royal",
+    "requirements": [
+      {
+        "itemId": "item_royal_order",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_flame_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bot_divine_will",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【王族 30 級試煉任務：君主的威嚴 / 呼喚盟友】向甘特洞穴的甘特接取。擊殺「巨大兵蟻」取得「村民的遺物」，交付後獲得君主的威嚴及呼喚盟友魔法書。",
+    "id": "recipe_npc_q_royal_clk_royal_majesty_01",
+    "isSpecial": false,
+    "npcId": "npc_q_royal",
+    "requirements": [
+      {
+        "itemId": "new_item_211",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "clk_royal_majesty",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【王族 15 級試煉任務：紅色斗篷 / 精準目標】向甘特洞穴的甘特接取。擊殺「黑騎士搜索隊」取得「搜索狀」，交付後獲得紅色斗篷及精準目標魔法書。",
+    "id": "recipe_npc_q_royal_clk_royal_red_01",
+    "isSpecial": false,
+    "npcId": "npc_q_royal",
+    "requirements": [
+      {
+        "itemId": "new_item_197",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "clk_royal_red",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【王族 50 級試煉任務】向奇岩的迪嘉勒廷接取。擊殺「小惡魔」取得「調職命令書」，擊殺「炎魔的惡魔」取得「炎魔之心」，交付後獲得黃金權杖及神意長靴。",
+    "id": "recipe_npc_q_royal_wpn_golden_scepter_01",
+    "isSpecial": false,
+    "npcId": "npc_q_royal",
+    "requirements": [
+      {
+        "itemId": "item_royal_order",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_flame_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_golden_scepter",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【戰士 15 級試煉任務】向海音村的多文接取。擊殺「石頭高崙」取得「生命的卷軸」，交付後獲得試煉斧頭及戰士印記(迅猛雙斧)。",
+    "id": "recipe_npc_q_warrior_bk_warrior_dualaxe_01",
+    "isSpecial": false,
+    "npcId": "npc_q_warrior",
+    "requirements": [
+      {
+        "itemId": "new_item_207",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_warrior_dualaxe",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【戰士 30 級試煉任務】向海音村的多文接取。擊殺「強盜」取得「被偷的戒指」，擊殺「強盜頭目」取得「被偷的項鍊」，交付後獲得戰士團斗篷及戰士印記(咆哮)。",
+    "id": "recipe_npc_q_warrior_bk_warrior_roar_01",
+    "isSpecial": false,
+    "npcId": "npc_q_warrior",
+    "requirements": [
+      {
+        "itemId": "new_item_225",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_226",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_warrior_roar",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【戰士 30 級試煉任務】向海音村的多文接取。擊殺「強盜」取得「被偷的戒指」，擊殺「強盜頭目」取得「被偷的項鍊」，交付後獲得戰士團斗篷及戰士印記(咆哮)。",
+    "id": "recipe_npc_q_warrior_clk_warrior_corps_01",
+    "isSpecial": false,
+    "npcId": "npc_q_warrior",
+    "requirements": [
+      {
+        "itemId": "new_item_225",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_226",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "clk_warrior_corps",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【戰士 45 級試煉任務】向海音村的多文接取。擊殺「獨眼巨人」取得「獨眼巨人的血」，交付後獲得戰士團頭盔。",
+    "id": "recipe_npc_q_warrior_hlm_warrior_corps_01",
+    "isSpecial": false,
+    "npcId": "npc_q_warrior",
+    "requirements": [
+      {
+        "itemId": "item_cyclops_blood",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "hlm_warrior_corps",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【戰士 50 級試煉任務】向海音村的多文接取。擊殺「思克巴」取得「神秘魔杖」x5，擊殺「墮落的司祭」取得「神秘慎重藥水」x1，交付後獲得大匠的斧頭。",
+    "id": "recipe_npc_q_warrior_wpn_master_axe_01",
+    "isSpecial": false,
+    "npcId": "npc_q_warrior",
+    "requirements": [
+      {
+        "itemId": "new_item_219",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_234",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_master_axe",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": "【戰士 15 級試煉任務】向海音村的多文接取。擊殺「石頭高崙」取得「生命的卷軸」，交付後獲得試煉斧頭及戰士印記(迅猛雙斧)。",
+    "id": "recipe_npc_q_warrior_wpn_warrior_trial_axe_01",
+    "isSpecial": false,
+    "npcId": "npc_q_warrior",
+    "requirements": [
+      {
+        "itemId": "new_item_207",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_warrior_trial_axe",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rabiani_bk_royal_bravewill_01",
+    "isSpecial": false,
+    "npcId": "npc_rabiani",
+    "requirements": [
+      {
+        "itemId": "mat_dragon_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_golem_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_icequeen_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_phoenix_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_royal_bravewill",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rabiani_bk_royal_burnweapon_01",
+    "isSpecial": false,
+    "npcId": "npc_rabiani",
+    "requirements": [
+      {
+        "itemId": "mat_dragon_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_golem_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_icequeen_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_phoenix_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_royal_burnweapon",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rabiani_bk_royal_kingguard_01",
+    "isSpecial": false,
+    "npcId": "npc_rabiani",
+    "requirements": [
+      {
+        "itemId": "mat_dragon_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_golem_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_icequeen_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_phoenix_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_royal_kingguard",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rabiani_bk_royal_shield_01",
+    "isSpecial": false,
+    "npcId": "npc_rabiani",
+    "requirements": [
+      {
+        "itemId": "mat_dragon_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_golem_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_icequeen_heart",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_phoenix_heart",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "bk_royal_shield",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rekne_new_item_168_01",
+    "isSpecial": false,
+    "npcId": "npc_rekne",
+    "requirements": [
+      {
+        "itemId": "new_item_163",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "new_item_168",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rekne_new_item_171_01",
+    "isSpecial": false,
+    "npcId": "npc_rekne",
+    "requirements": [
+      {
+        "itemId": "new_item_237",
+        "quantity": 2
+      }
+    ],
+    "result": {
+      "itemId": "new_item_171",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rekne_new_item_174_01",
+    "isSpecial": false,
+    "npcId": "npc_rekne",
+    "requirements": [
+      {
+        "itemId": "new_item_168",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_169",
+        "quantity": 5
+      }
+    ],
+    "result": {
+      "itemId": "new_item_174",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_rekne_new_item_175_01",
+    "isSpecial": false,
+    "npcId": "npc_rekne",
+    "requirements": [
+      {
+        "itemId": "new_item_172",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "new_item_175",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_robinson_wpn_flaming_angel_01",
+    "isSpecial": false,
+    "npcId": "npc_robinson",
+    "requirements": [
+      {
+        "itemId": "mat_earth_breath",
+        "quantity": 30
+      },
+      {
+        "itemId": "mat_fire_breath",
+        "quantity": 30
+      },
+      {
+        "itemId": "mat_griffon_feather",
+        "quantity": 30
+      },
+      {
+        "itemId": "mat_unicorn_horn",
+        "quantity": 4
+      },
+      {
+        "itemId": "mat_water_breath",
+        "quantity": 30
+      },
+      {
+        "itemId": "mat_wind_breath",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_152",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_155",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_158",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_161",
+        "quantity": 10
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_195",
+        "quantity": 1000
+      }
+    ],
+    "result": {
+      "itemId": "wpn_flaming_angel",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 500,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ryan_amr_bone_01",
+    "isSpecial": false,
+    "npcId": "npc_ryan",
+    "requirements": [
+      {
+        "itemId": "arm_78",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_183",
+        "quantity": 20
+      }
+    ],
+    "result": {
+      "itemId": "amr_bone",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 800,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ryan_hlm_bone_01",
+    "isSpecial": false,
+    "npcId": "npc_ryan",
+    "requirements": [
+      {
+        "itemId": "arm_49",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_183",
+        "quantity": 10
+      }
+    ],
+    "result": {
+      "itemId": "hlm_bone",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 800,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_ryan_shd_bone_01",
+    "isSpecial": false,
+    "npcId": "npc_ryan",
+    "requirements": [
+      {
+        "itemId": "arm_112",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_183",
+        "quantity": 15
+      }
+    ],
+    "result": {
+      "itemId": "shd_bone",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_belt_earth_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "new_item_165",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_181",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_191",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "acc_belt_earth",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_belt_fire_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "new_item_165",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_181",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_192",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "acc_belt_fire",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_belt_water_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "new_item_165",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_181",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_190",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "acc_belt_water",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_belt_wind_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "new_item_165",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_181",
+        "quantity": 1
+      },
+      {
+        "itemId": "new_item_193",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "acc_belt_wind",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 2000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_ring_dex_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "mat_moonlight_breath",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_unicorn_horn",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_150",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_164",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "acc_ring_dex",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 2000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_ring_int_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "mat_moonlight_breath",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_unicorn_horn",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_150",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_164",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "acc_ring_int",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 2000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_ring_magic_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "mat_moonlight_breath",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_unicorn_horn",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_150",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_164",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "acc_ring_magic",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 2000000,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_sebas_acc_ring_str_01",
+    "isSpecial": false,
+    "npcId": "npc_sebas",
+    "requirements": [
+      {
+        "itemId": "mat_moonlight_breath",
+        "quantity": 1
+      },
+      {
+        "itemId": "mat_unicorn_horn",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_150",
+        "quantity": 30
+      },
+      {
+        "itemId": "new_item_153",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_156",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_159",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_162",
+        "quantity": 5
+      },
+      {
+        "itemId": "new_item_164",
+        "quantity": 50
+      }
+    ],
+    "result": {
+      "itemId": "acc_ring_str",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_tas_panacea_cha_01",
+    "isSpecial": false,
+    "npcId": "npc_tas",
+    "requirements": [
+      {
+        "itemId": "panacea_white",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "panacea_cha",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_tas_panacea_con_01",
+    "isSpecial": false,
+    "npcId": "npc_tas",
+    "requirements": [
+      {
+        "itemId": "panacea_white",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "panacea_con",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_tas_panacea_dex_01",
+    "isSpecial": false,
+    "npcId": "npc_tas",
+    "requirements": [
+      {
+        "itemId": "panacea_white",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "panacea_dex",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_tas_panacea_int_01",
+    "isSpecial": false,
+    "npcId": "npc_tas",
+    "requirements": [
+      {
+        "itemId": "panacea_white",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "panacea_int",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_tas_panacea_str_01",
+    "isSpecial": false,
+    "npcId": "npc_tas",
+    "requirements": [
+      {
+        "itemId": "panacea_white",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "panacea_str",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_tas_panacea_wis_01",
+    "isSpecial": false,
+    "npcId": "npc_tas",
+    "requirements": [
+      {
+        "itemId": "panacea_white",
+        "quantity": 3
+      }
+    ],
+    "result": {
+      "itemId": "panacea_wis",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_11_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_11",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_11",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_11",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_21_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_21",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_21",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_21",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_31_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_31",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_31",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_31",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_41_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_41",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_41",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_41",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_51_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_51",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_51",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_51",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_61_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_61",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_61",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_61",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_71_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_71",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_71",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_71",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_81_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_81",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_81",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_81",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_upni_item_pride_dom_91_01",
+    "isSpecial": false,
+    "npcId": "npc_upni",
+    "requirements": [
+      {
+        "itemId": "item_pride_pass_91",
+        "quantity": 1
+      },
+      {
+        "itemId": "item_pride_scroll_91",
+        "quantity": 100
+      }
+    ],
+    "result": {
+      "itemId": "item_pride_dom_91",
+      "quantity": 1
+    },
+    "specialNote": null
+  },
+  {
+    "currencyCost": {
+      "amount": 0,
+      "currency": "gold"
+    },
+    "description": null,
+    "id": "recipe_npc_zeus_golem_wpn_demon_axehead_01",
+    "isSpecial": false,
+    "npcId": "npc_zeus_golem",
+    "requirements": [
+      {
+        "itemId": "mat_blackmithril_plate",
+        "quantity": 5
+      },
+      {
+        "itemId": "wpn_demon_axe",
+        "quantity": 1
+      }
+    ],
+    "result": {
+      "itemId": "wpn_demon_axehead",
+      "quantity": 1
+    },
+    "specialNote": null
+  }
+]

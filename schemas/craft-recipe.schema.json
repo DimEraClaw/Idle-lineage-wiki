@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Craft recipes",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "npcId", "result", "requirements", "currencyCost", "description", "isSpecial", "specialNote"],
+    "properties": {
+      "id": {"type": "string", "pattern": "^recipe_npc_[a-z0-9_]+_[a-z0-9_]+_[0-9]{2}$"},
+      "npcId": {"type": "string", "pattern": "^npc_[a-z0-9_]+$"},
+      "result": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["itemId", "quantity"],
+        "properties": {
+          "itemId": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+          "quantity": {"type": "integer", "minimum": 1}
+        }
+      },
+      "requirements": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["itemId", "quantity"],
+          "properties": {
+            "itemId": {"type": "string", "pattern": "^(?!gold$)[a-z0-9_]+$"},
+            "quantity": {"type": "integer", "minimum": 1}
+          }
+        }
+      },
+      "currencyCost": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["currency", "amount"],
+        "properties": {
+          "currency": {"const": "gold"},
+          "amount": {"type": "number", "minimum": 0}
+        }
+      },
+      "description": {"type": ["string", "null"]},
+      "isSpecial": {"type": "boolean"},
+      "specialNote": {"type": ["string", "null"]}
+    }
+  }
+}

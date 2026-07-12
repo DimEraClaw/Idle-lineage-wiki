@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Craft items",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name", "itemType", "entityRef", "linkStatus", "dataStatus"],
+    "properties": {
+      "id": {"type": "string", "pattern": "^[a-z0-9_]+$", "not": {"const": "gold"}},
+      "sourceId": {"type": ["string", "null"]},
+      "name": {"type": ["string", "null"]},
+      "itemType": {"enum": ["equipment", "skillbook", "material", "misc", "unknown"]},
+      "entityRef": {
+        "oneOf": [
+          {"type": "null"},
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["entityType", "entityId"],
+            "properties": {
+              "entityType": {"enum": ["equipment", "skill", "monster", "npc", "region"]},
+              "entityId": {"type": "string", "pattern": "^[a-z0-9_]+$"}
+            }
+          }
+        ]
+      },
+      "linkStatus": {"enum": ["resolved", "unresolved"]},
+      "dataStatus": {"enum": ["complete", "stub"]}
+    }
+  }
+}

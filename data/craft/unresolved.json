@@ -1,0 +1,4322 @@
+[
+  {
+    "blocking": false,
+    "id": "item_pride_pass_11",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_11].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_21",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_21].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_31",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_31].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_41",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_41].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_51",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_51].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_61",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_61].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_71",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_71].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_81",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_81].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_91",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_91].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_11",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_11].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_21",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_21].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_31",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_31].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_41",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_41].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_51",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_51].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_61",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_61].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_71",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_71].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_81",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_81].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_scroll_91",
+    "reason": "Recipe requirement has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_91].requirements",
+    "type": "missing_requirement_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_11",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_11].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_21",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_21].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_31",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_31].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_41",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_41].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_51",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_51].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_61",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_61].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_71",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_71].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_81",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_81].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_dom_91",
+    "reason": "Recipe result has no ITEMS_DB record; unresolved Item stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_upni[result=item_pride_dom_91].result",
+    "type": "missing_result_item"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_brave",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_brave",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_clan",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_clan",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_dance",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_dance",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_festival",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_festival",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_honor",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_honor",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_passion",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_passion",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_peak",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_peak",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_phantom",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_phantom",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_rage",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_rage",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_rampage",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_rampage",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_truth",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_truth",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_twin",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_twin",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_ear_wisdom",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_ear_wisdom",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_icequeen_ear_1",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_icequeen_ear_1",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_icequeen_ear_2",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_icequeen_ear_2",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_icequeen_ear_3",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_icequeen_ear_3",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_icequeen_ear_4",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_icequeen_ear_4",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_icequeen_ear_5",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_icequeen_ear_5",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_icequeen_ear_6",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_icequeen_ear_6",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "acc_icequeen_ear_7",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.acc_icequeen_ear_7",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_109",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_109",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_111",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_111",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_112",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_112",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_43",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_43",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_48",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_48",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_75",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_75",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_77",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_77",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_78",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_78",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_91",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_91",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "arm_92",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.arm_92",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "clk_warrior_corps",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.clk_warrior_corps",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "hlm_elf",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.hlm_elf",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "hlm_warrior_corps",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.hlm_warrior_corps",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_11",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_11",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_21",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_21",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_31",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_31",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_41",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_41",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_51",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_51",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_61",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_61",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_71",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_71",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_81",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_81",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "item_pride_pass_91",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.item_pride_pass_91",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_blackmithril_plate",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_blackmithril_plate",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_blackstone2",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_blackstone2",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_blackstone3",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_blackstone3",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_blackstone4",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_blackstone4",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_cursed_leather_earth",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_cursed_leather_earth",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_cursed_leather_fire",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_cursed_leather_fire",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_cursed_leather_water",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_cursed_leather_water",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_cursed_leather_wind",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_cursed_leather_wind",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_holy_relic",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_holy_relic",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_rasta_codex",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_rasta_codex",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_silver",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_silver",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_silver_plate",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_silver_plate",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "mat_silverore",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.mat_silverore",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_165",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_165",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_168",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_168",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_170",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_170",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_171",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_171",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_172",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_172",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_173",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_173",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_174",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_174",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_175",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_175",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_176",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_176",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_177",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_177",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_178",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_178",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_181",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_181",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_187",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_187",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_188",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_188",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_189",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_189",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "new_item_elfwing",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.new_item_elfwing",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "panacea_white",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.panacea_white",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "pet_arm_cross",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.pet_arm_cross",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "pet_arm_leather",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.pet_arm_leather",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "pet_arm_steel",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.pet_arm_steel",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "pet_fang_hound",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.pet_fang_hound",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "pet_fang_steel",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.pet_fang_steel",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_24",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_24",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_29",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_29",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_34",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_34",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_35",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_35",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_36",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_36",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_39",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_39",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_40",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_40",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "wpn_41",
+    "reason": "No verifiable acquisition source exists in current DROPS_DB; no source type inferred.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB.wpn_41",
+    "type": "unknown_material_source"
+  },
+  {
+    "blocking": false,
+    "id": "不幸的幻象眼魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "不死的木乃伊王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "不死鳥",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "不滅的巫妖",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "亞力安",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "人魚",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "伊弗利特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "伊萊克頓",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "侏儒",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "侏儒戰士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "傲慢的潔尼斯女王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "克特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冥法軍王海露拜",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冰之女王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冰人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冰原狼人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冰原老虎",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冰石高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冰魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冷酷冰原老虎",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "冷酷的艾莉絲",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "卡司特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "卡司特王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "卡士柏",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "卡魯塔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "受詛咒的妖魔殭屍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "受詛咒的艾爾摩士兵",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "受詛咒的艾爾摩將軍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "受詛咒的艾爾摩法師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "受詛咒的馴獸師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "古代巨人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "史巴托",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "哈士奇",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "哈柏哥布林",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "哈汀之影",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "哈維",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "哥布林",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "土精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地之牙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地元素守護者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地獄奴隸",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地獄束縛犬",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地獄犬",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地獄的黑豹",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "地靈之主",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墮落",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墮落的司祭(一階)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墮落的司祭(三階)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墮落的司祭(二階)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墮落的司祭(五階)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墮落的司祭(四階)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墳墓守護者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墳墓守護者法師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "墳墓守護者騎士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "夏洛伯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "多眼怪",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "多羅",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "夢幻之島冰石高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "夢幻之島地精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "夢幻之島水精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "夢幻之島火精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "夢幻之島風精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "夢魘",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "奇異鸚鵡",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "奇美拉",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "奎斯坦修",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "妖魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "妖魔弓箭手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "妖魔法師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "妖魔鬥士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "安塔瑞斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "安普長老",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "密密",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "小幻象眼魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "小惡魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨人戰士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨人長老",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨大兵蟻",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨大墳墓守護者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨大守護螞蟻",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨大強化白螞蟻",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨大白螞蟻",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨大突擊螞蟻",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨大鱷魚",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨蟻",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巨蟻女皇",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巫師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巴列斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巴土瑟",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巴拉卡斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "巴風特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "希爾黛斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "幼龍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 凱比斯(紅)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 凱比斯(黑)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 尖碑石奴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 尖碑石奴(黑)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 尼荷斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 尼荷斯(藍)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 巴斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 巴斯(紅)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 斯芬克斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 斯芬克斯(黑)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 曼陀羅草",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 曼陀羅草(白)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 聖甲蟲",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 聖甲蟲(藍)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 賀洛斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 阿努斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 阿努斯(黑)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "底比斯 阿努比斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "強化巨蟻",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "強化白螞蟻群",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "強盜",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "強盜頭目",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "影魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "德雷克",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "思克巴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "思克巴女皇",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "怪手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "恐怖夢魘",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "恐怖的伊弗利特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "恐怖的吸血鬼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "恐怖的地獄犬",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "恐怖的殭屍王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "恐怖的火炎蛋",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "恐怖的鋼鐵高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "惡魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "扭曲的潔尼斯女王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "拉斯塔巴德馴獸師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾杰弗雷庫(雄)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾杰弗雷庫(雌)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫卡伊拉(藍)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫卡伊拉(黃)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫尤卡(白)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫尤卡(藍)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫巴拉",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫巴拉(紅)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫艾托",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫艾托(枯竭)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫阿茲特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾艾庫阿茲特(黃)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾薩德司卡(紅)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾薩德司卡(紫)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾薩德提歐(藍)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾薩德提歐(黃)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾薩德泥偶",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "提卡爾薩德泥偶(黑)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "暗殺軍王史雷佛",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "暗黑思克巴女皇",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "暗黑火焰弓箭手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "暗黑火焰戰士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "暗黑萊肯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "暗黑黑騎士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "曼波兔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "木乃伊王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "杜賓狗",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "林德拜爾",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "格利芬",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "梅杜莎",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "歐吉",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "歐姆戰士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "歐熊",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "死亡",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "死亡之劍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "死亡的司祭(巴風特)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "死亡的司祭(思克巴)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "死亡的殭屍王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "死亡騎士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "死神",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "殘暴的史巴托",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "殘暴的食屍鬼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "殘暴的骷髏斧兵",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "殘暴的骷髏槍兵",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "殘暴的骷髏神射手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "殘暴的骷髏鬥士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "毒蠍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "水之牙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "水元素守護者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "水精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "水靈之主",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "污染的安特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "污染的潘",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "法令軍王蕾雅",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "法利昂",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "活鎧甲",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "海賊骷髏",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "海賊骷髏士兵",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "海賊骷髏首領",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "深淵之主",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "深淵地靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "深淵水靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "深淵火靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "深淵風靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "深淵食屍鬼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "混沌",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "混沌的司祭(野獸)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "混沌的司祭(飛翼)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "漂浮之眼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火之牙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火元素守護者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火炎蛋",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰之影親衛隊(巴風特)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰之靈魂(紅)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰之靈魂(藍)",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰之魔法師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰弓箭手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰戰士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰烈炎獸",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火焰阿西塔基奧",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火蜥蜴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "火靈之主",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "炎魔的分身",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "炎魔的小惡魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "炎魔的巴列斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "炎魔的巴風特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "炎魔的思克巴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "炎魔的思克巴女皇",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "炎魔的惡魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "烈炎獸",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "熊",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "熔岩高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "牧羊犬",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "狂暴蜥蜴人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "狂野之毒",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "狂野之魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "狂野毒牙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "狼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "狼人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "獨眼巨人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "獨角獸",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "甘地妖魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "白螞蟻群",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "石頭高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "穴居人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "精靈墓穴怪物",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "紅鬼魂",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "紙人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "羅孚妖魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "艾爾摩士兵",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "艾爾摩將軍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "艾莉絲",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "莫妮亞",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "萊肯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "藍尾蜥蜴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "蘑菇",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "蛇女",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "蜥蜴人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "蟑螂人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "血色術士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "血騎士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "西斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "西瑪",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "變形怪",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "變形怪首領",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "變種楊果里恩",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "變種蛇女",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔奇美拉",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔密密",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔小惡魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔巴列斯之影",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔巴風特之影",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔惡魔之影",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔死神",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔活鎧甲",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔炎魔之影",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔炎魔的奴隸",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔石頭高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔翼魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔蛇女",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "象牙塔鋼鐵高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島亞力安",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島卡司特",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島卡司特王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島哈維",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島夏洛伯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島多羅",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島巨大牛人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島巨大鱷魚",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島巨斧牛人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島格利芬",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島楊果里恩",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島歐熊",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島狼人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島獨眼巨人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島萊肯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島蛇女",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島蜥蜴人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島變形怪",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島邪惡蜥蜴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島鏈鎚牛人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島阿魯巴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島飛龍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島食人妖精",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島食人妖精王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島鱷魚",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "遺忘之島黑暗精靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "那魯加妖魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "邪惡多眼怪",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "邪惡密密",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "邪惡的鐮刀死神",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "邪惡蜥蜴",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "都達瑪拉妖魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "重裝歐姆戰士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "重裝蜥蜴人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "金屬蜈蚣",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "鋼鐵高崙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．安迪斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．巴塔斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．巴洛斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．巴陸德",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．拉曼斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．泰瑪斯",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．琪娜",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "長老．艾迪爾",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "闇之精靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "闇精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "闇黑君王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "闇黑的騎士范德",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "阿吐巴妖魔",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "阿西塔基奧",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "雪怪",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "風之牙",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "風元素守護者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "風精靈王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "風靈之主",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "飛龍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "食人妖精",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "食人妖精王",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "食屍鬼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "馬庫爾",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "馬昆斯吸血鬼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "騎士范德",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骨龍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骷髏",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骷髏弓箭手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骷髏斧手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骷髏槍兵",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骷髏神射手",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骷髏警衛",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "骷髏鬥士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "高等蜥蜴人",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "鬼魂",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "魂騎士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "魔族暗殺團",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "魔狼",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "魔獸軍王巴蘭卡",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "鯊魚",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "鱷魚",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑暗妖精將軍",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑暗妖精巡守",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑暗妖精法師",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑暗妖精魔法學徒",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑暗復仇者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑暗棲林者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑暗精靈",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑虎",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑長者",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑騎士",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "黑騎士搜索隊",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "龍蠅",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "龍龜",
+    "reason": "Legacy source uses monsterNameText; no verified monster ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.DROPS_DB",
+    "type": "unresolved_monster_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_mystic_mage",
+    "reason": "Recipe NPC has no NPC_INFO record; unresolved Npc stub created.",
+    "severity": "warning",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_mystic_mage",
+    "type": "unresolved_npc"
+  },
+  {
+    "blocking": false,
+    "id": "npc_bamut",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_bamut",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_bartel",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_bartel",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_brabo",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_brabo",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_david",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_david",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_dytite",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_dytite",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_elf",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_elf",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_elfqueen",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_elfqueen",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_ent",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_ent",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_falin",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_falin",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_finn",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_finn",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_flame_aide",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_flame_aide",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_flame_shadow",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_flame_shadow",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_flame_smith",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_flame_smith",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_hector",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_hector",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_herbert",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_herbert",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_ibelbin",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_ibelbin",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_imp",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_imp",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_joel",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_joel",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_keluya",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_keluya",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_kororanz",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_kororanz",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_kupu",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_kupu",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_lentis",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_lentis",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_lumiel",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_lumiel",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_moli",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_moli",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_moliya",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_moliya",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_mystic_mage",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.CRAFT_RECIPES.npc_mystic_mage",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_nalien",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_nalien",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_narupa",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_narupa",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_norse",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_norse",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_pan",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_pan",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_pir",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_pir",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_dark",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_dark",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_dragon",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_dragon",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_elf",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_elf",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_illusion",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_illusion",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_knight",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_knight",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_mage",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_mage",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_royal",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_royal",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_q_warrior",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_q_warrior",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_rabiani",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_rabiani",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_rekne",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_rekne",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_robinson",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_robinson",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_ryan",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_ryan",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_sebas",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_sebas",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_tas",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_tas",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_upni",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_upni",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "npc_zeus_golem",
+    "reason": "NPC location is display text only; no verified region ID is available.",
+    "severity": "info",
+    "sourceLocation": "CRAFT_DATA.NPC_INFO.npc_zeus_golem",
+    "type": "unresolved_region_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_dragon_armor",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_dragon_armor]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_dragon_bloodlust",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_dragon_bloodlust]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_elf_summon",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_elf_summon]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_elf_summon2",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_elf_summon2]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_royal_bravewill",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_royal_bravewill]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_royal_burnweapon",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_royal_burnweapon]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_royal_callally",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_royal_callally]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_royal_kingguard",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_royal_kingguard]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_royal_precise",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_royal_precise]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_royal_shield",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_royal_shield]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_warrior_dualaxe",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_warrior_dualaxe]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "bk_warrior_roar",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=bk_warrior_roar]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "mem_cube_burn",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=mem_cube_burn]",
+    "type": "unresolved_skill_mapping"
+  },
+  {
+    "blocking": false,
+    "id": "mem_cube_shock",
+    "reason": "Skillbook item exists but no verified skill entity ID is available.",
+    "severity": "info",
+    "sourceLocation": "EQUIP_DATA[id=mem_cube_shock]",
+    "type": "unresolved_skill_mapping"
+  }
+]

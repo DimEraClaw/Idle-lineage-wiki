@@ -1,0 +1,472 @@
+[
+  {
+    "dataStatus": "complete",
+    "description": "王族專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_royal",
+    "linkStatus": "unresolved",
+    "locationText": "甘特洞穴 / 威頓村",
+    "name": "甘特 / 馬沙 (王族試煉)",
+    "regionId": null,
+    "sortOrder": 0
+  },
+  {
+    "dataStatus": "complete",
+    "description": "騎士專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_knight",
+    "linkStatus": "unresolved",
+    "locationText": "銀騎士村 / 甘特洞穴 / 威頓村",
+    "name": "瑞奇 / 甘特 / 馬沙 (騎士試煉)",
+    "regionId": null,
+    "sortOrder": 1
+  },
+  {
+    "dataStatus": "complete",
+    "description": "妖精專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_elf",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "歐斯 / 迷幻森林之母 (妖精試煉)",
+    "regionId": null,
+    "sortOrder": 2
+  },
+  {
+    "dataStatus": "complete",
+    "description": "法師專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_mage",
+    "linkStatus": "unresolved",
+    "locationText": "說話之島 / 象牙塔 3 樓",
+    "name": "詹姆 / 塔拉斯 (法師試煉)",
+    "regionId": null,
+    "sortOrder": 3
+  },
+  {
+    "dataStatus": "complete",
+    "description": "黑暗妖精專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_dark",
+    "linkStatus": "unresolved",
+    "locationText": "沉默洞穴",
+    "name": "倫得 / 康 / 布魯迪卡 (黑妖試煉)",
+    "regionId": null,
+    "sortOrder": 4
+  },
+  {
+    "dataStatus": "complete",
+    "description": "幻術士專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_illusion",
+    "linkStatus": "unresolved",
+    "locationText": "希培利亞",
+    "name": "希蓮恩 (幻術士試煉)",
+    "regionId": null,
+    "sortOrder": 5
+  },
+  {
+    "dataStatus": "complete",
+    "description": "龍騎士專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_dragon",
+    "linkStatus": "unresolved",
+    "locationText": "貝希摩斯",
+    "name": "普洛凱爾 (龍騎士試煉)",
+    "regionId": null,
+    "sortOrder": 6
+  },
+  {
+    "dataStatus": "complete",
+    "description": "戰士專屬試煉導師。提供 15 級、30 級、45 級與 50 級試煉任務流程與獎勵。",
+    "id": "npc_q_warrior",
+    "linkStatus": "unresolved",
+    "locationText": "海音村",
+    "name": "多文 (戰士試煉)",
+    "regionId": null,
+    "sortOrder": 7
+  },
+  {
+    "dataStatus": "complete",
+    "description": "重甲鐵匠。負責鍛造鋼鐵套裝（鋼盔、鋼甲、鋼靴、鋼手套）與冰雪防具。",
+    "id": "npc_hector",
+    "linkStatus": "unresolved",
+    "locationText": "奇岩村",
+    "name": "赫特",
+    "regionId": null,
+    "sortOrder": 8
+  },
+  {
+    "dataStatus": "complete",
+    "description": "巨像鐵匠。將惡魔之斧重鑄為「惡魔之斧的鋼刃」。",
+    "id": "npc_zeus_golem",
+    "linkStatus": "unresolved",
+    "locationText": "威頓村",
+    "name": "希斯高崙",
+    "regionId": null,
+    "sortOrder": 9
+  },
+  {
+    "dataStatus": "complete",
+    "description": "皇家秘笈傳授者。消耗四大Boss心臟打造王族特殊級魔法書。",
+    "id": "npc_rabiani",
+    "linkStatus": "unresolved",
+    "locationText": "說話之島",
+    "name": "拉比安尼",
+    "regionId": null,
+    "sortOrder": 10
+  },
+  {
+    "dataStatus": "complete",
+    "description": "古代神物復甦者。使用古代神遺物重鑄「古代神之槍」與「古代神之斧」。",
+    "id": "npc_keluya",
+    "linkStatus": "unresolved",
+    "locationText": "威頓村",
+    "name": "客盧亞",
+    "regionId": null,
+    "sortOrder": 11
+  },
+  {
+    "dataStatus": "complete",
+    "description": "龍騎士防具工匠。製作「破滅者鎖鏈劍」及「古代射手/戰士臂甲」。",
+    "id": "npc_pir",
+    "linkStatus": "unresolved",
+    "locationText": "貝希摩斯",
+    "name": "皮爾",
+    "regionId": null,
+    "sortOrder": 12
+  },
+  {
+    "dataStatus": "complete",
+    "description": "被遺忘裝備解封大師。使用古代的卷軸解除封印，獲得古老系列武器與防具。",
+    "id": "npc_dytite",
+    "linkStatus": "unresolved",
+    "locationText": "象牙塔 3 樓",
+    "name": "迪泰特",
+    "regionId": null,
+    "sortOrder": 13
+  },
+  {
+    "dataStatus": "complete",
+    "description": "傲慢之塔傳送大師。使用傳送符與傲慢移動卷軸製作各層支配傳送符。",
+    "id": "npc_upni",
+    "linkStatus": "unresolved",
+    "locationText": "亞丁城",
+    "name": "烏普尼",
+    "regionId": null,
+    "sortOrder": 14
+  },
+  {
+    "dataStatus": "complete",
+    "description": "精靈神兵編織者。負責製作全系列精靈弓、精靈盾、精靈斗篷等精靈森林神兵利器。",
+    "id": "npc_narupa",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "納魯帕",
+    "regionId": null,
+    "sortOrder": 15
+  },
+  {
+    "dataStatus": "complete",
+    "description": "妖精至尊。可熔煉奧里哈魯根金屬塊，並使用風之淚與飛龍羽毛編織「沙哈之弓」。",
+    "id": "npc_elfqueen",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "妖精女王",
+    "regionId": null,
+    "sortOrder": 16
+  },
+  {
+    "dataStatus": "complete",
+    "description": "熾炎天使之弓締造者。收集四大屬性氣息、寶石與精靈玉打造頂級神弓。",
+    "id": "npc_robinson",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "羅賓孫",
+    "regionId": null,
+    "sortOrder": 17
+  },
+  {
+    "dataStatus": "complete",
+    "description": "細木工匠。負責精煉米索莉線、線軸、高品質木材等。",
+    "id": "npc_rekne",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "萊克妮",
+    "regionId": null,
+    "sortOrder": 18
+  },
+  {
+    "dataStatus": "complete",
+    "description": "精靈冶金師。負責熔煉米索莉線、精靈銀絲及精靈羽翼。",
+    "id": "npc_elf",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "艾爾夫",
+    "regionId": null,
+    "sortOrder": 19
+  },
+  {
+    "dataStatus": "complete",
+    "description": "精靈牛角編織者。負責熔煉米索莉金屬線、奧里哈魯根金屬線與米索莉之角。",
+    "id": "npc_pan",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "潘",
+    "regionId": null,
+    "sortOrder": 20
+  },
+  {
+    "dataStatus": "complete",
+    "description": "新手皮具匠人。負責初階防具與高級皮革的揉製。",
+    "id": "npc_moli",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "莫里",
+    "regionId": null,
+    "sortOrder": 21
+  },
+  {
+    "dataStatus": "complete",
+    "description": "冶金鐵匠。負責米索莉/奧里哈魯根之角與短劍/長劍劍身的鑄造。",
+    "id": "npc_brabo",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "布拉伯",
+    "regionId": null,
+    "sortOrder": 22
+  },
+  {
+    "dataStatus": "complete",
+    "description": "防具工匠。負責將莫里的皮具升级為銀質防具（銀頭盔、銀盾、銀皮甲等）。",
+    "id": "npc_finn",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "芬恩",
+    "regionId": null,
+    "sortOrder": 23
+  },
+  {
+    "dataStatus": "complete",
+    "description": "防具工匠。負責鍛造銀質防具，與芬恩配方相同。",
+    "id": "npc_falin",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "法林",
+    "regionId": null,
+    "sortOrder": 24
+  },
+  {
+    "dataStatus": "complete",
+    "description": "骨盾/骨甲大師。使用銀質防具與骨頭碎片鍛造骨頭防具。",
+    "id": "npc_joel",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "喬爾",
+    "regionId": null,
+    "sortOrder": 25
+  },
+  {
+    "dataStatus": "complete",
+    "description": "骨頭防具工匠，與喬爾配方相同。",
+    "id": "npc_ryan",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "萊恩",
+    "regionId": null,
+    "sortOrder": 26
+  },
+  {
+    "dataStatus": "complete",
+    "description": "古樹之靈。負責提煉「恩特之皮」。",
+    "id": "npc_ent",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "恩特",
+    "regionId": null,
+    "sortOrder": 27
+  },
+  {
+    "dataStatus": "complete",
+    "description": "線縷加工師。負責製作「奧里哈魯根金屬線」。",
+    "id": "npc_nalien",
+    "linkStatus": "unresolved",
+    "locationText": "妖精森林",
+    "name": "納里恩",
+    "regionId": null,
+    "sortOrder": 28
+  },
+  {
+    "dataStatus": "complete",
+    "description": "製作四大屬性皮革與傲慢之塔屬性斗篷。",
+    "id": "npc_bamut",
+    "linkStatus": "unresolved",
+    "locationText": "傲慢之塔入口",
+    "name": "巴姆特",
+    "regionId": null,
+    "sortOrder": 29
+  },
+  {
+    "dataStatus": "complete",
+    "description": "時空裂痕專家。可製作龜裂之核、奧西里斯寶箱與黑曜石奇古獸。",
+    "id": "npc_bartel",
+    "linkStatus": "unresolved",
+    "locationText": "希培利亞村莊",
+    "name": "巴特爾",
+    "regionId": null,
+    "sortOrder": 30
+  },
+  {
+    "dataStatus": "complete",
+    "description": "精煉冰之女王耳環與各式屬性耳環。",
+    "id": "npc_david",
+    "linkStatus": "unresolved",
+    "locationText": "歐瑞村 寶石加工",
+    "name": "大衛",
+    "regionId": null,
+    "sortOrder": 31
+  },
+  {
+    "dataStatus": "complete",
+    "description": "收集靈魂石碎片以逐階精煉炎魔奴隸耳環。",
+    "id": "npc_flame_aide",
+    "linkStatus": "unresolved",
+    "locationText": "炎魔謁見所",
+    "name": "炎魔的輔佐官",
+    "regionId": null,
+    "sortOrder": 32
+  },
+  {
+    "dataStatus": "complete",
+    "description": "炎魔化身。使用墮落素材鍛造「炎魔的血光斗篷」，以及將 +11 惡魔武器升級為惡魔王級武器。",
+    "id": "npc_flame_shadow",
+    "linkStatus": "unresolved",
+    "locationText": "炎魔謁見所",
+    "name": "炎魔之影",
+    "regionId": null,
+    "sortOrder": 33
+  },
+  {
+    "dataStatus": "complete",
+    "description": "精煉銀與黑色米索莉金屬板，並可製作影子神殿鑰匙。",
+    "id": "npc_flame_smith",
+    "linkStatus": "unresolved",
+    "locationText": "炎魔謁見所",
+    "name": "炎魔鐵匠",
+    "regionId": null,
+    "sortOrder": 34
+  },
+  {
+    "dataStatus": "complete",
+    "description": "魔法抗性裁縫師。負責製作「抗魔法斗篷」、「抗魔法頭盔」與「T恤」。",
+    "id": "npc_herbert",
+    "linkStatus": "unresolved",
+    "locationText": "奇岩村",
+    "name": "赫伯特",
+    "regionId": null,
+    "sortOrder": 35
+  },
+  {
+    "dataStatus": "complete",
+    "description": "歐瑞冰原大師。負責鍛造「西魯特之劍」及四大屬性抗性手套。",
+    "id": "npc_ibelbin",
+    "linkStatus": "unresolved",
+    "locationText": "歐瑞村",
+    "name": "伊貝爾賓",
+    "regionId": null,
+    "sortOrder": 36
+  },
+  {
+    "dataStatus": "complete",
+    "description": "惡魔僕從。使用惡魔腳鐐與墮落身體素材鍛造四款惡魔系列武器。",
+    "id": "npc_imp",
+    "linkStatus": "unresolved",
+    "locationText": "炎魔謁見所",
+    "name": "小惡魔",
+    "regionId": null,
+    "sortOrder": 37
+  },
+  {
+    "dataStatus": "complete",
+    "description": "傳說級武器大師。可使用「被封印的歷史書八頁」合成拉斯塔巴德武器秘笈，並鍛造神兵。",
+    "id": "npc_kororanz",
+    "linkStatus": "unresolved",
+    "locationText": "沉默洞穴",
+    "name": "可羅蘭斯",
+    "regionId": null,
+    "sortOrder": 38
+  },
+  {
+    "dataStatus": "complete",
+    "description": "黑妖冶金與武器師。負責熔煉銀塊，並鍛造黑暗/銀/黯音系列鋼爪、雙刀與十字弓。",
+    "id": "npc_kupu",
+    "linkStatus": "unresolved",
+    "locationText": "沉默洞穴",
+    "name": "庫普",
+    "regionId": null,
+    "sortOrder": 39
+  },
+  {
+    "dataStatus": "complete",
+    "description": "軍王印記大師。使用四軍王印記與軍王徽印熔煉四屬性精靈戒指。",
+    "id": "npc_lentis",
+    "linkStatus": "unresolved",
+    "locationText": "奇岩村",
+    "name": "倫提斯",
+    "regionId": null,
+    "sortOrder": 40
+  },
+  {
+    "dataStatus": "complete",
+    "description": "海音首飾與防具匠人。負責製作深淵皮帶、雙子耳環、水之手套、海神盾牌及神聖執行者系列裝備。",
+    "id": "npc_lumiel",
+    "linkStatus": "unresolved",
+    "locationText": "海音村",
+    "name": "琉米埃爾",
+    "regionId": null,
+    "sortOrder": 41
+  },
+  {
+    "dataStatus": "complete",
+    "description": "法師法衣裁縫師。負責製作「法師帽」與「法師皮袍」。",
+    "id": "npc_moliya",
+    "linkStatus": "unresolved",
+    "locationText": "奇岩村",
+    "name": "莫利雅",
+    "regionId": null,
+    "sortOrder": 42
+  },
+  {
+    "dataStatus": "stub",
+    "description": null,
+    "id": "npc_mystic_mage",
+    "linkStatus": "unresolved",
+    "locationText": null,
+    "name": null,
+    "regionId": null,
+    "sortOrder": 43
+  },
+  {
+    "dataStatus": "complete",
+    "description": "寵物裝備大師。專門為項圈夥伴鍛造鋼鐵與毀滅之牙。",
+    "id": "npc_norse",
+    "linkStatus": "unresolved",
+    "locationText": "亞丁城",
+    "name": "諾斯",
+    "regionId": null,
+    "sortOrder": 44
+  },
+  {
+    "dataStatus": "complete",
+    "description": "專長為加工高品質寶石、四大屬性魔戒與精靈皮帶。",
+    "id": "npc_sebas",
+    "linkStatus": "unresolved",
+    "locationText": "奇岩 寶石加工坊",
+    "name": "賽巴斯",
+    "regionId": null,
+    "sortOrder": 45
+  },
+  {
+    "dataStatus": "complete",
+    "description": "萬能藥大師。使用白藥水稀釋精煉各項屬性萬能藥。",
+    "id": "npc_tas",
+    "linkStatus": "unresolved",
+    "locationText": "奇岩村",
+    "name": "塔斯",
+    "regionId": null,
+    "sortOrder": 46
+  }
+]

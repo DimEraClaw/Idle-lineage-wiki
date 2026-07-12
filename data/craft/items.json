@@ -1,0 +1,4463 @@
+[
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_127",
+      "entityType": "equipment"
+    },
+    "id": "acc_127",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "老舊的身體腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_128",
+      "entityType": "equipment"
+    },
+    "id": "acc_128",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "老舊的精神腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_129",
+      "entityType": "equipment"
+    },
+    "id": "acc_129",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "老舊的靈魂腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_130",
+      "entityType": "equipment"
+    },
+    "id": "acc_130",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精神腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_131",
+      "entityType": "equipment"
+    },
+    "id": "acc_131",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "靈魂腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_134",
+      "entityType": "equipment"
+    },
+    "id": "acc_134",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "勇敢皮帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_135",
+      "entityType": "equipment"
+    },
+    "id": "acc_135",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "光明身體腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_136",
+      "entityType": "equipment"
+    },
+    "id": "acc_136",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "光明精神腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_137",
+      "entityType": "equipment"
+    },
+    "id": "acc_137",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "光明靈魂腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_belt_earth",
+      "entityType": "equipment"
+    },
+    "id": "acc_belt_earth",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "地精靈的皮帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_belt_fire",
+      "entityType": "equipment"
+    },
+    "id": "acc_belt_fire",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "火精靈的皮帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_belt_water",
+      "entityType": "equipment"
+    },
+    "id": "acc_belt_water",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "水精靈的皮帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_belt_wind",
+      "entityType": "equipment"
+    },
+    "id": "acc_belt_wind",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "風精靈的皮帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_brave",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_brave",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "勇猛耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_clan",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_clan",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "族群耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_dance",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_dance",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "舞動耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_dominate",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_dominate",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "支配耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_festival",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_festival",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "慶典耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_honor",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_honor",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "名譽耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_passion",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_passion",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "熱情耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_peak",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_peak",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "絕頂耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_phantom",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_phantom",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "幻魔耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_rage",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_rage",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "憤怒耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_rampage",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_rampage",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "暴走耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_slave",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_slave",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "奴隸耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_tolerance",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_tolerance",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寬容耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_truth",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_truth",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "真實耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_twin",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_twin",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "雙子耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_undead",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_undead",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "不死耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ear_wisdom",
+      "entityType": "equipment"
+    },
+    "id": "acc_ear_wisdom",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "智慧耳環"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_0",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_0",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv0"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_1",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_1",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv1"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_2",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_2",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv2"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_3",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_3",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv3"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_4",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_4",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv4"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_5",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_5",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv5"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_6",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_6",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv6"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_7",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_7",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv7"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_8_cha",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_8_cha",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv8 魅力"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_8_con",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_8_con",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv8 體質"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_8_dex",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_8_dex",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv8 敏捷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_8_int",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_8_int",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv8 智力"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_8_str",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_8_str",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv8 力量"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_icequeen_ear_8_wis",
+      "entityType": "equipment"
+    },
+    "id": "acc_icequeen_ear_8_wis",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王的耳環 Lv8 精神"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ring_dex",
+      "entityType": "equipment"
+    },
+    "id": "acc_ring_dex",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "敏捷戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ring_int",
+      "entityType": "equipment"
+    },
+    "id": "acc_ring_int",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "知識戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ring_magic",
+      "entityType": "equipment"
+    },
+    "id": "acc_ring_magic",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "魔力戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_ring_str",
+      "entityType": "equipment"
+    },
+    "id": "acc_ring_str",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "力量戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "acc_royal_guard",
+      "entityType": "equipment"
+    },
+    "id": "acc_royal_guard",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "守護者的戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_bone",
+      "entityType": "equipment"
+    },
+    "id": "amr_bone",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "骷髏盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_frost",
+      "entityType": "equipment"
+    },
+    "id": "amr_frost",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寒冰盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_icequeen_charm",
+      "entityType": "equipment"
+    },
+    "id": "amr_icequeen_charm",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王魅力禮服"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_magerobe",
+      "entityType": "equipment"
+    },
+    "id": "amr_magerobe",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "法師長袍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_old_leather",
+      "entityType": "equipment"
+    },
+    "id": "amr_old_leather",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古老的皮盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_old_plate",
+      "entityType": "equipment"
+    },
+    "id": "amr_old_plate",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古老的金屬盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_old_robe",
+      "entityType": "equipment"
+    },
+    "id": "amr_old_robe",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古老的長袍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_old_scale",
+      "entityType": "equipment"
+    },
+    "id": "amr_old_scale",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古老的鱗甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "amr_plate",
+      "entityType": "equipment"
+    },
+    "id": "amr_plate",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "金屬盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_100",
+      "entityType": "equipment"
+    },
+    "id": "arm_100",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "鋼鐵手套"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_102",
+      "entityType": "equipment"
+    },
+    "id": "arm_102",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "保護者手套"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_107",
+      "entityType": "equipment"
+    },
+    "id": "arm_107",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "伊娃之盾"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_108",
+      "entityType": "equipment"
+    },
+    "id": "arm_108",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "塔盾"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_109",
+      "entityType": "equipment"
+    },
+    "id": "arm_109",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "木盾"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_111",
+      "entityType": "equipment"
+    },
+    "id": "arm_111",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "皮盾牌"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_112",
+      "entityType": "equipment"
+    },
+    "id": "arm_112",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "銀釘皮盾"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_113",
+      "entityType": "equipment"
+    },
+    "id": "arm_113",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "鋼鐵盾牌"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_115",
+      "entityType": "equipment"
+    },
+    "id": "arm_115",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "魔法能量之書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_42",
+      "entityType": "equipment"
+    },
+    "id": "arm_42",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_43",
+      "entityType": "equipment"
+    },
+    "id": "arm_43",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "騎士面甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_44",
+      "entityType": "equipment"
+    },
+    "id": "arm_44",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "艾爾穆的祝福"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_48",
+      "entityType": "equipment"
+    },
+    "id": "arm_48",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "皮帽子"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_49",
+      "entityType": "equipment"
+    },
+    "id": "arm_49",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "皮頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_50",
+      "entityType": "equipment"
+    },
+    "id": "arm_50",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈敏捷頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_51",
+      "entityType": "equipment"
+    },
+    "id": "arm_51",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈體質頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_53",
+      "entityType": "equipment"
+    },
+    "id": "arm_53",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "紅騎士頭巾"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_70",
+      "entityType": "equipment"
+    },
+    "id": "arm_70",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "木甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_71",
+      "entityType": "equipment"
+    },
+    "id": "arm_71",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈護胸金屬板"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_72",
+      "entityType": "equipment"
+    },
+    "id": "arm_72",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈金屬盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_73",
+      "entityType": "equipment"
+    },
+    "id": "arm_73",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈鏈甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_74",
+      "entityType": "equipment"
+    },
+    "id": "arm_74",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "木製的夾克"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_75",
+      "entityType": "equipment"
+    },
+    "id": "arm_75",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "皮背心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_76",
+      "entityType": "equipment"
+    },
+    "id": "arm_76",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "皮盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_77",
+      "entityType": "equipment"
+    },
+    "id": "arm_77",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "銀釘皮背心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_78",
+      "entityType": "equipment"
+    },
+    "id": "arm_78",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "硬皮背心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_79",
+      "entityType": "equipment"
+    },
+    "id": "arm_79",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "鋼鐵金屬盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_80",
+      "entityType": "equipment"
+    },
+    "id": "arm_80",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "水龍鱗盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_81",
+      "entityType": "equipment"
+    },
+    "id": "arm_81",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "地龍鱗盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_82",
+      "entityType": "equipment"
+    },
+    "id": "arm_82",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "火龍鱗盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_83",
+      "entityType": "equipment"
+    },
+    "id": "arm_83",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "風龍鱗盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_85",
+      "entityType": "equipment"
+    },
+    "id": "arm_85",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈T恤"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_87",
+      "entityType": "equipment"
+    },
+    "id": "arm_87",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "保護者斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_89",
+      "entityType": "equipment"
+    },
+    "id": "arm_89",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "瑪那斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_90",
+      "entityType": "equipment"
+    },
+    "id": "arm_90",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_91",
+      "entityType": "equipment"
+    },
+    "id": "arm_91",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "皮涼鞋"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_92",
+      "entityType": "equipment"
+    },
+    "id": "arm_92",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "銀釘皮涼鞋"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_93",
+      "entityType": "equipment"
+    },
+    "id": "arm_93",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "皮長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_94",
+      "entityType": "equipment"
+    },
+    "id": "arm_94",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "鋼鐵長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_95",
+      "entityType": "equipment"
+    },
+    "id": "arm_95",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "深水長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_98",
+      "entityType": "equipment"
+    },
+    "id": "arm_98",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "腕甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_99",
+      "entityType": "equipment"
+    },
+    "id": "arm_99",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "力量手套"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_shadowboots",
+      "entityType": "equipment"
+    },
+    "id": "arm_shadowboots",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "影子長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_shadowglove",
+      "entityType": "equipment"
+    },
+    "id": "arm_shadowglove",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "影子手套"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "arm_shadowmask",
+      "entityType": "equipment"
+    },
+    "id": "arm_shadowmask",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "影子面具"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "armguard_archer",
+      "entityType": "equipment"
+    },
+    "id": "armguard_archer",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古代神射臂甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "armguard_dragonscale",
+      "entityType": "equipment"
+    },
+    "id": "armguard_dragonscale",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "龍鱗臂甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "armguard_fighter",
+      "entityType": "equipment"
+    },
+    "id": "armguard_fighter",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古代鬥士臂甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_dragon_armor",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "龍騎士書板(龍之護鎧)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_dragon_bloodlust",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "龍騎士書板(血之渴望)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_elf_summon",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "精靈水晶(召喚屬性精靈)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_elf_summon2",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "精靈水晶(召喚強力屬性精靈)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_royal_bravewill",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "魔法書(勇猛意志)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_royal_burnweapon",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "魔法書(灼熱武器)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_royal_callally",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "魔法書(呼喚盟友)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_royal_kingguard",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "魔法書(王者加護)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_royal_precise",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "魔法書(精準目標)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_royal_shield",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "魔法書(閃亮之盾)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_warrior_dualaxe",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "戰士的印記(迅猛雙斧)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "bk_warrior_roar",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "戰士的印記(咆哮)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "blt_body",
+      "entityType": "equipment"
+    },
+    "id": "blt_body",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "身體腰帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "bot_courage",
+      "entityType": "equipment"
+    },
+    "id": "bot_courage",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "勇氣長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "bot_divine_will",
+      "entityType": "equipment"
+    },
+    "id": "bot_divine_will",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "神意長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "bot_frost",
+      "entityType": "equipment"
+    },
+    "id": "bot_frost",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寒冰長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "bot_icequeen_charm",
+      "entityType": "equipment"
+    },
+    "id": "bot_icequeen_charm",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王魅力涼鞋"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "bot_mana",
+      "entityType": "equipment"
+    },
+    "id": "bot_mana",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "瑪那長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "bot_sephia",
+      "entityType": "equipment"
+    },
+    "id": "bot_sephia",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "賽菲亞長靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "bot_short",
+      "entityType": "equipment"
+    },
+    "id": "bot_short",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "短統靴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_dragon",
+      "entityType": "equipment"
+    },
+    "id": "clk_dragon",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "龍騎士斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_elf",
+      "entityType": "equipment"
+    },
+    "id": "clk_elf",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_flame_blood",
+      "entityType": "equipment"
+    },
+    "id": "clk_flame_blood",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "炎魔的血光斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_holy_corps",
+      "entityType": "equipment"
+    },
+    "id": "clk_holy_corps",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "神聖執行團的斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_illu",
+      "entityType": "equipment"
+    },
+    "id": "clk_illu",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "幻術士斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_mr",
+      "entityType": "equipment"
+    },
+    "id": "clk_mr",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "抗魔法斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_pride_earth",
+      "entityType": "equipment"
+    },
+    "id": "clk_pride_earth",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "地屬性斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_pride_fire",
+      "entityType": "equipment"
+    },
+    "id": "clk_pride_fire",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "火屬性斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_pride_water",
+      "entityType": "equipment"
+    },
+    "id": "clk_pride_water",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "水屬性斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_pride_wind",
+      "entityType": "equipment"
+    },
+    "id": "clk_pride_wind",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "風屬性斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_royal_majesty",
+      "entityType": "equipment"
+    },
+    "id": "clk_royal_majesty",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "君主的威嚴"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_royal_red",
+      "entityType": "equipment"
+    },
+    "id": "clk_royal_red",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "紅色斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "clk_warrior_corps",
+      "entityType": "equipment"
+    },
+    "id": "clk_warrior_corps",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "戰士團斗篷"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "glv_glove",
+      "entityType": "equipment"
+    },
+    "id": "glv_glove",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "手套"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_bone",
+      "entityType": "equipment"
+    },
+    "id": "hlm_bone",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "骷髏頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_elf",
+      "entityType": "equipment"
+    },
+    "id": "hlm_elf",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈皮盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_frost",
+      "entityType": "equipment"
+    },
+    "id": "hlm_frost",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寒冰頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_holy_corps",
+      "entityType": "equipment"
+    },
+    "id": "hlm_holy_corps",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "神聖執行團的頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_icequeen_charm",
+      "entityType": "equipment"
+    },
+    "id": "hlm_icequeen_charm",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "冰之女王魅力頭飾"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_mage",
+      "entityType": "equipment"
+    },
+    "id": "hlm_mage",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "法師之帽"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_silver",
+      "entityType": "equipment"
+    },
+    "id": "hlm_silver",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "銀釘皮帽"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_steel",
+      "entityType": "equipment"
+    },
+    "id": "hlm_steel",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "鋼鐵頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "hlm_warrior_corps",
+      "entityType": "equipment"
+    },
+    "id": "hlm_warrior_corps",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "戰士團頭盔"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_ancient_book",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "古代黑妖之秘笈"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_ancient_scroll",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "古代的卷軸"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_ancientkey",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "古代鑰匙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_ant_bark",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "污濁安特的樹皮"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_ant_branch",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "污濁安特的樹枝"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_ant_fruit",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "污濁安特的水果"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_blueflute",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "藍色長笛"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_chaos_key",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "混沌鑰匙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_cyclops_blood",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "獨眼巨人的血"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_dantes_letter",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "丹特斯的召書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_death_oath",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "死亡誓約"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_demon_search",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "妖魔搜索文件"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_demon_spy",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "妖魔密使首領間諜書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_dragon_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "龍之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_elf_whisper",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "精靈的私語"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_elmore_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "艾爾摩將軍之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_evo_fruit",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "進化果實"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_fallen_key",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "墮落鑰匙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_forgotten_greatsword",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "受封印 被遺忘的巨劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_forgotten_leather",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "被遺忘的皮盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_forgotten_plate",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "被遺忘的金屬盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_forgotten_robe",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "被遺忘的長袍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_forgotten_scale",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "被遺忘的鱗甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_forgotten_sword",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "受封印 被遺忘的劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_forgotten_xbow",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "受封印 被遺忘的弩槍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_kukulkan_box_basic",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "上鎖的庫庫爾坎初級寶箱"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_kukulkan_box_high",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "上鎖的庫庫爾坎高級寶箱"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_lost_soul",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "失去光明的靈魂"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_nightvision",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "夜之視野"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_orc_elder_head",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "妖魔長老首級"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_osiris_box_basic",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "上鎖的歐西里斯初級寶箱"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_osiris_box_high",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "上鎖的歐西里斯高級寶箱"
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_11",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_21",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_31",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_41",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_51",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_61",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_71",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_81",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_dom_91",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_11",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_21",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_31",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_41",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_51",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_61",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_71",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_81",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_pass_91",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_11",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_21",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_31",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_41",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_51",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_61",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_71",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_81",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "stub",
+    "entityRef": null,
+    "id": "item_pride_scroll_91",
+    "itemType": "unknown",
+    "linkStatus": "unresolved",
+    "name": null
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_royal_order",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "調職命令書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_sealed_intel",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "密封的情報書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_shadow_temple_key",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "暗影神殿鑰匙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_soulfire_ash",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "靈魂之火灰燼"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_spy_report",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "間諜報告書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_time_orb",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "完成的時間水晶球"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_unknown_spear",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "不為人知的矛"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_victory_fruit",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "勝利果實"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_wind_tear",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "風之淚"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_wyvern_blood",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "翼龍之血"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_yeti_head",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "雪怪首級"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "item_yeti_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "雪怪之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_black_blood",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "黑色血痕"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_black_mithril",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "黑色米索莉"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_black_powder",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "黑魔法粉"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_blackmithril_plate",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "黑色米索莉金屬板"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_blackstone2",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "二級黑魔石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_blackstone3",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "三級黑魔石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_blackstone4",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "四級黑魔石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_chaos_head",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "混沌首級"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_chimera_dragon",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "奇美拉之皮(龍)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_chimera_goat",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "奇美拉之皮(山羊)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_chimera_lion",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "奇美拉之皮(獅子)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_chimera_snake",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "奇美拉之皮(蛇)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_crack_core",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "龜裂之核"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_crest_assassin",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "暗殺軍王徽印"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_crest_beast",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "魔獸軍王徽印"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_crest_law",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "法令軍王徽印"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_crest_necro",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "冥法軍王徽印"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_cursed_leather_earth",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "詛咒的皮革(地)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_cursed_leather_fire",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "詛咒的皮革(火)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_cursed_leather_water",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "詛咒的皮革(水)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_cursed_leather_wind",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "詛咒的皮革(風)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_death_head",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "死亡首級"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_demon_anklet_black",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "惡魔的黑色腳鐐"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_demon_anklet_blue",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "惡魔的藍色腳鐐"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_demon_anklet_red",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "惡魔的紅色腳鐐"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_demon_anklet_white",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "惡魔的白色腳鐐"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_dragon_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "飛龍之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_earth_breath",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "土之氣息"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_fallen_fang",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "墮落之牙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_fallen_hand",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "墮落之手"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_fallen_head",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "墮落首級"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_fallen_poison",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "墮落之毒"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_fallen_scythe",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "墮落鐮刀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_fallen_tongue",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "墮落之舌"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_fire_breath",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "火之氣息"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_flame_claw",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "炎魔之爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_flame_eye",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "炎魔之眼"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_flame_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "炎魔之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_flame_sword",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "炎魔之劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_golem_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "高崙之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_griffon_feather",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "格利芬羽毛"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_1",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第1頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_2",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第2頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_3",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第3頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_4",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第4頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_5",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第5頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_6",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第6頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_7",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第7頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_history_8",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "封印的歷史書第8頁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_holy_relic",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "聖地遺物"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_ice_crystal",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "冰之結晶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_icequeen_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "冰之女王之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_kukulkan_basic_down",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "庫庫爾坎初級寶箱碎片(下)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_kukulkan_basic_up",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "庫庫爾坎初級寶箱碎片(上)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_kukulkan_high_down",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "庫庫爾坎高級寶箱碎片(下)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_kukulkan_high_up",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "庫庫爾坎高級寶箱碎片(上)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_legion_assassin",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "暗殺軍團印記"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_legion_beast",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "魔獸軍團印記"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_legion_law",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "法令軍團印記"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_legion_necro",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "冥法軍團印記"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_moonlight_breath",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "月光之氣息"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_osiris_basic_down",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "歐西里斯初級寶箱碎片(下)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_osiris_basic_up",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "歐西里斯初級寶箱碎片(上)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_osiris_high_down",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "歐西里斯高級寶箱碎片(下)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_osiris_high_up",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "歐西里斯高級寶箱碎片(上)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_rasta_codex",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "拉斯塔巴德製作武器秘笈"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_rift_shard",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "時空裂痕碎片"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_rough_stone",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "原石碎片"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_silver",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "銀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_silver_plate",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "銀金屬板"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_silverore",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "銀礦石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_soulstone_shard",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "靈魂石碎片"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_steel_chunk",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "鋼鐵塊"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_unicorn_horn",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "神聖獨角獸之角"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_unknown_axe",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "不為人知的斧"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_water_breath",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "水之氣息"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mat_wind_breath",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "風之氣息"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mem_cube_burn",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "記憶水晶(立方：燃燒)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "mem_cube_shock",
+    "itemType": "skillbook",
+    "linkStatus": "unresolved",
+    "name": "記憶水晶(立方：衝擊)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_144",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "夏洛伯之爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_150",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "魔法寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_151",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "鑽石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_152",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "品質鑽石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_153",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "高品質鑽石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_154",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "綠寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_155",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "品質綠寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_156",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "高品質綠寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_157",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "紅寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_158",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "品質紅寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_159",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "高品質紅寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_160",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "藍寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_161",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "品質藍寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_162",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "高品質藍寶石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_163",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "潘的鬃毛"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_164",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "粗糙的米索莉塊"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_165",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "元素石"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_166",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "蘑菇汁"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_167",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "食人巨魔的血"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_168",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "線"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_169",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "純粹的米索莉塊"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_170",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "精靈粉末"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_171",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "芮克妮的網"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_172",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "安特的樹皮"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_173",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "奧里哈魯根"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_174",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "米索莉線"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_175",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "芮克妮的蛻皮"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_176",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "魔法笛子"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_177",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "米索莉金屬板"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_178",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "奧里哈魯根金屬板"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_179",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "皮革"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_180",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "金屬塊"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_181",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "皮帶"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_182",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "高級皮革"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_183",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "骨頭碎片"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_187",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "藍色布料"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_188",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "紅色布料"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_189",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "白色布料"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_190",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "水龍鱗"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_191",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "地龍鱗"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_192",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "火龍鱗"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_193",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "風龍鱗"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_194",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "阿西塔基奧的灰燼"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_195",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "精靈玉"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_196",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "古老的交易文件"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_197",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "搜索狀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_198",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "黑騎士的誓約"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_199",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "都達瑪拉妖魔魔法書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_200",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "那魯加妖魔魔法書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_201",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "甘地妖魔魔法書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_202",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "阿吐巴妖魔魔法書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_203",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "骷髏頭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_204",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "食屍鬼的指甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_205",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "食屍鬼的牙齒"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_206",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "龍龜甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_207",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "生命的卷軸"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_208",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "蛇女之鱗"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_211",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "村民的遺物"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_212",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "不死族的骨頭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_213",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "受詛咒的精靈書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_214",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "不死族的鑰匙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_219",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "神秘魔杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_221",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "光明的鱗片"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_225",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "被偷的項鍊"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_226",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "被偷的戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_234",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "神秘慎重藥水"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_237",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "安特的樹枝"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_240",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "變形怪的血"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_elfwing",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "精靈羽翼"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_item_mermaid_scale",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "人魚之鱗"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "new_phoenix_heart",
+    "itemType": "material",
+    "linkStatus": "unresolved",
+    "name": "不死鳥之心"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "panacea_cha",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "萬能藥(CHA)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "panacea_con",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "萬能藥(CON)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "panacea_dex",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "萬能藥(DEX)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "panacea_int",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "萬能藥(INT)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "panacea_str",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "萬能藥(STR)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "panacea_white",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "純白的萬能藥"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": null,
+    "id": "panacea_wis",
+    "itemType": "misc",
+    "linkStatus": "unresolved",
+    "name": "萬能藥(WIS)"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_arm_bone",
+      "entityType": "equipment"
+    },
+    "id": "pet_arm_bone",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寵物骷髏盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_arm_chain",
+      "entityType": "equipment"
+    },
+    "id": "pet_arm_chain",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寵物鏈甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_arm_cross",
+      "entityType": "equipment"
+    },
+    "id": "pet_arm_cross",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寵物十字盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_arm_leather",
+      "entityType": "equipment"
+    },
+    "id": "pet_arm_leather",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寵物皮盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_arm_mithril",
+      "entityType": "equipment"
+    },
+    "id": "pet_arm_mithril",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寵物米索莉盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_arm_steel",
+      "entityType": "equipment"
+    },
+    "id": "pet_arm_steel",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "寵物鋼鐵盔甲"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_fang_hound",
+      "entityType": "equipment"
+    },
+    "id": "pet_fang_hound",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "獵犬之牙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_fang_ruin",
+      "entityType": "equipment"
+    },
+    "id": "pet_fang_ruin",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "破滅之牙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_fang_steel",
+      "entityType": "equipment"
+    },
+    "id": "pet_fang_steel",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "鋼鐵之牙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "pet_fang_victory",
+      "entityType": "equipment"
+    },
+    "id": "pet_fang_victory",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "勝利之牙"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "rng_earth",
+      "entityType": "equipment"
+    },
+    "id": "rng_earth",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "地靈戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "rng_fire",
+      "entityType": "equipment"
+    },
+    "id": "rng_fire",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "火靈戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "rng_water",
+      "entityType": "equipment"
+    },
+    "id": "rng_water",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "水靈戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "rng_wind",
+      "entityType": "equipment"
+    },
+    "id": "rng_wind",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "風靈戒指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "shd_bone",
+      "entityType": "equipment"
+    },
+    "id": "shd_bone",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "骷髏盾牌"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "shd_elf",
+      "entityType": "equipment"
+    },
+    "id": "shd_elf",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈盾牌"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "shd_illu_book",
+      "entityType": "equipment"
+    },
+    "id": "shd_illu_book",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "幻術士法書"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "shd_redknight",
+      "entityType": "equipment"
+    },
+    "id": "shd_redknight",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "紅騎士盾牌"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "tsh_tshirt",
+      "entityType": "equipment"
+    },
+    "id": "tsh_tshirt",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "T恤"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_10",
+      "entityType": "equipment"
+    },
+    "id": "wpn_10",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "木棒"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_15",
+      "entityType": "equipment"
+    },
+    "id": "wpn_15",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "吉薩"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_24",
+      "entityType": "equipment"
+    },
+    "id": "wpn_24",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈之矛"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_29",
+      "entityType": "equipment"
+    },
+    "id": "wpn_29",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "尤米弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_3",
+      "entityType": "equipment"
+    },
+    "id": "wpn_3",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_30",
+      "entityType": "equipment"
+    },
+    "id": "wpn_30",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "米索莉箭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_31",
+      "entityType": "equipment"
+    },
+    "id": "wpn_31",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "十字弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_34",
+      "entityType": "equipment"
+    },
+    "id": "wpn_34",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "短劍的劍身"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_35",
+      "entityType": "equipment"
+    },
+    "id": "wpn_35",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "長劍的劍身"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_36",
+      "entityType": "equipment"
+    },
+    "id": "wpn_36",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "奧里哈魯根的劍身"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_39",
+      "entityType": "equipment"
+    },
+    "id": "wpn_39",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "潘的角"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_40",
+      "entityType": "equipment"
+    },
+    "id": "wpn_40",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "覆上米索莉的角"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_41",
+      "entityType": "equipment"
+    },
+    "id": "wpn_41",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "覆上奧里哈魯根的角"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_5",
+      "entityType": "equipment"
+    },
+    "id": "wpn_5",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "箭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_ancient_axe",
+      "entityType": "equipment"
+    },
+    "id": "wpn_ancient_axe",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古代神之斧"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_ancient_spear",
+      "entityType": "equipment"
+    },
+    "id": "wpn_ancient_spear",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古代神之槍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_assassin_mark",
+      "entityType": "equipment"
+    },
+    "id": "wpn_assassin_mark",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "暗殺軍王之痕"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_baranka_claw",
+      "entityType": "equipment"
+    },
+    "id": "wpn_baranka_claw",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "魔獸軍王之爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_battleaxe",
+      "entityType": "equipment"
+    },
+    "id": "wpn_battleaxe",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "戰斧"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_beastking_claw",
+      "entityType": "equipment"
+    },
+    "id": "wpn_beastking_claw",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "獸王鋼爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_blackflame_sword",
+      "entityType": "equipment"
+    },
+    "id": "wpn_blackflame_sword",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "黑燄之劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_chain_annihilator",
+      "entityType": "equipment"
+    },
+    "id": "wpn_chain_annihilator",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "消滅者鎖鏈劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_chain_destroyer",
+      "entityType": "equipment"
+    },
+    "id": "wpn_chain_destroyer",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "破滅者鎖鏈劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_claw_dark",
+      "entityType": "equipment"
+    },
+    "id": "wpn_claw_dark",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "黑暗鋼爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_claw_gloom",
+      "entityType": "equipment"
+    },
+    "id": "wpn_claw_gloom",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "幽暗鋼爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_claw_silver",
+      "entityType": "equipment"
+    },
+    "id": "wpn_claw_silver",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "銀光鋼爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_crystalwand",
+      "entityType": "equipment"
+    },
+    "id": "wpn_crystalwand",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "水晶魔杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_dagger2",
+      "entityType": "equipment"
+    },
+    "id": "wpn_dagger2",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈匕首"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_death_finger",
+      "entityType": "equipment"
+    },
+    "id": "wpn_death_finger",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "死亡之指"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demon_axe",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demon_axe",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔斧頭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demon_axehead",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demon_axehead",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "魔物的斧頭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demon_claw",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demon_claw",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔鋼爪"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demon_dual",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demon_dual",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔雙刀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demon_sword",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demon_sword",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔之劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demon_xbow",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demon_xbow",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔十字弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demonking_2hsword",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demonking_2hsword",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔王雙手劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demonking_bow",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demonking_bow",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔王弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demonking_dual",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demonking_dual",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔王雙刀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demonking_spear",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demonking_spear",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔王矛"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_demonking_wand",
+      "entityType": "equipment"
+    },
+    "id": "wpn_demonking_wand",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "惡魔王魔杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_dragon_2h",
+      "entityType": "equipment"
+    },
+    "id": "wpn_dragon_2h",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "龍騎士雙手劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_dual_dark",
+      "entityType": "equipment"
+    },
+    "id": "wpn_dual_dark",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "黑暗雙刀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_dual_gloom",
+      "entityType": "equipment"
+    },
+    "id": "wpn_dual_gloom",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "幽暗雙刀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_dual_silver",
+      "entityType": "equipment"
+    },
+    "id": "wpn_dual_silver",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "銀光雙刀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_elfbow",
+      "entityType": "equipment"
+    },
+    "id": "wpn_elfbow",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_elfsword",
+      "entityType": "equipment"
+    },
+    "id": "wpn_elfsword",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "精靈短劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_emperor_blade",
+      "entityType": "equipment"
+    },
+    "id": "wpn_emperor_blade",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "真．冥皇執行劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_flaming_angel",
+      "entityType": "equipment"
+    },
+    "id": "wpn_flaming_angel",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "熾炎天使弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_golden_scepter",
+      "entityType": "equipment"
+    },
+    "id": "wpn_golden_scepter",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "黃金權杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_halberd",
+      "entityType": "equipment"
+    },
+    "id": "wpn_halberd",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "法丘"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_holycrystal_wand",
+      "entityType": "equipment"
+    },
+    "id": "wpn_holycrystal_wand",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "聖晶魔杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_illu_wand",
+      "entityType": "equipment"
+    },
+    "id": "wpn_illu_wand",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "幻術士魔杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_mailbreaker",
+      "entityType": "equipment"
+    },
+    "id": "wpn_mailbreaker",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "鎖子甲破壞者"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_mana_orb",
+      "entityType": "equipment"
+    },
+    "id": "wpn_mana_orb",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "瑪那水晶球"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_manawand",
+      "entityType": "equipment"
+    },
+    "id": "wpn_manawand",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "瑪那魔杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_master_axe",
+      "entityType": "equipment"
+    },
+    "id": "wpn_master_axe",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "大匠的斧頭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_official_2h",
+      "entityType": "equipment"
+    },
+    "id": "wpn_official_2h",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "武官雙手劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_official_blade",
+      "entityType": "equipment"
+    },
+    "id": "wpn_official_blade",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "武官之刃"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_old_greatsword",
+      "entityType": "equipment"
+    },
+    "id": "wpn_old_greatsword",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古老的巨劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_old_sword",
+      "entityType": "equipment"
+    },
+    "id": "wpn_old_sword",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古老的劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_old_xbow",
+      "entityType": "equipment"
+    },
+    "id": "wpn_old_xbow",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "古老的弩槍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_priest_wand",
+      "entityType": "equipment"
+    },
+    "id": "wpn_priest_wand",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "神官魔杖"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_qigu_obsidian",
+      "entityType": "equipment"
+    },
+    "id": "wpn_qigu_obsidian",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "黑曜石奇古獸"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_qigu_sapphire",
+      "entityType": "equipment"
+    },
+    "id": "wpn_qigu_sapphire",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "藍寶石奇古獸"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_rapier",
+      "entityType": "equipment"
+    },
+    "id": "wpn_rapier",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "細劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_redflame_bow",
+      "entityType": "equipment"
+    },
+    "id": "wpn_redflame_bow",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "赤焰之弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_redflame_sword",
+      "entityType": "equipment"
+    },
+    "id": "wpn_redflame_sword",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "赤焰之劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_redknight",
+      "entityType": "equipment"
+    },
+    "id": "wpn_redknight",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "紅騎士之劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_redshadow_dual",
+      "entityType": "equipment"
+    },
+    "id": "wpn_redshadow_dual",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "紅影雙刀"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_shaha_bow",
+      "entityType": "equipment"
+    },
+    "id": "wpn_shaha_bow",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "沙哈之弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_siruge",
+      "entityType": "equipment"
+    },
+    "id": "wpn_siruge",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "瑟魯基之劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_warrior_trial_axe",
+      "entityType": "equipment"
+    },
+    "id": "wpn_warrior_trial_axe",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "試煉斧頭"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_windblade_dagger",
+      "entityType": "equipment"
+    },
+    "id": "wpn_windblade_dagger",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "風刃短劍"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_xbow_dark",
+      "entityType": "equipment"
+    },
+    "id": "wpn_xbow_dark",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "黑暗十字弓"
+  },
+  {
+    "dataStatus": "complete",
+    "entityRef": {
+      "entityId": "wpn_xbow_gloom",
+      "entityType": "equipment"
+    },
+    "id": "wpn_xbow_gloom",
+    "itemType": "equipment",
+    "linkStatus": "resolved",
+    "name": "幽暗十字弓"
+  }
+]

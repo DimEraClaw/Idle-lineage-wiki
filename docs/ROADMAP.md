@@ -1,5 +1,11 @@
 # 開發 roadmap
 
+## 核心百科能力：Knowledge Domain
+
+Knowledge Domain 是角色能力查詢的正式 owner，也是 Equipment、Skill、Interaction 與 Mechanics 的共用知識層；不取代 Monster、Quest、Craft 等 Domain，也不提前實作 Analytics、Build Planner 或 Calculator。Stage K1 先定義 GameConcept、Mechanic、Formula、Research、Evidence 與 WikiDataCore 接入契約；K2 先盤點角色能力與戰鬥數值來源，之後再依序進入 deterministic data pipeline、repositories／search 與受控頁面接線。
+
+保留 Monster C1 契約成果。下一個大型實作階段應在 Monster C2 與 Knowledge K2 中選擇一個最有玩家查詢價值的最小切片，不同時全面展開兩者。詳細順序見 `docs/KNOWLEDGE_DOMAIN_STAGE_K1_PLAN.md`。
+
 ## 首要玩家可見功能：Release Hub／版本與更新中心
 
 Release Hub 建議作為第一個面向玩家的首頁功能，優先建立版本可信度與百科入口，再擴充其他首頁內容。正式契約見 `docs/RELEASE_HUB_CONTRACT.md`。

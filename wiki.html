@@ -1296,15 +1296,66 @@
     <script src="./js/wiki-data-core-craft-adapter.js"></script>
     <script src="./js/wiki-monster-data.js"></script>
     <script src="./js/wiki-monster-view.js"></script>
+    <script src="./js/wiki-equipment-data.js"></script>
+    <script src="./js/wiki-equipment-shadow-adapter.js"></script>
     <script>
         window.CRAFT_WIKI_PHASE1_ENABLED = false;
         window.WIKI_DATA_CORE_ENABLED = false;
         window.MONSTER_UI_ENABLED = true;
+        window.EQUIPMENT_DATA_SHADOW_ENABLED = false;
 
         let craftWikiInitializationPromise = null;
         let legacyCraftWikiInitialized = false;
         let craftPhase1FallbackNoticeShown = false;
         let wikiDataCoreRegistrationPromise = null;
+        let equipmentShadowInitializationPromise = null;
+
+        function isEquipmentShadowEnabled() {
+            return new URLSearchParams(window.location.search).get('equipmentShadow') === '1';
+        }
+
+        function setEquipmentShadowState(mode, ready, result) {
+            const root = document.documentElement;
+            root.dataset.equipmentShadowMode = mode;
+            root.dataset.equipmentShadowReady = String(ready);
+            if (result) {
+                root.dataset.equipmentShadowBlocking = String(result.counts.blocking);
+                root.dataset.equipmentShadowExpected = String(result.counts.expected);
+                root.dataset.equipmentShadowLegacyCount = String(result.counts.legacy);
+                root.dataset.equipmentShadowDatasetCount = String(result.counts.dataset);
+                root.dataset.equipmentShadowPerformance = JSON.stringify(result.performance);
+            }
+        }
+
+        function initEquipmentShadowIfEnabled() {
+            if (equipmentShadowInitializationPromise) return equipmentShadowInitializationPromise;
+            if (!isEquipmentShadowEnabled()) {
+                setEquipmentShadowState('disabled', false);
+                return Promise.resolve(false);
+            }
+            equipmentShadowInitializationPromise = (async () => {
+                if (!window.createEquipmentRepository || !window.EquipmentShadowAdapter) {
+                    setEquipmentShadowState('fallback', false);
+                    return false;
+                }
+                if (!window.EquipmentWikiData) window.EquipmentWikiData = window.createEquipmentRepository();
+                const loaded = await window.EquipmentWikiData.load();
+                if (!loaded) {
+                    setEquipmentShadowState('fallback', false);
+                    return false;
+                }
+                try {
+                    const result = window.EquipmentShadowAdapter.compareEquipmentData(EQUIP_DATA, window.EquipmentWikiData);
+                    window.__equipmentShadowState = result;
+                    setEquipmentShadowState('enabled', true, result);
+                    return true;
+                } catch (error) {
+                    setEquipmentShadowState('fallback', false);
+                    return false;
+                }
+            })();
+            return equipmentShadowInitializationPromise;
+        }
 
         function setCraftPhase1TestState(mode, ready) {
             const root = document.documentElement;
@@ -1447,6 +1498,7 @@
         // GLOBALS & INITIALIZATION
         window.addEventListener('DOMContentLoaded', async () => {
             initEquipWiki();
+            window.__equipmentShadowInitialization = initEquipmentShadowIfEnabled();
             await initCraftWikiWithFallback();
             initCardsGuide();
 

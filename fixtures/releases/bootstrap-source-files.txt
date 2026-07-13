@@ -1,0 +1,3 @@
+# Candidate bootstrap scope only; not the complete P0 source scope.
+index.html
+js/00-data.js

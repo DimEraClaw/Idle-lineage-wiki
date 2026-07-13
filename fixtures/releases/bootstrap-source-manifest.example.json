@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "commitDate": null,
+  "commitSha": "9252a99c152bca1256a900c94335cadff52558e9",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "1add884bfa1c91e24f1c4f85f5a3092f845873519af8ba72de1b2d616100e7c2",
+      "size": 62211
+    },
+    {
+      "path": "js/00-data.js",
+      "sha256": "84874e09f01394c850d664429d01db346a85e749de68b47a65d5f09f9165f8b3",
+      "size": 572981
+    }
+  ],
+  "gameVersion": "v3.2.79",
+  "manifestSchemaVersion": "1.0.0",
+  "retrievalMethod": "github_pages",
+  "retrievedAt": "2026-07-13T00:00:00+08:00",
+  "sourceRepository": "https://github.com/shines871/idle-lineage-class"
+}

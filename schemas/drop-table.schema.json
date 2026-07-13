@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "drop-table.schema.json", "title": "DropTable Dataset",
+  "type": "object", "additionalProperties": false, "required": ["schemaVersion", "dataset", "records"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" }, "dataset": { "const": "drop_tables" },
+    "records": { "type": "array", "items": { "$ref": "#/$defs/dropTable" } }
+  },
+  "$defs": {
+    "entityRef": { "type": "object", "additionalProperties": false, "required": ["entityType", "entityId"], "properties": { "entityType": { "type": "string", "minLength": 1 }, "entityId": { "type": "string", "minLength": 1 } } },
+    "dropTable": {
+      "type": "object", "additionalProperties": false,
+      "required": ["dropTableId", "owner", "ownerType", "dropType", "rollModel", "entries", "conditions", "runtimeModifiers", "verification", "version", "entityRef", "relations", "status"],
+      "properties": {
+        "dropTableId": { "type": "string", "minLength": 1 }, "owner": { "$ref": "#/$defs/entityRef" }, "ownerType": { "const": "monster" },
+        "dropType": { "const": "base" }, "rollModel": { "const": "independent" }, "entries": { "type": "array", "items": { "type": "object" } },
+        "conditions": { "type": "array", "maxItems": 0 }, "runtimeModifiers": { "type": "array", "maxItems": 0 },
+        "verification": { "type": "object", "required": ["verificationStatus", "source", "confidence"] },
+        "version": { "type": "object", "required": ["sourceRevision", "gameVersion", "schemaVersion", "validFrom", "validTo"] },
+        "entityRef": { "$ref": "#/$defs/entityRef" }, "relations": { "type": "array", "items": { "$ref": "#/$defs/entityRef" } }, "status": { "enum": ["complete", "partial", "review_required", "unresolved"] }
+      }
+    }
+  }
+}

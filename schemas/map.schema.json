@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "map.schema.json", "title": "Map Dataset",
+  "type": "object", "additionalProperties": false, "required": ["schemaVersion", "dataset", "records"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" }, "dataset": { "const": "maps" },
+    "records": { "type": "array", "items": { "$ref": "#/$defs/map" } }
+  },
+  "$defs": {
+    "entityRef": { "type": "object", "additionalProperties": false, "required": ["entityType", "entityId"], "properties": { "entityType": { "type": "string", "minLength": 1 }, "entityId": { "type": "string", "minLength": 1 } } },
+    "map": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mapId", "displayName", "monsterRefs", "bossRefs", "entityRef", "verification", "version", "status"],
+      "properties": {
+        "mapId": { "type": "string", "minLength": 1 }, "displayName": { "type": ["string", "null"] },
+        "monsterRefs": { "type": "array", "items": { "$ref": "#/$defs/entityRef" } }, "bossRefs": { "type": "array", "items": { "$ref": "#/$defs/entityRef" } },
+        "entityRef": { "$ref": "#/$defs/entityRef" },
+        "verification": { "type": "object", "required": ["verificationStatus", "source", "confidence"] },
+        "version": { "type": "object", "required": ["sourceRevision", "gameVersion", "schemaVersion", "validFrom", "validTo"] },
+        "status": { "enum": ["complete", "partial", "review_required", "unresolved"] }
+      }
+    }
+  }
+}

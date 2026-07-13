@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "drop-entry.schema.json", "title": "DropEntry",
+  "type": "object", "additionalProperties": false,
+  "required": ["dropEntryId", "dropTableRef", "itemRef", "itemNameText", "probability", "quantity", "dropType", "bossOnly", "conditions", "runtimeModifiers", "verification", "version", "entityRef", "status"],
+  "properties": {
+    "dropEntryId": { "type": "string", "minLength": 1 },
+    "dropTableRef": { "$ref": "#/$defs/entityRef" }, "itemRef": { "$ref": "#/$defs/entityRef" }, "itemNameText": { "type": "null" },
+    "probability": { "type": "object", "additionalProperties": false, "required": ["value", "unit", "basis"], "properties": { "value": { "type": "number", "minimum": 0, "maximum": 100 }, "unit": { "const": "percent" }, "basis": { "const": 100 } } },
+    "quantity": { "type": "object", "additionalProperties": false, "required": ["min", "max"], "properties": { "min": { "const": 1 }, "max": { "const": 1 } } },
+    "dropType": { "const": "base" }, "bossOnly": { "type": ["boolean", "null"] }, "conditions": { "type": "array", "items": { "type": "object" } }, "runtimeModifiers": { "type": "array", "items": { "type": "object" } },
+    "verification": { "type": "object", "required": ["verificationStatus", "source", "confidence"] },
+    "version": { "type": "object", "required": ["sourceRevision", "gameVersion", "schemaVersion", "validFrom", "validTo"] },
+    "entityRef": { "$ref": "#/$defs/entityRef" }, "status": { "enum": ["complete", "partial", "review_required", "unresolved"] }
+  },
+  "$defs": { "entityRef": { "type": "object", "additionalProperties": false, "required": ["entityType", "entityId"], "properties": { "entityType": { "type": "string", "minLength": 1 }, "entityId": { "type": "string", "minLength": 1 } } } }
+}

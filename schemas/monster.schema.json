@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "monster.schema.json",
+  "title": "Monster Dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "dataset", "records"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "dataset": { "const": "monsters" },
+    "records": { "type": "array", "items": { "$ref": "#/$defs/monster" } }
+  },
+  "$defs": {
+    "entityRef": {
+      "type": "object", "additionalProperties": false,
+      "required": ["entityType", "entityId"],
+      "properties": { "entityType": { "type": "string", "minLength": 1 }, "entityId": { "type": "string", "minLength": 1 } }
+    },
+    "verification": {
+      "type": "object", "additionalProperties": false,
+      "required": ["verificationStatus", "source", "evidence", "verifiedBy", "verifiedVersion", "confidence"],
+      "properties": {
+        "verificationStatus": { "enum": ["Official", "Code", "Generated", "Community", "Research", "Test", "Unknown"] },
+        "source": { "type": ["string", "null"] }, "evidence": { "type": "array", "items": { "type": "string" } },
+        "verifiedBy": { "type": ["string", "null"] }, "verifiedVersion": { "type": ["string", "null"] },
+        "confidence": { "enum": ["high", "medium", "low", "unknown"] }
+      }
+    },
+    "version": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sourceRevision", "gameVersion", "schemaVersion", "validFrom", "validTo"],
+      "properties": { "sourceRevision": { "type": ["string", "null"] }, "gameVersion": { "type": ["string", "null"] }, "schemaVersion": { "const": "1.0.0" }, "validFrom": { "type": ["string", "null"] }, "validTo": { "type": ["string", "null"] } }
+    },
+    "monster": {
+      "type": "object", "additionalProperties": false,
+      "required": ["monsterId", "displayName", "level", "hp", "mp", "stats", "race", "size", "sizeCode", "element", "alignment", "boss", "bossTier", "isQuestTarget", "mapRef", "dropTableRef", "cardRef", "relations", "verification", "version", "status", "entityRef"],
+      "properties": {
+        "monsterId": { "type": "string", "minLength": 1 }, "displayName": { "type": "string", "minLength": 1 },
+        "level": { "type": "number" }, "hp": { "type": "number", "minimum": 0 }, "mp": { "type": ["number", "null"] },
+        "stats": {
+          "type": "object", "additionalProperties": false,
+          "required": ["ac", "mr", "hit", "er", "dr", "attackSpeed", "damageDice", "damageBonus", "experience", "goldMin", "goldMax"],
+          "properties": {
+            "ac": { "type": "number" }, "mr": { "type": "number" }, "hit": { "type": "number" }, "er": { "type": ["number", "null"] }, "dr": { "type": ["number", "null"] },
+            "attackSpeed": { "type": "number" }, "damageDice": { "type": "array", "prefixItems": [{"type":"number"},{"type":"number"}], "minItems": 2, "maxItems": 2 },
+            "damageBonus": { "type": "number" }, "experience": { "type": "number" }, "goldMin": { "type": "number" }, "goldMax": { "type": "number" }
+          }
+        },
+        "race": { "type": ["string", "null"] }, "size": { "type": "null" }, "sizeCode": { "type": ["string", "null"] }, "element": { "type": ["string", "null"] },
+        "alignment": { "type": ["number", "string", "null"] }, "boss": { "type": "boolean" }, "bossTier": { "type": "null" }, "isQuestTarget": { "type": "null" },
+        "mapRef": { "type": "array", "items": { "$ref": "#/$defs/entityRef" } },
+        "dropTableRef": { "anyOf": [{ "$ref": "#/$defs/entityRef" }, { "type": "null" }] }, "cardRef": { "type": "null" },
+        "relations": { "type": "array", "items": { "$ref": "#/$defs/entityRef" } },
+        "verification": { "$ref": "#/$defs/verification" }, "version": { "$ref": "#/$defs/version" },
+        "status": { "enum": ["complete", "partial", "review_required", "unresolved"] }, "entityRef": { "$ref": "#/$defs/entityRef" }
+      }
+    }
+  }
+}

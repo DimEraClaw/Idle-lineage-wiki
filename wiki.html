@@ -1093,6 +1093,7 @@
             <button onclick="switchTab('equip')" id="btn-tab-equip" class="nav-btn active-tab-btn">🛡️ 裝備與技能百科</button>
             <button onclick="switchTab('craft')" id="btn-tab-craft" class="nav-btn">🛠️ 製作與配方百科</button>
             <button onclick="switchTab('cards')" id="btn-tab-cards" class="nav-btn">🎴 怪物與卡片手冊</button>
+            <button onclick="switchTab('monster')" id="btn-tab-monster" class="nav-btn" hidden>👹 怪物百科 Alpha</button>
         </div>
     </header>
 
@@ -1248,6 +1249,31 @@
         </div>
     </div>
 
+    <!-- ------------------ MONSTER UI ALPHA PANE ------------------ -->
+    <div id="tab-content-monster" class="tab-pane">
+        <div class="wiki-container">
+            <aside class="sidebar">
+                <div class="sidebar-title">怪物搜尋結果</div>
+                <div id="monster-search-results"></div>
+            </aside>
+            <main class="content-area">
+                <div class="header-bar">
+                    <div class="wiki-title">
+                        <h2>怪物百科 Alpha</h2>
+                        <span>查詢怪物等級、HP、所在地圖與基礎掉落</span>
+                    </div>
+                    <div class="search-box">
+                        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        <input type="text" id="search-monster" placeholder="搜尋怪物名稱或 Monster ID">
+                    </div>
+                </div>
+                <div class="recipe-list" id="monster-detail">
+                    <p>請搜尋並選擇怪物。</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
     <!-- Shared Material Drops Drawer -->
     <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
     <div class="drawer" id="drawer">
@@ -1264,9 +1290,12 @@
     <script src="./js/wiki-craft-data.js"></script>
     <script src="./js/wiki-data-core.js"></script>
     <script src="./js/wiki-data-core-craft-adapter.js"></script>
+    <script src="./js/wiki-monster-data.js"></script>
+    <script src="./js/wiki-monster-view.js"></script>
     <script>
         window.CRAFT_WIKI_PHASE1_ENABLED = false;
         window.WIKI_DATA_CORE_ENABLED = false;
+        window.MONSTER_UI_ALPHA = false;
 
         let craftWikiInitializationPromise = null;
         let legacyCraftWikiInitialized = false;
@@ -1292,6 +1321,10 @@
         function isWikiDataCoreEnabled() {
             const testValue = new URLSearchParams(window.location.search).get('wikiDataCore');
             return window.WIKI_DATA_CORE_ENABLED === true || testValue === '1';
+        }
+
+        function isMonsterUIAlphaEnabled() {
+            return window.MONSTER_UI_ALPHA === true || new URLSearchParams(window.location.search).get('monsterUI') === '1';
         }
 
         function registerCraftAdapterIfEnabled() {
@@ -1387,6 +1420,7 @@
                     if (tabId === 'equip') filterEquips();
                     else if (tabId === 'craft') filterCraftRecipes();
                     else if (tabId === 'cards') filterCardsGlobal();
+                    else if (tabId === 'monster' && window.MonsterWikiView) window.MonsterWikiView.search(searchKeyword);
                 }
             }
             
@@ -1410,8 +1444,18 @@
             initCardsGuide();
 
             const params = new URLSearchParams(window.location.search);
-            const tabParam = params.get('tab') || 'equip';
+            let tabParam = params.get('tab') || 'equip';
             const searchParam = params.get('search') || '';
+
+            if (isMonsterUIAlphaEnabled() && window.MonsterWikiView) {
+                const monsterReady = await window.MonsterWikiView.init();
+                document.documentElement.dataset.monsterUiAlphaMode = monsterReady ? 'enabled' : 'fallback';
+                if (!monsterReady && tabParam === 'monster') tabParam = 'equip';
+            } else {
+                document.documentElement.dataset.monsterUiAlphaMode = 'disabled';
+                document.documentElement.dataset.monsterUiAlphaReady = 'false';
+                if (tabParam === 'monster') tabParam = 'equip';
+            }
 
             switchTab(tabParam, searchParam);
             await registerCraftAdapterIfEnabled();

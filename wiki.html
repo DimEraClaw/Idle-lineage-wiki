@@ -1093,7 +1093,7 @@
             <button onclick="switchTab('equip')" id="btn-tab-equip" class="nav-btn active-tab-btn">🛡️ 裝備與技能百科</button>
             <button onclick="switchTab('craft')" id="btn-tab-craft" class="nav-btn">🛠️ 製作與配方百科</button>
             <button onclick="switchTab('cards')" id="btn-tab-cards" class="nav-btn">🎴 怪物與卡片手冊</button>
-            <button onclick="switchTab('monster')" id="btn-tab-monster" class="nav-btn" hidden>👹 怪物百科 Alpha</button>
+            <button onclick="switchTab('monster')" id="btn-tab-monster" class="nav-btn" hidden>👹 怪物百科 Beta</button>
         </div>
     </header>
 
@@ -1249,23 +1249,27 @@
         </div>
     </div>
 
-    <!-- ------------------ MONSTER UI ALPHA PANE ------------------ -->
+    <!-- ------------------ MONSTER UI BETA PANE ------------------ -->
     <div id="tab-content-monster" class="tab-pane">
         <div class="wiki-container">
             <aside class="sidebar">
-                <div class="sidebar-title">怪物搜尋結果</div>
+                <div class="sidebar-title">怪物／掉落查詢結果</div>
                 <div id="monster-search-results"></div>
             </aside>
             <main class="content-area">
                 <div class="header-bar">
                     <div class="wiki-title">
-                        <h2>怪物百科 Alpha</h2>
-                        <span>查詢怪物等級、HP、所在地圖與基礎掉落</span>
+                        <h2>怪物百科 Beta</h2>
+                        <span>查詢怪物、地圖與遊戲基礎掉落</span>
                     </div>
                     <div class="search-box">
                         <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
                         <input type="text" id="search-monster" placeholder="搜尋怪物名稱或 Monster ID">
                     </div>
+                </div>
+                <div id="monster-search-modes" role="group" aria-label="怪物百科搜尋模式">
+                    <button type="button" class="category-btn" data-monster-mode="monster">怪物</button>
+                    <button type="button" class="category-btn" data-monster-mode="drop">掉落物</button>
                 </div>
                 <div class="recipe-list" id="monster-detail">
                     <p>請搜尋並選擇怪物。</p>
@@ -1398,7 +1402,7 @@
         // ------------------ GLOBAL TAB SYSTEM ------------------
         let currentTab = 'equip';
 
-        function switchTab(tabId, searchKeyword = '') {
+        function switchTab(tabId, searchKeyword = '', options = {}) {
             currentTab = tabId;
             
             // Toggle active pane
@@ -1424,17 +1428,20 @@
                 }
             }
             
-            const url = new URL(window.location.href);
-            url.searchParams.set('tab', tabId);
-            if (searchKeyword) {
-                url.searchParams.set('search', searchKeyword);
-            } else {
-                url.searchParams.delete('search');
-                if (tabId === 'cards') {
-                    selectRegion('home');
+            if (options.syncHistory !== false) {
+                const url = new URL(window.location.href);
+                url.searchParams.set('tab', tabId);
+                if (searchKeyword && tabId !== 'monster') {
+                    url.searchParams.set('search', searchKeyword);
+                } else {
+                    url.searchParams.delete('search');
+                    if (tabId === 'cards') {
+                        selectRegion('home');
+                    }
                 }
+                window.history.replaceState({}, '', url.toString());
             }
-            window.history.replaceState({}, '', url.toString());
+            if (tabId === 'monster' && window.MonsterWikiView) window.MonsterWikiView.activate();
         }
 
         // GLOBALS & INITIALIZATION
@@ -1448,6 +1455,7 @@
             const searchParam = params.get('search') || '';
 
             if (isMonsterUIAlphaEnabled() && window.MonsterWikiView) {
+                if (window.MonsterWikiData) window.MonsterWikiData.setItemLabelSource(EQUIP_DATA);
                 const monsterReady = await window.MonsterWikiView.init();
                 document.documentElement.dataset.monsterUiAlphaMode = monsterReady ? 'enabled' : 'fallback';
                 if (!monsterReady && tabParam === 'monster') tabParam = 'equip';

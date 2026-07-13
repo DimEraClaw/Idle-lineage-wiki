@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimeraclaw.github.io/Idle-lineage-wiki/schemas/equipment-view-index.schema.json",
+  "title": "Equipment View Index 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset", "records", "schemaVersion", "viewPayloadVersion"],
+  "properties": {
+    "dataset": { "const": "equipment_view_index" },
+    "schemaVersion": { "const": "1.0.0" },
+    "viewPayloadVersion": { "const": "1.0.0" },
+    "records": {
+      "type": "array",
+      "minItems": 786,
+      "maxItems": 786,
+      "items": { "$ref": "#/$defs/summary" }
+    }
+  },
+  "$defs": {
+    "entityRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entityId", "entityType"],
+      "properties": {
+        "entityId": { "type": "string", "minLength": 1 },
+        "entityType": { "const": "equipment" }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseStats", "classRequirements", "description", "detailLocator", "displayName", "entityRef", "equipmentGroup", "equipmentId", "equipmentType", "itemType", "price", "rarity", "safeEnhance", "slot", "status"],
+      "properties": {
+        "equipmentId": { "type": "string", "pattern": "^[A-Za-z0-9_]+$" },
+        "displayName": { "type": "string", "minLength": 1 },
+        "itemType": { "enum": ["wpn", "arm", "acc"] },
+        "equipmentGroup": { "enum": ["weapon", "armor", "accessory"] },
+        "equipmentType": { "type": "string", "minLength": 1 },
+        "slot": { "type": "string", "minLength": 1 },
+        "rarity": { "enum": ["common", "legendary", "relic", null] },
+        "price": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["amount"],
+          "properties": { "amount": { "type": ["number", "null"] } }
+        },
+        "description": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["canonicalText"],
+          "properties": { "canonicalText": { "type": ["string", "null"] } }
+        },
+        "classRequirements": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["baseClasses"],
+          "properties": {
+            "baseClasses": {
+              "anyOf": [
+                { "type": "null" },
+                { "type": "array", "uniqueItems": true, "items": { "enum": ["royal", "knight", "elf", "mage", "dark", "dragon", "illusion", "warrior"] } }
+              ]
+            }
+          }
+        },
+        "safeEnhance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enhanceable", "safeLevel"],
+          "properties": {
+            "enhanceable": { "type": ["boolean", "null"] },
+            "safeLevel": { "type": ["integer", "null"] }
+          }
+        },
+        "baseStats": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["value", "valueState"],
+            "properties": {
+              "value": { "type": "number" },
+              "valueState": { "enum": ["explicit", "explicit_zero"] }
+            }
+          }
+        },
+        "status": { "enum": ["complete", "partial", "unresolved", "review_required"] },
+        "entityRef": { "$ref": "#/$defs/entityRef" },
+        "detailLocator": { "type": "string", "pattern": "^data/equipment/equipment-details-[0-9a-f]\\.json$" }
+      }
+    }
+  }
+}

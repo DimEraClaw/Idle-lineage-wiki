@@ -1315,6 +1315,7 @@
         let equipmentViewAdapter = null;
         let equipmentViewRecords = [];
         let equipmentViewNavigationBound = false;
+        let equipmentViewActiveDetailId = null;
 
         function isEquipmentDataViewEnabled() {
             return new URLSearchParams(window.location.search).get('equipmentData') === '1';
@@ -2863,6 +2864,7 @@
             const content = document.getElementById('detail-modal-content');
             if (!item) {
                 if (!isEquipmentDatasetViewReady()) return;
+                equipmentViewActiveDetailId = String(itemId);
                 title.textContent = '找不到裝備';
                 content.innerHTML = `<div style="color:var(--text-secondary);">找不到 Equipment ID：${String(itemId).replace(/[&<>"']/g, '')}</div>`;
                 modal.classList.add('active');
@@ -2871,6 +2873,7 @@
             }
 
             if (isEquipmentDatasetViewReady()) {
+                equipmentViewActiveDetailId = item.id;
                 loadEquipmentDiagnosticsForDetail(item.id);
                 if (options.updateHistory !== false) {
                     const url = new URL(window.location.href);
@@ -2880,7 +2883,35 @@
                     url.searchParams.set('equipment', item.id);
                     window.history.pushState({ equipmentId: item.id }, '', url.toString());
                 }
+                title.textContent = item.name;
+                content.innerHTML = '<div data-equipment-detail-state="loading" style="color:var(--text-secondary);">詳細資料載入中……</div>';
+                modal.classList.add('active');
+                overlay.classList.add('active');
+                equipmentViewAdapter.getDetail(item.id).then(detail => {
+                    if (equipmentViewActiveDetailId !== item.id) return;
+                    if (!detail) {
+                        content.innerHTML = '<div data-equipment-detail-state="error" style="color:var(--text-secondary);">詳細資料載入失敗</div>';
+                        setEquipmentDataViewState('dataset', true);
+                        return;
+                    }
+                    renderEquipmentDetailContent(detail);
+                    setEquipmentDataViewState('dataset', true);
+                }).catch(() => {
+                    if (equipmentViewActiveDetailId === item.id) {
+                        content.innerHTML = '<div data-equipment-detail-state="error" style="color:var(--text-secondary);">詳細資料載入失敗</div>';
+                    }
+                });
+                return;
             }
+
+            renderEquipmentDetailContent(item);
+        }
+
+        function renderEquipmentDetailContent(item) {
+            const modal = document.getElementById('detail-modal');
+            const overlay = document.getElementById('detail-modal-overlay');
+            const title = document.getElementById('detail-modal-title');
+            const content = document.getElementById('detail-modal-content');
 
             let rarityCn = '普通';
             if (item.rarity === 'legendary') rarityCn = '傳說';
@@ -2955,6 +2986,7 @@
         }
 
         function closeDetailModal(updateHistory = true) {
+            equipmentViewActiveDetailId = null;
             document.getElementById('detail-modal').classList.remove('active');
             document.getElementById('detail-modal-overlay').classList.remove('active');
             if (updateHistory && isEquipmentDatasetViewReady()) {

@@ -126,6 +126,8 @@
         const legacyById = new Map(legacyRecords.map(record => [record.id, record]));
         let readModels = [];
         let byId = new Map();
+        let detailById = new Map();
+        let detailPromises = new Map();
         let loadPromise = null;
         let diagnosticsPromise = null;
         let state = { ready: false, error: null, source: 'legacy', count: 0, renderTimeMs: null, diagnosticsReady: false, diagnosticsError: null };
@@ -158,6 +160,12 @@
                 state.error = null;
                 state.source = 'dataset';
                 state.count = readModels.length;
+                const repositoryState = repository.getState();
+                state.initialPayloadBytes = repositoryState.performance.responseBytes.index || 0;
+                state.indexFetchTimeMs = repositoryState.performance.fetchTimeMs;
+                state.indexParseTimeMs = repositoryState.performance.parseTimeMs;
+                state.indexBuildTimeMs = repositoryState.performance.indexBuildTimeMs;
+                state.indexReadyTimeMs = repositoryState.performance.totalReadyTimeMs;
                 return true;
             })();
             return loadPromise;
@@ -181,6 +189,30 @@
             return diagnosticsPromise;
         }
 
+        async function getDetail(equipmentId) {
+            const id = String(equipmentId || '');
+            if (detailById.has(id)) {
+                state.detailCacheHits = (state.detailCacheHits || 0) + 1;
+                return clone(detailById.get(id));
+            }
+            if (detailPromises.has(id)) return detailPromises.get(id);
+            const promise = (async () => {
+                if (!repository || typeof repository.loadEquipmentDetail !== 'function') return null;
+                const record = await repository.loadEquipmentDetail(id);
+                if (!record) return null;
+                const model = toReadModel(record, legacyById.get(id));
+                detailById.set(id, model);
+                state.detailCacheCount = detailById.size;
+                const repositoryState = repository.getState();
+                state.detailFetchTimeMs = repositoryState.performance.detailFetchTimeMs;
+                state.detailParseTimeMs = repositoryState.performance.detailParseTimeMs;
+                state.detailCacheHits = repositoryState.performance.detailCacheHits;
+                return clone(model);
+            })();
+            detailPromises.set(id, promise);
+            return promise;
+        }
+
         function search(keyword) {
             const query = String(keyword || '').trim().toLocaleLowerCase();
             if (!query) return clone(readModels);
@@ -192,6 +224,7 @@
             ensureDiagnostics,
             getAll: () => clone(readModels),
             getById: equipmentId => clone(byId.get(String(equipmentId || '')) || null),
+            getDetail,
             search,
             getState: () => clone(state),
             setRenderTime: milliseconds => { state.renderTimeMs = Number(milliseconds); }

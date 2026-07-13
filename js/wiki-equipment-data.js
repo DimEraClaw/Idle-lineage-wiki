@@ -11,6 +11,7 @@
         diagnostics: 'data/equipment/diagnostics.json',
         unresolved: 'data/equipment/unresolved.json'
     });
+    const INDEX_URL = 'data/equipment/equipment-index.json';
     const CLASS_KEYS = Object.freeze(['dark', 'dragon', 'elf', 'illusion', 'knight', 'mage', 'royal', 'warrior']);
     const SEARCH_LABELS = Object.freeze({
         weapon: '武器',
@@ -70,6 +71,9 @@
         let loadPromise = null;
         let equipmentLoadPromise = null;
         let diagnosticsLoadPromise = null;
+        let detailLoadPromises = new Map();
+        let detailRecordsById = new Map();
+        let summaryRecordsById = new Map();
         let recordsById = new Map();
         let indexes = emptyIndexes();
         let state = emptyState();
@@ -92,11 +96,15 @@
         function emptyState() {
             return {
                 ready: false,
+                indexReady: false,
+                canonicalReady: false,
                 loading: false,
                 error: null,
                 diagnosticsReady: false,
                 diagnosticsLoading: false,
                 diagnosticsError: null,
+                detailCacheCount: 0,
+                detailErrors: {},
                 optionalErrors: [],
                 ambiguousNameCount: 0,
                 indexCounts: {},
@@ -108,13 +116,19 @@
                     totalReadyTimeMs: 0,
                     memoryEstimateBytes: 0,
                     searchAverageMs: null,
-                    diagnosticsLazyLoadMs: null
+                    diagnosticsLazyLoadMs: null,
+                    detailFetchTimeMs: null,
+                    detailParseTimeMs: null,
+                    detailCacheHits: 0
                 }
             };
         }
 
         function clear(error) {
             recordsById = new Map();
+            summaryRecordsById = new Map();
+            detailRecordsById = new Map();
+            detailLoadPromises = new Map();
             indexes = emptyIndexes();
             state = emptyState();
             state.error = error ? String(error.message || error) : null;
@@ -242,9 +256,10 @@
             };
             const indexCharacters = Array.from(indexes.searchableText.values()).reduce((sum, text) => sum + text.length, 0);
             state.performance.memoryEstimateBytes =
-                state.performance.responseBytes.equipment +
-                state.performance.responseBytes.diagnostics +
-                state.performance.responseBytes.unresolved +
+                (state.performance.responseBytes.equipment || 0) +
+                (state.performance.responseBytes.index || 0) +
+                (state.performance.responseBytes.diagnostics || 0) +
+                (state.performance.responseBytes.unresolved || 0) +
                 indexCharacters * 2 +
                 equipmentRecords.length * 160;
             state.performance.indexBuildTimeMs = now() - start;
@@ -252,10 +267,11 @@
 
         async function load() {
             if (loadPromise) return loadPromise;
-            if (state.ready) return loadDiagnostics();
+            if (state.canonicalReady) return loadDiagnostics();
             loadPromise = (async () => {
                 const totalStart = now();
-                clear();
+                const hadIndex = state.indexReady;
+                if (!hadIndex) clear();
                 state.loading = true;
                 if (!fetchImpl) {
                     clear('fetch unavailable');
@@ -278,6 +294,7 @@
                         unresolvedRecords = diagnosticsResult.document.records.filter(record => record.status === 'unresolved');
                     }
                     state.performance.responseBytes = {
+                        ...(hadIndex ? state.performance.responseBytes : {}),
                         equipment: equipmentResult.bytes,
                         diagnostics: diagnosticsResult.bytes,
                         unresolved: unresolvedResult.bytes
@@ -286,6 +303,7 @@
                     state.performance.parseTimeMs = equipmentResult.parseMs + diagnosticsResult.parseMs + unresolvedResult.parseMs;
                     buildIndexes(equipmentResult.document.records, diagnosticsResult.document.records, unresolvedRecords);
                     state.ready = true;
+                    state.canonicalReady = true;
                     state.loading = false;
                     state.diagnosticsReady = true;
                     state.performance.totalReadyTimeMs = now() - totalStart;
@@ -299,7 +317,7 @@
         }
 
         async function loadEquipment() {
-            if (state.ready) return true;
+            if (state.indexReady || state.canonicalReady) return true;
             if (equipmentLoadPromise) return equipmentLoadPromise;
             equipmentLoadPromise = (async () => {
                 const totalStart = now();
@@ -310,13 +328,16 @@
                     return false;
                 }
                 try {
-                    const result = await fetchDocument(URLS.equipment, true);
-                    requireEnvelope(result.document, 'equipment', URLS.equipment);
-                    state.performance.responseBytes = { equipment: result.bytes, diagnostics: 0, unresolved: 0 };
+                    const result = await fetchDocument(INDEX_URL, true);
+                    requireEnvelope(result.document, 'equipment_view_index', INDEX_URL);
+                    if (result.document.viewPayloadVersion !== '1.0.0') throw new Error('Invalid Equipment view payload version');
+                    state.performance.responseBytes = { index: result.bytes, equipment: 0, diagnostics: 0, unresolved: 0 };
                     state.performance.fetchTimeMs = result.fetchMs;
                     state.performance.parseTimeMs = result.parseMs;
                     buildIndexes(result.document.records, [], []);
+                    summaryRecordsById = new Map(result.document.records.map(record => [record.equipmentId, freezeDeep(clone(record))]));
                     state.ready = true;
+                    state.indexReady = true;
                     state.loading = false;
                     state.performance.totalReadyTimeMs = now() - totalStart;
                     return true;
@@ -326,6 +347,57 @@
                 }
             })();
             return equipmentLoadPromise;
+        }
+
+        function validDetailLocator(locator) {
+            return /^data\/equipment\/equipment-details-[0-9a-f]\.json$/.test(String(locator || ''));
+        }
+
+        async function loadEquipmentDetail(equipmentId) {
+            const id = String(equipmentId || '');
+            if (detailRecordsById.has(id)) {
+                state.performance.detailCacheHits += 1;
+                return clone(detailRecordsById.get(id));
+            }
+            if (state.canonicalReady && recordsById.has(id)) {
+                state.performance.detailCacheHits += 1;
+                return getEquipmentById(id);
+            }
+            const summary = summaryRecordsById.get(id);
+            if (!summary || !validDetailLocator(summary.detailLocator)) return null;
+            const locator = summary.detailLocator;
+            if (!detailLoadPromises.has(locator)) {
+                detailLoadPromises.set(locator, (async () => {
+                    try {
+                        const result = await fetchDocument(locator, true);
+                        requireEnvelope(result.document, 'equipment_view_details', locator);
+                        const bucket = locator.match(/equipment-details-([0-9a-f])\.json$/)[1];
+                        if (result.document.viewPayloadVersion !== '1.0.0' || result.document.bucket !== bucket) {
+                            throw new Error('Invalid Equipment detail payload version or bucket');
+                        }
+                        const seen = new Set();
+                        result.document.records.forEach(record => {
+                            if (!record || typeof record.equipmentId !== 'string' || seen.has(record.equipmentId)) {
+                                throw new Error('Duplicate or invalid Equipment detail ID');
+                            }
+                            const owner = summaryRecordsById.get(record.equipmentId);
+                            if (!owner || owner.detailLocator !== locator) throw new Error('Invalid Equipment detail locator coverage');
+                            seen.add(record.equipmentId);
+                            detailRecordsById.set(record.equipmentId, freezeDeep(clone(record)));
+                        });
+                        state.detailCacheCount = detailRecordsById.size;
+                        state.performance.detailFetchTimeMs = result.fetchMs;
+                        state.performance.detailParseTimeMs = result.parseMs;
+                        state.performance.responseBytes[locator] = result.bytes;
+                        return true;
+                    } catch (error) {
+                        state.detailErrors[locator] = String(error.message || error);
+                        return false;
+                    }
+                })());
+            }
+            const loaded = await detailLoadPromises.get(locator);
+            return loaded ? clone(detailRecordsById.get(id) || null) : null;
         }
 
         function replaceDiagnosticIndexes(diagnosticRecords, unresolvedRecords) {
@@ -442,6 +514,7 @@
         return Object.freeze({
             load,
             loadEquipment,
+            loadEquipmentDetail,
             loadDiagnostics,
             getEquipmentById,
             getEquipmentByName,
@@ -459,5 +532,5 @@
         });
     }
 
-    return Object.freeze({ createEquipmentRepository, URLS, SEARCH_LABELS });
+    return Object.freeze({ createEquipmentRepository, URLS, INDEX_URL, SEARCH_LABELS });
 });

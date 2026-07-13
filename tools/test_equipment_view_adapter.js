@@ -4,7 +4,7 @@ const assert = require('assert');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
-const { createEquipmentRepository, URLS } = require('../js/wiki-equipment-data.js');
+const { createEquipmentRepository, URLS, INDEX_URL } = require('../js/wiki-equipment-data.js');
 const { createEquipmentViewAdapter, toReadModel } = require('../js/wiki-equipment-view-adapter.js');
 const { SEARCH_FIXTURES } = require('../js/wiki-equipment-shadow-adapter.js');
 
@@ -14,7 +14,13 @@ const legacyMatch = html.match(/const EQUIP_DATA = (\[.*?\]);\r?\n/s);
 assert(legacyMatch, 'EQUIP_DATA literal was not found');
 const legacy = JSON.parse(legacyMatch[1]);
 const legacyEquipment = legacy.filter(record => record.category === 'equipment');
-const documents = Object.fromEntries(Object.values(URLS).map(url => [url, fs.readFileSync(path.join(ROOT, url), 'utf8')]));
+const viewUrls = [INDEX_URL, ...fs.readdirSync(path.join(ROOT, 'data/equipment'))
+    .filter(name => /^equipment-details-[0-9a-f]\.json$/.test(name))
+    .map(name => 'data/equipment/' + name)];
+const documents = Object.fromEntries([...Object.values(URLS), ...viewUrls].map(url => [url, fs.readFileSync(path.join(ROOT, url), 'utf8')]));
+const indexDocument = JSON.parse(documents[INDEX_URL]);
+const accDetailUrl = indexDocument.records.find(record => record.equipmentId === 'acc_116').detailLocator;
+const sameShardEquipmentId = indexDocument.records.find(record => record.detailLocator === accDetailUrl && record.equipmentId !== 'acc_116').equipmentId;
 
 function fetchFrom(source, calls) {
     return async url => {
@@ -50,12 +56,17 @@ async function main() {
     const { repository, adapter } = await makeAdapter(documents, calls);
     const legacyHash = hash(legacy);
     await test('view load succeeds', async () => assert.strictEqual(await adapter.load(), true));
-    await test('initial view fetches only equipments.json', async () => assert.deepStrictEqual(calls, [URLS.equipment]));
+    await test('initial view fetches only equipment-index.json', async () => assert.deepStrictEqual(calls, [INDEX_URL]));
     await test('view exposes 786 equipment records', async () => assert.strictEqual(adapter.getAll().length, 786));
     await test('repository is ready after equipment-only load', async () => assert.strictEqual(repository.getState().ready, true));
     await test('diagnostics are not ready initially', async () => assert.strictEqual(repository.getState().diagnosticsReady, false));
     await test('adapter source is Dataset', async () => assert.strictEqual(adapter.getState().source, 'dataset'));
     await test('adapter count is 786', async () => assert.strictEqual(adapter.getState().count, 786));
+    await test('summary index excludes full verification and relations', async () => {
+        const summary = repository.getEquipmentById('acc_116');
+        assert.strictEqual(summary.verification, undefined);
+        assert.strictEqual(summary.relations, undefined);
+    });
     await test('weapon count remains 309', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'weapon').length, 309));
     await test('armor count remains 339', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'armor').length, 339));
     await test('accessory count remains 138', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'accessory').length, 138));
@@ -68,10 +79,14 @@ async function main() {
     await test('all-class requirement maps to all', async () => assert.strictEqual(adapter.getById('acc_116').req, 'all'));
     await test('safe level preserves explicit zero', async () => assert.strictEqual(adapter.getById('acc_116').safe, 0));
     await test('entityRef is retained', async () => assert.deepStrictEqual(adapter.getById('acc_116').entityRef, { entityId: 'acc_116', entityType: 'equipment' }));
-    await test('formal relations are retained', async () => assert(adapter.getById('acc_116').relations.length > 0));
-    await test('Monster relation uses Entity ID navigation', async () => assert(adapter.getById('acc_116').sources.some(x => /tab=monster&amp;monster=/.test(x))));
-    await test('relation HTML does not contain onclick', async () => assert(adapter.getAll().every(x => x.sources.every(source => !/onclick/i.test(source)))));
-    await test('Craft relations do not invent a navigation URL', async () => assert(adapter.getAll().flatMap(x => x.sources).filter(x => x.includes('【製作')).every(x => !/href=/i.test(x))));
+    const accDetail = await adapter.getDetail('acc_116');
+    await test('formal relations are retained after lazy Detail load', async () => assert(accDetail.relations.length > 0));
+    await test('Monster relation uses Entity ID navigation', async () => assert(accDetail.sources.some(x => /tab=monster&amp;monster=/.test(x))));
+    await test('relation HTML does not contain onclick', async () => assert(accDetail.sources.every(source => !/onclick/i.test(source))));
+    await test('Craft relations do not invent a navigation URL', async () => {
+        const detail = await adapter.getDetail('wpn_emperor_blade');
+        assert(detail.sources.filter(x => x.includes('【製作')).every(x => !/href=/i.test(x)));
+    });
     await test('unknown Equipment ID returns null', async () => assert.strictEqual(adapter.getById('not-real'), null));
     await test('ID search is case-insensitive', async () => assert(adapter.search('ACC_116').some(x => x.id === 'acc_116')));
     await test('full Chinese name search works', async () => assert(adapter.search('傳送控制戒指').some(x => x.id === 'acc_116')));
@@ -100,45 +115,72 @@ async function main() {
         adapter.setRenderTime(12.5);
         assert.strictEqual(adapter.getState().renderTimeMs, 12.5);
     });
+    await test('Detail fetch loads only the selected stable shard', async () => assert.strictEqual(calls.filter(url => url === accDetailUrl).length, 1));
+    await test('reopening Detail uses cache', async () => {
+        await adapter.getDetail('acc_116');
+        assert.strictEqual(calls.filter(url => url === accDetailUrl).length, 1);
+    });
+    await test('a second Equipment in the same shard does not refetch', async () => {
+        await adapter.getDetail(sameShardEquipmentId);
+        assert.strictEqual(calls.filter(url => url === accDetailUrl).length, 1);
+    });
+    await test('Detail 404 is local and keeps index View ready', async () => {
+        const source = cloneDocuments();
+        delete source[accDetailUrl];
+        const instance = await makeAdapter(source, []);
+        assert.strictEqual(await instance.adapter.load(), true);
+        assert.strictEqual(await instance.adapter.getDetail('acc_116'), null);
+        assert.strictEqual(instance.adapter.getState().ready, true);
+        assert.strictEqual(instance.adapter.getAll().length, 786);
+    });
+    await test('Detail parse error is local and keeps cards searchable', async () => {
+        const source = cloneDocuments();
+        source[accDetailUrl] = '{';
+        const instance = await makeAdapter(source, []);
+        assert.strictEqual(await instance.adapter.load(), true);
+        assert.strictEqual(await instance.adapter.getDetail('acc_116'), null);
+        assert(instance.adapter.search('acc_116').some(record => record.id === 'acc_116'));
+    });
     await test('detail diagnostics load lazily', async () => {
         const result = await adapter.ensureDiagnostics('acc_116');
         assert.strictEqual(result.ready, true);
         assert(calls.includes(URLS.diagnostics));
         assert(calls.includes(URLS.unresolved));
     });
-    await test('lazy diagnostics do not refetch equipment', async () => assert.strictEqual(calls.filter(url => url === URLS.equipment).length, 1));
+    await test('lazy diagnostics do not fetch canonical equipment', async () => assert.strictEqual(calls.filter(url => url === URLS.equipment).length, 0));
     await test('repeated diagnostics reuse one request', async () => {
         await adapter.ensureDiagnostics('acc_116');
         assert.strictEqual(calls.filter(url => url === URLS.diagnostics).length, 1);
     });
-    await test('shadow full load after view load does not refetch equipment', async () => {
+    await test('shadow full load after view load fetches canonical equipment once', async () => {
         assert.strictEqual(await repository.load(), true);
         assert.strictEqual(calls.filter(url => url === URLS.equipment).length, 1);
+        assert.strictEqual(calls.filter(url => url === INDEX_URL).length, 1);
     });
-    await test('equipment 404 falls back without rejection', async () => {
+    await test('index 404 falls back without rejection', async () => {
         const source = cloneDocuments();
-        delete source[URLS.equipment];
+        delete source[INDEX_URL];
         const instance = await makeAdapter(source, []);
         assert.strictEqual(await instance.adapter.load(), false);
         assert.strictEqual(instance.adapter.getAll().length, 0);
     });
-    await test('equipment parse error falls back without rejection', async () => {
+    await test('index parse error falls back without rejection', async () => {
         const source = cloneDocuments();
-        source[URLS.equipment] = '{';
+        source[INDEX_URL] = '{';
         const instance = await makeAdapter(source, []);
         assert.strictEqual(await instance.adapter.load(), false);
     });
-    await test('invalid equipment envelope falls back', async () => {
+    await test('invalid index envelope falls back', async () => {
         const source = cloneDocuments();
-        source[URLS.equipment] = JSON.stringify({ dataset: 'wrong', schemaVersion: '1.0.0', records: [] });
+        source[INDEX_URL] = JSON.stringify({ dataset: 'wrong', schemaVersion: '1.0.0', records: [] });
         const instance = await makeAdapter(source, []);
         assert.strictEqual(await instance.adapter.load(), false);
     });
     await test('duplicate Equipment ID fails closed in repository', async () => {
         const source = cloneDocuments();
-        const envelope = JSON.parse(source[URLS.equipment]);
+        const envelope = JSON.parse(source[INDEX_URL]);
         envelope.records.push(envelope.records[0]);
-        source[URLS.equipment] = JSON.stringify(envelope);
+        source[INDEX_URL] = JSON.stringify(envelope);
         const instance = await makeAdapter(source, []);
         assert.strictEqual(await instance.adapter.load(), false);
     });

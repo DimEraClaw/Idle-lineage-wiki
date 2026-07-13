@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dim-era-claw.github.io/idle-lineage-wiki/schemas/legacy-entity-mapping.schema.json",
+  "title": "Legacy Entity Mapping Dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "mappings"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "mappings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/mapping" }
+    }
+  },
+  "$defs": {
+    "entityRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entityType", "entityId"],
+      "properties": {
+        "entityType": { "enum": ["monster", "map", "item", "card"] },
+        "entityId": { "type": "string", "minLength": 1 }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidenceType", "sourceLocation"],
+      "properties": {
+        "evidenceType": { "enum": ["code", "data"] },
+        "sourceLocation": { "type": "string", "minLength": 1 }
+      }
+    },
+    "versionScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["validFrom", "validTo"],
+      "properties": {
+        "validFrom": { "type": ["string", "null"] },
+        "validTo": { "type": ["string", "null"] }
+      }
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "mappingType", "sourceScope", "sourceValue", "normalizedValue", "target", "candidates", "status", "matchMethod", "sourceLocation", "evidence", "versionScope", "replacementMappingId", "notes"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^mapping_[a-z0-9_]+$" },
+        "mappingType": { "enum": ["monster_name_to_id", "drop_owner_to_monster_id", "wiki_monster_to_monster_id", "craft_monster_to_monster_id", "map_label_to_map_id", "wiki_location_to_map_id", "legacy_card_key_to_monster_id", "legacy_card_key_to_card_candidate", "item_name_to_item_id", "alias_to_entity_id"] },
+        "sourceScope": { "type": "string", "minLength": 1 },
+        "sourceValue": { "type": "string", "minLength": 1 },
+        "normalizedValue": { "type": "string", "minLength": 1 },
+        "target": { "oneOf": [{ "$ref": "#/$defs/entityRef" }, { "type": "null" }] },
+        "candidates": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/entityRef" } },
+        "status": { "enum": ["resolved", "unresolved", "ambiguous", "missing_target", "deprecated", "conflict", "compatibility_only"] },
+        "matchMethod": { "enum": ["exact_id", "exact_name", "verified_alias", "normalized_display", "manual_mapping", "historical_mapping", "unresolved"] },
+        "sourceLocation": { "type": "string", "minLength": 1 },
+        "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+        "versionScope": { "$ref": "#/$defs/versionScope" },
+        "replacementMappingId": { "type": ["string", "null"], "pattern": "^mapping_[a-z0-9_]+$" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "enum": ["resolved", "compatibility_only"] } }, "required": ["status"] },
+          "then": { "properties": { "target": { "$ref": "#/$defs/entityRef" }, "evidence": { "minItems": 1 } } }
+        },
+        {
+          "if": { "properties": { "status": { "enum": ["unresolved", "missing_target"] } }, "required": ["status"] },
+          "then": { "properties": { "target": { "type": "null" }, "matchMethod": { "const": "unresolved" } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "ambiguous" } }, "required": ["status"] },
+          "then": { "properties": { "target": { "type": "null" }, "candidates": { "minItems": 2 } } }
+        }
+      ]
+    }
+  }
+}

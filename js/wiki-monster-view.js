@@ -347,8 +347,8 @@
         bindEvents();
         updateModeControls();
         renderSearchResults();
-        document.documentElement.dataset.monsterUiAlphaReady = 'true';
-        document.documentElement.dataset.monsterUiAlphaCounts = JSON.stringify(global.MonsterWikiData.getState().counts);
+        document.documentElement.dataset.monsterUiReady = 'true';
+        document.documentElement.dataset.monsterUiCounts = JSON.stringify(global.MonsterWikiData.getState().counts);
         initialized = true;
         return true;
     }

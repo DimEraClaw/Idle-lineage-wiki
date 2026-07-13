@@ -1093,7 +1093,7 @@
             <button onclick="switchTab('equip')" id="btn-tab-equip" class="nav-btn active-tab-btn">🛡️ 裝備與技能百科</button>
             <button onclick="switchTab('craft')" id="btn-tab-craft" class="nav-btn">🛠️ 製作與配方百科</button>
             <button onclick="switchTab('cards')" id="btn-tab-cards" class="nav-btn">🎴 怪物與卡片手冊</button>
-            <button onclick="switchTab('monster')" id="btn-tab-monster" class="nav-btn" hidden>👹 怪物百科 Beta</button>
+            <button onclick="switchTab('monster')" id="btn-tab-monster" class="nav-btn" hidden>👹 怪物百科</button>
         </div>
     </header>
 
@@ -1249,7 +1249,7 @@
         </div>
     </div>
 
-    <!-- ------------------ MONSTER UI BETA PANE ------------------ -->
+    <!-- ------------------ MONSTER WIKI PANE ------------------ -->
     <div id="tab-content-monster" class="tab-pane">
         <div class="wiki-container">
             <aside class="sidebar">
@@ -1259,7 +1259,7 @@
             <main class="content-area">
                 <div class="header-bar">
                     <div class="wiki-title">
-                        <h2>怪物百科 Beta</h2>
+                        <h2>怪物百科</h2>
                         <span>查詢怪物、地圖與遊戲基礎掉落</span>
                     </div>
                     <div class="search-box">
@@ -1299,7 +1299,7 @@
     <script>
         window.CRAFT_WIKI_PHASE1_ENABLED = false;
         window.WIKI_DATA_CORE_ENABLED = false;
-        window.MONSTER_UI_ALPHA = false;
+        window.MONSTER_UI_ENABLED = true;
 
         let craftWikiInitializationPromise = null;
         let legacyCraftWikiInitialized = false;
@@ -1327,8 +1327,8 @@
             return window.WIKI_DATA_CORE_ENABLED === true || testValue === '1';
         }
 
-        function isMonsterUIAlphaEnabled() {
-            return window.MONSTER_UI_ALPHA === true || new URLSearchParams(window.location.search).get('monsterUI') === '1';
+        function isMonsterUIEnabled() {
+            return window.MONSTER_UI_ENABLED === true || new URLSearchParams(window.location.search).get('monsterUI') === '1';
         }
 
         function registerCraftAdapterIfEnabled() {
@@ -1454,14 +1454,14 @@
             let tabParam = params.get('tab') || 'equip';
             const searchParam = params.get('search') || '';
 
-            if (isMonsterUIAlphaEnabled() && window.MonsterWikiView) {
+            if (isMonsterUIEnabled() && window.MonsterWikiView) {
                 if (window.MonsterWikiData) window.MonsterWikiData.setItemLabelSource(EQUIP_DATA);
                 const monsterReady = await window.MonsterWikiView.init();
-                document.documentElement.dataset.monsterUiAlphaMode = monsterReady ? 'enabled' : 'fallback';
+                document.documentElement.dataset.monsterUiMode = monsterReady ? 'enabled' : 'fallback';
                 if (!monsterReady && tabParam === 'monster') tabParam = 'equip';
             } else {
-                document.documentElement.dataset.monsterUiAlphaMode = 'disabled';
-                document.documentElement.dataset.monsterUiAlphaReady = 'false';
+                document.documentElement.dataset.monsterUiMode = 'disabled';
+                document.documentElement.dataset.monsterUiReady = 'false';
                 if (tabParam === 'monster') tabParam = 'equip';
             }
 

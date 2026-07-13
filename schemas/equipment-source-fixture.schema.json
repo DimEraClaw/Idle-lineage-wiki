@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimeraclaw.github.io/Idle-lineage-wiki/schemas/equipment-source-fixture.schema.json",
+  "title": "Equipment Source Extraction Fixture 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "fixtureType", "sources"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "fixtureType": { "const": "equipment_source_extraction" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sourceId", "sourceFile", "symbolPath", "sourceRole", "extractionMethod", "required", "sourceRevision", "gameVersion", "fieldsOwned", "runtimeMutationAllowed", "purity", "usesDom", "usesPlayerState", "usesLocalStorage"],
+        "properties": {
+          "sourceId": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+          "sourceFile": { "type": "string", "minLength": 1 },
+          "symbolPath": { "type": "string", "minLength": 1 },
+          "sourceRole": { "enum": ["canonical_base", "deterministic_enrichment", "migration_projection", "relation_owner"] },
+          "extractionMethod": { "enum": ["restricted_object_literal", "restricted_constant_literal", "json_parse"] },
+          "required": { "type": "boolean" },
+          "sourceRevision": { "type": ["string", "null"] },
+          "gameVersion": { "type": ["string", "null"] },
+          "fieldsOwned": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "runtimeMutationAllowed": { "type": "boolean" },
+          "purity": { "const": "deterministic_no_side_effects" },
+          "usesDom": { "const": false },
+          "usesPlayerState": { "const": false },
+          "usesLocalStorage": { "const": false }
+        }
+      }
+    }
+  }
+}

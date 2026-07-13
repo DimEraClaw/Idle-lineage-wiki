@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimeraclaw.github.io/Idle-lineage-wiki/schemas/equipment-classification-mapping.schema.json",
+  "title": "Equipment Classification Mapping Fixture 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "mappingVersion", "fixtureType", "forbiddenStrategies", "resolvedMappings"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "mappingVersion": { "const": "1.0.0" },
+    "fixtureType": { "const": "equipment_classification_mapping" },
+    "forbiddenStrategies": { "type": "array", "contains": { "const": "display_name_regex" } },
+    "resolvedMappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["equipmentId", "equipmentGroup", "equipmentType", "slot", "method", "sourceLocations", "reason"],
+        "properties": {
+          "equipmentId": { "type": "string", "pattern": "^[A-Za-z0-9_]+$" },
+          "equipmentGroup": { "enum": ["weapon", "armor", "accessory"] },
+          "equipmentType": { "enum": ["one_hand_sword", "two_hand_sword", "dagger", "blunt", "two_hand_blunt", "spear", "two_hand_spear", "bow", "crossbow", "staff", "claw", "dual_blade", "chain_sword", "kiringku", "other_weapon", "armor", "helmet", "cloak", "gloves", "boots", "tshirt", "greaves", "shield", "necklace", "earring", "belt", "ring"] },
+          "slot": { "enum": ["weapon", "arrow", "armor", "helmet", "cloak", "gloves", "boots", "tshirt", "greaves", "shield", "necklace", "earring", "belt", "ring", "pet_weapon", "pet_armor"] },
+          "method": { "enum": ["raw_type_and_slot", "legacy_subtype_mapping", "weapon_tags_id_mapping", "explicit_id_mapping"] },
+          "sourceLocations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

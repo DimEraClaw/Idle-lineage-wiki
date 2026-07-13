@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimeraclaw.github.io/Idle-lineage-wiki/schemas/equipment.schema.json",
+  "title": "Equipment Entity 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["equipmentId", "displayName", "itemType", "equipmentGroup", "equipmentType", "slot", "classRequirements", "rarity", "baseStats", "safeEnhance", "price", "description", "skillRefs", "setRefs", "mechanicRefs", "relations", "verification", "version", "status", "entityRef"],
+  "properties": {
+    "equipmentId": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9_]+$" },
+    "displayName": { "type": "string", "minLength": 1 },
+    "itemType": { "enum": ["wpn", "arm", "acc"] },
+    "equipmentGroup": { "enum": ["weapon", "armor", "accessory"] },
+    "equipmentType": { "anyOf": [{ "$ref": "#/$defs/equipmentType" }, { "type": "null" }] },
+    "slot": { "anyOf": [{ "$ref": "#/$defs/slot" }, { "type": "null" }] },
+    "classRequirements": { "$ref": "#/$defs/classRequirements" },
+    "rarity": { "enum": ["common", "legendary", "relic", null] },
+    "baseStats": { "$ref": "#/$defs/baseStats" },
+    "safeEnhance": { "$ref": "#/$defs/safeEnhance" },
+    "price": { "$ref": "#/$defs/price" },
+    "description": { "$ref": "#/$defs/description" },
+    "skillRefs": { "$ref": "#/$defs/entityRefs" },
+    "setRefs": { "$ref": "#/$defs/entityRefs" },
+    "mechanicRefs": { "$ref": "#/$defs/entityRefs" },
+    "relations": { "type": "array", "items": { "$ref": "#/$defs/relationRef" } },
+    "verification": { "$ref": "#/$defs/verification" },
+    "version": { "$ref": "#/$defs/version" },
+    "status": { "enum": ["complete", "partial", "unresolved", "review_required"] },
+    "entityRef": { "$ref": "#/$defs/equipmentRef" }
+  },
+  "$defs": {
+    "equipmentType": {
+      "enum": ["one_hand_sword", "two_hand_sword", "dagger", "blunt", "two_hand_blunt", "spear", "two_hand_spear", "bow", "crossbow", "staff", "claw", "dual_blade", "chain_sword", "kiringku", "other_weapon", "armor", "helmet", "cloak", "gloves", "boots", "tshirt", "greaves", "shield", "necklace", "earring", "belt", "ring"]
+    },
+    "slot": {
+      "enum": ["weapon", "arrow", "armor", "helmet", "cloak", "gloves", "boots", "tshirt", "greaves", "shield", "necklace", "earring", "belt", "ring", "pet_weapon", "pet_armor"]
+    },
+    "entityRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entityType", "entityId"],
+      "properties": {
+        "entityType": { "type": "string", "minLength": 1 },
+        "entityId": { "type": "string", "minLength": 1 }
+      }
+    },
+    "equipmentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entityType", "entityId"],
+      "properties": {
+        "entityType": { "const": "equipment" },
+        "entityId": { "type": "string", "minLength": 1 }
+      }
+    },
+    "entityRefs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entityRef" }
+    },
+    "relationRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relationType", "relationRef", "target", "status"],
+      "properties": {
+        "relationType": { "type": "string", "minLength": 1 },
+        "relationRef": { "anyOf": [{ "$ref": "#/$defs/entityRef" }, { "type": "null" }] },
+        "target": { "anyOf": [{ "$ref": "#/$defs/entityRef" }, { "type": "null" }] },
+        "status": { "enum": ["resolved", "unresolved"] }
+      }
+    },
+    "classRequirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseClasses", "ruleRefs", "status"],
+      "properties": {
+        "baseClasses": {
+          "anyOf": [
+            { "type": "null" },
+            { "type": "array", "uniqueItems": true, "items": { "enum": ["royal", "knight", "elf", "mage", "dark", "dragon", "illusion", "warrior"] } }
+          ]
+        },
+        "ruleRefs": { "$ref": "#/$defs/entityRefs" },
+        "status": { "enum": ["resolved", "partial", "unresolved"] }
+      }
+    },
+    "statValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "valueState", "unit", "conceptRef"],
+      "properties": {
+        "value": { "type": ["number", "null"] },
+        "valueState": { "enum": ["explicit", "explicit_zero", "derived_zero", "not_applicable", "unresolved"] },
+        "unit": { "type": ["string", "null"] },
+        "conceptRef": { "anyOf": [{ "$ref": "#/$defs/entityRef" }, { "type": "null" }] }
+      },
+      "allOf": [
+        { "if": { "properties": { "valueState": { "enum": ["explicit_zero", "derived_zero"] } } }, "then": { "properties": { "value": { "const": 0 } } } },
+        { "if": { "properties": { "valueState": { "enum": ["not_applicable", "unresolved"] } } }, "then": { "properties": { "value": { "type": "null" } } } }
+      ]
+    },
+    "baseStats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dmgS", "dmgL", "hit", "dmgBonus", "ac", "mr", "er", "dr", "mhp", "mmp", "extraMp", "mdmg", "str", "dex", "con", "int", "wis", "cha", "resFire", "resWater", "resWind", "resEarth"],
+      "properties": {
+        "dmgS": { "$ref": "#/$defs/statValue" }, "dmgL": { "$ref": "#/$defs/statValue" },
+        "hit": { "$ref": "#/$defs/statValue" }, "dmgBonus": { "$ref": "#/$defs/statValue" },
+        "ac": { "$ref": "#/$defs/statValue" }, "mr": { "$ref": "#/$defs/statValue" },
+        "er": { "$ref": "#/$defs/statValue" }, "dr": { "$ref": "#/$defs/statValue" },
+        "mhp": { "$ref": "#/$defs/statValue" }, "mmp": { "$ref": "#/$defs/statValue" },
+        "extraMp": { "$ref": "#/$defs/statValue" }, "mdmg": { "$ref": "#/$defs/statValue" },
+        "str": { "$ref": "#/$defs/statValue" }, "dex": { "$ref": "#/$defs/statValue" },
+        "con": { "$ref": "#/$defs/statValue" }, "int": { "$ref": "#/$defs/statValue" },
+        "wis": { "$ref": "#/$defs/statValue" }, "cha": { "$ref": "#/$defs/statValue" },
+        "resFire": { "$ref": "#/$defs/statValue" }, "resWater": { "$ref": "#/$defs/statValue" },
+        "resWind": { "$ref": "#/$defs/statValue" }, "resEarth": { "$ref": "#/$defs/statValue" }
+      }
+    },
+    "safeEnhance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enhanceable", "safeLevel", "maxLevel", "ruleRefs", "status"],
+      "properties": {
+        "enhanceable": { "type": ["boolean", "null"] },
+        "safeLevel": { "type": ["integer", "null"] },
+        "maxLevel": { "type": ["integer", "null"] },
+        "ruleRefs": { "$ref": "#/$defs/entityRefs" },
+        "status": { "enum": ["resolved", "partial", "unresolved"] }
+      },
+      "allOf": [
+        { "if": { "properties": { "enhanceable": { "const": false } }, "required": ["enhanceable"] }, "then": { "properties": { "safeLevel": { "type": "null" }, "maxLevel": { "type": "null" } } } }
+      ]
+    },
+    "price": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount", "currencyRef", "priceType"],
+      "properties": {
+        "amount": { "type": ["number", "null"] },
+        "currencyRef": { "anyOf": [{ "$ref": "#/$defs/entityRef" }, { "type": "null" }] },
+        "priceType": { "const": "base_item_price" }
+      }
+    },
+    "description": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonicalText", "editorialNote"],
+      "properties": {
+        "canonicalText": { "type": ["string", "null"] },
+        "editorialNote": { "type": ["string", "null"] }
+      }
+    },
+    "fieldProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceFile", "symbolPath", "sourceRevision", "gameVersion", "extractionMethod", "classification", "evidenceRefs", "conflict", "unresolvedReason"],
+      "properties": {
+        "sourceFile": { "type": ["string", "null"] }, "symbolPath": { "type": ["string", "null"] },
+        "sourceRevision": { "type": ["string", "null"] }, "gameVersion": { "type": ["string", "null"] },
+        "extractionMethod": { "type": "string", "minLength": 1 },
+        "classification": { "enum": ["canonical", "derived", "editorial", "relation_summary"] },
+        "evidenceRefs": { "$ref": "#/$defs/entityRefs" }, "conflict": { "type": "boolean" },
+        "unresolvedReason": { "type": ["string", "null"] }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statuses", "fields"],
+      "properties": {
+        "statuses": { "type": "array", "uniqueItems": true, "items": { "enum": ["Official", "Code", "Generated", "Community", "Research", "Test", "Unknown"] } },
+        "fields": { "type": "object", "additionalProperties": { "$ref": "#/$defs/fieldProvenance" } }
+      }
+    },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceRevision", "gameVersion", "schemaVersion", "validFrom", "validTo"],
+      "properties": {
+        "sourceRevision": { "type": ["string", "null"] }, "gameVersion": { "type": ["string", "null"] },
+        "schemaVersion": { "const": "1.0.0" }, "validFrom": { "type": ["string", "null"] }, "validTo": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

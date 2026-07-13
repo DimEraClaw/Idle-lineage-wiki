@@ -1,0 +1,672 @@
+{
+  "fixtureType": "equipment_special_cases",
+  "records": [
+    {
+      "caseId": "armguard",
+      "equipmentId": "armguard_archer",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.armguard_archer",
+          "wiki.html#EQUIP_DATA.armguard_archer"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "armor",
+        "equipmentType": "shield",
+        "slot": "shield"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 15,
+        "safeLevel": 0,
+        "sourceState": "explicit_zero"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "arrow",
+      "equipmentId": "relic_handy_quiver",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_handy_quiver",
+          "wiki.html#EQUIP_DATA.relic_handy_quiver"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "other_weapon",
+        "slot": "arrow"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "bow",
+      "equipmentId": "relic_forgotten_sniperbow",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_forgotten_sniperbow",
+          "wiki.html#EQUIP_DATA.relic_forgotten_sniperbow"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "elf"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "bow",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "chain_sword",
+      "equipmentId": "relic_blacktiger_whip",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_blacktiger_whip",
+          "wiki.html#EQUIP_DATA.relic_blacktiger_whip"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dragon"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "chain_sword",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "claw",
+      "equipmentId": "relic_ancient_spider_claw",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_ancient_spider_claw",
+          "wiki.html#EQUIP_DATA.relic_ancient_spider_claw"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dragon",
+          "knight"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "claw",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "crossbow",
+      "equipmentId": "relic_modded_crossbow",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_modded_crossbow",
+          "wiki.html#EQUIP_DATA.relic_modded_crossbow"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "elf",
+          "illusion"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "crossbow",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "derived_slot",
+      "equipmentId": "relic_amp_staff",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_amp_staff",
+          "wiki.html#EQUIP_DATA.relic_amp_staff"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "staff",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "dual_blade",
+      "equipmentId": "relic_armor_spareblade",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_armor_spareblade",
+          "wiki.html#EQUIP_DATA.relic_armor_spareblade"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "dual_blade",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "earring",
+      "equipmentId": "acc_ear_brave",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.acc_ear_brave",
+          "wiki.html#EQUIP_DATA.acc_ear_brave"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "accessory",
+        "equipmentType": "earring",
+        "slot": "earring"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "explicit_slot",
+      "equipmentId": "acc_116",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.acc_116",
+          "wiki.html#EQUIP_DATA.acc_116"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "accessory",
+        "equipmentType": "ring",
+        "slot": "ring"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 5,
+        "safeLevel": 0,
+        "sourceState": "explicit_zero"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "kiringku",
+      "equipmentId": "relic_croc_soul",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_croc_soul",
+          "wiki.html#EQUIP_DATA.relic_croc_soul"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "illusion"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "kiringku",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "no_enhance",
+      "equipmentId": "acc_ear_brave",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.acc_ear_brave",
+          "wiki.html#EQUIP_DATA.acc_ear_brave"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "accessory",
+        "equipmentType": "earring",
+        "slot": "earring"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "offhand_shield",
+      "equipmentId": "arm_103",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.arm_103",
+          "wiki.html#EQUIP_DATA.arm_103"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "armor",
+        "equipmentType": "shield",
+        "slot": "shield"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 15,
+        "safeLevel": 4,
+        "sourceState": "explicit"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "pet_armor",
+      "equipmentId": "pet_arm_bone",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.pet_arm_bone",
+          "wiki.html#EQUIP_DATA.pet_arm_bone"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "armor",
+        "equipmentType": "armor",
+        "slot": "pet_armor"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 5,
+        "safeLevel": 0,
+        "sourceState": "explicit_zero"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "pet_weapon",
+      "equipmentId": "pet_fang_hound",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.pet_fang_hound",
+          "wiki.html#EQUIP_DATA.pet_fang_hound"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "accessory",
+        "equipmentType": "ring",
+        "slot": "pet_weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 5,
+        "safeLevel": 0,
+        "sourceState": "explicit_zero"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "requirements_all",
+      "equipmentId": "acc_116",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.acc_116",
+          "wiki.html#EQUIP_DATA.acc_116"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "accessory",
+        "equipmentType": "ring",
+        "slot": "ring"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 5,
+        "safeLevel": 0,
+        "sourceState": "explicit_zero"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "requirements_missing",
+      "equipmentId": "wpn_22",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.wpn_22",
+          "wiki.html#EQUIP_DATA.wpn_22"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": null,
+        "sourceState": "missing_unresolved"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "other_weapon",
+        "slot": "arrow"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "missing_unresolved"
+      },
+      "unresolvedReason": "Canonical source omits the field; the fixture preserves null/unresolved semantics."
+    },
+    {
+      "caseId": "ring",
+      "equipmentId": "acc_116",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.acc_116",
+          "wiki.html#EQUIP_DATA.acc_116"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "accessory",
+        "equipmentType": "ring",
+        "slot": "ring"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 5,
+        "safeLevel": 0,
+        "sourceState": "explicit_zero"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "safe_explicit_zero",
+      "equipmentId": "acc_116",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.acc_116",
+          "wiki.html#EQUIP_DATA.acc_116"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ],
+        "sourceState": "explicit_all"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "accessory",
+        "equipmentType": "ring",
+        "slot": "ring"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": 5,
+        "safeLevel": 0,
+        "sourceState": "explicit_zero"
+      },
+      "unresolvedReason": null
+    },
+    {
+      "caseId": "safe_missing",
+      "equipmentId": "wpn_22",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.wpn_22",
+          "wiki.html#EQUIP_DATA.wpn_22"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": null,
+        "sourceState": "missing_unresolved"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "other_weapon",
+        "slot": "arrow"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": true,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "missing_unresolved"
+      },
+      "unresolvedReason": "Canonical source omits the field; the fixture preserves null/unresolved semantics."
+    },
+    {
+      "caseId": "two_hand_weapon",
+      "equipmentId": "relic_armor_spareblade",
+      "evidence": {
+        "sourceLocations": [
+          "js/00-data.js#DB.items.relic_armor_spareblade",
+          "wiki.html#EQUIP_DATA.relic_armor_spareblade"
+        ]
+      },
+      "expectedClassSemantics": {
+        "baseClasses": [
+          "dark"
+        ],
+        "sourceState": "explicit_subset"
+      },
+      "expectedClassification": {
+        "equipmentGroup": "weapon",
+        "equipmentType": "dual_blade",
+        "slot": "weapon"
+      },
+      "expectedSafeSemantics": {
+        "enhanceable": false,
+        "maxLevel": null,
+        "safeLevel": null,
+        "sourceState": "not_applicable"
+      },
+      "unresolvedReason": null
+    }
+  ],
+  "schemaVersion": "1.0.0"
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dimeraclaw.github.io/Idle-lineage-wiki/schemas/equipment-unresolved.schema.json",
+  "title": "Equipment Unresolved Fixture 1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "fixtureType", "fixtureScope", "records"],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "fixtureType": { "const": "equipment_unresolved_examples" },
+    "fixtureScope": { "const": "examples_not_full_786_diagnostics" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "equipmentId", "fieldPath", "code", "reason", "sourceLocation", "candidates", "blocking", "status", "valueState", "evidenceRefs", "notes"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^equipment_diagnostic_[a-z0-9_]+$" },
+          "equipmentId": { "type": "string", "pattern": "^[A-Za-z0-9_]+$" },
+          "fieldPath": { "type": "string", "minLength": 1 },
+          "code": { "enum": ["equipment_field_unresolved", "equipment_runtime_mutation_unresolved", "equipment_type_unresolved", "equipment_slot_unresolved", "equipment_class_requirement_unresolved", "equipment_safe_enhance_unresolved", "equipment_price_conflict", "equipment_description_missing", "equipment_relation_unresolved", "equipment_mechanic_unresolved", "equipment_weight_unverified", "equipment_source_precedence_conflict"] },
+          "reason": { "type": "string", "minLength": 1 },
+          "sourceLocation": { "type": ["string", "null"] },
+          "candidates": { "type": "array", "items": { "type": ["string", "number", "boolean"] } },
+          "blocking": { "type": "boolean" },
+          "status": { "enum": ["unresolved", "review_required"] },
+          "valueState": { "enum": ["missing", "not_applicable", "explicit_zero", "derived_zero", "unresolved", "conflict", "unverified_claim"] },
+          "evidenceRefs": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["entityType", "entityId"], "properties": { "entityType": { "type": "string" }, "entityId": { "type": "string" } } } },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

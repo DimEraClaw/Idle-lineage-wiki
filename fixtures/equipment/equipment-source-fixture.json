@@ -1,0 +1,125 @@
+{
+  "fixtureType": "equipment_source_extraction",
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "extractionMethod": "json_parse",
+      "fieldsOwned": [
+        "craftRelations"
+      ],
+      "gameVersion": "v3.2.79",
+      "purity": "deterministic_no_side_effects",
+      "required": true,
+      "runtimeMutationAllowed": false,
+      "sourceFile": "data/craft/recipes.json",
+      "sourceId": "craft_recipes",
+      "sourceRevision": "6ccd57fea874d82be78750402d8f7a8a562056b7",
+      "sourceRole": "relation_owner",
+      "symbolPath": "$",
+      "usesDom": false,
+      "usesLocalStorage": false,
+      "usesPlayerState": false
+    },
+    {
+      "extractionMethod": "restricted_object_literal",
+      "fieldsOwned": [
+        "equipmentId",
+        "displayName",
+        "itemType",
+        "classRequirements",
+        "baseStats",
+        "safeEnhance",
+        "price",
+        "description"
+      ],
+      "gameVersion": "v3.2.79",
+      "purity": "deterministic_no_side_effects",
+      "required": true,
+      "runtimeMutationAllowed": false,
+      "sourceFile": "js/00-data.js",
+      "sourceId": "db_items",
+      "sourceRevision": "3129429f6534a56d891dd846f0a2ae79c014f51e",
+      "sourceRole": "canonical_base",
+      "symbolPath": "DB.items",
+      "usesDom": false,
+      "usesLocalStorage": false,
+      "usesPlayerState": false
+    },
+    {
+      "extractionMethod": "restricted_object_literal",
+      "fieldsOwned": [
+        "setRefs"
+      ],
+      "gameVersion": "v3.2.79",
+      "purity": "deterministic_no_side_effects",
+      "required": true,
+      "runtimeMutationAllowed": true,
+      "sourceFile": "js/00-data.js",
+      "sourceId": "db_sets",
+      "sourceRevision": "3129429f6534a56d891dd846f0a2ae79c014f51e",
+      "sourceRole": "deterministic_enrichment",
+      "symbolPath": "DB.sets",
+      "usesDom": false,
+      "usesLocalStorage": false,
+      "usesPlayerState": false
+    },
+    {
+      "extractionMethod": "json_parse",
+      "fieldsOwned": [
+        "relations"
+      ],
+      "gameVersion": "v3.2.79",
+      "purity": "deterministic_no_side_effects",
+      "required": true,
+      "runtimeMutationAllowed": false,
+      "sourceFile": "data/monster/drop_tables.json",
+      "sourceId": "monster_drops",
+      "sourceRevision": "eaf79d33b0feaf879046866afb86ceda328d7ecd",
+      "sourceRole": "relation_owner",
+      "symbolPath": "$",
+      "usesDom": false,
+      "usesLocalStorage": false,
+      "usesPlayerState": false
+    },
+    {
+      "extractionMethod": "restricted_constant_literal",
+      "fieldsOwned": [
+        "equipmentType"
+      ],
+      "gameVersion": "v3.2.79",
+      "purity": "deterministic_no_side_effects",
+      "required": true,
+      "runtimeMutationAllowed": true,
+      "sourceFile": "js/10-ui-tabs.js",
+      "sourceId": "weapon_tags",
+      "sourceRevision": "3129429f6534a56d891dd846f0a2ae79c014f51e",
+      "sourceRole": "deterministic_enrichment",
+      "symbolPath": "WEAPON_TAGS",
+      "usesDom": false,
+      "usesLocalStorage": false,
+      "usesPlayerState": false
+    },
+    {
+      "extractionMethod": "restricted_constant_literal",
+      "fieldsOwned": [
+        "equipmentGroup",
+        "equipmentType",
+        "slot",
+        "rarity",
+        "editorial"
+      ],
+      "gameVersion": "v3.2.79",
+      "purity": "deterministic_no_side_effects",
+      "required": true,
+      "runtimeMutationAllowed": false,
+      "sourceFile": "wiki.html",
+      "sourceId": "wiki_equip_data",
+      "sourceRevision": null,
+      "sourceRole": "migration_projection",
+      "symbolPath": "EQUIP_DATA",
+      "usesDom": false,
+      "usesLocalStorage": false,
+      "usesPlayerState": false
+    }
+  ]
+}

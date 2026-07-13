@@ -1,0 +1,87 @@
+{
+  "expectedCount": 5,
+  "fixtureType": "equipment_price_conflicts",
+  "records": [
+    {
+      "authoritativeCandidate": "DB.items.p",
+      "dbItemsValue": 10000,
+      "diagnosticCode": "equipment_price_conflict",
+      "equipmentId": "relic_strong_femur",
+      "fieldPath": "price.amount",
+      "notes": [
+        "Preserve the mismatch for review; do not silently rewrite either source fixture."
+      ],
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_strong_femur.p",
+        "wiki.html#EQUIP_DATA.relic_strong_femur.price"
+      ],
+      "status": "review_required",
+      "wikiValue": 0
+    },
+    {
+      "authoritativeCandidate": "DB.items.p",
+      "dbItemsValue": 10000,
+      "diagnosticCode": "equipment_price_conflict",
+      "equipmentId": "relic_mandra_spirit",
+      "fieldPath": "price.amount",
+      "notes": [
+        "Preserve the mismatch for review; do not silently rewrite either source fixture."
+      ],
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_mandra_spirit.p",
+        "wiki.html#EQUIP_DATA.relic_mandra_spirit.price"
+      ],
+      "status": "review_required",
+      "wikiValue": 0
+    },
+    {
+      "authoritativeCandidate": "DB.items.p",
+      "dbItemsValue": 10000,
+      "diagnosticCode": "equipment_price_conflict",
+      "equipmentId": "relic_scorpion_sting",
+      "fieldPath": "price.amount",
+      "notes": [
+        "Preserve the mismatch for review; do not silently rewrite either source fixture."
+      ],
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_scorpion_sting.p",
+        "wiki.html#EQUIP_DATA.relic_scorpion_sting.price"
+      ],
+      "status": "review_required",
+      "wikiValue": 0
+    },
+    {
+      "authoritativeCandidate": "DB.items.p",
+      "dbItemsValue": 10000,
+      "diagnosticCode": "equipment_price_conflict",
+      "equipmentId": "relic_ska_soul",
+      "fieldPath": "price.amount",
+      "notes": [
+        "Preserve the mismatch for review; do not silently rewrite either source fixture."
+      ],
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_ska_soul.p",
+        "wiki.html#EQUIP_DATA.relic_ska_soul.price"
+      ],
+      "status": "review_required",
+      "wikiValue": 0
+    },
+    {
+      "authoritativeCandidate": "DB.items.p",
+      "dbItemsValue": 10000,
+      "diagnosticCode": "equipment_price_conflict",
+      "equipmentId": "relic_shadow_stinger",
+      "fieldPath": "price.amount",
+      "notes": [
+        "Preserve the mismatch for review; do not silently rewrite either source fixture."
+      ],
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_shadow_stinger.p",
+        "wiki.html#EQUIP_DATA.relic_shadow_stinger.price"
+      ],
+      "status": "review_required",
+      "wikiValue": 1
+    }
+  ],
+  "schemaVersion": "1.0.0"
+}

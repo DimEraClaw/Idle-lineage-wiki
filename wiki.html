@@ -1297,18 +1297,82 @@
     <script src="./js/wiki-monster-data.js"></script>
     <script src="./js/wiki-monster-view.js"></script>
     <script src="./js/wiki-equipment-data.js"></script>
+    <script src="./js/wiki-equipment-view-adapter.js"></script>
     <script src="./js/wiki-equipment-shadow-adapter.js"></script>
     <script>
         window.CRAFT_WIKI_PHASE1_ENABLED = false;
         window.WIKI_DATA_CORE_ENABLED = false;
         window.MONSTER_UI_ENABLED = true;
         window.EQUIPMENT_DATA_SHADOW_ENABLED = false;
+        window.EQUIPMENT_DATA_VIEW_ENABLED = false;
 
         let craftWikiInitializationPromise = null;
         let legacyCraftWikiInitialized = false;
         let craftPhase1FallbackNoticeShown = false;
         let wikiDataCoreRegistrationPromise = null;
         let equipmentShadowInitializationPromise = null;
+        let equipmentViewInitializationPromise = null;
+        let equipmentViewAdapter = null;
+        let equipmentViewRecords = [];
+        let equipmentViewNavigationBound = false;
+
+        function isEquipmentDataViewEnabled() {
+            return new URLSearchParams(window.location.search).get('equipmentData') === '1';
+        }
+
+        function setEquipmentDataViewState(mode, ready) {
+            const root = document.documentElement;
+            root.dataset.equipmentDataMode = mode;
+            root.dataset.equipmentDataReady = String(ready);
+            root.dataset.equipmentDataSource = ready ? 'dataset' : 'legacy';
+            if (equipmentViewAdapter) root.dataset.equipmentDataState = JSON.stringify(equipmentViewAdapter.getState());
+        }
+
+        function initEquipmentDataViewIfEnabled() {
+            if (equipmentViewInitializationPromise) return equipmentViewInitializationPromise;
+            if (!isEquipmentDataViewEnabled()) {
+                setEquipmentDataViewState('disabled', false);
+                return Promise.resolve(false);
+            }
+            equipmentViewInitializationPromise = (async () => {
+                if (!window.createEquipmentRepository || !window.createEquipmentViewAdapter) {
+                    setEquipmentDataViewState('fallback', false);
+                    return false;
+                }
+                if (!window.EquipmentWikiData) window.EquipmentWikiData = window.createEquipmentRepository();
+                equipmentViewAdapter = window.createEquipmentViewAdapter({ repository: window.EquipmentWikiData, legacyRecords: EQUIP_DATA });
+                const loaded = await equipmentViewAdapter.load();
+                if (!loaded || equipmentViewAdapter.getState().count !== 786) {
+                    equipmentViewRecords = [];
+                    setEquipmentDataViewState('fallback', false);
+                    return false;
+                }
+                equipmentViewRecords = equipmentViewAdapter.getAll();
+                window.EquipmentWikiViewAdapter = equipmentViewAdapter;
+                setEquipmentDataViewState('enabled', true);
+                return true;
+            })();
+            return equipmentViewInitializationPromise;
+        }
+
+        function isEquipmentDatasetViewReady() {
+            return isEquipmentDataViewEnabled() && equipmentViewAdapter && equipmentViewAdapter.getState().ready;
+        }
+
+        function getEquipmentWikiSource() {
+            return isEquipmentDatasetViewReady() && currentWikiCategory === 'equipment' ? equipmentViewRecords : EQUIP_DATA;
+        }
+
+        function loadEquipmentDiagnosticsForDetail(equipmentId) {
+            if (!isEquipmentDatasetViewReady()) return;
+            equipmentViewAdapter.ensureDiagnostics(equipmentId).then(result => {
+                document.documentElement.dataset.equipmentDiagnosticsReady = String(result.ready);
+                document.documentElement.dataset.equipmentDiagnosticsError = result.error || '';
+                setEquipmentDataViewState('enabled', true);
+            }).catch(() => {
+                document.documentElement.dataset.equipmentDiagnosticsReady = 'false';
+            });
+        }
 
         function isEquipmentShadowEnabled() {
             return new URLSearchParams(window.location.search).get('equipmentShadow') === '1';
@@ -1497,6 +1561,7 @@
 
         // GLOBALS & INITIALIZATION
         window.addEventListener('DOMContentLoaded', async () => {
+            await initEquipmentDataViewIfEnabled();
             initEquipWiki();
             window.__equipmentShadowInitialization = initEquipmentShadowIfEnabled();
             await initCraftWikiWithFallback();
@@ -1518,6 +1583,8 @@
             }
 
             switchTab(tabParam, searchParam);
+            restoreEquipmentDeepLink();
+            bindEquipmentViewNavigation();
             await registerCraftAdapterIfEnabled();
         });
 
@@ -1994,7 +2061,8 @@
             const groups = { weapon: 0, armor: 0, accessory: 0 };
             const types = {};
             
-            EQUIP_DATA.forEach(item => {
+            const equipmentSource = isEquipmentDatasetViewReady() ? equipmentViewRecords : EQUIP_DATA;
+            equipmentSource.forEach(item => {
                 if (item.category === 'equipment') {
                     if (item.equipmentGroup) {
                         groups[item.equipmentGroup] = (groups[item.equipmentGroup] || 0) + 1;
@@ -2381,8 +2449,9 @@
                 return;
             }
 
+            const renderStartedAt = window.performance && performance.now ? performance.now() : Date.now();
             const q = searchQuery.toLowerCase().trim();
-            const filtered = EQUIP_DATA.filter(item => {
+            const filtered = getEquipmentWikiSource().filter(item => {
                 // 1. Category Filter
                 if (item.category !== currentWikiCategory) return false;
                 
@@ -2402,7 +2471,8 @@
                 
                 // 3. Class Filter (Checkbox checklist)
                 if (selectedClasses.length > 0) {
-                    if (item.req && item.req !== 'all') {
+                    if (!item.req) return false;
+                    if (item.req !== 'all') {
                         const classesList = item.req.split(',').map(c => c.trim());
                         const hasMatch = selectedClasses.some(c => classesList.includes(c));
                         if (!hasMatch) return false;
@@ -2410,6 +2480,8 @@
                 }
 
                 // 4. Advanced Filters
+                const descriptionText = String(item.desc || '');
+                const sourceRecords = Array.isArray(item.sources) ? item.sources : [];
                 if (advancedFilters.rarity.length > 0) {
                     if (!advancedFilters.rarity.includes(item.rarity)) return false;
                 }
@@ -2419,34 +2491,34 @@
                 }
 
                 if (advancedFilters.enhanceable !== null) {
-                    const isEnh = item.safe !== 0 && !item.desc.includes('無法強化');
+                    const isEnh = item.safe != null && item.safe !== 0 && !descriptionText.includes('無法強化');
                     if (isEnh !== advancedFilters.enhanceable) return false;
                 }
 
                 if (advancedFilters.tradeable !== null) {
-                    const isTrade = !item.desc.includes('不可轉移') && !item.desc.includes('無法交易');
+                    const isTrade = item.desc != null && !descriptionText.includes('不可轉移') && !descriptionText.includes('無法交易');
                     if (isTrade !== advancedFilters.tradeable) return false;
                 }
 
                 if (advancedFilters.setItem !== null) {
-                    const isSet = item.desc.includes('套裝之一') || item.desc.includes('集齊相同套裝');
+                    const isSet = descriptionText.includes('套裝之一') || descriptionText.includes('集齊相同套裝');
                     if (isSet !== advancedFilters.setItem) return false;
                 }
 
                 if (advancedFilters.specialStats !== null) {
-                    const isSpec = item.desc.includes('特殊效果') || item.desc.includes('機率觸發') || item.desc.includes('特效') || item.desc.includes('蘊含');
+                    const isSpec = descriptionText.includes('特殊效果') || descriptionText.includes('機率觸發') || descriptionText.includes('特效') || descriptionText.includes('蘊含');
                     if (isSpec !== advancedFilters.specialStats) return false;
                 }
 
                 if (advancedFilters.dropData !== null) {
-                    const hasDrop = item.sources.some(s => s.includes('【掉落】'));
+                    const hasDrop = sourceRecords.some(s => s.includes('【掉落】'));
                     if (hasDrop !== advancedFilters.dropData) return false;
                 }
 
                 if (advancedFilters.obtain.length > 0) {
                     const hasObtain = advancedFilters.obtain.some(o => {
                         const oMap = { drop: '【掉落】', quest: '【任務】', shop: '【商店】', craft: '【製作】', exchange: '【兌換】' };
-                        return item.sources.some(s => s.includes(oMap[o]));
+                        return sourceRecords.some(s => s.includes(oMap[o]));
                     });
                     if (!hasObtain) return false;
                 }
@@ -2475,15 +2547,16 @@
 
                 // 5. Text Search query (Name, Description, Sources, Subtype, Stats)
                 if (q) {
-                    const matchName = item.name.toLowerCase().includes(q);
-                    const matchDesc = item.desc.toLowerCase().includes(q);
+                    const matchName = String(item.name || '').toLowerCase().includes(q);
+                    const matchDesc = descriptionText.toLowerCase().includes(q);
                     const matchSub = (item.subtype_cn || item.slot_cn || '').toLowerCase().includes(q);
-                    const matchSources = item.sources.some(s => s.toLowerCase().replace(/<[^>]*>/g, '').includes(q));
+                    const matchSources = sourceRecords.some(s => s.toLowerCase().replace(/<[^>]*>/g, '').includes(q));
+                    const matchCanonical = String(item.searchableText || '').includes(q);
                     
                     const statValuesStr = Object.values(item.stats || {}).join(' ').toLowerCase();
                     const matchStats = statValuesStr.includes(q);
                     
-                    return matchName || matchDesc || matchSub || matchSources || matchStats;
+                    return matchName || matchDesc || matchSub || matchSources || matchStats || matchCanonical;
                 }
 
                 return true;
@@ -2520,6 +2593,11 @@
                 }
             });
             listContainer.innerHTML = html;
+            if (isEquipmentDatasetViewReady() && equipmentViewAdapter) {
+                const renderedAt = window.performance && performance.now ? performance.now() : Date.now();
+                equipmentViewAdapter.setRenderTime(renderedAt - renderStartedAt);
+                setEquipmentDataViewState('dataset', true, 'ready');
+            }
         }
 
         // Sorting filters logic
@@ -2532,7 +2610,12 @@
             } else if (sortBy === 'ac_high') {
                 arr.sort((a, b) => ((b.stats && b.stats.ac) || 0) - ((a.stats && a.stats.ac) || 0));
             } else if (sortBy === 'price_high') {
-                arr.sort((a, b) => b.price - a.price);
+                arr.sort((a, b) => {
+                    if (a.price == null && b.price == null) return 0;
+                    if (a.price == null) return 1;
+                    if (b.price == null) return -1;
+                    return b.price - a.price;
+                });
             } else if (sortBy === 'level_low') {
                 // Extract minimum learning level from description or stats
                 function getMinLevel(item) {
@@ -2552,7 +2635,10 @@
             if (item.rarity === 'legendary') rarityCn = '傳說';
             else if (item.rarity === 'relic') rarityCn = '遺物';
 
-            let classesCn = item.req.split(',').map(c => CLASS_NAME_MAP[c.trim()] || c.trim()).join('、');
+            let classesCn = item.req ? item.req.split(',').map(c => CLASS_NAME_MAP[c.trim()] || c.trim()).join('、') : '資料尚未建立';
+            const safeCn = item.safe == null ? '資料尚未建立' : `+${item.safe}`;
+            const priceCn = item.price == null ? '資料尚未建立' : item.price.toLocaleString();
+            const descriptionCn = item.desc == null && item.viewState && item.viewState.source === 'dataset' ? '資料尚未建立' : (item.desc || '暫無裝備敘述。');
             
             let sourcesHtml = '';
             if (item.sources && item.sources.length > 0) {
@@ -2566,18 +2652,18 @@
                 </div>
                 <div class="equip-meta">
                     <span class="meta-tag">${item.slot_cn}</span>
-                    <span class="meta-tag">安全值 +${item.safe}</span>
+                    <span class="meta-tag">安全值 ${safeCn}</span>
                 </div>
                 <div class="equip-stats">
                     ${formatStats(item.type, item.stats)}
                 </div>
                 <div class="equip-desc">
-                    ${item.desc || '暫無裝備敘述。'}
+                    ${descriptionCn}
                 </div>
                 ${sourcesHtml}
                 <div class="equip-footer">
                     <div>職業: <span style="color:#fff;font-weight:500;">${classesCn}</span></div>
-                    <div class="footer-price">價值: <span>${item.price.toLocaleString()}</span> 金幣</div>
+                    <div class="footer-price">價值: <span>${priceCn}</span>${item.price == null ? '' : ' 金幣'}</div>
                 </div>
             </div>`;
         }
@@ -2769,14 +2855,32 @@
         }
 
         // Open details modal
-        function openDetailModal(itemId) {
-            const item = EQUIP_DATA.find(i => i.id === itemId);
-            if (!item) return;
-
+        function openDetailModal(itemId, options = {}) {
+            const item = getEquipmentWikiSource().find(i => i.id === itemId);
             const modal = document.getElementById('detail-modal');
             const overlay = document.getElementById('detail-modal-overlay');
             const title = document.getElementById('detail-modal-title');
             const content = document.getElementById('detail-modal-content');
+            if (!item) {
+                if (!isEquipmentDatasetViewReady()) return;
+                title.textContent = '找不到裝備';
+                content.innerHTML = `<div style="color:var(--text-secondary);">找不到 Equipment ID：${String(itemId).replace(/[&<>"']/g, '')}</div>`;
+                modal.classList.add('active');
+                overlay.classList.add('active');
+                return;
+            }
+
+            if (isEquipmentDatasetViewReady()) {
+                loadEquipmentDiagnosticsForDetail(item.id);
+                if (options.updateHistory !== false) {
+                    const url = new URL(window.location.href);
+                    url.searchParams.set('equipmentData', '1');
+                    url.searchParams.set('tab', 'equip');
+                    url.searchParams.set('category', 'equipment');
+                    url.searchParams.set('equipment', item.id);
+                    window.history.pushState({ equipmentId: item.id }, '', url.toString());
+                }
+            }
 
             let rarityCn = '普通';
             if (item.rarity === 'legendary') rarityCn = '傳說';
@@ -2785,7 +2889,18 @@
 
             title.textContent = item.name;
 
-            let classesCn = item.req.split(',').map(c => CLASS_NAME_MAP[c.trim()] || c.trim()).join('、');
+            let classesCn = item.req ? item.req.split(',').map(c => CLASS_NAME_MAP[c.trim()] || c.trim()).join('、') : '資料尚未建立';
+            const safeCn = item.safe == null ? '資料尚未建立' : `+${item.safe}`;
+            const priceCn = item.price == null ? '資料尚未建立' : item.price.toLocaleString();
+            const descriptionCn = item.desc == null && item.viewState && item.viewState.source === 'dataset' ? '資料尚未建立' : (item.desc || '暫無詳細說明。');
+            const statusCn = item.viewState && item.viewState.priceConflict
+                ? '價格待確認'
+                : (item.viewState && item.viewState.unresolved
+                    ? '資料尚未建立'
+                    : (item.viewState && item.viewState.partial ? '部分資料尚未建立' : '已載入'));
+            const datasetStatusHtml = item.viewState && item.viewState.source === 'dataset'
+                ? `<div data-equipment-view-status="${item.viewState.status || 'unknown'}" style="font-size:0.8rem; color:var(--text-secondary);">Dataset 狀態：${statusCn}</div>`
+                : '';
             
             let statsHtml = '';
             if (item.type !== 'skillbk') {
@@ -2811,7 +2926,7 @@
                 <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
                     <div class="equip-meta">
                         <span class="meta-tag" style="background-color:rgba(56,189,248,0.1); border-color:rgba(56,189,248,0.3); color:var(--accent-blue);">${item.slot_cn}</span>
-                        ${item.type !== 'skillbk' && !item.id.startsWith('rem_') ? `<span class="meta-tag">安全強化值: +${item.safe}</span>` : ''}
+                        ${item.type !== 'skillbk' && !item.id.startsWith('rem_') ? `<span class="meta-tag">安全強化值: ${safeCn}</span>` : ''}
                     </div>
                     <span class="badge rarity-${item.rarity}" style="font-size:0.85rem; padding:4px 10px;">${rarityCn}</span>
                 </div>
@@ -2821,15 +2936,17 @@
                 <div>
                     <div style="font-weight:700; color:#fff; font-size:0.9rem; margin-bottom:6px;">📝 裝備技能背景說明：</div>
                     <div style="font-size:0.9rem; color:var(--text-secondary); background-color:rgba(15,23,42,0.3); padding:15px; border-radius:8px; border:1px solid var(--border-color); line-height:1.5;">
-                        ${item.desc || '暫無詳細說明。'}
+                        ${descriptionCn}
                     </div>
                 </div>
 
                 ${sourcesHtml}
 
+                ${datasetStatusHtml}
+
                 <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border-color); padding-top:15px; margin-top:10px; font-size:0.88rem; color:var(--text-secondary);">
                     <div>適用職業: <span style="color:#fff; font-weight:600;">${classesCn}</span></div>
-                    <div>${item.type !== 'skillbk' ? '基礎原價' : '商店原價'}: <span style="color:var(--accent-gold); font-weight:700; font-size:1.05rem;">${item.price.toLocaleString()}</span> 金幣</div>
+                    <div>${item.type !== 'skillbk' ? '基礎原價' : '商店原價'}: <span style="color:var(--accent-gold); font-weight:700; font-size:1.05rem;">${priceCn}</span>${item.price == null ? '' : ' 金幣'}</div>
                 </div>
             `;
 
@@ -2837,9 +2954,39 @@
             overlay.classList.add('active');
         }
 
-        function closeDetailModal() {
+        function closeDetailModal(updateHistory = true) {
             document.getElementById('detail-modal').classList.remove('active');
             document.getElementById('detail-modal-overlay').classList.remove('active');
+            if (updateHistory && isEquipmentDatasetViewReady()) {
+                const url = new URL(window.location.href);
+                if (url.searchParams.has('equipment')) {
+                    url.searchParams.delete('equipment');
+                    window.history.pushState({}, '', url.toString());
+                }
+            }
+        }
+
+        function restoreEquipmentDeepLink() {
+            if (!isEquipmentDatasetViewReady()) return;
+            const params = new URLSearchParams(window.location.search);
+            const equipmentId = params.get('equipment');
+            if (!equipmentId) return;
+            currentWikiCategory = 'equipment';
+            filterEquips();
+            renderSidebar();
+            syncUIFromState();
+            openDetailModal(equipmentId, { updateHistory: false });
+        }
+
+        function bindEquipmentViewNavigation() {
+            if (equipmentViewNavigationBound) return;
+            equipmentViewNavigationBound = true;
+            window.addEventListener('popstate', () => {
+                if (!isEquipmentDatasetViewReady()) return;
+                const equipmentId = new URLSearchParams(window.location.search).get('equipment');
+                if (equipmentId) openDetailModal(equipmentId, { updateHistory: false });
+                else closeDetailModal(false);
+            });
         }
 
         // Advanced Filter Drawer togglers

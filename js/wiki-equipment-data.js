@@ -68,6 +68,8 @@
         const now = settings.now || (() => (typeof performance !== 'undefined' && performance.now ? performance.now() : Date.now()));
 
         let loadPromise = null;
+        let equipmentLoadPromise = null;
+        let diagnosticsLoadPromise = null;
         let recordsById = new Map();
         let indexes = emptyIndexes();
         let state = emptyState();
@@ -92,6 +94,9 @@
                 ready: false,
                 loading: false,
                 error: null,
+                diagnosticsReady: false,
+                diagnosticsLoading: false,
+                diagnosticsError: null,
                 optionalErrors: [],
                 ambiguousNameCount: 0,
                 indexCounts: {},
@@ -102,7 +107,8 @@
                     indexBuildTimeMs: 0,
                     totalReadyTimeMs: 0,
                     memoryEstimateBytes: 0,
-                    searchAverageMs: null
+                    searchAverageMs: null,
+                    diagnosticsLazyLoadMs: null
                 }
             };
         }
@@ -246,6 +252,7 @@
 
         async function load() {
             if (loadPromise) return loadPromise;
+            if (state.ready) return loadDiagnostics();
             loadPromise = (async () => {
                 const totalStart = now();
                 clear();
@@ -280,6 +287,7 @@
                     buildIndexes(equipmentResult.document.records, diagnosticsResult.document.records, unresolvedRecords);
                     state.ready = true;
                     state.loading = false;
+                    state.diagnosticsReady = true;
                     state.performance.totalReadyTimeMs = now() - totalStart;
                     return true;
                 } catch (error) {
@@ -288,6 +296,102 @@
                 }
             })();
             return loadPromise;
+        }
+
+        async function loadEquipment() {
+            if (state.ready) return true;
+            if (equipmentLoadPromise) return equipmentLoadPromise;
+            equipmentLoadPromise = (async () => {
+                const totalStart = now();
+                clear();
+                state.loading = true;
+                if (!fetchImpl) {
+                    clear('fetch unavailable');
+                    return false;
+                }
+                try {
+                    const result = await fetchDocument(URLS.equipment, true);
+                    requireEnvelope(result.document, 'equipment', URLS.equipment);
+                    state.performance.responseBytes = { equipment: result.bytes, diagnostics: 0, unresolved: 0 };
+                    state.performance.fetchTimeMs = result.fetchMs;
+                    state.performance.parseTimeMs = result.parseMs;
+                    buildIndexes(result.document.records, [], []);
+                    state.ready = true;
+                    state.loading = false;
+                    state.performance.totalReadyTimeMs = now() - totalStart;
+                    return true;
+                } catch (error) {
+                    clear(error);
+                    return false;
+                }
+            })();
+            return equipmentLoadPromise;
+        }
+
+        function replaceDiagnosticIndexes(diagnosticRecords, unresolvedRecords) {
+            const diagnosticsByEquipment = new Map();
+            const unresolvedByEquipment = new Map();
+            const diagnosticStore = new Map();
+            const unresolvedStore = new Map();
+            diagnosticRecords.forEach((record, position) => {
+                const key = 'd' + position;
+                diagnosticStore.set(key, freezeDeep(clone(record)));
+                add(diagnosticsByEquipment, record.equipmentId, key);
+            });
+            unresolvedRecords.forEach((record, position) => {
+                const key = 'u' + position;
+                unresolvedStore.set(key, freezeDeep(clone(record)));
+                add(unresolvedByEquipment, record.equipmentId, key);
+            });
+            diagnosticsByEquipment.forEach((values, key) => diagnosticsByEquipment.set(key, sortedUnique(values)));
+            unresolvedByEquipment.forEach((values, key) => unresolvedByEquipment.set(key, sortedUnique(values)));
+            indexes.diagnosticsByEquipment = diagnosticsByEquipment;
+            indexes.unresolvedByEquipment = unresolvedByEquipment;
+            indexes._diagnosticStore = diagnosticStore;
+            indexes._unresolvedStore = unresolvedStore;
+            state.indexCounts.diagnosticsByEquipment = diagnosticsByEquipment.size;
+            state.indexCounts.unresolvedByEquipment = unresolvedByEquipment.size;
+        }
+
+        async function loadDiagnostics() {
+            if (state.diagnosticsReady) return true;
+            if (diagnosticsLoadPromise) return diagnosticsLoadPromise;
+            diagnosticsLoadPromise = (async () => {
+                if (!state.ready) {
+                    state.diagnosticsError = 'Equipment Dataset is not ready';
+                    return false;
+                }
+                state.diagnosticsLoading = true;
+                const start = now();
+                try {
+                    const [diagnosticsResult, unresolvedResult] = await Promise.all([
+                        fetchDocument(URLS.diagnostics, true),
+                        fetchDocument(URLS.unresolved, false)
+                    ]);
+                    requireEnvelope(diagnosticsResult.document, 'equipment_diagnostics', URLS.diagnostics);
+                    let unresolvedRecords;
+                    if (unresolvedResult.document) {
+                        requireEnvelope(unresolvedResult.document, 'equipment_unresolved', URLS.unresolved);
+                        unresolvedRecords = unresolvedResult.document.records;
+                    } else {
+                        state.optionalErrors.push(unresolvedResult.error);
+                        unresolvedRecords = diagnosticsResult.document.records.filter(record => record.status === 'unresolved');
+                    }
+                    replaceDiagnosticIndexes(diagnosticsResult.document.records, unresolvedRecords);
+                    state.performance.responseBytes.diagnostics = diagnosticsResult.bytes;
+                    state.performance.responseBytes.unresolved = unresolvedResult.bytes;
+                    state.diagnosticsReady = true;
+                    state.diagnosticsLoading = false;
+                    state.diagnosticsError = null;
+                    state.performance.diagnosticsLazyLoadMs = now() - start;
+                    return true;
+                } catch (error) {
+                    state.diagnosticsLoading = false;
+                    state.diagnosticsError = String(error.message || error);
+                    return false;
+                }
+            })();
+            return diagnosticsLoadPromise;
         }
 
         function entitiesForIds(ids) {
@@ -337,6 +441,8 @@
 
         return Object.freeze({
             load,
+            loadEquipment,
+            loadDiagnostics,
             getEquipmentById,
             getEquipmentByName,
             searchEquipment,

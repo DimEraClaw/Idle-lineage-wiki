@@ -1337,6 +1337,7 @@
                 setEquipmentDataViewState('disabled', false);
                 return Promise.resolve(false);
             }
+            setEquipmentDataViewState('loading', false);
             equipmentViewInitializationPromise = (async () => {
                 if (!window.createEquipmentRepository || !window.createEquipmentViewAdapter) {
                     setEquipmentDataViewState('fallback', false);
@@ -1371,9 +1372,19 @@
             equipmentViewAdapter.ensureDiagnostics(equipmentId).then(result => {
                 document.documentElement.dataset.equipmentDiagnosticsReady = String(result.ready);
                 document.documentElement.dataset.equipmentDiagnosticsError = result.error || '';
+                const notice = document.querySelector('[data-equipment-diagnostics-status]');
+                if (notice) {
+                    notice.textContent = result.ready ? '' : '資料狀態暫時無法載入';
+                    notice.hidden = result.ready;
+                }
                 setEquipmentDataViewState('enabled', true);
             }).catch(() => {
                 document.documentElement.dataset.equipmentDiagnosticsReady = 'false';
+                const notice = document.querySelector('[data-equipment-diagnostics-status]');
+                if (notice) {
+                    notice.textContent = '資料狀態暫時無法載入';
+                    notice.hidden = false;
+                }
             });
         }
 
@@ -1564,9 +1575,8 @@
 
         // GLOBALS & INITIALIZATION
         window.addEventListener('DOMContentLoaded', async () => {
-            await initEquipmentDataViewIfEnabled();
+            const equipmentDataInitialization = initEquipmentDataViewIfEnabled();
             initEquipWiki();
-            window.__equipmentShadowInitialization = initEquipmentShadowIfEnabled();
             await initCraftWikiWithFallback();
             initCardsGuide();
 
@@ -1586,9 +1596,13 @@
             }
 
             switchTab(tabParam, searchParam);
-            restoreEquipmentDeepLink();
             bindEquipmentViewNavigation();
             await registerCraftAdapterIfEnabled();
+
+            await equipmentDataInitialization;
+            initEquipWiki();
+            window.__equipmentShadowInitialization = initEquipmentShadowIfEnabled();
+            restoreEquipmentDeepLink();
         });
 
         // ------------------ TAB 1: EQUIP WIKI JS (RESTORED CARD RENDERING) ------------------
@@ -2641,7 +2655,7 @@
             let classesCn = item.req ? item.req.split(',').map(c => CLASS_NAME_MAP[c.trim()] || c.trim()).join('、') : '資料尚未建立';
             const safeCn = item.safe == null ? '資料尚未建立' : `+${item.safe}`;
             const priceCn = item.price == null ? '資料尚未建立' : item.price.toLocaleString();
-            const descriptionCn = item.desc == null && item.viewState && item.viewState.source === 'dataset' ? '資料尚未建立' : (item.desc || '暫無裝備敘述。');
+            const descriptionCn = item.desc == null && item.viewState && item.viewState.source === 'dataset' ? '尚無說明' : (item.desc || '暫無裝備敘述。');
             
             let sourcesHtml = '';
             if (item.sources && item.sources.length > 0) {
@@ -2924,7 +2938,7 @@
             let classesCn = item.req ? item.req.split(',').map(c => CLASS_NAME_MAP[c.trim()] || c.trim()).join('、') : '資料尚未建立';
             const safeCn = item.safe == null ? '資料尚未建立' : `+${item.safe}`;
             const priceCn = item.price == null ? '資料尚未建立' : item.price.toLocaleString();
-            const descriptionCn = item.desc == null && item.viewState && item.viewState.source === 'dataset' ? '資料尚未建立' : (item.desc || '暫無詳細說明。');
+            const descriptionCn = item.desc == null && item.viewState && item.viewState.source === 'dataset' ? '尚無說明' : (item.desc || '暫無詳細說明。');
             const statusCn = item.viewState && item.viewState.priceConflict
                 ? '價格待確認'
                 : (item.viewState && item.viewState.unresolved
@@ -2932,6 +2946,11 @@
                     : (item.viewState && item.viewState.partial ? '部分資料尚未建立' : '已載入'));
             const datasetStatusHtml = item.viewState && item.viewState.source === 'dataset'
                 ? `<div data-equipment-view-status="${item.viewState.status || 'unknown'}" style="font-size:0.8rem; color:var(--text-secondary);">Dataset 狀態：${statusCn}</div>`
+                : '';
+            const diagnosticsState = equipmentViewAdapter ? equipmentViewAdapter.getState() : null;
+            const diagnosticsUnavailable = diagnosticsState && diagnosticsState.diagnosticsError;
+            const diagnosticsStatusHtml = item.viewState && item.viewState.source === 'dataset'
+                ? `<div data-equipment-diagnostics-status style="font-size:0.8rem; color:var(--text-secondary);"${diagnosticsUnavailable ? '' : ' hidden'}>${diagnosticsUnavailable ? '資料狀態暫時無法載入' : ''}</div>`
                 : '';
             
             let statsHtml = '';
@@ -2975,6 +2994,7 @@
                 ${sourcesHtml}
 
                 ${datasetStatusHtml}
+                ${diagnosticsStatusHtml}
 
                 <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--border-color); padding-top:15px; margin-top:10px; font-size:0.88rem; color:var(--text-secondary);">
                     <div>適用職業: <span style="color:#fff; font-weight:600;">${classesCn}</span></div>

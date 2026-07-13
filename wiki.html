@@ -1304,7 +1304,7 @@
         window.WIKI_DATA_CORE_ENABLED = false;
         window.MONSTER_UI_ENABLED = true;
         window.EQUIPMENT_DATA_SHADOW_ENABLED = false;
-        window.EQUIPMENT_DATA_VIEW_ENABLED = false;
+        window.EQUIPMENT_DATA_VIEW_ENABLED = true;
 
         let craftWikiInitializationPromise = null;
         let legacyCraftWikiInitialized = false;
@@ -1318,7 +1318,9 @@
         let equipmentViewActiveDetailId = null;
 
         function isEquipmentDataViewEnabled() {
-            return new URLSearchParams(window.location.search).get('equipmentData') === '1';
+            const mode = new URLSearchParams(window.location.search).get('equipmentData');
+            if (mode === '0') return false;
+            return window.EQUIPMENT_DATA_VIEW_ENABLED || mode === '1';
         }
 
         function setEquipmentDataViewState(mode, ready) {
@@ -2877,7 +2879,6 @@
                 loadEquipmentDiagnosticsForDetail(item.id);
                 if (options.updateHistory !== false) {
                     const url = new URL(window.location.href);
-                    url.searchParams.set('equipmentData', '1');
                     url.searchParams.set('tab', 'equip');
                     url.searchParams.set('category', 'equipment');
                     url.searchParams.set('equipment', item.id);

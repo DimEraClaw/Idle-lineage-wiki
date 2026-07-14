@@ -1346,7 +1346,8 @@
                 if (!window.EquipmentWikiData) window.EquipmentWikiData = window.createEquipmentRepository();
                 equipmentViewAdapter = window.createEquipmentViewAdapter({ repository: window.EquipmentWikiData, legacyRecords: EQUIP_DATA });
                 const loaded = await equipmentViewAdapter.load();
-                if (!loaded || equipmentViewAdapter.getState().count !== 786) {
+                const equipmentViewState = equipmentViewAdapter.getState();
+                if (!loaded || !equipmentViewState.ready || equipmentViewState.count <= 0) {
                     equipmentViewRecords = [];
                     setEquipmentDataViewState('fallback', false);
                     return false;

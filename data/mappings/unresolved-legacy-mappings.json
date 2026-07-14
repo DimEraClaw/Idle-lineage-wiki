@@ -1,6 +1,36 @@
 {
   "mappings": [
     {
+      "candidates": [
+        {
+          "entityId": "de_train_hellslave",
+          "entityType": "monster"
+        },
+        {
+          "entityId": "sanct_hellslave",
+          "entityType": "monster"
+        }
+      ],
+      "evidence": [],
+      "id": "mapping_craftmob_craftdrops_de_train_hellslave",
+      "mappingType": "craft_monster_to_monster_id",
+      "matchMethod": "unresolved",
+      "normalizedValue": "地獄奴隸",
+      "notes": [
+        "exact name is not unique; no candidate was selected"
+      ],
+      "replacementMappingId": null,
+      "sourceLocation": "data/craft/drops.json",
+      "sourceScope": "craft:drops.monsterNameText",
+      "sourceValue": "地獄奴隸",
+      "status": "conflict",
+      "target": null,
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
       "candidates": [],
       "evidence": [],
       "id": "mapping_craftmob_craftdrops_elf_grave_group",
@@ -15,6 +45,36 @@
       "sourceScope": "craft:drops.monsterNameText",
       "sourceValue": "精靈墓穴怪物",
       "status": "unresolved",
+      "target": null,
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [
+        {
+          "entityId": "de_train_hellslave",
+          "entityType": "monster"
+        },
+        {
+          "entityId": "sanct_hellslave",
+          "entityType": "monster"
+        }
+      ],
+      "evidence": [],
+      "id": "mapping_drop_mobdrops_de_train_hellslave",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "unresolved",
+      "normalizedValue": "地獄奴隸",
+      "notes": [
+        "exact name is not unique; no candidate was selected"
+      ],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "地獄奴隸",
+      "status": "conflict",
       "target": null,
       "versionScope": {
         "validFrom": null,
@@ -9398,6 +9458,36 @@
       }
     },
     {
+      "candidates": [
+        {
+          "entityId": "de_train_hellslave",
+          "entityType": "monster"
+        },
+        {
+          "entityId": "sanct_hellslave",
+          "entityType": "monster"
+        }
+      ],
+      "evidence": [],
+      "id": "mapping_cardmob_cardindex_de_train_hellslave",
+      "mappingType": "legacy_card_key_to_monster_id",
+      "matchMethod": "unresolved",
+      "normalizedValue": "地獄奴隸",
+      "notes": [
+        "exact name is not unique; no candidate was selected"
+      ],
+      "replacementMappingId": null,
+      "sourceLocation": "js/15-cards.js#CARD_MOB_INFO",
+      "sourceScope": "game:CARD_MOB_INFO",
+      "sourceValue": "地獄奴隸",
+      "status": "conflict",
+      "target": null,
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
       "candidates": [],
       "evidence": [],
       "id": "mapping_maplabel_mapregions_town_aden",
@@ -9769,6 +9859,57 @@
       "sourceScope": "game:MAP_REGIONS",
       "sourceValue": "銀騎士村莊",
       "status": "missing_target",
+      "target": null,
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [],
+      "id": "mapping_maplabel_mapregions_town_elder_council",
+      "mappingType": "map_label_to_map_id",
+      "matchMethod": "unresolved",
+      "normalizedValue": "長老會議廳",
+      "notes": [
+        "navigation value town_elder_council is not a DB.maps key"
+      ],
+      "replacementMappingId": null,
+      "sourceLocation": "js/11-world-map.js#MAP_REGIONS",
+      "sourceScope": "game:MAP_REGIONS",
+      "sourceValue": "長老會議廳",
+      "status": "missing_target",
+      "target": null,
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [
+        {
+          "entityId": "de_train_hellslave",
+          "entityType": "monster"
+        },
+        {
+          "entityId": "sanct_hellslave",
+          "entityType": "monster"
+        }
+      ],
+      "evidence": [],
+      "id": "mapping_mnid_dbmobs_de_train_hellslave",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "unresolved",
+      "normalizedValue": "地獄奴隸",
+      "notes": [
+        "exact name is not unique; no candidate was selected"
+      ],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "地獄奴隸",
+      "status": "conflict",
       "target": null,
       "versionScope": {
         "validFrom": null,
@@ -12289,6 +12430,36 @@
       "sourceScope": "wiki:REGIONS_DATA.locations",
       "sourceValue": "魔獸軍王之室",
       "status": "unresolved",
+      "target": null,
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [
+        {
+          "entityId": "de_train_hellslave",
+          "entityType": "monster"
+        },
+        {
+          "entityId": "sanct_hellslave",
+          "entityType": "monster"
+        }
+      ],
+      "evidence": [],
+      "id": "mapping_wikimob_wikimobs_de_train_hellslave",
+      "mappingType": "wiki_monster_to_monster_id",
+      "matchMethod": "unresolved",
+      "normalizedValue": "地獄奴隸",
+      "notes": [
+        "exact name is not unique; no candidate was selected"
+      ],
+      "replacementMappingId": null,
+      "sourceLocation": "wiki.html#REGIONS_DATA",
+      "sourceScope": "wiki:REGIONS_DATA.monsters",
+      "sourceValue": "地獄奴隸",
+      "status": "conflict",
       "target": null,
       "versionScope": {
         "validFrom": null,

@@ -76,6 +76,8 @@ def expected_relations(source_root: Path, allow_ids: set[str]) -> tuple[dict[str
     drop_entries: dict[str, tuple[str, str]] = {}
     for table in load(source_root / "data" / "monster" / "drop_tables.json")["records"]:
         owner = table["owner"]
+        if owner is None:
+            continue
         for entry in table["entries"]:
             entry_id = entry["dropEntryId"]
             drop_entries[entry_id] = (owner["entityType"], owner["entityId"])
@@ -105,24 +107,26 @@ def validate(
     schema_dir: Path = DEFAULT_SCHEMAS,
     source_root: Path = ROOT,
     check_deterministic: bool = True,
+    program_source_root: Path | None = None,
 ) -> dict[str, Any]:
     equipment_doc, diagnostics_doc, unresolved_doc = (load(data_dir / name) for name in FILES)
     records, diagnostics, unresolved = equipment_doc["records"], diagnostics_doc["records"], unresolved_doc["records"]
     schema = load(schema_dir / "equipment.schema.json")
     allow = load(source_root / "fixtures" / "equipment" / "equipment-allowlist.json")["records"]
-    mappings = load(source_root / "fixtures" / "equipment" / "equipment-classification-mapping.json")["resolvedMappings"]
+    mapping_fixture = load(source_root / "fixtures" / "equipment" / "equipment-classification-mapping.json")
+    mappings = mapping_fixture["resolvedMappings"] + mapping_fixture.get("unresolvedMappings", [])
     price_fixture = load(source_root / "fixtures" / "equipment" / "equipment-price-conflicts.json")["records"]
-    program = extract_program_sources(source_root)
+    program = extract_program_sources(program_source_root or source_root, source_root)
     raw_items = program["items"]
     allow_ids = {row["equipmentId"] for row in allow}
     mapping_by_id = {row["equipmentId"]: row for row in mappings}
 
-    require(len(records) == 786, "invalid_equipment_count", str(len(records)))
+    require(len(records) == 825, "invalid_equipment_count", str(len(records)))
     by_id = unique(records, "equipmentId")
     require(set(by_id) == allow_ids, "equipment_allowlist_mismatch", "formal Dataset differs from E3-A allowlist")
     expected, recipe_ids, drop_entries = expected_relations(source_root, allow_ids)
     wiki_categories = {row["id"]: row.get("category") for row in program["wiki"]}
-    require(all(wiki_categories.get(equipment_id) == "equipment" for equipment_id in by_id), "equipment_allowlist_mismatch", "SkillBook, Doll or remains record found")
+    require(all(raw_items[equipment_id]["type"] in {"wpn", "arm", "acc"} for equipment_id in by_id), "equipment_allowlist_mismatch", "SkillBook, Doll or remains record found")
     require(records == sorted(records, key=lambda row: row["equipmentId"]), "unstable_equipment_output", "equipment record order")
     require(diagnostics == sorted(diagnostics, key=lambda row: (row["equipmentId"], row["code"], row["id"])), "unstable_equipment_output", "diagnostic order")
 
@@ -135,11 +139,14 @@ def validate(
         require(record["displayName"] == raw["n"] and record["itemType"] == raw["type"], "equipment_allowlist_mismatch", f"canonical identity projection: {equipment_id}")
         require(record["entityRef"] == {"entityType": "equipment", "entityId": equipment_id}, "invalid_equipment_entity_ref", equipment_id)
         require(record["equipmentGroup"] in GROUPS, "invalid_equipment_group", equipment_id)
-        require(record["equipmentType"] in TYPES and TYPE_GROUP[record["equipmentType"]] == record["equipmentGroup"], "invalid_equipment_type", equipment_id)
+        mapping = mapping_by_id[equipment_id]
+        if mapping.get("status") == "unresolved":
+            require(record["equipmentType"] is None and record["status"] == "unresolved", "invalid_equipment_type", equipment_id)
+        else:
+            require(record["equipmentType"] in TYPES and TYPE_GROUP[record["equipmentType"]] == record["equipmentGroup"], "invalid_equipment_type", equipment_id)
         require(record["slot"] in SLOTS, "invalid_equipment_slot", equipment_id)
         expected_group = {"wpn": "weapon", "arm": "armor", "acc": "accessory"}.get(record["itemType"])
         require(expected_group == record["equipmentGroup"], "invalid_equipment_group", equipment_id)
-        mapping = mapping_by_id[equipment_id]
         require((record["equipmentGroup"], record["equipmentType"], record["slot"]) == (mapping["equipmentGroup"], mapping["equipmentType"], mapping["slot"]), "equipment_allowlist_mismatch", f"classification: {equipment_id}")
 
         classes = record["classRequirements"]["baseClasses"]
@@ -211,8 +218,8 @@ def validate(
 
     if check_deterministic:
         with tempfile.TemporaryDirectory() as first, tempfile.TemporaryDirectory() as second:
-            generate(source_root, Path(first))
-            generate(source_root, Path(second))
+            generate(program_source_root or source_root, Path(first), source_root)
+            generate(program_source_root or source_root, Path(second), source_root)
             for name in FILES:
                 current = (data_dir / name).read_bytes()
                 require((Path(first) / name).read_bytes() == (Path(second) / name).read_bytes() == current, "unstable_equipment_output", f"checked-in parity: {name}")
@@ -230,10 +237,11 @@ def main() -> int:
     parser.add_argument("--data-dir", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--schema-dir", type=Path, default=DEFAULT_SCHEMAS)
     parser.add_argument("--source-root", type=Path, default=ROOT)
+    parser.add_argument("--program-source-root", type=Path)
     parser.add_argument("--skip-deterministic", action="store_true")
     args = parser.parse_args()
     try:
-        result = validate(args.data_dir, args.schema_dir, args.source_root, not args.skip_deterministic)
+        result = validate(args.data_dir, args.schema_dir, args.source_root, not args.skip_deterministic, args.program_source_root)
     except (ValidationError, OSError, ValueError, RuntimeError, KeyError, json.JSONDecodeError) as error:
         print(f"FAILED: {error}")
         return 1

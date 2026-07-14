@@ -6,7 +6,8 @@ from pathlib import Path
 from generate_legacy_entity_mappings import ROOT,build_mappings,encode,extract_source,mapping_id,normalize_display
 from validate_legacy_entity_mappings import entity_sets,load,validate
 SCHEMA=load(ROOT/"schemas/legacy-entity-mapping.schema.json")
-DATA=extract_source(ROOT);ENTITIES=entity_sets(DATA)
+SOURCE_ROOT=ROOT/"temp_online"/"u2a-c3d4f96f13aefabf1453a4a3f1f54d688fd573f6-v2"/"snapshot"
+DATA=extract_source(SOURCE_ROOT,ROOT);ENTITIES=entity_sets(DATA)
 def datasets():
  r,u=build_mappings(copy.deepcopy(DATA));return {"schemaVersion":"1.0.0","mappings":r},{"schemaVersion":"1.0.0","mappings":u}
 def codes(ds,baseline=False):return {x["code"] for x in validate(list(ds),SCHEMA,ENTITIES,check_baseline=baseline)}
@@ -57,15 +58,15 @@ class Tests(unittest.TestCase):
  def test_23_card_candidates(self):
   r,u=datasets();self.assertEqual(sum(x['mappingType']=='legacy_card_key_to_card_candidate' for x in u['mappings']),409)
  def test_24_drop_count(self):
-  r,u=datasets();self.assertEqual(sum(x['mappingType']=='drop_owner_to_monster_id' for x in r['mappings']),433)
+  r,u=datasets();self.assertEqual(sum(x['mappingType']=='drop_owner_to_monster_id' for x in r['mappings']),440);self.assertEqual(sum(x['mappingType']=='drop_owner_to_monster_id' and x['status']=='conflict' for x in u['mappings']),1)
  def test_25_wiki_monsters(self):
-  r,u=datasets();self.assertEqual(sum(x['mappingType']=='wiki_monster_to_monster_id' for x in r['mappings']),408)
+  r,u=datasets();self.assertEqual(sum(x['mappingType']=='wiki_monster_to_monster_id' for x in r['mappings']),407)
  def test_26_craft_resolved(self):
-  r,u=datasets();self.assertEqual(sum(x['mappingType']=='craft_monster_to_monster_id' for x in r['mappings']),365)
+  r,u=datasets();self.assertEqual(sum(x['mappingType']=='craft_monster_to_monster_id' for x in r['mappings']),364)
  def test_27_nav_resolved(self):
-  r,u=datasets();self.assertEqual(sum(x['mappingType']=='map_label_to_map_id' for x in r['mappings']),100)
+  r,u=datasets();self.assertEqual(sum(x['mappingType']=='map_label_to_map_id' for x in r['mappings']),103)
  def test_28_nav_missing(self):
-  r,u=datasets();self.assertEqual(sum(x['mappingType']=='map_label_to_map_id' for x in u['mappings']),18)
+  r,u=datasets();self.assertEqual(sum(x['mappingType']=='map_label_to_map_id' for x in u['mappings']),19)
  def test_29_wiki_location_resolved(self):
   r,u=datasets();self.assertEqual(sum(x['mappingType']=='wiki_location_to_map_id' for x in r['mappings']),83)
  def test_30_wiki_location_unresolved(self):

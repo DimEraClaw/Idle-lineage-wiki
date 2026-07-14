@@ -55,7 +55,7 @@ def require_sorted(values: list[Any], key, label: str) -> None:
     require(values == sorted(values, key=key), f"Non-deterministic ordering: {label}")
 
 
-def validate(data_dir: Path, schema_dir: Path, source_root: Path, check_deterministic: bool = True) -> dict[str, Any]:
+def validate(data_dir: Path, schema_dir: Path, source_root: Path, check_deterministic: bool = True, source_revision: str | None = None) -> dict[str, Any]:
     monsters_doc, maps_doc, drops_doc, unresolved_doc = (load(data_dir / f) for f in FILES)
     schema_validate(monsters_doc, schema_dir / "monster.schema.json")
     schema_validate(maps_doc, schema_dir / "map.schema.json")
@@ -101,7 +101,10 @@ def validate(data_dir: Path, schema_dir: Path, source_root: Path, check_determin
         table_id = table["dropTableId"]
         require(ref_key(table["entityRef"]) == ("dropTable", table_id), f"Invalid drop table entityRef: {table_id}")
         owner = table["owner"]
-        require(ref_key(owner)[0] == "monster" and owner["entityId"] in monster_by_id, f"Invalid DropOwner: {table_id}")
+        if owner is None:
+            require(table["ownerType"] == "unknown" and table["status"] == "unresolved" and bool(table["ownerNameText"]), f"Invalid unresolved DropOwner: {table_id}")
+        else:
+            require(ref_key(owner)[0] == "monster" and owner["entityId"] in monster_by_id and table["ownerType"] == "monster", f"Invalid DropOwner: {table_id}")
         require_sorted(table["entries"], lambda x: x["dropEntryId"], f"drop entries {table_id}")
         for entry in table["entries"]:
             schema_validate(entry, entry_schema)
@@ -122,8 +125,8 @@ def validate(data_dir: Path, schema_dir: Path, source_root: Path, check_determin
     byte_hashes = {name: hashlib.sha256((data_dir / name).read_bytes()).hexdigest() for name in FILES}
     if check_deterministic:
         with tempfile.TemporaryDirectory() as first, tempfile.TemporaryDirectory() as second:
-            generate(source_root, Path(first))
-            generate(source_root, Path(second))
+            generate(source_root, Path(first), source_revision)
+            generate(source_root, Path(second), source_revision)
             for name in FILES:
                 a, b, current = (Path(first) / name).read_bytes(), (Path(second) / name).read_bytes(), (data_dir / name).read_bytes()
                 require(a == b, f"Generator is not byte stable: {name}")
@@ -137,10 +140,11 @@ def main() -> int:
     parser.add_argument("--data-dir", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--schema-dir", type=Path, default=DEFAULT_SCHEMAS)
     parser.add_argument("--source-root", type=Path, default=ROOT)
+    parser.add_argument("--source-revision")
     parser.add_argument("--skip-deterministic", action="store_true")
     args = parser.parse_args()
     try:
-        result = validate(args.data_dir, args.schema_dir, args.source_root, not args.skip_deterministic)
+        result = validate(args.data_dir, args.schema_dir, args.source_root, not args.skip_deterministic, args.source_revision)
     except (ValidationError, OSError, ValueError) as error:
         print(f"FAILED: {error}")
         return 1

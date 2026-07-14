@@ -11,8 +11,8 @@
     "viewPayloadVersion": { "const": "1.0.0" },
     "records": {
       "type": "array",
-      "minItems": 786,
-      "maxItems": 786,
+      "minItems": 825,
+      "maxItems": 825,
       "items": { "$ref": "#/$defs/summary" }
     }
   },
@@ -35,7 +35,7 @@
         "displayName": { "type": "string", "minLength": 1 },
         "itemType": { "enum": ["wpn", "arm", "acc"] },
         "equipmentGroup": { "enum": ["weapon", "armor", "accessory"] },
-        "equipmentType": { "type": "string", "minLength": 1 },
+        "equipmentType": { "type": ["string", "null"] },
         "slot": { "type": "string", "minLength": 1 },
         "rarity": { "enum": ["common", "legendary", "relic", null] },
         "price": {

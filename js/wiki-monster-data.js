@@ -57,10 +57,9 @@
             }
             nextMonstersById.set(monster.monsterId, monster);
             const nameKey = normalize(monster.displayName);
-            if (!nameKey || nextMonstersByName.has(nameKey)) {
-                throw new Error('Monster dataset contains an invalid or duplicate displayName.');
-            }
-            nextMonstersByName.set(nameKey, monster);
+            if (!nameKey) throw new Error('Monster dataset contains an invalid displayName.');
+            if (!nextMonstersByName.has(nameKey)) nextMonstersByName.set(nameKey, []);
+            nextMonstersByName.get(nameKey).push(monster);
         });
 
         maps.forEach(map => {
@@ -148,8 +147,8 @@
     }
 
     function getMonsterByName(displayName) {
-        const record = ready ? (monstersByName.get(normalize(displayName)) || null) : null;
-        return snapshot(record);
+        const records = ready ? (monstersByName.get(normalize(displayName)) || []) : [];
+        return snapshot(records.length === 1 ? records[0] : null);
     }
 
     function searchMonsters(keyword) {

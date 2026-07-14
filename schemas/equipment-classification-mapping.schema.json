@@ -4,7 +4,7 @@
   "title": "Equipment Classification Mapping Fixture 1.0.0",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "mappingVersion", "fixtureType", "forbiddenStrategies", "resolvedMappings"],
+  "required": ["schemaVersion", "mappingVersion", "fixtureType", "forbiddenStrategies", "resolvedMappings", "unresolvedMappings"],
   "properties": {
     "schemaVersion": { "const": "1.0.0" },
     "mappingVersion": { "const": "1.0.0" },
@@ -24,6 +24,25 @@
           "method": { "enum": ["raw_type_and_slot", "legacy_subtype_mapping", "weapon_tags_id_mapping", "explicit_id_mapping"] },
           "sourceLocations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
           "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "unresolvedMappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["equipmentId", "equipmentGroup", "equipmentType", "slot", "method", "sourceLocations", "reason", "status", "candidates"],
+        "properties": {
+          "equipmentId": { "type": "string", "pattern": "^[A-Za-z0-9_]+$" },
+          "equipmentGroup": { "const": "weapon" },
+          "equipmentType": { "type": "null" },
+          "slot": { "const": "weapon" },
+          "method": { "const": "raw_type_and_slot" },
+          "sourceLocations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "reason": { "type": "string", "minLength": 1 },
+          "status": { "const": "unresolved" },
+          "candidates": { "type": "array", "items": { "type": "string", "minLength": 1 } }
         }
       }
     }

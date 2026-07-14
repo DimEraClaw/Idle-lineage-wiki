@@ -4618,6 +4618,46 @@
     {
       "baseStats": {
         "ac": {
+          "value": 10,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "knight",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "真．冥皇套裝之一。集齊披風／鎧甲／面甲／護手／鋼靴五件：防禦-20、HP+100、MP+20、HP自然恢復量+10、攻擊速度額外+30%（可與加速、勇敢藥水堆疊）、額外傷害+5。"
+      },
+      "detailLocator": "data/equipment/equipment-details-3.json",
+      "displayName": "真．冥皇鎧甲",
+      "entityRef": {
+        "entityId": "amr_emperor",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "amr_emperor",
+      "equipmentType": "armor",
+      "itemType": "arm",
+      "price": {
+        "amount": 500000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "armor",
+      "status": "complete"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 13,
           "valueState": "explicit"
         },
@@ -5467,6 +5507,49 @@
         "ac": {
           "value": 0,
           "valueState": "explicit_zero"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "散發不祥氣息的項鍊。硬質減少0.25秒；MP自然恢復量-5。"
+      },
+      "detailLocator": "data/equipment/equipment-details-3.json",
+      "displayName": "厄運項鍊",
+      "entityRef": {
+        "entityId": "amu_doom",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "amu_doom",
+      "equipmentType": "necklace",
+      "itemType": "acc",
+      "price": {
+        "amount": 20000
+      },
+      "rarity": "common",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "necklace",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
         },
         "int": {
           "value": 1,
@@ -5542,6 +5625,49 @@
         "amount": 300000
       },
       "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "necklace",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "凝聚苦痛意志的項鍊。50% 機率免疫暈眩；HP自然恢復量-5。"
+      },
+      "detailLocator": "data/equipment/equipment-details-1.json",
+      "displayName": "苦痛項鍊",
+      "entityRef": {
+        "entityId": "amu_pain",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "amu_pain",
+      "equipmentType": "necklace",
+      "itemType": "acc",
+      "price": {
+        "amount": 20000
+      },
+      "rarity": "common",
       "safeEnhance": {
         "enhanceable": true,
         "safeLevel": 0
@@ -5846,6 +5972,10 @@
       "baseStats": {
         "ac": {
           "value": 2,
+          "valueState": "explicit"
+        },
+        "resNone": {
+          "value": 10,
           "valueState": "explicit"
         }
       },
@@ -9957,6 +10087,46 @@
     {
       "baseStats": {
         "ac": {
+          "value": 7,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "knight",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "真．冥皇套裝之一。集齊披風／鎧甲／面甲／護手／鋼靴五件：防禦-20、HP+100、MP+20、HP自然恢復量+10、攻擊速度額外+30%（可與加速、勇敢藥水堆疊）、額外傷害+5。"
+      },
+      "detailLocator": "data/equipment/equipment-details-1.json",
+      "displayName": "真．冥皇鋼靴",
+      "entityRef": {
+        "entityId": "bot_emperor",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "bot_emperor",
+      "equipmentType": "boots",
+      "itemType": "arm",
+      "price": {
+        "amount": 500000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "boots",
+      "status": "complete"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 2,
           "valueState": "explicit"
         },
@@ -10712,6 +10882,46 @@
       },
       "slot": "cloak",
       "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 7,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "knight",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "真．冥皇套裝之一。集齊披風／鎧甲／面甲／護手／鋼靴五件：防禦-20、HP+100、MP+20、HP自然恢復量+10、攻擊速度額外+30%（可與加速、勇敢藥水堆疊）、額外傷害+5。"
+      },
+      "detailLocator": "data/equipment/equipment-details-a.json",
+      "displayName": "真．冥皇披風",
+      "entityRef": {
+        "entityId": "clk_emperor",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "clk_emperor",
+      "equipmentType": "cloak",
+      "itemType": "arm",
+      "price": {
+        "amount": 500000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "cloak",
+      "status": "complete"
     },
     {
       "baseStats": {
@@ -11559,6 +11769,139 @@
     {
       "baseStats": {
         "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
+        "mhp": {
+          "value": 20,
+          "valueState": "explicit"
+        },
+        "mmp": {
+          "value": 10,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "淨化怨念後重生的靈魂耳環，剛柔並濟。HP上限+20、MP上限+10、近距離傷害+1。"
+      },
+      "detailLocator": "data/equipment/equipment-details-3.json",
+      "displayName": "靈魂耳環(鬥士)",
+      "entityRef": {
+        "entityId": "ear_soul_fighter",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "ear_soul_fighter",
+      "equipmentType": "earring",
+      "itemType": "acc",
+      "price": {
+        "amount": 30000
+      },
+      "rarity": "common",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "earring",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
+        "mhp": {
+          "value": 40,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dragon",
+          "knight",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "淨化怨念後重生的靈魂耳環，堅毅不拔。HP上限+40、HP自然恢復量+3、近距離命中+1。"
+      },
+      "detailLocator": "data/equipment/equipment-details-f.json",
+      "displayName": "靈魂耳環(騎士)",
+      "entityRef": {
+        "entityId": "ear_soul_knight",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "ear_soul_knight",
+      "equipmentType": "earring",
+      "itemType": "acc",
+      "price": {
+        "amount": 30000
+      },
+      "rarity": "common",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "earring",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
+        "mdmg": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "mmp": {
+          "value": 30,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf",
+          "illusion",
+          "mage"
+        ]
+      },
+      "description": {
+        "canonicalText": "淨化怨念後重生的靈魂耳環，蘊含充沛魔力。MP上限+30、MP自然恢復量+2、魔法傷害+1。"
+      },
+      "detailLocator": "data/equipment/equipment-details-a.json",
+      "displayName": "靈魂耳環(法師)",
+      "entityRef": {
+        "entityId": "ear_soul_mage",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "ear_soul_mage",
+      "equipmentType": "earring",
+      "itemType": "acc",
+      "price": {
+        "amount": 30000
+      },
+      "rarity": "common",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "earring",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 3,
           "valueState": "explicit"
         }
@@ -11897,6 +12240,46 @@
       },
       "slot": "gloves",
       "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 5,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "knight",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "真．冥皇套裝之一。集齊披風／鎧甲／面甲／護手／鋼靴五件：防禦-20、HP+100、MP+20、HP自然恢復量+10、攻擊速度額外+30%（可與加速、勇敢藥水堆疊）、額外傷害+5。"
+      },
+      "detailLocator": "data/equipment/equipment-details-f.json",
+      "displayName": "真．冥皇護手",
+      "entityRef": {
+        "entityId": "glv_emperor",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "glv_emperor",
+      "equipmentType": "gloves",
+      "itemType": "arm",
+      "price": {
+        "amount": 500000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "gloves",
+      "status": "complete"
     },
     {
       "baseStats": {
@@ -12628,6 +13011,46 @@
       },
       "slot": "helmet",
       "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 6,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "knight",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "真．冥皇套裝之一。集齊披風／鎧甲／面甲／護手／鋼靴五件：防禦-20、HP+100、MP+20、HP自然恢復量+10、攻擊速度額外+30%（可與加速、勇敢藥水堆疊）、額外傷害+5。"
+      },
+      "detailLocator": "data/equipment/equipment-details-7.json",
+      "displayName": "真．冥皇面甲",
+      "entityRef": {
+        "entityId": "hlm_emperor",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "hlm_emperor",
+      "equipmentType": "helmet",
+      "itemType": "arm",
+      "price": {
+        "amount": 500000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "helmet",
+      "status": "complete"
     },
     {
       "baseStats": {
@@ -14310,6 +14733,10 @@
         "ac": {
           "value": 0,
           "valueState": "explicit_zero"
+        },
+        "resNone": {
+          "value": 20,
+          "valueState": "explicit"
         }
       },
       "classRequirements": {
@@ -15101,7 +15528,7 @@
         ]
       },
       "description": {
-        "canonicalText": "【遺物】爆彈花不穩定的花蕊，受創時炸裂波及四周。"
+        "canonicalText": "【遺物】爆彈花不穩定的花蕊，受創時炸裂波及四周；爆裂反噬屬於火屬性魔法傷害，可由魔防與火屬性抗性減輕。"
       },
       "detailLocator": "data/equipment/equipment-details-e.json",
       "displayName": "爆彈花蕊",
@@ -15522,6 +15949,57 @@
     {
       "baseStats": {
         "dmgBonus": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 2,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 16,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "elf",
+          "illusion",
+          "knight"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】淬滿屍毒的細針，可單手持握、連射如雨，麻痺獵物後仍能刺穿其頑強的抵抗（需裝備箭矢）。"
+      },
+      "detailLocator": "data/equipment/equipment-details-a.json",
+      "displayName": "屍毒之針",
+      "entityRef": {
+        "entityId": "relic_corpse_needle",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_corpse_needle",
+      "equipmentType": "bow",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
           "value": 7,
           "valueState": "explicit"
         },
@@ -15659,6 +16137,53 @@
       },
       "slot": "weapon",
       "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dr": {
+          "value": 5,
+          "valueState": "explicit"
+        },
+        "mhp": {
+          "value": 50,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】巨大鱷魚厚實皮革縫製的盔甲，堅韌耐重，足以卸去迎面而來的鋒芒。"
+      },
+      "detailLocator": "data/equipment/equipment-details-6.json",
+      "displayName": "巨大鱷魚的皮革盔甲",
+      "entityRef": {
+        "entityId": "relic_croc_leather",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_croc_leather",
+      "equipmentType": "armor",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "armor",
+      "status": "complete"
     },
     {
       "baseStats": {
@@ -16712,6 +17237,54 @@
     {
       "baseStats": {
         "ac": {
+          "value": 4,
+          "valueState": "explicit"
+        },
+        "mr": {
+          "value": 10,
+          "valueState": "explicit"
+        },
+        "resEarth": {
+          "value": 20,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】地元素凝聚而成的護盾，厚土之力抵禦四方衝擊。"
+      },
+      "detailLocator": "data/equipment/equipment-details-6.json",
+      "displayName": "地元素屏障",
+      "entityRef": {
+        "entityId": "relic_earth_barrier",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_earth_barrier",
+      "equipmentType": "shield",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "shield",
+      "status": "complete"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 0,
           "valueState": "explicit_zero"
         },
@@ -16754,6 +17327,55 @@
         "safeLevel": null
       },
       "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 18,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 15,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf",
+          "illusion"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】地精靈王抗拒之力凝成的雙手弓。一般模式可發動連射 65%；一般攻擊化為地屬性，受到傷害時必定額外觸發一次連射（經典模式亦可發動）。"
+      },
+      "detailLocator": "data/equipment/equipment-details-9.json",
+      "displayName": "地精靈王的抗拒",
+      "entityRef": {
+        "entityId": "relic_earthking_resist",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_earthking_resist",
+      "equipmentType": "bow",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -17441,6 +18063,58 @@
     {
       "baseStats": {
         "ac": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "mr": {
+          "value": 10,
+          "valueState": "explicit"
+        },
+        "resFire": {
+          "value": 20,
+          "valueState": "explicit"
+        },
+        "str": {
+          "value": 1,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】火元素燃燒而成的護盾，烈焰之力灼退進犯之敵。"
+      },
+      "detailLocator": "data/equipment/equipment-details-e.json",
+      "displayName": "火元素屏障",
+      "entityRef": {
+        "entityId": "relic_fire_barrier",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_fire_barrier",
+      "equipmentType": "shield",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "shield",
+      "status": "complete"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 0,
           "valueState": "explicit_zero"
         },
@@ -17530,6 +18204,56 @@
         "safeLevel": null
       },
       "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 18,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 21,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 17,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 15,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dragon",
+          "knight",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】火精靈王爆焰凝成的雙手劍。一般模式可發動切割；一般攻擊化為火屬性，命中時有 10% 機率爆破，追加等同該次傷害的火屬性魔法傷害。"
+      },
+      "detailLocator": "data/equipment/equipment-details-6.json",
+      "displayName": "火精靈王的爆焰",
+      "entityRef": {
+        "entityId": "relic_fireking_blast",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_fireking_blast",
+      "equipmentType": "two_hand_sword",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -18046,6 +18770,49 @@
     {
       "baseStats": {
         "ac": {
+          "value": 6,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】黑暗妖精將軍愛用的握劍護腕。裝備單手劍或雙手劍時，力量 +3。"
+      },
+      "detailLocator": "data/equipment/equipment-details-7.json",
+      "displayName": "將軍愛用的握劍護腕",
+      "entityRef": {
+        "entityId": "relic_general_swordguard",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_general_swordguard",
+      "equipmentType": "gloves",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "gloves",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 1,
           "valueState": "explicit"
         }
@@ -18084,6 +18851,59 @@
         "safeLevel": null
       },
       "slot": "necklace",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 11,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 9,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 15,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "knight",
+          "mage",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】殘暴食屍鬼口中兇殘的毒牙，咬痕間纏繞著克制疾風的地脈之力。"
+      },
+      "detailLocator": "data/equipment/equipment-details-5.json",
+      "displayName": "兇殘惡鬼的毒牙",
+      "entityRef": {
+        "entityId": "relic_ghoul_fang",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_ghoul_fang",
+      "equipmentType": "one_hand_sword",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -19669,6 +20489,49 @@
     },
     {
       "baseStats": {
+        "ac": {
+          "value": 12,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】卡司特王背上腫脹的畸形背瘤，搏動之間源源不絕地湧出生機。"
+      },
+      "detailLocator": "data/equipment/equipment-details-4.json",
+      "displayName": "妖鬼王的畸形背瘤",
+      "entityRef": {
+        "entityId": "relic_kasta_hump",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_kasta_hump",
+      "equipmentType": "cloak",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "cloak",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
         "dmgBonus": {
           "value": 9,
           "valueState": "explicit"
@@ -19764,6 +20627,54 @@
         "safeLevel": null
       },
       "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 13,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 12,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】熔岩高崙熔鑄的雙拳，一擊裂地，灼熱拳痕會在敵人身上持續燃燒。"
+      },
+      "detailLocator": "data/equipment/equipment-details-6.json",
+      "displayName": "熔岩灼燒的雙拳",
+      "entityRef": {
+        "entityId": "relic_lava_fists",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_lava_fists",
+      "equipmentType": "blunt",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -20057,6 +20968,49 @@
         "safeLevel": null
       },
       "slot": "boots",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】紅鬼魂殘存的抗魔意志凝成的襯衫。每有 1 點精神，魔防（MR）+1。"
+      },
+      "detailLocator": "data/equipment/equipment-details-6.json",
+      "displayName": "魔力阻抗襯衫",
+      "entityRef": {
+        "entityId": "relic_magic_resist_shirt",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_magic_resist_shirt",
+      "equipmentType": "tshirt",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "tshirt",
       "status": "partial"
     },
     {
@@ -20646,6 +21600,58 @@
         "safeLevel": null
       },
       "slot": "helmet",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 17,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 21,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 17,
+          "valueState": "explicit"
+        },
+        "str": {
+          "value": 1,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dragon"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】不斷變幻形貌的鎖鏈劍，能隨敵人的力量改變姿態，反制地、水、火、風四大屬性。"
+      },
+      "detailLocator": "data/equipment/equipment-details-9.json",
+      "displayName": "不定形的變幻劍",
+      "entityRef": {
+        "entityId": "relic_morph_blade",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_morph_blade",
+      "equipmentType": "chain_sword",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -21626,6 +22632,61 @@
     },
     {
       "baseStats": {
+        "ac": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "extraMp": {
+          "value": 5,
+          "valueState": "explicit"
+        },
+        "mdmg": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "mmp": {
+          "value": 30,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】與歐林互許終身的定情之戒，指環間流轉著綿長不絕的魔力。"
+      },
+      "detailLocator": "data/equipment/equipment-details-d.json",
+      "displayName": "與歐林的定情之戒",
+      "entityRef": {
+        "entityId": "relic_orin_ring",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "relic_orin_ring",
+      "equipmentType": "ring",
+      "itemType": "acc",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "ring",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
         "dmgBonus": {
           "value": 6,
           "valueState": "explicit"
@@ -21875,6 +22936,58 @@
     },
     {
       "baseStats": {
+        "dex": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "dmgBonus": {
+          "value": 16,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 10,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 18,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】傳說海賊珍藏的迷幻雙刀，刃光如潮，交錯之間翻湧著深海的幻影。"
+      },
+      "detailLocator": "data/equipment/equipment-details-5.json",
+      "displayName": "傳說海賊的迷幻雙刀",
+      "entityRef": {
+        "entityId": "relic_pirate_dual",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_pirate_dual",
+      "equipmentType": "dual_blade",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
         "ac": {
           "value": 0,
           "valueState": "explicit_zero"
@@ -22053,6 +23166,50 @@
         "safeLevel": null
       },
       "slot": "earring",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
+        "dex": {
+          "value": 2,
+          "valueState": "explicit"
+        },
+        "int": {
+          "value": 2,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】獨角獸回應純潔少女憐愛所留下的項鍊。僅女妖精可裝備；男妖精與其他職業皆無法裝備。"
+      },
+      "detailLocator": "data/equipment/equipment-details-7.json",
+      "displayName": "純潔少女的憐愛",
+      "entityRef": {
+        "entityId": "relic_pure_maiden_love",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "relic_pure_maiden_love",
+      "equipmentType": "necklace",
+      "itemType": "acc",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "necklace",
       "status": "partial"
     },
     {
@@ -22433,6 +23590,59 @@
         "safeLevel": null
       },
       "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "extraMp": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 15,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "illusion",
+          "mage"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】破岩法師將大地秘術封入的單手魔杖。一般模式可發動共鳴；一般攻擊化為地屬性，每次攻擊 100% 額外觸發地獄之牙。"
+      },
+      "detailLocator": "data/equipment/equipment-details-f.json",
+      "displayName": "破岩法師的秘術",
+      "entityRef": {
+        "entityId": "relic_rockmage_secret",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_rockmage_secret",
+      "equipmentType": "staff",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -23443,6 +24653,59 @@
     {
       "baseStats": {
         "dmgBonus": {
+          "value": 13,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 5,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 4,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 14,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "knight",
+          "mage",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】殘暴史巴托碎裂的骸骨破片，殘存著獵殺不死生物與狼人的執念。"
+      },
+      "detailLocator": "data/equipment/equipment-details-4.json",
+      "displayName": "殘暴骸骨的破片",
+      "entityRef": {
+        "entityId": "relic_sparto_shard",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_sparto_shard",
+      "equipmentType": "one_hand_sword",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
           "value": 9,
           "valueState": "explicit"
         },
@@ -23960,6 +25223,49 @@
         "safeLevel": null
       },
       "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】馴獸師隨身的飼料袋，各種野獸聞香而至、俯首認主。裝備時視為持有全部誘捕狀態，卸下即消失。"
+      },
+      "detailLocator": "data/equipment/equipment-details-6.json",
+      "displayName": "馴獸師的飼料袋",
+      "entityRef": {
+        "entityId": "relic_tamer_feedbag",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "relic_tamer_feedbag",
+      "equipmentType": "ring",
+      "itemType": "acc",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "ring",
       "status": "partial"
     },
     {
@@ -24625,6 +25931,58 @@
     {
       "baseStats": {
         "ac": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "con": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "mr": {
+          "value": 10,
+          "valueState": "explicit"
+        },
+        "resWater": {
+          "value": 20,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】水元素流轉而成的護盾，柔波之力承接一切鋒芒。"
+      },
+      "detailLocator": "data/equipment/equipment-details-c.json",
+      "displayName": "水元素屏障",
+      "entityRef": {
+        "entityId": "relic_water_barrier",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_water_barrier",
+      "equipmentType": "shield",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "shield",
+      "status": "complete"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 0,
           "valueState": "explicit_zero"
         }
@@ -24663,6 +26021,54 @@
         "safeLevel": null
       },
       "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 13,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 17,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 15,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】水精靈王柔流凝成的鋼爪。雙擊 35%，攻擊貫穿硬皮；一般攻擊化為水屬性，未命中時有 30% 機率改判為擦傷並造成一半傷害。"
+      },
+      "detailLocator": "data/equipment/equipment-details-2.json",
+      "displayName": "水精靈王的撫摸",
+      "entityRef": {
+        "entityId": "relic_waterking_caress",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_waterking_caress",
+      "equipmentType": "claw",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -25105,6 +26511,58 @@
           "value": 1,
           "valueState": "explicit"
         },
+        "dex": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "mr": {
+          "value": 10,
+          "valueState": "explicit"
+        },
+        "resWind": {
+          "value": 20,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】風元素環繞而成的護盾，疾風之力卸去來襲之勢。"
+      },
+      "detailLocator": "data/equipment/equipment-details-4.json",
+      "displayName": "風元素屏障",
+      "entityRef": {
+        "entityId": "relic_wind_barrier",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_wind_barrier",
+      "equipmentType": "shield",
+      "itemType": "arm",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "shield",
+      "status": "complete"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 1,
+          "valueState": "explicit"
+        },
         "er": {
           "value": 3,
           "valueState": "explicit"
@@ -25144,6 +26602,54 @@
         "safeLevel": null
       },
       "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 15,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "mage"
+        ]
+      },
+      "description": {
+        "canonicalText": "【遺物】風精靈王狂嘯凝成的單手魔杖。一般模式可發動共鳴，攻擊貫穿硬皮；一般攻擊化為風屬性，施展風屬性傷害魔法時有 15% 機率額外觸發龍捲風。"
+      },
+      "detailLocator": "data/equipment/equipment-details-3.json",
+      "displayName": "風精靈王的狂嘯",
+      "entityRef": {
+        "entityId": "relic_windking_roar",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_windking_roar",
+      "equipmentType": "staff",
+      "itemType": "wpn",
+      "price": {
+        "amount": 10000
+      },
+      "rarity": "relic",
+      "safeEnhance": {
+        "enhanceable": false,
+        "safeLevel": null
+      },
+      "slot": "weapon",
       "status": "partial"
     },
     {
@@ -25838,6 +27344,61 @@
           "value": 0,
           "valueState": "explicit_zero"
         },
+        "int": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "mhp": {
+          "value": 30,
+          "valueState": "explicit"
+        },
+        "wis": {
+          "value": 1,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "dragon",
+          "elf",
+          "illusion",
+          "knight",
+          "mage",
+          "royal",
+          "warrior"
+        ]
+      },
+      "description": {
+        "canonicalText": "傳說中賢者佩戴的戒指，助人凝神靜思。智力+1、精神+1、HP上限+30。"
+      },
+      "detailLocator": "data/equipment/equipment-details-5.json",
+      "displayName": "賢者之戒",
+      "entityRef": {
+        "entityId": "rng_sage",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "accessory",
+      "equipmentId": "rng_sage",
+      "equipmentType": "ring",
+      "itemType": "acc",
+      "price": {
+        "amount": 2000000
+      },
+      "rarity": "common",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "ring",
+      "status": "complete"
+    },
+    {
+      "baseStats": {
+        "ac": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
         "resWater": {
           "value": 10,
           "valueState": "explicit"
@@ -26180,6 +27741,47 @@
     {
       "baseStats": {
         "ac": {
+          "value": 3,
+          "valueState": "explicit"
+        },
+        "mhp": {
+          "value": 10,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dragon",
+          "knight"
+        ]
+      },
+      "description": {
+        "canonicalText": "武官配發的制式盾牌。HP+10、HP自然恢復量+4。"
+      },
+      "detailLocator": "data/equipment/equipment-details-1.json",
+      "displayName": "武官之盾",
+      "entityRef": {
+        "entityId": "shd_official",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "shd_official",
+      "equipmentType": "shield",
+      "itemType": "arm",
+      "price": {
+        "amount": 80000
+      },
+      "rarity": "common",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 6
+      },
+      "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 0,
           "valueState": "explicit_zero"
         },
@@ -26307,7 +27909,48 @@
     {
       "baseStats": {
         "ac": {
+          "value": 3,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "knight",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "反叛者們代代相傳的堅盾。硬質減少0.5秒；受到傷害時 1% 機率使該次傷害減少 50，每強化 +1 機率 +2%。"
+      },
+      "detailLocator": "data/equipment/equipment-details-f.json",
+      "displayName": "反叛者的盾牌",
+      "entityRef": {
+        "entityId": "shd_rebel",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "armor",
+      "equipmentId": "shd_rebel",
+      "equipmentType": "shield",
+      "itemType": "arm",
+      "price": {
+        "amount": 700000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 4
+      },
+      "slot": "shield",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "ac": {
           "value": 2,
+          "valueState": "explicit"
+        },
+        "resNone": {
+          "value": 20,
           "valueState": "explicit"
         }
       },
@@ -30120,6 +31763,58 @@
     },
     {
       "baseStats": {
+        "dmgBonus": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
+        "dmgL": {
+          "value": 22,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 19,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 4,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dark",
+          "elf",
+          "knight",
+          "mage",
+          "royal"
+        ]
+      },
+      "description": {
+        "canonicalText": "冥皇的詛咒滲入劍身的漆黑執行劍，握柄傳來刺骨的死寂。反擊（一般限定）、居合（一般限定）、貫穿、HP自然恢復量-30；裝備時變身為 死亡騎士。"
+      },
+      "detailLocator": "data/equipment/equipment-details-6.json",
+      "displayName": "受詛咒的真．冥皇執行劍",
+      "entityRef": {
+        "entityId": "wpn_cursed_emperor_blade",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "wpn_cursed_emperor_blade",
+      "equipmentType": "one_hand_sword",
+      "itemType": "wpn",
+      "price": {
+        "amount": 990000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 6
+      },
+      "slot": "weapon",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
         "dmgL": {
           "value": 3,
           "valueState": "explicit"
@@ -32469,6 +34164,124 @@
       },
       "slot": "weapon",
       "status": "partial"
+    },
+    {
+      "baseStats": {
+        "cha": {
+          "value": 2,
+          "valueState": "explicit"
+        },
+        "con": {
+          "value": 1,
+          "valueState": "explicit"
+        },
+        "dmgBonus": {
+          "value": 30,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 53,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 43,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 7,
+          "valueState": "explicit"
+        },
+        "str": {
+          "value": 2,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "dragon",
+          "knight"
+        ]
+      },
+      "description": {
+        "canonicalText": "吉爾塔斯魔力凝成的雙手魔劍，劍身纏繞著異界的沙塵與血氣。切割（一般限定）、貫穿、力量+2、體質+1、魅力+2；擊殺敵人後，獲得額外傷害+10，持續10秒。"
+      },
+      "detailLocator": "data/equipment/equipment-details-d.json",
+      "displayName": "吉爾塔斯之劍",
+      "entityRef": {
+        "entityId": "wpn_giltas_sword",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "wpn_giltas_sword",
+      "equipmentType": "two_hand_sword",
+      "itemType": "wpn",
+      "price": {
+        "amount": 990000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "weapon",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
+        "dmgL": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 15,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 0,
+          "valueState": "explicit_zero"
+        },
+        "int": {
+          "value": 2,
+          "valueState": "explicit"
+        },
+        "wis": {
+          "value": 2,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "illusion",
+          "mage"
+        ]
+      },
+      "description": {
+        "canonicalText": "吉爾塔斯魔力凝成的雙手魔杖，杖端迴盪著異界的低語。魔爆（一般限定）、貫穿、智力+2、精神+2、MP自然恢復量+15；擊殺敵人後，獲得額外魔法點數+10，持續10秒。"
+      },
+      "detailLocator": "data/equipment/equipment-details-e.json",
+      "displayName": "吉爾塔斯魔杖",
+      "entityRef": {
+        "entityId": "wpn_giltas_wand",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "wpn_giltas_wand",
+      "equipmentType": null,
+      "itemType": "wpn",
+      "price": {
+        "amount": 990000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 0
+      },
+      "slot": "weapon",
+      "status": "unresolved"
     },
     {
       "baseStats": {
@@ -34920,6 +36733,55 @@
       "safeEnhance": {
         "enhanceable": true,
         "safeLevel": 0
+      },
+      "slot": "weapon",
+      "status": "partial"
+    },
+    {
+      "baseStats": {
+        "dmgBonus": {
+          "value": 5,
+          "valueState": "explicit"
+        },
+        "dmgL": {
+          "value": 4,
+          "valueState": "explicit"
+        },
+        "dmgS": {
+          "value": 5,
+          "valueState": "explicit"
+        },
+        "hit": {
+          "value": 7,
+          "valueState": "explicit"
+        }
+      },
+      "classRequirements": {
+        "baseClasses": [
+          "elf",
+          "illusion"
+        ]
+      },
+      "description": {
+        "canonicalText": "在聖地深處腐朽多年的長弓，弓身雖朽、殺意未減。連射100%（一般限定）、貫穿（需裝備箭矢）。"
+      },
+      "detailLocator": "data/equipment/equipment-details-1.json",
+      "displayName": "腐壞的長弓",
+      "entityRef": {
+        "entityId": "wpn_rotten_longbow",
+        "entityType": "equipment"
+      },
+      "equipmentGroup": "weapon",
+      "equipmentId": "wpn_rotten_longbow",
+      "equipmentType": "bow",
+      "itemType": "wpn",
+      "price": {
+        "amount": 850000
+      },
+      "rarity": "legendary",
+      "safeEnhance": {
+        "enhanceable": true,
+        "safeLevel": 6
       },
       "slot": "weapon",
       "status": "partial"

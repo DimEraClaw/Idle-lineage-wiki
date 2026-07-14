@@ -100,7 +100,7 @@
     "baseStats": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["dmgS", "dmgL", "hit", "dmgBonus", "ac", "mr", "er", "dr", "mhp", "mmp", "extraMp", "mdmg", "str", "dex", "con", "int", "wis", "cha", "resFire", "resWater", "resWind", "resEarth"],
+      "required": ["dmgS", "dmgL", "hit", "dmgBonus", "ac", "mr", "er", "dr", "mhp", "mmp", "extraMp", "mdmg", "str", "dex", "con", "int", "wis", "cha", "resFire", "resWater", "resWind", "resEarth", "resNone"],
       "properties": {
         "dmgS": { "$ref": "#/$defs/statValue" }, "dmgL": { "$ref": "#/$defs/statValue" },
         "hit": { "$ref": "#/$defs/statValue" }, "dmgBonus": { "$ref": "#/$defs/statValue" },
@@ -112,7 +112,8 @@
         "con": { "$ref": "#/$defs/statValue" }, "int": { "$ref": "#/$defs/statValue" },
         "wis": { "$ref": "#/$defs/statValue" }, "cha": { "$ref": "#/$defs/statValue" },
         "resFire": { "$ref": "#/$defs/statValue" }, "resWater": { "$ref": "#/$defs/statValue" },
-        "resWind": { "$ref": "#/$defs/statValue" }, "resEarth": { "$ref": "#/$defs/statValue" }
+        "resWind": { "$ref": "#/$defs/statValue" }, "resEarth": { "$ref": "#/$defs/statValue" },
+        "resNone": { "$ref": "#/$defs/statValue" }
       }
     },
     "safeEnhance": {

@@ -17,12 +17,14 @@ NODE_EXTRACTOR = r'''
 const fs=require('fs'),vm=require('vm'),root=process.argv[1],read=p=>fs.readFileSync(root+'/'+p,'utf8');
 const c={};vm.createContext(c);
 for(const f of ['js/00-data.js','js/01-drops-config.js','js/15-cards.js']) vm.runInContext(read(f),c,{filename:f});
-const DB=vm.runInContext('DB',c),drops=vm.runInContext('MOB_DROPS',c),cards=vm.runInContext('CARD_MOB_INFO',c),trial=vm.runInContext('TRIAL_ITEM_CLASS',c);
+const DB=vm.runInContext('DB',c),drops=vm.runInContext('MOB_DROPS',c),cards=vm.runInContext('CARD_MOB_INFO',c),trial=vm.runInContext('TRIAL_ITEM_CLASS',c),gameVersion=vm.runInContext('GAME_VERSION',c);
 const world=read('js/11-world-map.js'),m=world.match(/const MAP_REGIONS\s*=\s*(\[[\s\S]*?\n\]);/);
 if(!m) throw new Error('MAP_REGIONS not found');
 const nav=vm.runInNewContext('('+m[1]+')'),labels={};
 for(const group of nav) for(const entry of group.maps||[]) if(DB.maps[entry.v]) labels[entry.v]=entry.t;
-console.log(JSON.stringify({mobs:DB.mobs,maps:DB.maps,drops,cardMonsterIds:[...new Set(Object.values(cards).map(x=>x.id))],itemIds:Object.keys(DB.items),trialItems:trial,mapLabels:labels}));
+const sanctuary=world.match(/const SANCTUARY_MAP_NAMES\s*=\s*(\{[^;]+\})\s*;/);
+if(sanctuary) Object.assign(labels,vm.runInNewContext('('+sanctuary[1]+')'));
+console.log(JSON.stringify({mobs:DB.mobs,maps:DB.maps,drops,cardMonsterIds:[...new Set(Object.values(cards).map(x=>x.id))],itemIds:Object.keys(DB.items),trialItems:trial,mapLabels:labels,gameVersion}));
 '''
 
 
@@ -48,8 +50,8 @@ def verification(source: str, status: str = "Code", confidence: str = "high") ->
     return {"verificationStatus": status, "source": source, "evidence": [source], "verifiedBy": "generate_monster_data.py", "verifiedVersion": None, "confidence": confidence}
 
 
-def version() -> dict[str, Any]:
-    return {"sourceRevision": None, "gameVersion": None, "schemaVersion": SCHEMA_VERSION, "validFrom": None, "validTo": None}
+def version(source: dict[str, Any]) -> dict[str, Any]:
+    return {"sourceRevision": source.get("sourceRevision"), "gameVersion": source.get("gameVersion"), "schemaVersion": SCHEMA_VERSION, "validFrom": None, "validTo": None}
 
 
 def relation_refs(*groups: list[dict[str, str]]) -> list[dict[str, str]]:
@@ -85,21 +87,25 @@ def build(source: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any], dict[
         status = "complete" if label else "partial"
         if not label:
             unresolved.append({"code": "map_display_name_unresolved", "entityRef": ref("map", map_id), "source": "js/00-data.js#DB.maps", "details": "No resolved MAP_REGIONS label; key was not humanized."})
-        map_records.append({"mapId": map_id, "displayName": label, "monsterRefs": normal, "bossRefs": bosses, "entityRef": ref("map", map_id), "verification": verification("js/00-data.js#DB.maps"), "version": version(), "status": status})
+        map_records.append({"mapId": map_id, "displayName": label, "monsterRefs": normal, "bossRefs": bosses, "entityRef": ref("map", map_id), "verification": verification("js/00-data.js#DB.maps"), "version": version(source), "status": status})
 
-    owner_to_id: dict[str, str] = {}
+    owner_to_id: dict[str, str | None] = {}
     for owner in drops:
         ids = name_to_ids.get(owner, [])
-        if len(ids) != 1:
+        if not ids:
             raise GenerationError(f"drop owner is not uniquely resolvable: {owner!r} -> {ids}")
-        owner_to_id[owner] = ids[0]
+        owner_to_id[owner] = ids[0] if len(ids) == 1 else None
 
     table_by_monster: dict[str, str] = {}
     table_records = []
-    for owner in sorted(drops, key=lambda x: owner_to_id[x]):
+    for owner in sorted(drops, key=lambda x: (owner_to_id[x] or "", x)):
         monster_id = owner_to_id[owner]
-        table_id = f"drop_table_monster_{monster_id}_base"
-        table_by_monster[monster_id] = table_id
+        conflict_ids = sorted(name_to_ids[owner])
+        table_id = f"drop_table_monster_{monster_id}_base" if monster_id else "drop_table_legacy_owner_hellslave_base"
+        if monster_id:
+            table_by_monster[monster_id] = table_id
+        else:
+            unresolved.append({"code": "drop_owner_conflict", "entityRef": ref("dropTable", table_id), "source": "js/01-drops-config.js#MOB_DROPS", "details": f"Owner name has multiple Monster candidates and remains unresolved: {conflict_ids}"})
         entries = []
         seen_items: set[str] = set()
         for item_id, rate in drops[owner]:
@@ -108,7 +114,7 @@ def build(source: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any], dict[
             seen_items.add(item_id)
             if item_id not in item_ids:
                 raise GenerationError(f"drop item does not exist: {item_id}")
-            entry_id = f"drop_entry_monster_{monster_id}_{item_id}_base"
+            entry_id = f"drop_entry_monster_{monster_id}_{item_id}_base" if monster_id else f"drop_entry_legacy_owner_hellslave_{item_id}_base"
             conditions = []
             entry_status = "complete"
             if item_id in trial_items:
@@ -119,15 +125,16 @@ def build(source: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any], dict[
                 "dropEntryId": entry_id, "dropTableRef": ref("dropTable", table_id), "itemRef": ref("item", item_id), "itemNameText": None,
                 "probability": {"value": rate, "unit": "percent", "basis": 100}, "quantity": {"min": 1, "max": 1}, "dropType": "base",
                 "bossOnly": None, "conditions": conditions, "runtimeModifiers": [],
-                "verification": verification("js/01-drops-config.js#MOB_DROPS + js/05-kill-progression.js#killMob"), "version": version(),
+                "verification": verification("js/01-drops-config.js#MOB_DROPS + js/05-kill-progression.js#killMob"), "version": version(source),
                 "entityRef": ref("dropEntry", entry_id), "status": entry_status
             })
         entries.sort(key=lambda x: x["dropEntryId"])
         entry_refs = [ref("dropEntry", x["dropEntryId"]) for x in entries]
+        owner_ref = ref("monster", monster_id) if monster_id else None
         table_records.append({
-            "dropTableId": table_id, "owner": ref("monster", monster_id), "ownerType": "monster", "dropType": "base", "rollModel": "independent",
-            "entries": entries, "conditions": [], "runtimeModifiers": [], "verification": verification("js/01-drops-config.js#MOB_DROPS"), "version": version(),
-            "entityRef": ref("dropTable", table_id), "relations": relation_refs([ref("monster", monster_id)], entry_refs), "status": "partial" if any(x["status"] != "complete" for x in entries) else "complete"
+            "dropTableId": table_id, "owner": owner_ref, "ownerNameText": None if monster_id else owner, "ownerType": "monster" if monster_id else "unknown", "sourceLocation": "js/01-drops-config.js#MOB_DROPS", "dropType": "base", "rollModel": "independent",
+            "entries": entries, "conditions": [], "runtimeModifiers": [], "verification": verification("js/01-drops-config.js#MOB_DROPS"), "version": version(source),
+            "entityRef": ref("dropTable", table_id), "relations": relation_refs([owner_ref] if owner_ref else [], entry_refs), "status": "unresolved" if not monster_id else "partial" if any(x["status"] != "complete" for x in entries) else "complete"
         })
 
     monster_records = []
@@ -145,7 +152,7 @@ def build(source: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any], dict[
             "stats": {"ac": mob["ac"], "mr": mob["mr"], "hit": mob["hit"], "er": mob.get("er"), "dr": mob.get("dr"), "attackSpeed": mob["atkSpd"], "damageDice": mob["dmg"], "damageBonus": mob["db"], "experience": mob["exp"], "goldMin": mob["goldMin"], "goldMax": mob["goldMax"]},
             "race": mob.get("race"), "size": None, "sizeCode": mob.get("s"), "element": mob.get("e", mob.get("elem")), "alignment": None,
             "boss": bool(mob.get("boss", False)), "bossTier": None, "isQuestTarget": None, "mapRef": map_refs, "dropTableRef": table_ref, "cardRef": None,
-            "relations": relation_refs(map_refs, drop_refs), "verification": verification(f"js/00-data.js#DB.mobs.{monster_id}"), "version": version(),
+            "relations": relation_refs(map_refs, drop_refs), "verification": verification(f"js/00-data.js#DB.mobs.{monster_id}"), "version": version(source),
             "status": "partial", "entityRef": ref("monster", monster_id)
         })
 
@@ -164,8 +171,10 @@ def write_json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
 
 
-def generate(source_root: Path, output_dir: Path) -> dict[str, int]:
-    monsters, maps, tables, unresolved = build(extract(source_root))
+def generate(source_root: Path, output_dir: Path, source_revision: str | None = None) -> dict[str, int]:
+    source = extract(source_root)
+    source["sourceRevision"] = source_revision
+    monsters, maps, tables, unresolved = build(source)
     write_json(output_dir / "monsters.json", monsters)
     write_json(output_dir / "maps.json", maps)
     write_json(output_dir / "drop_tables.json", tables)
@@ -177,8 +186,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-root", type=Path, default=ROOT)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--source-revision")
     args = parser.parse_args()
-    print(json.dumps(generate(args.source_root, args.output_dir), ensure_ascii=False, sort_keys=True))
+    print(json.dumps(generate(args.source_root, args.output_dir, args.source_revision), ensure_ascii=False, sort_keys=True))
     return 0
 
 

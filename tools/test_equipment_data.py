@@ -16,6 +16,7 @@ from validate_equipment_data import DEFAULT_SCHEMAS, FILES, ValidationError, val
 
 
 class EquipmentDataTests(unittest.TestCase):
+    PROGRAM_SOURCE_ROOT = ROOT / "temp_online" / "u2a-c3d4f96f13aefabf1453a4a3f1f54d688fd573f6-v2" / "snapshot"
     def workspace(self) -> tuple[tempfile.TemporaryDirectory, Path]:
         temp = tempfile.TemporaryDirectory()
         path = Path(temp.name)
@@ -34,14 +35,14 @@ class EquipmentDataTests(unittest.TestCase):
             callback(value)
             self.rewrite(path / filename, value)
             with self.assertRaisesRegex(ValidationError, message):
-                validate(path, DEFAULT_SCHEMAS, ROOT, False)
+                validate(path, DEFAULT_SCHEMAS, ROOT, False, self.PROGRAM_SOURCE_ROOT)
         finally:
             temp.cleanup()
 
     def test_01_valid_dataset(self) -> None:
-        self.assertEqual(validate(check_deterministic=False)["validator"], "passed")
+        self.assertEqual(validate(check_deterministic=False, program_source_root=self.PROGRAM_SOURCE_ROOT)["validator"], "passed")
 
-    def test_02_count_not_786_rejected(self) -> None:
+    def test_02_count_not_825_rejected(self) -> None:
         self.mutate("equipments.json", lambda x: x["records"].pop(), "invalid_equipment_count")
 
     def test_03_duplicate_id_rejected(self) -> None:
@@ -53,7 +54,7 @@ class EquipmentDataTests(unittest.TestCase):
         self.mutate("equipments.json", lambda x: x["records"][0].update(equipmentId="missing_equipment"), "equipment_allowlist_mismatch")
 
     def _out_of_scope(self, category: str) -> None:
-        program = __import__("generate_equipment_data").extract_program_sources(ROOT)
+        program = __import__("generate_equipment_data").extract_program_sources(self.PROGRAM_SOURCE_ROOT, ROOT)
         target = next(row["id"] for row in program["wiki"] if row.get("category") == category)
         self.mutate("equipments.json", lambda x: x["records"][0].update(equipmentId=target), "equipment_allowlist_mismatch")
 
@@ -83,7 +84,7 @@ class EquipmentDataTests(unittest.TestCase):
             x["records"][0]["classRequirements"]["baseClasses"] = ["wizard"]
         self.mutate("equipments.json", change, "invalid_equipment_class")
 
-    def test_13_twenty_third_base_stat_rejected(self) -> None:
+    def test_13_twenty_fourth_base_stat_rejected(self) -> None:
         def change(x):
             x["records"][0]["baseStats"]["luck"] = {"value": 1, "valueState": "explicit", "unit": None, "conceptRef": None}
         self.mutate("equipments.json", change, "invalid_base_stat")
@@ -137,7 +138,7 @@ class EquipmentDataTests(unittest.TestCase):
             self.rewrite(path / "diagnostics.json", diag)
             self.rewrite(path / "unresolved.json", unresolved)
             with self.assertRaisesRegex(ValidationError, "unresolved_fake_target"):
-                validate(path, DEFAULT_SCHEMAS, ROOT, False)
+                validate(path, DEFAULT_SCHEMAS, ROOT, False, self.PROGRAM_SOURCE_ROOT)
         finally:
             temp.cleanup()
 
@@ -161,19 +162,19 @@ class EquipmentDataTests(unittest.TestCase):
                 array_key = next(key for key in ("records", "resolvedMappings", "sources") if key in value)
                 value[array_key].reverse()
                 self.rewrite(source / "fixtures/equipment" / name, value)
-            generate(source, Path(output_temp))
+            generate(self.PROGRAM_SOURCE_ROOT, Path(output_temp), source)
             for name in FILES:
                 self.assertEqual((Path(output_temp) / name).read_bytes(), (DEFAULT_OUTPUT / name).read_bytes())
 
     def test_24_two_runs_have_identical_sha256(self) -> None:
         with tempfile.TemporaryDirectory() as first, tempfile.TemporaryDirectory() as second:
-            generate(ROOT, Path(first))
-            generate(ROOT, Path(second))
+            generate(self.PROGRAM_SOURCE_ROOT, Path(first), ROOT)
+            generate(self.PROGRAM_SOURCE_ROOT, Path(second), ROOT)
             for name in FILES:
                 self.assertEqual(hashlib.sha256((Path(first) / name).read_bytes()).hexdigest(), hashlib.sha256((Path(second) / name).read_bytes()).hexdigest())
 
     def test_25_checked_in_parity(self) -> None:
-        self.assertTrue(validate()["byteStable"])
+        self.assertTrue(validate(program_source_root=self.PROGRAM_SOURCE_ROOT)["byteStable"])
 
     def test_26_utf8_lf_single_newline(self) -> None:
         for name in FILES:
@@ -190,18 +191,18 @@ class EquipmentDataTests(unittest.TestCase):
         self.mutate("diagnostics.json", change, "local_path_leak")
 
     def test_28_monster_relations_complete(self) -> None:
-        result = validate(check_deterministic=False)
-        self.assertEqual(result["relations"]["monster_drop"], 1533)
+        result = validate(check_deterministic=False, program_source_root=self.PROGRAM_SOURCE_ROOT)
+        self.assertEqual(result["relations"]["monster_drop"], 1607)
 
     def test_29_craft_relations_complete(self) -> None:
-        result = validate(check_deterministic=False)
+        result = validate(check_deterministic=False, program_source_root=self.PROGRAM_SOURCE_ROOT)
         self.assertEqual(result["relations"]["craft_result"], 220)
         self.assertEqual(result["relations"]["craft_requirement"], 103)
 
     def test_30_status_not_all_complete(self) -> None:
         statuses = {row["status"] for row in load(DEFAULT_OUTPUT / "equipments.json")["records"]}
         self.assertNotEqual(statuses, {"complete"})
-        self.assertEqual(statuses, {"partial", "review_required", "unresolved"})
+        self.assertEqual(statuses, {"complete", "partial", "review_required", "unresolved"})
 
 
 if __name__ == "__main__":

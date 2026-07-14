@@ -82,20 +82,22 @@ def record(mapping_type: str, scope: str, value: str, location: str, *, target_t
             "notes": notes or []}
 
 NODE_EXTRACTOR = r'''
-const fs=require('fs'),vm=require('vm'),root=process.argv[1],read=p=>fs.readFileSync(root+'/'+p,'utf8');
+const fs=require('fs'),vm=require('vm'),root=process.argv[1],project=process.argv[2],read=p=>fs.readFileSync(root+'/'+p,'utf8'),readProject=p=>fs.readFileSync(project+'/'+p,'utf8');
 const c={};vm.createContext(c);for(const f of ['js/00-data.js','js/01-drops-config.js','js/15-cards.js'])vm.runInContext(read(f),c);
 const DB=vm.runInContext('DB',c),D=vm.runInContext('MOB_DROPS',c),CM=vm.runInContext('CARD_MOB_INFO',c);
-let ms=read('js/11-world-map.js').match(/const MAP_REGIONS\s*=\s*(\[[\s\S]*?\n\]);/),MR=vm.runInNewContext('('+ms[1]+')');
-let line=read('wiki.html').split(/\r?\n/).find(x=>x.includes('const REGIONS_DATA =')),g=line.slice(line.indexOf('=')+1).trim(),W=JSON.parse(g.slice(0,-1));
-let craft=JSON.parse(read('data/craft/drops.json')),base={};vm.createContext(base);vm.runInContext(read('js/00-data.js'),base);let B=vm.runInContext('DB',base);
-console.log(JSON.stringify({mobs:Object.entries(DB.mobs).map(([id,x])=>[id,x.n]),drops:Object.keys(D),cards:Object.keys(CM),maps:Object.keys(DB.maps),nav:MR.flatMap(r=>r.maps.map(m=>[m.v,m.t])),wikiMobs:[...new Set(W.flatMap(r=>r.mobs.map(m=>m.name)))],wikiLoc:[...new Set(W.flatMap(r=>r.mobs.flatMap(m=>m.maps||[])))],wikiItems:[...new Set(W.flatMap(r=>r.mobs.flatMap(m=>(m.drops||[]).map(d=>d.name))))],items:Object.entries(B.items).map(([id,x])=>[id,x.n]),craftMobs:[...new Set(craft.flatMap(r=>(r.sources||[]).map(s=>s.monsterNameText).filter(Boolean)))]}));
+let world=read('js/11-world-map.js'),ms=world.match(/const MAP_REGIONS\s*=\s*(\[[\s\S]*?\n\]);/),MR=vm.runInNewContext('('+ms[1]+')');
+let sanctuary=world.match(/const SANCTUARY_MAP_NAMES\s*=\s*(\{[^;]+\})\s*;/),SN=sanctuary?Object.entries(vm.runInNewContext('('+sanctuary[1]+')')):[];
+let line=readProject('wiki.html').split(/\r?\n/).find(x=>x.includes('const REGIONS_DATA =')),g=line.slice(line.indexOf('=')+1).trim(),W=JSON.parse(g.slice(0,-1));
+let craft=JSON.parse(readProject('data/craft/drops.json')),base={};vm.createContext(base);vm.runInContext(read('js/00-data.js'),base);let B=vm.runInContext('DB',base);
+console.log(JSON.stringify({mobs:Object.entries(DB.mobs).map(([id,x])=>[id,x.n]),drops:Object.keys(D),cards:Object.keys(CM),maps:Object.keys(DB.maps),nav:[...MR.flatMap(r=>r.maps.map(m=>[m.v,m.t])),...SN],wikiMobs:[...new Set(W.flatMap(r=>r.mobs.map(m=>m.name)))],wikiLoc:[...new Set(W.flatMap(r=>r.mobs.flatMap(m=>m.maps||[])))],wikiItems:[...new Set(W.flatMap(r=>r.mobs.flatMap(m=>(m.drops||[]).map(d=>d.name))))],items:Object.entries(B.items).map(([id,x])=>[id,x.n]),craftMobs:[...new Set(craft.flatMap(r=>(r.sources||[]).map(s=>s.monsterNameText).filter(Boolean)))]}));
 '''
 
-def extract_source(source_root: Path) -> dict[str, Any]:
-    needed = ["js/00-data.js", "js/01-drops-config.js", "js/11-world-map.js", "js/15-cards.js", "wiki.html", "data/craft/drops.json"]
-    for name in needed:
+def extract_source(source_root: Path, project_root: Path = ROOT) -> dict[str, Any]:
+    for name in ["js/00-data.js", "js/01-drops-config.js", "js/11-world-map.js", "js/15-cards.js"]:
         if not (source_root / name).is_file(): raise GenerationError(f"missing source: {name}")
-    run = subprocess.run(["node", "-e", NODE_EXTRACTOR, str(source_root.resolve())], capture_output=True, text=True, encoding="utf-8", check=False)
+    for name in ["wiki.html", "data/craft/drops.json"]:
+        if not (project_root / name).is_file(): raise GenerationError(f"missing source: {name}")
+    run = subprocess.run(["node", "-e", NODE_EXTRACTOR, str(source_root.resolve()), str(project_root.resolve())], capture_output=True, text=True, encoding="utf-8", check=False)
     if run.returncode: raise GenerationError(run.stderr.strip() or "source extraction failed")
     return json.loads(run.stdout)
 
@@ -116,7 +118,8 @@ def build_mappings(data: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dic
             if len(ids)==1:
                 result.append(record(mtype,scope,value,loc,target_type=etype,target_id=ids[0],status="compatibility_only" if compat else "resolved",target_location=f"{target_loc}.{ids[0]}"))
             elif len(ids)>1:
-                unresolved.append(record(mtype,scope,value,loc,status="ambiguous",method="unresolved",variant=variant_for(value, sorted(ids)[0]),candidates=[{"entityType":etype,"entityId":x} for x in sorted(ids)],notes=["exact name is not unique"]))
+                is_known_conflict = value == "地獄奴隸"
+                unresolved.append(record(mtype,scope,value,loc,status="conflict" if is_known_conflict else "ambiguous",method="unresolved",variant=variant_for(value, sorted(ids)[0]),candidates=[{"entityType":etype,"entityId":x} for x in sorted(ids)],notes=["exact name is not unique; no candidate was selected"]))
             else:
                 unresolved.append(record(mtype,scope,value,loc,status="unresolved",method="unresolved",notes=["no existing target with an exact unique name"]))
     add_names(mobs.keys(),"monster_name_to_id","game:DB.mobs","js/00-data.js#DB.mobs",mobs,"monster","js/00-data.js#DB.mobs")
@@ -125,7 +128,7 @@ def build_mappings(data: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dic
     add_names(data["craftMobs"],"craft_monster_to_monster_id","craft:drops.monsterNameText","data/craft/drops.json",mobs,"monster","js/00-data.js#DB.mobs")
     add_names(data["cards"],"legacy_card_key_to_monster_id","game:CARD_MOB_INFO","js/15-cards.js#CARD_MOB_INFO",mobs,"monster","js/00-data.js#DB.mobs",True)
     for value in sorted(set(data["cards"])):
-        mid=mobs[value][0]
+        mid=sorted(mobs[value])[0]
         unresolved.append(record("legacy_card_key_to_card_candidate","save:cardDex",value,"js/12-npc-quests.js#CARDDEX_KEY",status="unresolved",method="unresolved",variant=variant_for(value,mid),notes=[f"monster candidate: {mid}","canonical Card ID is not defined"]))
     for map_id,label in sorted(data["nav"],key=lambda x:(x[1],x[0])):
         if map_id in map_ids:
@@ -147,9 +150,9 @@ def encode(records: list[dict[str, Any]]) -> bytes:
     return (json.dumps({"schemaVersion":SCHEMA_VERSION,"mappings":records},ensure_ascii=False,indent=2,sort_keys=True,allow_nan=False)+"\n").encode("utf-8")
 
 def main() -> int:
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument("--source-root",type=Path,default=ROOT);p.add_argument("--resolved-output",type=Path,default=DEFAULT_RESOLVED);p.add_argument("--unresolved-output",type=Path,default=DEFAULT_UNRESOLVED);a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument("--source-root",type=Path,default=ROOT);p.add_argument("--project-root",type=Path,default=ROOT);p.add_argument("--resolved-output",type=Path,default=DEFAULT_RESOLVED);p.add_argument("--unresolved-output",type=Path,default=DEFAULT_UNRESOLVED);a=p.parse_args()
     try:
-        resolved,unresolved=build_mappings(extract_source(a.source_root))
+        resolved,unresolved=build_mappings(extract_source(a.source_root,a.project_root))
         for path,payload in [(a.resolved_output,encode(resolved)),(a.unresolved_output,encode(unresolved))]:path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(payload)
     except (GenerationError,OSError,json.JSONDecodeError) as exc:p.exit(1,f"error: {exc}\n")
     print(json.dumps({"resolvedOutputRecords":len(resolved),"unresolvedOutputRecords":len(unresolved)},sort_keys=True));return 0

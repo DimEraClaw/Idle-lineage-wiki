@@ -1,5 +1,5 @@
 {
-  "expectedCount": 786,
+  "expectedCount": 825,
   "fixtureType": "equipment_allowlist",
   "records": [
     {
@@ -894,6 +894,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "amr_emperor",
+      "expectedGroup": "armor",
+      "expectedSlot": "armor",
+      "expectedType": "armor",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.amr_emperor",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "amr_fallen",
       "expectedGroup": "armor",
       "expectedSlot": "armor",
@@ -1083,6 +1092,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "amu_doom",
+      "expectedGroup": "accessory",
+      "expectedSlot": "necklace",
+      "expectedType": "necklace",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.amu_doom",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "amu_int",
       "expectedGroup": "accessory",
       "expectedSlot": "necklace",
@@ -1098,6 +1116,15 @@
       "expectedType": "necklace",
       "sourceItemType": "acc",
       "sourceLocation": "js/00-data.js#DB.items.amu_iris",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "amu_pain",
+      "expectedGroup": "accessory",
+      "expectedSlot": "necklace",
+      "expectedType": "necklace",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.amu_pain",
       "status": "resolved"
     },
     {
@@ -2064,6 +2091,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "bot_emperor",
+      "expectedGroup": "armor",
+      "expectedSlot": "boots",
+      "expectedType": "boots",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.bot_emperor",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "bot_fallen",
       "expectedGroup": "armor",
       "expectedSlot": "boots",
@@ -2223,6 +2259,15 @@
       "expectedType": "cloak",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.clk_elf",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "clk_emperor",
+      "expectedGroup": "armor",
+      "expectedSlot": "cloak",
+      "expectedType": "cloak",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.clk_emperor",
       "status": "resolved"
     },
     {
@@ -2397,6 +2442,33 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "ear_soul_fighter",
+      "expectedGroup": "accessory",
+      "expectedSlot": "earring",
+      "expectedType": "earring",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.ear_soul_fighter",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "ear_soul_knight",
+      "expectedGroup": "accessory",
+      "expectedSlot": "earring",
+      "expectedType": "earring",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.ear_soul_knight",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "ear_soul_mage",
+      "expectedGroup": "accessory",
+      "expectedSlot": "earring",
+      "expectedType": "earring",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.ear_soul_mage",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "glv_baranka",
       "expectedGroup": "armor",
       "expectedSlot": "gloves",
@@ -2466,6 +2538,15 @@
       "expectedType": "gloves",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.glv_earth_spirit",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "glv_emperor",
+      "expectedGroup": "armor",
+      "expectedSlot": "gloves",
+      "expectedType": "gloves",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.glv_emperor",
       "status": "resolved"
     },
     {
@@ -2619,6 +2700,15 @@
       "expectedType": "helmet",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.hlm_elf",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "hlm_emperor",
+      "expectedGroup": "armor",
+      "expectedSlot": "helmet",
+      "expectedType": "helmet",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.hlm_emperor",
       "status": "resolved"
     },
     {
@@ -3198,6 +3288,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_corpse_needle",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "bow",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_corpse_needle",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_crab_claw",
       "expectedGroup": "weapon",
       "expectedSlot": "weapon",
@@ -3222,6 +3321,15 @@
       "expectedType": "two_hand_sword",
       "sourceItemType": "wpn",
       "sourceLocation": "js/00-data.js#DB.items.relic_croc_fang",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_croc_leather",
+      "expectedGroup": "armor",
+      "expectedSlot": "armor",
+      "expectedType": "armor",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_croc_leather",
       "status": "resolved"
     },
     {
@@ -3414,12 +3522,30 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_earth_barrier",
+      "expectedGroup": "armor",
+      "expectedSlot": "shield",
+      "expectedType": "shield",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_earth_barrier",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_earthfang_core",
       "expectedGroup": "armor",
       "expectedSlot": "shield",
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_earthfang_core",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_earthking_resist",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "bow",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_earthking_resist",
       "status": "resolved"
     },
     {
@@ -3540,6 +3666,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_fire_barrier",
+      "expectedGroup": "armor",
+      "expectedSlot": "shield",
+      "expectedType": "shield",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_fire_barrier",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_fireegg_orb",
       "expectedGroup": "armor",
       "expectedSlot": "shield",
@@ -3555,6 +3690,15 @@
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_firefang_ember",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_fireking_blast",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "two_hand_sword",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_fireking_blast",
       "status": "resolved"
     },
     {
@@ -3657,12 +3801,30 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_general_swordguard",
+      "expectedGroup": "armor",
+      "expectedSlot": "gloves",
+      "expectedType": "gloves",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_general_swordguard",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_ghoul_bracelet",
       "expectedGroup": "accessory",
       "expectedSlot": "necklace",
       "expectedType": "necklace",
       "sourceItemType": "acc",
       "sourceLocation": "js/00-data.js#DB.items.relic_ghoul_bracelet",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_ghoul_fang",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "one_hand_sword",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_ghoul_fang",
       "status": "resolved"
     },
     {
@@ -3954,6 +4116,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_kasta_hump",
+      "expectedGroup": "armor",
+      "expectedSlot": "cloak",
+      "expectedType": "cloak",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_kasta_hump",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_killerbee_sting",
       "expectedGroup": "weapon",
       "expectedSlot": "weapon",
@@ -3969,6 +4140,15 @@
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_lamia_tailscale",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_lava_fists",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "blunt",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_lava_fists",
       "status": "resolved"
     },
     {
@@ -4023,6 +4203,15 @@
       "expectedType": "boots",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_lycan_swiftlegs",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_magic_resist_shirt",
+      "expectedGroup": "armor",
+      "expectedSlot": "tshirt",
+      "expectedType": "tshirt",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_magic_resist_shirt",
       "status": "resolved"
     },
     {
@@ -4131,6 +4320,15 @@
       "expectedType": "helmet",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_moonhowl_helm",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_morph_blade",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "chain_sword",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_morph_blade",
       "status": "resolved"
     },
     {
@@ -4314,6 +4512,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_orin_ring",
+      "expectedGroup": "accessory",
+      "expectedSlot": "ring",
+      "expectedType": "ring",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.relic_orin_ring",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_pan_staff",
       "expectedGroup": "weapon",
       "expectedSlot": "weapon",
@@ -4359,6 +4566,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_pirate_dual",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "dual_blade",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_pirate_dual",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_pirate_ring",
       "expectedGroup": "accessory",
       "expectedSlot": "ring",
@@ -4392,6 +4608,15 @@
       "expectedType": "earring",
       "sourceItemType": "acc",
       "sourceLocation": "js/00-data.js#DB.items.relic_pup_fang",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_pure_maiden_love",
+      "expectedGroup": "accessory",
+      "expectedSlot": "necklace",
+      "expectedType": "necklace",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.relic_pure_maiden_love",
       "status": "resolved"
     },
     {
@@ -4464,6 +4689,15 @@
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_roach_shell",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_rockmage_secret",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "staff",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_rockmage_secret",
       "status": "resolved"
     },
     {
@@ -4647,6 +4881,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_sparto_shard",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "one_hand_sword",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_sparto_shard",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_spider_claw",
       "expectedGroup": "weapon",
       "expectedSlot": "weapon",
@@ -4743,6 +4986,15 @@
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_tamer_dogclub",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_tamer_feedbag",
+      "expectedGroup": "accessory",
+      "expectedSlot": "ring",
+      "expectedType": "ring",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.relic_tamer_feedbag",
       "status": "resolved"
     },
     {
@@ -4872,12 +5124,30 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_water_barrier",
+      "expectedGroup": "armor",
+      "expectedSlot": "shield",
+      "expectedType": "shield",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_water_barrier",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_waterfang_tear",
       "expectedGroup": "armor",
       "expectedSlot": "shield",
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_waterfang_tear",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_waterking_caress",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "claw",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_waterking_caress",
       "status": "resolved"
     },
     {
@@ -4962,12 +5232,30 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "relic_wind_barrier",
+      "expectedGroup": "armor",
+      "expectedSlot": "shield",
+      "expectedType": "shield",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.relic_wind_barrier",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "relic_windfang_breeze",
       "expectedGroup": "armor",
       "expectedSlot": "shield",
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.relic_windfang_breeze",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "relic_windking_roar",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "staff",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.relic_windking_roar",
       "status": "resolved"
     },
     {
@@ -5097,6 +5385,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "rng_sage",
+      "expectedGroup": "accessory",
+      "expectedSlot": "ring",
+      "expectedType": "ring",
+      "sourceItemType": "acc",
+      "sourceLocation": "js/00-data.js#DB.items.rng_sage",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "rng_water",
       "expectedGroup": "accessory",
       "expectedSlot": "ring",
@@ -5169,6 +5466,15 @@
       "status": "resolved"
     },
     {
+      "equipmentId": "shd_official",
+      "expectedGroup": "armor",
+      "expectedSlot": "shield",
+      "expectedType": "shield",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.shd_official",
+      "status": "resolved"
+    },
+    {
       "equipmentId": "shd_phantom_eye",
       "expectedGroup": "armor",
       "expectedSlot": "shield",
@@ -5193,6 +5499,15 @@
       "expectedType": "shield",
       "sourceItemType": "arm",
       "sourceLocation": "js/00-data.js#DB.items.shd_rasta",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "shd_rebel",
+      "expectedGroup": "armor",
+      "expectedSlot": "shield",
+      "expectedType": "shield",
+      "sourceItemType": "arm",
+      "sourceLocation": "js/00-data.js#DB.items.shd_rebel",
       "status": "resolved"
     },
     {
@@ -5907,12 +6222,12 @@
       "status": "resolved"
     },
     {
-      "equipmentId": "wpn_dagger_rasta",
+      "equipmentId": "wpn_cursed_emperor_blade",
       "expectedGroup": "weapon",
       "expectedSlot": "weapon",
-      "expectedType": "dagger",
+      "expectedType": "one_hand_sword",
       "sourceItemType": "wpn",
-      "sourceLocation": "js/00-data.js#DB.items.wpn_dagger_rasta",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_cursed_emperor_blade",
       "status": "resolved"
     },
     {
@@ -5931,6 +6246,15 @@
       "expectedType": "dagger",
       "sourceItemType": "wpn",
       "sourceLocation": "js/00-data.js#DB.items.wpn_dagger2",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "wpn_dagger_rasta",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "dagger",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_dagger_rasta",
       "status": "resolved"
     },
     {
@@ -6337,6 +6661,24 @@
       "sourceItemType": "wpn",
       "sourceLocation": "js/00-data.js#DB.items.wpn_giantaxe",
       "status": "resolved"
+    },
+    {
+      "equipmentId": "wpn_giltas_sword",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "two_hand_sword",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_giltas_sword",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "wpn_giltas_wand",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": null,
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_giltas_wand",
+      "status": "unresolved"
     },
     {
       "equipmentId": "wpn_glory_sword",
@@ -6777,6 +7119,15 @@
       "expectedType": "dual_blade",
       "sourceItemType": "wpn",
       "sourceLocation": "js/00-data.js#DB.items.wpn_redshadow_dual",
+      "status": "resolved"
+    },
+    {
+      "equipmentId": "wpn_rotten_longbow",
+      "expectedGroup": "weapon",
+      "expectedSlot": "weapon",
+      "expectedType": "bow",
+      "sourceItemType": "wpn",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_rotten_longbow",
       "status": "resolved"
     },
     {

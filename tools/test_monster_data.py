@@ -14,11 +14,13 @@ from validate_monster_data import DEFAULT_SCHEMAS, FILES, ValidationError, valid
 
 
 class MonsterDataPipelineTests(unittest.TestCase):
+    SOURCE_ROOT = ROOT / "temp_online" / "u2a-c3d4f96f13aefabf1453a4a3f1f54d688fd573f6-v2" / "snapshot"
+    SOURCE_REVISION = "c3d4f96f13aefabf1453a4a3f1f54d688fd573f6"
     @classmethod
     def setUpClass(cls) -> None:
         cls.base_tmp = tempfile.TemporaryDirectory()
         cls.base = Path(cls.base_tmp.name)
-        cls.counts = generate(ROOT, cls.base)
+        cls.counts = generate(cls.SOURCE_ROOT, cls.base, cls.SOURCE_REVISION)
 
     @classmethod
     def tearDownClass(cls) -> None:
@@ -36,15 +38,15 @@ class MonsterDataPipelineTests(unittest.TestCase):
         path.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
 
     def test_generator_counts(self) -> None:
-        self.assertEqual(self.counts, {"monsters": 460, "maps": 214, "dropTables": 433, "dropEntries": 3655, "unresolved": 2875})
+        self.assertEqual(self.counts, {"monsters": 469, "maps": 217, "dropTables": 441, "dropEntries": 3812, "unresolved": 2921})
 
     def test_validator(self) -> None:
-        result = validate(self.base, DEFAULT_SCHEMAS, ROOT, False)
+        result = validate(self.base, DEFAULT_SCHEMAS, self.SOURCE_ROOT, False, self.SOURCE_REVISION)
         self.assertEqual(result["schema"], "passed")
 
     def test_deterministic_generation(self) -> None:
         with tempfile.TemporaryDirectory() as other:
-            generate(ROOT, Path(other))
+            generate(self.SOURCE_ROOT, Path(other), self.SOURCE_REVISION)
             for name in FILES:
                 self.assertEqual((self.base / name).read_bytes(), (Path(other) / name).read_bytes())
 
@@ -55,7 +57,7 @@ class MonsterDataPipelineTests(unittest.TestCase):
             doc["records"].append(dict(doc["records"][0]))
             self.rewrite(path / "monsters.json", doc)
             with self.assertRaisesRegex(ValidationError, "Duplicate monster ID"):
-                validate(path, DEFAULT_SCHEMAS, ROOT, False)
+                validate(path, DEFAULT_SCHEMAS, self.SOURCE_ROOT, False, self.SOURCE_REVISION)
         finally:
             temp.cleanup()
 
@@ -66,7 +68,7 @@ class MonsterDataPipelineTests(unittest.TestCase):
             doc["records"][0]["mapRef"] = [{"entityType": "map", "entityId": "missing_map"}]
             self.rewrite(path / "monsters.json", doc)
             with self.assertRaisesRegex(ValidationError, "Invalid MapRef"):
-                validate(path, DEFAULT_SCHEMAS, ROOT, False)
+                validate(path, DEFAULT_SCHEMAS, self.SOURCE_ROOT, False, self.SOURCE_REVISION)
         finally:
             temp.cleanup()
 
@@ -77,12 +79,12 @@ class MonsterDataPipelineTests(unittest.TestCase):
             del doc["records"][0]["hp"]
             self.rewrite(path / "monsters.json", doc)
             with self.assertRaisesRegex(ValidationError, "Schema validation failed"):
-                validate(path, DEFAULT_SCHEMAS, ROOT, False)
+                validate(path, DEFAULT_SCHEMAS, self.SOURCE_ROOT, False, self.SOURCE_REVISION)
         finally:
             temp.cleanup()
 
     def test_byte_stability_and_checked_in_parity(self) -> None:
-        result = validate(ROOT / "data" / "monster", DEFAULT_SCHEMAS, ROOT, True)
+        result = validate(ROOT / "data" / "monster", DEFAULT_SCHEMAS, self.SOURCE_ROOT, True, self.SOURCE_REVISION)
         self.assertEqual(set(result["byteHashes"]), set(FILES))
 
 

@@ -9,9 +9,10 @@
     "entityRef": { "type": "object", "additionalProperties": false, "required": ["entityType", "entityId"], "properties": { "entityType": { "type": "string", "minLength": 1 }, "entityId": { "type": "string", "minLength": 1 } } },
     "dropTable": {
       "type": "object", "additionalProperties": false,
-      "required": ["dropTableId", "owner", "ownerType", "dropType", "rollModel", "entries", "conditions", "runtimeModifiers", "verification", "version", "entityRef", "relations", "status"],
+      "required": ["dropTableId", "owner", "ownerNameText", "ownerType", "sourceLocation", "dropType", "rollModel", "entries", "conditions", "runtimeModifiers", "verification", "version", "entityRef", "relations", "status"],
       "properties": {
-        "dropTableId": { "type": "string", "minLength": 1 }, "owner": { "$ref": "#/$defs/entityRef" }, "ownerType": { "const": "monster" },
+        "dropTableId": { "type": "string", "minLength": 1 }, "owner": { "anyOf": [{ "$ref": "#/$defs/entityRef" }, { "type": "null" }] },
+        "ownerNameText": { "type": ["string", "null"] }, "ownerType": { "enum": ["monster", "unknown"] }, "sourceLocation": { "type": "string", "minLength": 1 },
         "dropType": { "const": "base" }, "rollModel": { "const": "independent" }, "entries": { "type": "array", "items": { "type": "object" } },
         "conditions": { "type": "array", "maxItems": 0 }, "runtimeModifiers": { "type": "array", "maxItems": 0 },
         "verification": { "type": "object", "required": ["verificationStatus", "source", "confidence"] },

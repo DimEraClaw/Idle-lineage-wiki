@@ -1196,6 +1196,17 @@
     },
     {
       "equipmentGroup": "armor",
+      "equipmentId": "amr_emperor",
+      "equipmentType": "armor",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "armor",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.amr_emperor"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
       "equipmentId": "amr_fallen",
       "equipmentType": "armor",
       "method": "raw_type_and_slot",
@@ -1448,6 +1459,17 @@
     },
     {
       "equipmentGroup": "accessory",
+      "equipmentId": "amu_doom",
+      "equipmentType": "necklace",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "necklace",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.amu_doom"
+      ]
+    },
+    {
+      "equipmentGroup": "accessory",
       "equipmentId": "amu_int",
       "equipmentType": "necklace",
       "method": "raw_type_and_slot",
@@ -1468,6 +1490,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.amu_iris",
         "wiki.html#EQUIP_DATA.amu_iris"
+      ]
+    },
+    {
+      "equipmentGroup": "accessory",
+      "equipmentId": "amu_pain",
+      "equipmentType": "necklace",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "necklace",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.amu_pain"
       ]
     },
     {
@@ -2756,6 +2789,17 @@
     },
     {
       "equipmentGroup": "armor",
+      "equipmentId": "bot_emperor",
+      "equipmentType": "boots",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "boots",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.bot_emperor"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
       "equipmentId": "bot_fallen",
       "equipmentType": "boots",
       "method": "raw_type_and_slot",
@@ -2968,6 +3012,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.clk_elf",
         "wiki.html#EQUIP_DATA.clk_elf"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
+      "equipmentId": "clk_emperor",
+      "equipmentType": "cloak",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "cloak",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.clk_emperor"
       ]
     },
     {
@@ -3199,6 +3254,39 @@
       ]
     },
     {
+      "equipmentGroup": "accessory",
+      "equipmentId": "ear_soul_fighter",
+      "equipmentType": "earring",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "earring",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.ear_soul_fighter"
+      ]
+    },
+    {
+      "equipmentGroup": "accessory",
+      "equipmentId": "ear_soul_knight",
+      "equipmentType": "earring",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "earring",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.ear_soul_knight"
+      ]
+    },
+    {
+      "equipmentGroup": "accessory",
+      "equipmentId": "ear_soul_mage",
+      "equipmentType": "earring",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "earring",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.ear_soul_mage"
+      ]
+    },
+    {
       "equipmentGroup": "armor",
       "equipmentId": "glv_baranka",
       "equipmentType": "gloves",
@@ -3292,6 +3380,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.glv_earth_spirit",
         "wiki.html#EQUIP_DATA.glv_earth_spirit"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
+      "equipmentId": "glv_emperor",
+      "equipmentType": "gloves",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "gloves",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.glv_emperor"
       ]
     },
     {
@@ -3496,6 +3595,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.hlm_elf",
         "wiki.html#EQUIP_DATA.hlm_elf"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
+      "equipmentId": "hlm_emperor",
+      "equipmentType": "helmet",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "helmet",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.hlm_emperor"
       ]
     },
     {
@@ -4268,6 +4378,18 @@
     },
     {
       "equipmentGroup": "weapon",
+      "equipmentId": "relic_corpse_needle",
+      "equipmentType": "bow",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_corpse_needle",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_corpse_needle"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
       "equipmentId": "relic_crab_claw",
       "equipmentType": "two_hand_sword",
       "method": "legacy_subtype_mapping",
@@ -4300,6 +4422,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_croc_fang",
         "wiki.html#EQUIP_DATA.relic_croc_fang"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_croc_leather",
+      "equipmentType": "armor",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "armor",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_croc_leather"
       ]
     },
     {
@@ -4556,6 +4689,17 @@
     },
     {
       "equipmentGroup": "armor",
+      "equipmentId": "relic_earth_barrier",
+      "equipmentType": "shield",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "shield",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_earth_barrier"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
       "equipmentId": "relic_earthfang_core",
       "equipmentType": "shield",
       "method": "raw_type_and_slot",
@@ -4564,6 +4708,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_earthfang_core",
         "wiki.html#EQUIP_DATA.relic_earthfang_core"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_earthking_resist",
+      "equipmentType": "bow",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_earthking_resist",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_earthking_resist"
       ]
     },
     {
@@ -4724,6 +4880,17 @@
     },
     {
       "equipmentGroup": "armor",
+      "equipmentId": "relic_fire_barrier",
+      "equipmentType": "shield",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "shield",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_fire_barrier"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
       "equipmentId": "relic_fireegg_orb",
       "equipmentType": "shield",
       "method": "raw_type_and_slot",
@@ -4744,6 +4911,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_firefang_ember",
         "wiki.html#EQUIP_DATA.relic_firefang_ember"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_fireking_blast",
+      "equipmentType": "two_hand_sword",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_fireking_blast",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_fireking_blast"
       ]
     },
     {
@@ -4879,6 +5058,17 @@
       ]
     },
     {
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_general_swordguard",
+      "equipmentType": "gloves",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "gloves",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_general_swordguard"
+      ]
+    },
+    {
       "equipmentGroup": "accessory",
       "equipmentId": "relic_ghoul_bracelet",
       "equipmentType": "necklace",
@@ -4888,6 +5078,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_ghoul_bracelet",
         "wiki.html#EQUIP_DATA.relic_ghoul_bracelet"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_ghoul_fang",
+      "equipmentType": "one_hand_sword",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_ghoul_fang",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_ghoul_fang"
       ]
     },
     {
@@ -5275,6 +5477,17 @@
       ]
     },
     {
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_kasta_hump",
+      "equipmentType": "cloak",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "cloak",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_kasta_hump"
+      ]
+    },
+    {
       "equipmentGroup": "weapon",
       "equipmentId": "relic_killerbee_sting",
       "equipmentType": "one_hand_sword",
@@ -5296,6 +5509,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_lamia_tailscale",
         "wiki.html#EQUIP_DATA.relic_lamia_tailscale"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_lava_fists",
+      "equipmentType": "blunt",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_lava_fists",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_lava_fists"
       ]
     },
     {
@@ -5368,6 +5593,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_lycan_swiftlegs",
         "wiki.html#EQUIP_DATA.relic_lycan_swiftlegs"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
+      "equipmentId": "relic_magic_resist_shirt",
+      "equipmentType": "tshirt",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "tshirt",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_magic_resist_shirt"
       ]
     },
     {
@@ -5512,6 +5748,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_moonhowl_helm",
         "wiki.html#EQUIP_DATA.relic_moonhowl_helm"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_morph_blade",
+      "equipmentType": "chain_sword",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_morph_blade",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_morph_blade"
       ]
     },
     {
@@ -5755,6 +6003,17 @@
       ]
     },
     {
+      "equipmentGroup": "accessory",
+      "equipmentId": "relic_orin_ring",
+      "equipmentType": "ring",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "ring",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_orin_ring"
+      ]
+    },
+    {
       "equipmentGroup": "weapon",
       "equipmentId": "relic_pan_staff",
       "equipmentType": "one_hand_sword",
@@ -5815,6 +6074,18 @@
       ]
     },
     {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_pirate_dual",
+      "equipmentType": "dual_blade",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_pirate_dual",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_pirate_dual"
+      ]
+    },
+    {
       "equipmentGroup": "accessory",
       "equipmentId": "relic_pirate_ring",
       "equipmentType": "ring",
@@ -5860,6 +6131,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_pup_fang",
         "wiki.html#EQUIP_DATA.relic_pup_fang"
+      ]
+    },
+    {
+      "equipmentGroup": "accessory",
+      "equipmentId": "relic_pure_maiden_love",
+      "equipmentType": "necklace",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "necklace",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_pure_maiden_love"
       ]
     },
     {
@@ -5956,6 +6238,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_roach_shell",
         "wiki.html#EQUIP_DATA.relic_roach_shell"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_rockmage_secret",
+      "equipmentType": "staff",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_rockmage_secret",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_rockmage_secret"
       ]
     },
     {
@@ -6200,6 +6494,18 @@
     },
     {
       "equipmentGroup": "weapon",
+      "equipmentId": "relic_sparto_shard",
+      "equipmentType": "one_hand_sword",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_sparto_shard",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_sparto_shard"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
       "equipmentId": "relic_spider_claw",
       "equipmentType": "claw",
       "method": "legacy_subtype_mapping",
@@ -6328,6 +6634,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_tamer_dogclub",
         "wiki.html#EQUIP_DATA.relic_tamer_dogclub"
+      ]
+    },
+    {
+      "equipmentGroup": "accessory",
+      "equipmentId": "relic_tamer_feedbag",
+      "equipmentType": "ring",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "ring",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_tamer_feedbag"
       ]
     },
     {
@@ -6500,6 +6817,17 @@
     },
     {
       "equipmentGroup": "armor",
+      "equipmentId": "relic_water_barrier",
+      "equipmentType": "shield",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "shield",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_water_barrier"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
       "equipmentId": "relic_waterfang_tear",
       "equipmentType": "shield",
       "method": "raw_type_and_slot",
@@ -6508,6 +6836,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_waterfang_tear",
         "wiki.html#EQUIP_DATA.relic_waterfang_tear"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_waterking_caress",
+      "equipmentType": "claw",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_waterking_caress",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_waterking_caress"
       ]
     },
     {
@@ -6620,6 +6960,17 @@
     },
     {
       "equipmentGroup": "armor",
+      "equipmentId": "relic_wind_barrier",
+      "equipmentType": "shield",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "shield",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_wind_barrier"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
       "equipmentId": "relic_windfang_breeze",
       "equipmentType": "shield",
       "method": "raw_type_and_slot",
@@ -6628,6 +6979,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.relic_windfang_breeze",
         "wiki.html#EQUIP_DATA.relic_windfang_breeze"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "relic_windking_roar",
+      "equipmentType": "staff",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.relic_windking_roar",
+        "js/10-ui-tabs.js#WEAPON_TAGS.relic_windking_roar"
       ]
     },
     {
@@ -6800,6 +7163,17 @@
     },
     {
       "equipmentGroup": "accessory",
+      "equipmentId": "rng_sage",
+      "equipmentType": "ring",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "ring",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.rng_sage"
+      ]
+    },
+    {
+      "equipmentGroup": "accessory",
       "equipmentId": "rng_water",
       "equipmentType": "ring",
       "method": "raw_type_and_slot",
@@ -6896,6 +7270,17 @@
     },
     {
       "equipmentGroup": "armor",
+      "equipmentId": "shd_official",
+      "equipmentType": "shield",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "shield",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.shd_official"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
       "equipmentId": "shd_phantom_eye",
       "equipmentType": "shield",
       "method": "raw_type_and_slot",
@@ -6928,6 +7313,17 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.shd_rasta",
         "wiki.html#EQUIP_DATA.shd_rasta"
+      ]
+    },
+    {
+      "equipmentGroup": "armor",
+      "equipmentId": "shd_rebel",
+      "equipmentType": "shield",
+      "method": "raw_type_and_slot",
+      "reason": "DB.items raw type/slot provides the classification.",
+      "slot": "shield",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.shd_rebel"
       ]
     },
     {
@@ -7880,14 +8276,14 @@
     },
     {
       "equipmentGroup": "weapon",
-      "equipmentId": "wpn_dagger_rasta",
-      "equipmentType": "dagger",
-      "method": "legacy_subtype_mapping",
-      "reason": "The audited legacy subtype plus canonical raw flags resolves this exact ID; the display name is not used.",
+      "equipmentId": "wpn_cursed_emperor_blade",
+      "equipmentType": "one_hand_sword",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
       "slot": "weapon",
       "sourceLocations": [
-        "js/00-data.js#DB.items.wpn_dagger_rasta",
-        "wiki.html#EQUIP_DATA.wpn_dagger_rasta"
+        "js/00-data.js#DB.items.wpn_cursed_emperor_blade",
+        "js/10-ui-tabs.js#WEAPON_TAGS.wpn_cursed_emperor_blade"
       ]
     },
     {
@@ -7912,6 +8308,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.wpn_dagger2",
         "wiki.html#EQUIP_DATA.wpn_dagger2"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "wpn_dagger_rasta",
+      "equipmentType": "dagger",
+      "method": "legacy_subtype_mapping",
+      "reason": "The audited legacy subtype plus canonical raw flags resolves this exact ID; the display name is not used.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.wpn_dagger_rasta",
+        "wiki.html#EQUIP_DATA.wpn_dagger_rasta"
       ]
     },
     {
@@ -8452,6 +8860,18 @@
       "sourceLocations": [
         "js/00-data.js#DB.items.wpn_giantaxe",
         "wiki.html#EQUIP_DATA.wpn_giantaxe"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
+      "equipmentId": "wpn_giltas_sword",
+      "equipmentType": "two_hand_sword",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.wpn_giltas_sword",
+        "js/10-ui-tabs.js#WEAPON_TAGS.wpn_giltas_sword"
       ]
     },
     {
@@ -9044,6 +9464,18 @@
     },
     {
       "equipmentGroup": "weapon",
+      "equipmentId": "wpn_rotten_longbow",
+      "equipmentType": "bow",
+      "method": "explicit_id_mapping",
+      "reason": "Audited ID-specific weapon flags and WEAPON_TAGS evidence provide the classification.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.wpn_rotten_longbow",
+        "js/10-ui-tabs.js#WEAPON_TAGS.wpn_rotten_longbow"
+      ]
+    },
+    {
+      "equipmentGroup": "weapon",
       "equipmentId": "wpn_scimitar",
       "equipmentType": "one_hand_sword",
       "method": "legacy_subtype_mapping",
@@ -9439,5 +9871,21 @@
       ]
     }
   ],
-  "schemaVersion": "1.0.0"
+  "schemaVersion": "1.0.0",
+  "unresolvedMappings": [
+    {
+      "candidates": [],
+      "equipmentGroup": "weapon",
+      "equipmentId": "wpn_giltas_wand",
+      "equipmentType": null,
+      "method": "raw_type_and_slot",
+      "reason": "DB.items confirms a weapon but provides no isWand flag, subtype, or WEAPON_TAGS entry; weapon subtype must not be guessed.",
+      "slot": "weapon",
+      "sourceLocations": [
+        "js/00-data.js#DB.items.wpn_giltas_wand",
+        "js/10-ui-tabs.js#WEAPON_TAGS"
+      ],
+      "status": "unresolved"
+    }
+  ]
 }

@@ -76,7 +76,7 @@ def searchable_text(record: dict[str, Any], legacy: dict[str, Any] | None) -> st
     values = [
         record["displayName"], record["equipmentId"], LABELS.get(record["equipmentGroup"], ""),
         LABELS.get(record["equipmentType"], ""), LABELS.get(record["slot"], ""), record["equipmentGroup"],
-        record["equipmentType"], record["slot"], description, legacy_search_text(legacy),
+        record["equipmentType"] or "", record["slot"] or "", description, legacy_search_text(legacy),
     ]
     return " ".join(values).lower()
 
@@ -92,7 +92,7 @@ def validate(
     canonical_document = load(canonical_path)
     canonical_records = sorted(canonical_document["records"], key=lambda row: row["equipmentId"])
     canonical_by_id = {row["equipmentId"]: row for row in canonical_records}
-    require(len(canonical_records) == len(canonical_by_id) == 786, "invalid_equipment_count")
+    require(len(canonical_records) == len(canonical_by_id) == 825, "invalid_equipment_count")
 
     index_schema = load(schema_dir / "equipment-view-index.schema.json")
     equipment_schema = load(schema_dir / "equipment.schema.json")
@@ -101,7 +101,7 @@ def validate(
     index_records = index_document["records"]
     require(index_records == sorted(index_records, key=lambda row: row["equipmentId"]), "unstable_view_output", "index order")
     index_by_id = {row["equipmentId"]: row for row in index_records}
-    require(len(index_records) == len(index_by_id) == 786, "duplicate_equipment_id")
+    require(len(index_records) == len(index_by_id) == 825, "duplicate_equipment_id")
     require(set(index_by_id) == set(canonical_by_id), "identity_parity_failed")
 
     for equipment_id, summary in index_by_id.items():

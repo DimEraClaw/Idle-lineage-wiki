@@ -39,8 +39,8 @@ class EquipmentViewPayloadTests(unittest.TestCase):
     def test_01_validator_passes(self) -> None:
         self.assertEqual(validate(check_deterministic=False)["validator"], "passed")
 
-    def test_02_index_has_786_records(self) -> None:
-        self.assertEqual(len(self.index), 786)
+    def test_02_index_has_825_records(self) -> None:
+        self.assertEqual(len(self.index), 825)
 
     def test_03_index_identity_parity(self) -> None:
         self.assertEqual(set(self.index_by_id), set(self.canonical_by_id))
@@ -58,11 +58,11 @@ class EquipmentViewPayloadTests(unittest.TestCase):
     def test_06_index_excludes_full_verification_and_relations(self) -> None:
         self.assertTrue(all(not ({"verification", "relations", "version"} & set(row)) for row in self.index))
 
-    def test_07_detail_coverage_is_786(self) -> None:
-        self.assertEqual(sum(len(load(DEFAULT_OUTPUT / name)["records"]) for name in DETAIL_FILES), 786)
+    def test_07_detail_coverage_is_825(self) -> None:
+        self.assertEqual(sum(len(load(DEFAULT_OUTPUT / name)["records"]) for name in DETAIL_FILES), 825)
 
     def test_08_each_equipment_has_one_locator(self) -> None:
-        self.assertEqual(len({row["equipmentId"]: row["detailLocator"] for row in self.index}), 786)
+        self.assertEqual(len({row["equipmentId"]: row["detailLocator"] for row in self.index}), 825)
 
     def test_09_locator_uses_stable_hash_bucket(self) -> None:
         self.assertTrue(all(Path(row["detailLocator"]).name == detail_filename(row["equipmentId"]) for row in self.index))
@@ -198,7 +198,7 @@ class EquipmentViewPayloadTests(unittest.TestCase):
         self.assertEqual(sum(row["description"]["canonicalText"] is None for row in self.index), 277)
 
     def test_28_monster_relation_parity(self) -> None:
-        self.assertEqual(sum(rel["relationType"] == "monster_drop" for row in self.canonical for rel in row["relations"]), 1533)
+        self.assertEqual(sum(rel["relationType"] == "monster_drop" for row in self.canonical for rel in row["relations"]), 1607)
 
     def test_29_craft_relation_parity(self) -> None:
         self.assertEqual(sum(rel["relationType"] == "craft_result" for row in self.canonical for rel in row["relations"]), 220)

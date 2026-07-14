@@ -3695,6 +3695,22 @@
     {
       "blocking": false,
       "candidates": [
+        "reqAvatar"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "amr_icequeen_charm",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_amr_icequeen_charm_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.amr_icequeen_charm",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         1
       ],
       "code": "equipment_relation_unresolved",
@@ -4568,6 +4584,23 @@
     },
     {
       "blocking": false,
+      "candidates": [
+        "hitstunReduce",
+        "mpR"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "amu_doom",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_amu_doom_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.amu_doom",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
       "candidates": [],
       "code": "equipment_description_missing",
       "equipmentId": "amu_int",
@@ -4643,6 +4676,23 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.amu_iris.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "hpR",
+        "stunResist"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "amu_pain",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_amu_pain_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.amu_pain",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -5036,8 +5086,7 @@
       "blocking": false,
       "candidates": [
         "block",
-        "immStone",
-        "magicDrNonEle"
+        "immStone"
       ],
       "code": "equipment_mechanic_unresolved",
       "equipmentId": "arm_106",
@@ -9631,6 +9680,22 @@
     {
       "blocking": false,
       "candidates": [
+        "reqAvatar"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "bot_icequeen_charm",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_bot_icequeen_charm_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.bot_icequeen_charm",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         1
       ],
       "code": "equipment_relation_unresolved",
@@ -11257,6 +11322,55 @@
     },
     {
       "blocking": false,
+      "candidates": [
+        "meleeDmg"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "ear_soul_fighter",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_ear_soul_fighter_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.ear_soul_fighter",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "hpR",
+        "meleeHit"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "ear_soul_knight",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_ear_soul_knight_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.ear_soul_knight",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "mpR"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "ear_soul_mage",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_ear_soul_mage_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.ear_soul_mage",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
       "candidates": [],
       "code": "equipment_description_missing",
       "equipmentId": "glv_baranka",
@@ -12570,6 +12684,22 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.hlm_holy_corps.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "reqAvatar"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "hlm_icequeen_charm",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_hlm_icequeen_charm_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.hlm_icequeen_charm",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -14078,22 +14208,6 @@
     {
       "blocking": false,
       "candidates": [
-        "magicDrNonEle"
-      ],
-      "code": "equipment_mechanic_unresolved",
-      "equipmentId": "relic_azt_mirror",
-      "evidenceRefs": [],
-      "fieldPath": "mechanicRefs",
-      "id": "equipment_diagnostic_relic_azt_mirror_equipment_mechanic_unresolved",
-      "notes": [],
-      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
-      "sourceLocation": "js/00-data.js#DB.items.relic_azt_mirror",
-      "status": "unresolved",
-      "valueState": "unresolved"
-    },
-    {
-      "blocking": false,
-      "candidates": [
         1
       ],
       "code": "equipment_relation_unresolved",
@@ -15113,6 +15227,23 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_collie_fur.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "procStatusSkill",
+        "rapidfire"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_corpse_needle",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_corpse_needle_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_corpse_needle",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -16214,6 +16345,24 @@
     {
       "blocking": false,
       "candidates": [
+        "ele",
+        "hurtRapidfire",
+        "rapidfire"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_earthking_resist",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_earthking_resist_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_earthking_resist",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "comboRate",
         "eff",
         "ignHardSkin"
@@ -16955,6 +17104,24 @@
     {
       "blocking": false,
       "candidates": [
+        "eff",
+        "ele",
+        "hitEchoMagic"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_fireking_blast",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_fireking_blast_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_fireking_blast",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "wearerEle"
       ],
       "code": "equipment_mechanic_unresolved",
@@ -17441,6 +17608,22 @@
     {
       "blocking": false,
       "candidates": [
+        "swordStr"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_general_swordguard",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_general_swordguard_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_general_swordguard",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "immParalyze"
       ],
       "code": "equipment_mechanic_unresolved",
@@ -17485,6 +17668,22 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_ghoul_bracelet.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "ele"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_ghoul_fang",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_ghoul_fang_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_ghoul_fang",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -18922,6 +19121,22 @@
     {
       "blocking": false,
       "candidates": [
+        "hpR"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_kasta_hump",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_kasta_hump_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_kasta_hump",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "hasteStrike"
       ],
       "code": "equipment_mechanic_unresolved",
@@ -19016,6 +19231,24 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_lamia_tailscale.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "ele",
+        "ignHardSkin",
+        "unBonus"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_lava_fists",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_lava_fists_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_lava_fists",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -19291,6 +19524,22 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_lycan_swiftlegs.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "mrPerWis"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_magic_resist_shirt",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_magic_resist_shirt_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_magic_resist_shirt",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -19825,6 +20074,23 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_moonhowl_helm.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "counterAllEle",
+        "weakExpose"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_morph_blade",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_morph_blade_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_morph_blade",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -20685,6 +20951,22 @@
     {
       "blocking": false,
       "candidates": [
+        "mpR"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_orin_ring",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_orin_ring_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_orin_ring",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "petDmgAll"
       ],
       "code": "equipment_mechanic_unresolved",
@@ -20895,6 +21177,25 @@
     {
       "blocking": false,
       "candidates": [
+        "comboRate",
+        "eff",
+        "ele",
+        "ignHardSkin"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_pirate_dual",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_pirate_dual_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_pirate_dual",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "petDmgAll",
         "summonDmg"
       ],
@@ -21071,6 +21372,24 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_pup_fang.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "mpR",
+        "reqAvatar",
+        "strictAvatar"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_pure_maiden_love",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_pure_maiden_love_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_pure_maiden_love",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -21413,6 +21732,26 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_roach_shell.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "ele",
+        "ignHardSkin",
+        "procRateBase",
+        "procRatePerEn",
+        "procSkill"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_rockmage_secret",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_rockmage_secret_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_rockmage_secret",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -22312,6 +22651,22 @@
     {
       "blocking": false,
       "candidates": [
+        "unBonus"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_sparto_shard",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_sparto_shard_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_sparto_shard",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "comboRate",
         "eff",
         "procPoison"
@@ -22832,6 +23187,22 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_tamer_dogclub.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "allLures"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_tamer_feedbag",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_tamer_feedbag_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_tamer_feedbag",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -23500,6 +23871,26 @@
     {
       "blocking": false,
       "candidates": [
+        "comboRate",
+        "eff",
+        "ele",
+        "ignHardSkin",
+        "missGrazeRate"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_waterking_caress",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_waterking_caress_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_waterking_caress",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "ele",
         "extraDmg",
         "ignHardSkin",
@@ -23959,6 +24350,24 @@
       "sourceLocation": "wiki.html#EQUIP_DATA.relic_windfang_breeze.weight",
       "status": "unresolved",
       "valueState": "unverified_claim"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "ele",
+        "ignHardSkin",
+        "windSpellProcRate"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "relic_windking_roar",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_relic_windking_roar_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.relic_windking_roar",
+      "status": "unresolved",
+      "valueState": "unresolved"
     },
     {
       "blocking": false,
@@ -24919,6 +25328,22 @@
     {
       "blocking": false,
       "candidates": [
+        "hpR"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "shd_official",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_shd_official_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.shd_official",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "block",
         "immStone",
         "mpR"
@@ -25093,9 +25518,24 @@
     {
       "blocking": false,
       "candidates": [
+        "hitstunReduce"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "shd_rebel",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_shd_rebel_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.shd_rebel",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         "block",
-        "immStone",
-        "magicDrNonEle"
+        "immStone"
       ],
       "code": "equipment_mechanic_unresolved",
       "equipmentId": "shd_redknight",
@@ -29119,6 +29559,23 @@
     },
     {
       "blocking": false,
+      "candidates": [
+        "hpR",
+        "ignHardSkin"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "wpn_cursed_emperor_blade",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_wpn_cursed_emperor_blade_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_cursed_emperor_blade",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
       "candidates": [],
       "code": "equipment_description_missing",
       "equipmentId": "wpn_dagger1",
@@ -31387,6 +31844,54 @@
     {
       "blocking": false,
       "candidates": [
+        "eff",
+        "ignHardSkin"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "wpn_giltas_sword",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_wpn_giltas_sword_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_giltas_sword",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": true,
+      "candidates": [],
+      "code": "equipment_classification_unresolved",
+      "equipmentId": "wpn_giltas_wand",
+      "evidenceRefs": [],
+      "fieldPath": "equipmentType",
+      "id": "equipment_diagnostic_wpn_giltas_wand_equipment_classification_unresolved",
+      "notes": [],
+      "reason": "DB.items confirms a weapon but provides no isWand flag, subtype, or WEAPON_TAGS entry; weapon subtype must not be guessed.",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_giltas_wand",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
+        "eff",
+        "mpR"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "wpn_giltas_wand",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_wpn_giltas_wand_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_giltas_wand",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
+      "candidates": [
         1
       ],
       "code": "equipment_relation_unresolved",
@@ -33543,6 +34048,23 @@
     },
     {
       "blocking": false,
+      "candidates": [
+        "ignHardSkin",
+        "rapidfire"
+      ],
+      "code": "equipment_mechanic_unresolved",
+      "equipmentId": "wpn_rotten_longbow",
+      "evidenceRefs": [],
+      "fieldPath": "mechanicRefs",
+      "id": "equipment_diagnostic_wpn_rotten_longbow_equipment_mechanic_unresolved",
+      "notes": [],
+      "reason": "Code-backed mechanic fields exist, but formal Mechanic Entity IDs are not established.",
+      "sourceLocation": "js/00-data.js#DB.items.wpn_rotten_longbow",
+      "status": "unresolved",
+      "valueState": "unresolved"
+    },
+    {
+      "blocking": false,
       "candidates": [],
       "code": "equipment_description_missing",
       "equipmentId": "wpn_scimitar",
@@ -35136,8 +35658,9 @@
   "schemaVersion": "1.0.0",
   "summary": {
     "equipment_class_requirement_unresolved": 4,
+    "equipment_classification_unresolved": 1,
     "equipment_description_missing": 277,
-    "equipment_mechanic_unresolved": 465,
+    "equipment_mechanic_unresolved": 495,
     "equipment_relation_unresolved": 624,
     "equipment_safe_enhance_unresolved": 4,
     "equipment_set_identity_unresolved": 50,

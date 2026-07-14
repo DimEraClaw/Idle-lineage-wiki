@@ -17,7 +17,7 @@ CLASSES = ("dark", "dragon", "elf", "illusion", "knight", "mage", "royal", "warr
 BASE_STATS = (
     "ac", "cha", "con", "dex", "dmgBonus", "dmgL", "dmgS", "dr", "er", "extraMp",
     "hit", "int", "mdmg", "mhp", "mmp", "mr", "resEarth", "resFire", "resWater",
-    "resWind", "str", "wis",
+    "resWind", "resNone", "str", "wis",
 )
 TOP_LEVEL_FIELDS = (
     "equipmentId", "displayName", "itemType", "equipmentGroup", "equipmentType", "slot",
@@ -48,6 +48,8 @@ MECHANIC_SIGNAL_FIELDS = {
     "slowedBonusDmg", "softMult", "spellProc", "strawCurse", "stealth", "stoneInstakill",
     "stunHitBonus", "stunResist", "summonDmg", "summonHit", "thorns", "trackBoost", "unBonus",
     "vanderStunHit", "weakExpose", "weakHitBonus", "wearerEle", "windHelm",
+    "allLures", "counterAllEle", "hitEchoMagic", "hurtRapidfire", "missGrazeRate",
+    "mrPerWis", "reqAvatar", "strictAvatar", "swordStr", "windSpellProcRate",
 }
 
 
@@ -64,12 +66,12 @@ def write(path: Path, value: Any) -> None:
     path.write_bytes(canonical_bytes(value))
 
 
-def extract_program_sources(source_root: Path) -> dict[str, Any]:
+def extract_program_sources(source_root: Path, project_root: Path | None = None) -> dict[str, Any]:
     """Evaluate only balanced data literals in a fresh VM; no game file is executed."""
     script = r"""
 const fs=require('fs'),vm=require('vm');
 function ext(t,m,o,c){let p=t.indexOf(m);if(p<0)throw Error(m);p=t.indexOf(o,p);let d=0,q=null,e=false;for(let i=p;i<t.length;i++){let x=t[i];if(q){if(e)e=false;else if(x==='\\')e=true;else if(x===q)q=null;continue}if(x==='"'||x==="'"||x==='`'){q=x;continue}if(x===o)d++;else if(x===c&&--d===0)return t.slice(p,i+1)}throw Error('unclosed '+m)}
-const root=process.argv[2], data=fs.readFileSync(root+'/js/00-data.js','utf8'), ui=fs.readFileSync(root+'/js/10-ui-tabs.js','utf8'), wikiText=fs.readFileSync(root+'/wiki.html','utf8');
+const root=process.argv[2], project=process.argv[3], data=fs.readFileSync(root+'/js/00-data.js','utf8'), ui=fs.readFileSync(root+'/js/10-ui-tabs.js','utf8'), wikiText=fs.readFileSync(project+'/wiki.html','utf8');
 const db=vm.runInNewContext('('+ext(data,'const DB','{','}')+')');
 const tags=vm.runInNewContext('('+ext(ui,'const WEAPON_TAGS','{','}')+')');
 const wiki=JSON.parse(ext(wikiText,'const EQUIP_DATA','[',']'));
@@ -77,7 +79,7 @@ const match=data.match(/const\s+GAME_VERSION\s*=\s*['"]([^'"]+)['"]/);
 console.log(JSON.stringify({items:db.items,sets:db.sets,weaponTags:tags,wiki,gameVersion:match?match[1]:null}));
 """
     result = subprocess.run(
-        ["node", "-", str(source_root.resolve()).replace("\\", "/")], input=script,
+        ["node", "-", str(source_root.resolve()).replace("\\", "/"), str((project_root or ROOT).resolve()).replace("\\", "/")], input=script,
         text=True, encoding="utf-8", capture_output=True, check=False,
     )
     if result.returncode:
@@ -151,15 +153,16 @@ def relation_sort_key(value: dict[str, Any]) -> tuple[str, str, str, str, str]:
     )
 
 
-def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
-    fixtures = source_root / "fixtures" / "equipment"
+def build(source_root: Path = ROOT, project_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
+    fixtures = project_root / "fixtures" / "equipment"
     allow = load(fixtures / "equipment-allowlist.json")["records"]
-    mappings = load(fixtures / "equipment-classification-mapping.json")["resolvedMappings"]
+    mapping_fixture = load(fixtures / "equipment-classification-mapping.json")
+    mappings = mapping_fixture["resolvedMappings"] + mapping_fixture.get("unresolvedMappings", [])
     source_fixture = load(fixtures / "equipment-source-fixture.json")
     price_fixture = load(fixtures / "equipment-price-conflicts.json")["records"]
-    program = extract_program_sources(source_root)
-    drops = load(source_root / "data" / "monster" / "drop_tables.json")["records"]
-    recipes = load(source_root / "data" / "craft" / "recipes.json")
+    program = extract_program_sources(source_root, project_root)
+    drops = load(project_root / "data" / "monster" / "drop_tables.json")["records"]
+    recipes = load(project_root / "data" / "craft" / "recipes.json")
 
     allow_ids = {row["equipmentId"] for row in allow}
     mapping_by_id = {row["equipmentId"]: row for row in mappings}
@@ -173,6 +176,8 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
     drop_relations: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for table in drops:
         owner = table["owner"]
+        if owner is None:
+            continue
         for entry in table["entries"]:
             equipment_id = entry["itemRef"]["entityId"]
             if equipment_id in allow_ids:
@@ -211,9 +216,16 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
     for allow_row in sorted(allow, key=lambda row: row["equipmentId"]):
         equipment_id = allow_row["equipmentId"]
         raw = program["items"][equipment_id]
-        wiki = wiki_by_id[equipment_id]
+        wiki = wiki_by_id.get(equipment_id)
         mapping = mapping_by_id[equipment_id]
         item_diagnostics: list[dict[str, Any]] = []
+
+        if mapping.get("status") == "unresolved":
+            item_diagnostics.append(diagnostic(
+                equipment_id, "equipmentType", "equipment_classification_unresolved",
+                mapping["reason"], mapping["sourceLocations"][0], blocking=True,
+                candidates=mapping.get("candidates", []),
+            ))
 
         req = raw.get("req")
         if req is None:
@@ -286,7 +298,7 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
                 "js/00-data.js#DB.sets", candidates=sorted(legacy_sets[equipment_id]),
             ))
 
-        legacy_sources = wiki.get("sources") or []
+        legacy_sources = wiki.get("sources") or [] if wiki else []
         if legacy_sources:
             item_diagnostics.append(diagnostic(
                 equipment_id, "relations", "equipment_relation_unresolved",
@@ -294,12 +306,13 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
                 f"wiki.html#EQUIP_DATA.{equipment_id}.sources", candidates=[len(legacy_sources)],
             ))
 
-        item_diagnostics.append(diagnostic(
-            equipment_id, "weight", "equipment_weight_unverified",
-            "Legacy Wiki weight has no verified canonical ID-based source and is excluded from Equipment schema.",
-            f"wiki.html#EQUIP_DATA.{equipment_id}.weight", candidates=[wiki["weight"]],
-            value_state="unverified_claim",
-        ))
+        if wiki:
+            item_diagnostics.append(diagnostic(
+                equipment_id, "weight", "equipment_weight_unverified",
+                "Legacy Wiki weight has no verified canonical ID-based source and is excluded from Equipment schema.",
+                f"wiki.html#EQUIP_DATA.{equipment_id}.weight", candidates=[wiki["weight"]],
+                value_state="unverified_claim",
+            ))
 
         if equipment_id in price_by_id:
             conflict = price_by_id[equipment_id]
@@ -332,8 +345,9 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
             "restricted_object_literal", "canonical",
         )
         derived_mapping = provenance(
-            "fixtures/equipment/equipment-classification-mapping.json", f"resolvedMappings.{equipment_id}",
+            "fixtures/equipment/equipment-classification-mapping.json", f"{'unresolvedMappings' if mapping.get('status') == 'unresolved' else 'resolvedMappings'}.{equipment_id}",
             None, game_version, "id_mapping_fixture", "derived",
+            unresolved_reason=mapping["reason"] if mapping.get("status") == "unresolved" else None,
         )
         fields: dict[str, Any] = {}
         for field in ("equipmentId", "displayName", "itemType", "classRequirements", "baseStats", "safeEnhance", "price", "description"):
@@ -356,7 +370,7 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
             "displayName": raw["n"],
             "itemType": raw["type"],
             "equipmentGroup": mapping["equipmentGroup"],
-            "equipmentType": mapping["equipmentType"],
+            "equipmentType": mapping.get("equipmentType"),
             "slot": mapping["slot"],
             "classRequirements": class_requirements,
             "rarity": "relic" if raw.get("relic") else "legendary" if raw.get("legend") else "common",
@@ -389,7 +403,7 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
     stats = {
         "equipment": len(records),
         "groups": dict(sorted(Counter(record["equipmentGroup"] for record in records).items())),
-        "types": dict(sorted(Counter(record["equipmentType"] for record in records).items())),
+        "types": dict(sorted(Counter(record["equipmentType"] or "unresolved" for record in records).items())),
         "slots": dict(sorted(Counter(record["slot"] for record in records).items())),
         "relations": dict(sorted(relation_counts.items())),
         "diagnostics": diagnostic_counts,
@@ -399,8 +413,8 @@ def build(source_root: Path = ROOT) -> tuple[dict[str, Any], dict[str, Any]]:
     return documents, stats
 
 
-def generate(source_root: Path = ROOT, output_dir: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
-    documents, stats = build(source_root)
+def generate(source_root: Path = ROOT, output_dir: Path = DEFAULT_OUTPUT, project_root: Path = ROOT) -> dict[str, Any]:
+    documents, stats = build(source_root, project_root)
     for name, document in documents.items():
         write(output_dir / name, document)
     return stats
@@ -409,10 +423,11 @@ def generate(source_root: Path = ROOT, output_dir: Path = DEFAULT_OUTPUT) -> dic
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-root", type=Path, default=ROOT)
+    parser.add_argument("--project-root", type=Path, default=ROOT)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     try:
-        result = generate(args.source_root, args.output_dir)
+        result = generate(args.source_root, args.output_dir, args.project_root)
     except (OSError, ValueError, RuntimeError, KeyError) as error:
         print(f"FAILED: {error}")
         return 1

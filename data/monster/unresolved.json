@@ -3683,6 +3683,15 @@
       "source": "js/15-cards.js#CARD_MOB_INFO"
     },
     {
+      "code": "drop_owner_conflict",
+      "details": "Owner name has multiple Monster candidates and remains unresolved: ['de_train_hellslave', 'sanct_hellslave']",
+      "entityRef": {
+        "entityId": "drop_table_legacy_owner_hellslave_base",
+        "entityType": "dropTable"
+      },
+      "source": "js/01-drops-config.js#MOB_DROPS"
+    },
+    {
       "code": "drop_runtime_modifier_unresolved",
       "details": "Trial gating and forced-100 runtime behavior require a contracted MechanicRef; base probability is preserved separately.",
       "entityRef": {
@@ -8501,6 +8510,87 @@
       "code": "monster_alignment_unresolved",
       "details": "No canonical alignment source",
       "entityRef": {
+        "entityId": "sanct_cursed_fighter",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_cursed_knight",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_cursed_mage",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_dantes",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_giltas",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_hellslave",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_scavenger",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_tethys",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
+        "entityId": "sanct_wyvern",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_alignment_unresolved",
+      "details": "No canonical alignment source",
+      "entityRef": {
         "entityId": "scorpion",
         "entityType": "monster"
       },
@@ -12641,6 +12731,87 @@
       "code": "monster_bossTier_unresolved",
       "details": "No canonical boss tier source",
       "entityRef": {
+        "entityId": "sanct_cursed_fighter",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_cursed_knight",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_cursed_mage",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_dantes",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_giltas",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_hellslave",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_scavenger",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_tethys",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
+        "entityId": "sanct_wyvern",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_bossTier_unresolved",
+      "details": "No canonical boss tier source",
+      "entityRef": {
         "entityId": "scorpion",
         "entityType": "monster"
       },
@@ -16781,6 +16952,87 @@
       "code": "monster_isQuestTarget_unresolved",
       "details": "Quest Domain relation not available",
       "entityRef": {
+        "entityId": "sanct_cursed_fighter",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_cursed_knight",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_cursed_mage",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_dantes",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_giltas",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_hellslave",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_scavenger",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_tethys",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
+        "entityId": "sanct_wyvern",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_isQuestTarget_unresolved",
+      "details": "Quest Domain relation not available",
+      "entityRef": {
         "entityId": "scorpion",
         "entityType": "monster"
       },
@@ -20921,6 +21173,87 @@
       "code": "monster_mp_unresolved",
       "details": "No common MP source",
       "entityRef": {
+        "entityId": "sanct_cursed_fighter",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_cursed_knight",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_cursed_mage",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_dantes",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_giltas",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_hellslave",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_scavenger",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_tethys",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
+        "entityId": "sanct_wyvern",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_mp_unresolved",
+      "details": "No common MP source",
+      "entityRef": {
         "entityId": "scorpion",
         "entityType": "monster"
       },
@@ -25053,6 +25386,87 @@
       "details": "Raw size code retained: 'S'",
       "entityRef": {
         "entityId": "salamander",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'S'",
+      "entityRef": {
+        "entityId": "sanct_cursed_fighter",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'S'",
+      "entityRef": {
+        "entityId": "sanct_cursed_knight",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'S'",
+      "entityRef": {
+        "entityId": "sanct_cursed_mage",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'S'",
+      "entityRef": {
+        "entityId": "sanct_dantes",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'L'",
+      "entityRef": {
+        "entityId": "sanct_giltas",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'S'",
+      "entityRef": {
+        "entityId": "sanct_hellslave",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'S'",
+      "entityRef": {
+        "entityId": "sanct_scavenger",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'L'",
+      "entityRef": {
+        "entityId": "sanct_tethys",
+        "entityType": "monster"
+      },
+      "source": "js/00-data.js#DB.mobs"
+    },
+    {
+      "code": "monster_size_unresolved",
+      "details": "Raw size code retained: 'L'",
+      "entityRef": {
+        "entityId": "sanct_wyvern",
         "entityType": "monster"
       },
       "source": "js/00-data.js#DB.mobs"

@@ -81,18 +81,18 @@ def canonical_bytes(value: Any) -> bytes:
     return (json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8")
 
 
-def extract_sources(source_root: Path) -> dict[str, Any]:
+def extract_sources(source_root: Path, project_root: Path | None = None) -> dict[str, Any]:
     script = r"""
 const fs=require('fs'),vm=require('vm');
 function ext(t,m,o,c){let p=t.indexOf(m);if(p<0)throw Error(m);p=t.indexOf(o,p);let d=0,q=null,e=false;for(let i=p;i<t.length;i++){let x=t[i];if(q){if(e)e=false;else if(x==='\\')e=true;else if(x===q)q=null;continue}if(x==='"'||x==="'"||x==='`'){q=x;continue}if(x===o)d++;else if(x===c&&--d===0)return t.slice(p,i+1)}throw Error('unclosed '+m)}
-const root=process.argv[2], a=fs.readFileSync(root+'/js/00-data.js','utf8'), w=fs.readFileSync(root+'/wiki.html','utf8');
+const root=process.argv[2], project=process.argv[3], a=fs.readFileSync(root+'/js/00-data.js','utf8'), w=fs.readFileSync(project+'/wiki.html','utf8');
 const db=vm.runInNewContext('('+ext(a,'const DB','{','}')+')');
 const wiki=JSON.parse(ext(w,'const EQUIP_DATA','[',']'));
 const compact=x=>({type:x.type??null,slot:x.slot??null,isArrow:x.isArrow===true,noEnhance:x.noEnhance===true,safe:Object.prototype.hasOwnProperty.call(x,'safe')?x.safe:null,hasSafe:Object.prototype.hasOwnProperty.call(x,'safe'),maxEn:x.maxEn??null,req:x.req??null,hasReq:Object.prototype.hasOwnProperty.call(x,'req'),p:x.p??null,d:x.d??null});
 console.log(JSON.stringify({dbItems:Object.fromEntries(Object.entries(db.items).map(([k,v])=>[k,compact(v)])),wiki:wiki.map(x=>({id:x.id,category:x.category,equipmentGroup:x.equipmentGroup??null,equipmentType:x.equipmentType??null,slot:x.slot??null,price:x.price??null}))}));
 """
     result = subprocess.run(
-        ["node", "-", str(source_root.resolve()).replace("\\", "/")],
+        ["node", "-", str(source_root.resolve()).replace("\\", "/"), str((project_root or ROOT).resolve()).replace("\\", "/")],
         input=script, text=True, encoding="utf-8", capture_output=True, check=False,
     )
     require(result.returncode == 0, "missing_equipment_source", result.stderr.strip() or "Node extraction failed")
@@ -113,7 +113,7 @@ def equipment_schema_probe(equipment_id: str) -> dict[str, Any]:
     stats = {name: dict(stat) for name in (
         "dmgS", "dmgL", "hit", "dmgBonus", "ac", "mr", "er", "dr", "mhp", "mmp",
         "extraMp", "mdmg", "str", "dex", "con", "int", "wis", "cha", "resFire",
-        "resWater", "resWind", "resEarth",
+        "resWater", "resWind", "resEarth", "resNone",
     )}
     return {
         "equipmentId": equipment_id, "displayName": "schema probe", "itemType": "wpn",
@@ -134,6 +134,7 @@ def validate(
     fixture_dir: Path = DEFAULT_FIXTURES,
     schema_dir: Path = DEFAULT_SCHEMAS,
     source_root: Path = ROOT,
+    program_source_root: Path | None = None,
 ) -> dict[str, Any]:
     docs = {name: load(fixture_dir / name) for name in FIXTURE_FILES}
     for name in FIXTURE_FILES + SCHEMA_FILES:
@@ -148,25 +149,28 @@ def validate(
     schema_validate(docs["equipment-classification-mapping.json"], schema_dir / "equipment-classification-mapping.schema.json")
     schema_validate(docs["equipment-unresolved.example.json"], schema_dir / "equipment-unresolved.schema.json")
     allow = docs["equipment-allowlist.json"]["records"]
-    require(docs["equipment-allowlist.json"].get("expectedCount") == 786 and len(allow) == 786, "invalid_equipment_allowlist_count", str(len(allow)))
+    require(docs["equipment-allowlist.json"].get("expectedCount") == 825 and len(allow) == 825, "invalid_equipment_allowlist_count", str(len(allow)))
     allow_by_id = unique(allow, "equipmentId")
-    source = extract_sources(source_root)
+    source = extract_sources(program_source_root or source_root, source_root)
     db_items, wiki = source["dbItems"], source["wiki"]
     wiki_equipment = {x["id"]: x for x in wiki if x["category"] == "equipment"}
     excluded = {x["id"] for x in wiki if x["category"] in {"skillbook", "doll", "set"}}
     require(set(allow_by_id).isdisjoint(excluded), "out_of_scope_item", "SkillBook/Doll/remains included")
-    require(set(allow_by_id) == set(wiki_equipment), "missing_equipment_source", "EQUIP_DATA parity mismatch")
+    require(set(wiki_equipment).issubset(allow_by_id), "missing_equipment_source", "legacy EQUIP_DATA must remain covered")
     require(set(allow_by_id).issubset(db_items), "missing_equipment_source", "allowlist ID missing from DB.items")
     for row in allow:
         require(row["equipmentGroup"] if "equipmentGroup" in row else True, "invalid_equipment_group", row["equipmentId"])
         require(row["expectedGroup"] in GROUPS, "invalid_equipment_group", row["equipmentId"])
-        require(row["expectedType"] in TYPES, "invalid_equipment_type", row["equipmentId"])
+        require(row["expectedType"] in TYPES or (row["equipmentId"] == "wpn_giltas_wand" and row["expectedType"] is None), "invalid_equipment_type", row["equipmentId"])
         require(row["expectedSlot"] in SLOTS, "invalid_equipment_slot", row["equipmentId"])
         require(row["sourceItemType"] == db_items[row["equipmentId"]]["type"], "missing_equipment_source", row["equipmentId"])
 
+    unresolved_mappings = docs["equipment-classification-mapping.json"].get("unresolvedMappings", [])
     mappings = docs["equipment-classification-mapping.json"]["resolvedMappings"]
     mapping_by_id = unique(mappings, "equipmentId")
-    require(set(mapping_by_id) == set(allow_by_id), "unresolved_classification", "mapping coverage differs from allowlist")
+    unresolved_by_id = unique(unresolved_mappings, "equipmentId")
+    require(set(mapping_by_id) | set(unresolved_by_id) == set(allow_by_id) and set(mapping_by_id).isdisjoint(unresolved_by_id), "unresolved_classification", "mapping coverage differs from allowlist")
+    require(set(unresolved_by_id) == {"wpn_giltas_wand"}, "unresolved_classification", "only the audited Giltas wand subtype may remain unresolved")
     require("display_name_regex" in docs["equipment-classification-mapping.json"]["forbiddenStrategies"], "classification_conflict", "name regex not forbidden")
     for equipment_id, mapped in mapping_by_id.items():
         expected = allow_by_id[equipment_id]
@@ -174,6 +178,9 @@ def validate(
         require(mapped["equipmentType"] in TYPES, "invalid_equipment_type", equipment_id)
         require(mapped["slot"] in SLOTS, "invalid_equipment_slot", equipment_id)
         require((mapped["equipmentGroup"], mapped["equipmentType"], mapped["slot"]) == (expected["expectedGroup"], expected["expectedType"], expected["expectedSlot"]), "classification_conflict", equipment_id)
+    for equipment_id, mapped in unresolved_by_id.items():
+        expected = allow_by_id[equipment_id]
+        require((mapped["equipmentGroup"], mapped["equipmentType"], mapped["slot"], mapped["status"]) == (expected["expectedGroup"], expected["expectedType"], expected["expectedSlot"], "unresolved"), "classification_conflict", equipment_id)
 
     prices = docs["equipment-price-conflicts.json"]["records"]
     require(len(prices) == 5 and {x["equipmentId"] for x in prices} == PRICE_IDS, "missing_price_conflict_fixture", "expected five audited IDs")
@@ -216,7 +223,7 @@ def validate(
     hashes = {name: hashlib.sha256(((fixture_dir if name in FIXTURE_FILES else schema_dir) / name).read_bytes()).hexdigest() for name in FIXTURE_FILES + SCHEMA_FILES}
     return {
         "allowlist": len(allow), "classificationMappings": len(mappings),
-        "unresolvedClassifications": len(set(allow_by_id) - set(mapping_by_id)),
+        "unresolvedClassifications": len(unresolved_by_id),
         "specialCases": len(specials), "priceConflicts": len(prices),
         "unresolvedExamples": len(unresolved), "schemas": 4,
         "schema": "passed", "validator": "passed", "byteStable": True,
@@ -229,9 +236,10 @@ def main() -> int:
     parser.add_argument("--fixture-dir", type=Path, default=DEFAULT_FIXTURES)
     parser.add_argument("--schema-dir", type=Path, default=DEFAULT_SCHEMAS)
     parser.add_argument("--source-root", type=Path, default=ROOT)
+    parser.add_argument("--program-source-root", type=Path)
     args = parser.parse_args()
     try:
-        result = validate(args.fixture_dir, args.schema_dir, args.source_root)
+        result = validate(args.fixture_dir, args.schema_dir, args.source_root, args.program_source_root)
     except (ValidationError, OSError, ValueError, json.JSONDecodeError) as error:
         print(f"FAILED: {error}")
         return 1

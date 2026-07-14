@@ -1249,37 +1249,6 @@
         },
         {
           "evidenceType": "code",
-          "sourceLocation": "js/00-data.js#DB.mobs.de_train_hellslave"
-        }
-      ],
-      "id": "mapping_craftmob_craftdrops_de_train_hellslave",
-      "mappingType": "craft_monster_to_monster_id",
-      "matchMethod": "exact_name",
-      "normalizedValue": "地獄奴隸",
-      "notes": [],
-      "replacementMappingId": null,
-      "sourceLocation": "data/craft/drops.json",
-      "sourceScope": "craft:drops.monsterNameText",
-      "sourceValue": "地獄奴隸",
-      "status": "resolved",
-      "target": {
-        "entityId": "de_train_hellslave",
-        "entityType": "monster"
-      },
-      "versionScope": {
-        "validFrom": null,
-        "validTo": null
-      }
-    },
-    {
-      "candidates": [],
-      "evidence": [
-        {
-          "evidenceType": "data",
-          "sourceLocation": "data/craft/drops.json"
-        },
-        {
-          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.de_train_hellhound"
         }
       ],
@@ -12347,6 +12316,99 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_cursed_mage"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_cursed_mage",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "受詛咒的黑暗妖精法師",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "受詛咒的黑暗妖精法師",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_cursed_mage",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_cursed_knight"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_cursed_knight",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "受詛咒的黑暗妖精騎士",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "受詛咒的黑暗妖精騎士",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_cursed_knight",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_cursed_fighter"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_cursed_fighter",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "受詛咒的黑暗妖精鬥士",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "受詛咒的黑暗妖精鬥士",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_cursed_fighter",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.giant_ancient"
         }
       ],
@@ -12393,6 +12455,37 @@
       "status": "resolved",
       "target": {
         "entityId": "sparto",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_giltas"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_giltas",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "吉爾塔斯",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "吉爾塔斯",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_giltas",
         "entityType": "monster"
       },
       "versionScope": {
@@ -12672,37 +12765,6 @@
       "status": "resolved",
       "target": {
         "entityId": "de_lab_earth",
-        "entityType": "monster"
-      },
-      "versionScope": {
-        "validFrom": null,
-        "validTo": null
-      }
-    },
-    {
-      "candidates": [],
-      "evidence": [
-        {
-          "evidenceType": "code",
-          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
-        },
-        {
-          "evidenceType": "code",
-          "sourceLocation": "js/00-data.js#DB.mobs.de_train_hellslave"
-        }
-      ],
-      "id": "mapping_drop_mobdrops_de_train_hellslave",
-      "mappingType": "drop_owner_to_monster_id",
-      "matchMethod": "exact_name",
-      "normalizedValue": "地獄奴隸",
-      "notes": [],
-      "replacementMappingId": null,
-      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
-      "sourceScope": "game:MOB_DROPS",
-      "sourceValue": "地獄奴隸",
-      "status": "resolved",
-      "target": {
-        "entityId": "de_train_hellslave",
         "entityType": "monster"
       },
       "versionScope": {
@@ -19353,6 +19415,37 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_tethys"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_tethys",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "特提斯",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "特提斯",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_tethys",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.armadillo"
         }
       ],
@@ -19818,6 +19911,37 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_dantes"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_dantes",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "真‧死亡騎士 冥皇丹特斯",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "真‧死亡騎士 冥皇丹特斯",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_dantes",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.stone_golem"
         }
       ],
@@ -19957,6 +20081,37 @@
       "status": "resolved",
       "target": {
         "entityId": "rova_orc",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_wyvern"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_wyvern",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "翼龍",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "翼龍",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_wyvern",
         "entityType": "monster"
       },
       "versionScope": {
@@ -23274,6 +23429,37 @@
       "status": "resolved",
       "target": {
         "entityId": "ghoul",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/01-drops-config.js#MOB_DROPS"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_scavenger"
+        }
+      ],
+      "id": "mapping_drop_mobdrops_sanct_scavenger",
+      "mappingType": "drop_owner_to_monster_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "食腐獸",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/01-drops-config.js#MOB_DROPS",
+      "sourceScope": "game:MOB_DROPS",
+      "sourceValue": "食腐獸",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_scavenger",
         "entityType": "monster"
       },
       "versionScope": {
@@ -51717,37 +51903,6 @@
         },
         {
           "evidenceType": "code",
-          "sourceLocation": "js/00-data.js#DB.mobs.de_train_hellslave"
-        }
-      ],
-      "id": "mapping_cardmob_cardindex_de_train_hellslave",
-      "mappingType": "legacy_card_key_to_monster_id",
-      "matchMethod": "exact_name",
-      "normalizedValue": "地獄奴隸",
-      "notes": [],
-      "replacementMappingId": null,
-      "sourceLocation": "js/15-cards.js#CARD_MOB_INFO",
-      "sourceScope": "game:CARD_MOB_INFO",
-      "sourceValue": "地獄奴隸",
-      "status": "compatibility_only",
-      "target": {
-        "entityId": "de_train_hellslave",
-        "entityType": "monster"
-      },
-      "versionScope": {
-        "validFrom": null,
-        "validTo": null
-      }
-    },
-    {
-      "candidates": [],
-      "evidence": [
-        {
-          "evidenceType": "code",
-          "sourceLocation": "js/15-cards.js#CARD_MOB_INFO"
-        },
-        {
-          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.de_train_hellhound"
         }
       ],
@@ -63466,6 +63621,37 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.maps.cursed_dark_elf_sanctuary"
+        }
+      ],
+      "id": "mapping_maplabel_mapregions_cursed_dark_elf_sanctuary",
+      "mappingType": "map_label_to_map_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "受詛咒的黑暗妖精聖地",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/11-world-map.js#MAP_REGIONS",
+      "sourceScope": "game:MAP_REGIONS",
+      "sourceValue": "受詛咒的黑暗妖精聖地",
+      "status": "resolved",
+      "target": {
+        "entityId": "cursed_dark_elf_sanctuary",
+        "entityType": "map"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/11-world-map.js#MAP_REGIONS"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.maps.giant_tomb"
         }
       ],
@@ -64163,6 +64349,37 @@
       "status": "resolved",
       "target": {
         "entityId": "antaras_lair",
+        "entityType": "map"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/11-world-map.js#MAP_REGIONS"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.maps.collapsed_elder_council_hall"
+        }
+      ],
+      "id": "mapping_maplabel_mapregions_collapsed_elder_council_hall",
+      "mappingType": "map_label_to_map_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "崩壞的長老會議廳",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/11-world-map.js#MAP_REGIONS",
+      "sourceScope": "game:MAP_REGIONS",
+      "sourceValue": "崩壞的長老會議廳",
+      "status": "resolved",
+      "target": {
+        "entityId": "collapsed_elder_council_hall",
         "entityType": "map"
       },
       "versionScope": {
@@ -65915,6 +66132,37 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.maps.dark_elf_sanctuary"
+        }
+      ],
+      "id": "mapping_maplabel_mapregions_dark_elf_sanctuary",
+      "mappingType": "map_label_to_map_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "黑暗妖精聖地",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/11-world-map.js#MAP_REGIONS",
+      "sourceScope": "game:MAP_REGIONS",
+      "sourceValue": "黑暗妖精聖地",
+      "status": "resolved",
+      "target": {
+        "entityId": "dark_elf_sanctuary",
+        "entityType": "map"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/11-world-map.js#MAP_REGIONS"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.maps.dark_magic_lab"
         }
       ],
@@ -67248,6 +67496,99 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_cursed_mage"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_cursed_mage",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "受詛咒的黑暗妖精法師",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "受詛咒的黑暗妖精法師",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_cursed_mage",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_cursed_knight"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_cursed_knight",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "受詛咒的黑暗妖精騎士",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "受詛咒的黑暗妖精騎士",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_cursed_knight",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_cursed_fighter"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_cursed_fighter",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "受詛咒的黑暗妖精鬥士",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "受詛咒的黑暗妖精鬥士",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_cursed_fighter",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.giant_ancient"
         }
       ],
@@ -67294,6 +67635,37 @@
       "status": "resolved",
       "target": {
         "entityId": "sparto",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_giltas"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_giltas",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "吉爾塔斯",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "吉爾塔斯",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_giltas",
         "entityType": "monster"
       },
       "versionScope": {
@@ -67604,37 +67976,6 @@
       "status": "resolved",
       "target": {
         "entityId": "de_lab_earth",
-        "entityType": "monster"
-      },
-      "versionScope": {
-        "validFrom": null,
-        "validTo": null
-      }
-    },
-    {
-      "candidates": [],
-      "evidence": [
-        {
-          "evidenceType": "code",
-          "sourceLocation": "js/00-data.js#DB.mobs"
-        },
-        {
-          "evidenceType": "code",
-          "sourceLocation": "js/00-data.js#DB.mobs.de_train_hellslave"
-        }
-      ],
-      "id": "mapping_mnid_dbmobs_de_train_hellslave",
-      "mappingType": "monster_name_to_id",
-      "matchMethod": "exact_name",
-      "normalizedValue": "地獄奴隸",
-      "notes": [],
-      "replacementMappingId": null,
-      "sourceLocation": "js/00-data.js#DB.mobs",
-      "sourceScope": "game:DB.mobs",
-      "sourceValue": "地獄奴隸",
-      "status": "resolved",
-      "target": {
-        "entityId": "de_train_hellslave",
         "entityType": "monster"
       },
       "versionScope": {
@@ -74502,6 +74843,37 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_tethys"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_tethys",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "特提斯",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "特提斯",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_tethys",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.siege_tros"
         }
       ],
@@ -74998,6 +75370,37 @@
         },
         {
           "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_dantes"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_dantes",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "真‧死亡騎士 冥皇丹特斯",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "真‧死亡騎士 冥皇丹特斯",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_dantes",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
           "sourceLocation": "js/00-data.js#DB.mobs.stone_golem"
         }
       ],
@@ -75137,6 +75540,37 @@
       "status": "resolved",
       "target": {
         "entityId": "rova_orc",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_wyvern"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_wyvern",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "翼龍",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "翼龍",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_wyvern",
         "entityType": "monster"
       },
       "versionScope": {
@@ -78857,6 +79291,37 @@
       "status": "resolved",
       "target": {
         "entityId": "ghoul",
+        "entityType": "monster"
+      },
+      "versionScope": {
+        "validFrom": null,
+        "validTo": null
+      }
+    },
+    {
+      "candidates": [],
+      "evidence": [
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs"
+        },
+        {
+          "evidenceType": "code",
+          "sourceLocation": "js/00-data.js#DB.mobs.sanct_scavenger"
+        }
+      ],
+      "id": "mapping_mnid_dbmobs_sanct_scavenger",
+      "mappingType": "monster_name_to_id",
+      "matchMethod": "exact_name",
+      "normalizedValue": "食腐獸",
+      "notes": [],
+      "replacementMappingId": null,
+      "sourceLocation": "js/00-data.js#DB.mobs",
+      "sourceScope": "game:DB.mobs",
+      "sourceValue": "食腐獸",
+      "status": "resolved",
+      "target": {
+        "entityId": "sanct_scavenger",
         "entityType": "monster"
       },
       "versionScope": {
@@ -84282,37 +84747,6 @@
       "status": "resolved",
       "target": {
         "entityId": "de_lab_earth",
-        "entityType": "monster"
-      },
-      "versionScope": {
-        "validFrom": null,
-        "validTo": null
-      }
-    },
-    {
-      "candidates": [],
-      "evidence": [
-        {
-          "evidenceType": "code",
-          "sourceLocation": "wiki.html#REGIONS_DATA"
-        },
-        {
-          "evidenceType": "code",
-          "sourceLocation": "js/00-data.js#DB.mobs.de_train_hellslave"
-        }
-      ],
-      "id": "mapping_wikimob_wikimobs_de_train_hellslave",
-      "mappingType": "wiki_monster_to_monster_id",
-      "matchMethod": "exact_name",
-      "normalizedValue": "地獄奴隸",
-      "notes": [],
-      "replacementMappingId": null,
-      "sourceLocation": "wiki.html#REGIONS_DATA",
-      "sourceScope": "wiki:REGIONS_DATA.monsters",
-      "sourceValue": "地獄奴隸",
-      "status": "resolved",
-      "target": {
-        "entityId": "de_train_hellslave",
         "entityType": "monster"
       },
       "versionScope": {

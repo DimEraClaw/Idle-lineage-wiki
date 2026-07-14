@@ -29,9 +29,10 @@ from validate_equipment_fixtures import (
 
 
 class EquipmentFixtureTests(unittest.TestCase):
+    PROGRAM_SOURCE_ROOT = ROOT / "temp_online" / "u2a-c3d4f96f13aefabf1453a4a3f1f54d688fd573f6-v2" / "snapshot"
     @classmethod
     def setUpClass(cls) -> None:
-        cls.source = extract_sources(ROOT)
+        cls.source = extract_sources(cls.PROGRAM_SOURCE_ROOT, ROOT)
         cls.categories: dict[str, list[str]] = {}
         for row in cls.source["wiki"]:
             cls.categories.setdefault(row["category"], []).append(row["id"])
@@ -60,14 +61,14 @@ class EquipmentFixtureTests(unittest.TestCase):
             callback(value)
             self.rewrite(path, value)
             with self.assertRaisesRegex(ValidationError, message):
-                validate(fixtures, schemas, ROOT)
+                validate(fixtures, schemas, ROOT, self.PROGRAM_SOURCE_ROOT)
         finally:
             temp.cleanup()
 
     def test_01_valid_fixtures(self) -> None:
-        self.assertEqual(validate()["validator"], "passed")
+        self.assertEqual(validate(program_source_root=self.PROGRAM_SOURCE_ROOT)["validator"], "passed")
 
-    def test_02_allowlist_is_exactly_786(self) -> None:
+    def test_02_allowlist_is_exactly_825(self) -> None:
         self.mutate("equipment-allowlist.json", lambda x: x["records"].pop(), "invalid_equipment_allowlist_count")
 
     def test_03_duplicate_id_rejected(self) -> None:
@@ -148,7 +149,7 @@ class EquipmentFixtureTests(unittest.TestCase):
         self.assertEqual(canonical_bytes(value), canonical_bytes(reversed_value))
 
     def test_21_sha256_is_reproducible(self) -> None:
-        result = validate()
+        result = validate(program_source_root=self.PROGRAM_SOURCE_ROOT)
         for name, digest in result["sha256"].items():
             path = (DEFAULT_FIXTURES if name in FIXTURE_FILES else DEFAULT_SCHEMAS) / name
             self.assertEqual(digest, hashlib.sha256(path.read_bytes()).hexdigest())

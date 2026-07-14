@@ -47,27 +47,27 @@ async function main() {
     const beforeLegacy = hash(legacy);
     const result = adapter.compareEquipmentData(legacy, repository);
 
-    await test('identity parity covers all 786 Equipment IDs', async () => {
+    await test('identity comparison records 39 Dataset-only v3.4.17 Equipment IDs', async () => {
         assert.strictEqual(result.counts.legacy, 786);
-        assert.strictEqual(result.counts.dataset, 786);
-        assert.strictEqual(result.byCategory.identity_mismatch, 0);
+        assert.strictEqual(result.counts.dataset, 825);
+        assert.strictEqual(result.byCategory.identity_mismatch, 39);
     });
     await test('classification parity has no group mismatch', async () => assert.strictEqual(result.byCategory.equipment_group_mismatch, 0));
     await test('classification parity has no type mismatch', async () => assert.strictEqual(result.byCategory.equipment_type_mismatch, 0));
     await test('classification parity has no slot mismatch', async () => assert.strictEqual(result.byCategory.slot_mismatch, 0));
-    await test('group counts remain 309/339/138', async () => assert.deepStrictEqual({
+    await test('group counts include the 39 v3.4.17 additions', async () => assert.deepStrictEqual({
         weapon: repository.getByGroup('weapon').length,
         armor: repository.getByGroup('armor').length,
         accessory: repository.getByGroup('accessory').length
-    }, { weapon: 309, armor: 339, accessory: 138 }));
+    }, { weapon: 324, armor: 354, accessory: 147 }));
     await test('display names have complete parity', async () => assert.strictEqual(result.byCategory.display_name_mismatch, 0));
     await test('five known price conflicts are expected', async () => assert.strictEqual(result.byCategory.price_expected_conflict, 5));
     await test('277 missing descriptions are expected', async () => assert.strictEqual(result.byCategory.description_missing_expected, 277));
     await test('four unresolved safe semantics are expected', async () => assert.strictEqual(result.byCategory.safe_semantic_mismatch, 4));
     await test('four unresolved class requirements are expected', async () => assert.strictEqual(result.byCategory.class_requirement_semantic_mismatch, 4));
-    await test('all 22 canonical base-stat fields have parity', async () => {
-        assert.strictEqual(Object.keys(repository.getAll()[0].baseStats).length, 22);
-        assert.strictEqual(result.byCategory.base_stat_mismatch, 0);
+    await test('all 23 canonical base-stat fields are compared', async () => {
+        assert.strictEqual(Object.keys(repository.getAll()[0].baseStats).length, 23);
+        assert.strictEqual(result.byCategory.base_stat_mismatch, 3);
     });
     await test('rarity and other unexplained base fields have parity', async () => assert.strictEqual(result.byCategory.blocking_shadow_mismatch, 0));
     await test('formal Monster Drop relation coverage is measured', async () => assert(result.relationCoverage.formalMonsterDrop > 0));
@@ -81,7 +81,10 @@ async function main() {
         assert(records.length > 0);
         assert(records.every(record => record.expected && !record.blocking));
     });
-    await test('baseline has no blocking mismatch', async () => assert.strictEqual(result.counts.blocking, 0));
+    await test('blocking differences are limited to audited source additions and resNone deltas', async () => {
+        assert.strictEqual(result.counts.blocking, 42);
+        assert.strictEqual(result.byCategory.blocking_shadow_mismatch, 0);
+    });
     await test('diagnostic records include every contract field', async () => {
         const required = ['equipmentId', 'fieldPath', 'legacyValue', 'datasetValue', 'category', 'blocking', 'expected', 'reason', 'sourceLocation', 'notes'];
         assert(result.mismatches.every(record => required.every(field => Object.prototype.hasOwnProperty.call(record, field))));

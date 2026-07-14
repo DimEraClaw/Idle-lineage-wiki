@@ -37,7 +37,7 @@ async function main() {
     const repository = createEquipmentRepository({ fetch: fetchFrom(documents, calls) });
     await test('load succeeds', async () => assert.strictEqual(await repository.load(), true));
     await test('exactly three Dataset files are fetched once', async () => assert.deepStrictEqual(calls.sort(), Object.values(URLS).sort()));
-    await test('786 Equipment records are loaded', async () => assert.strictEqual(repository.getAll().length, 786));
+    await test('825 Equipment records are loaded', async () => assert.strictEqual(repository.getAll().length, 825));
     await test('ID lookup uses equipmentId', async () => assert.strictEqual(repository.getEquipmentById('acc_116').equipmentId, 'acc_116'));
     await test('exact name lookup resolves unique names', async () => assert.strictEqual(repository.getEquipmentByName('傳送控制戒指').equipmentId, 'acc_116'));
     await test('partial Chinese name search works', async () => assert(repository.searchEquipment('傳送控制').some(record => record.equipmentId === 'acc_116')));
@@ -59,7 +59,7 @@ async function main() {
         const list = repository.getAll();
         list.pop();
         list[0].relations.length = 0;
-        assert.strictEqual(repository.getAll().length, 786);
+        assert.strictEqual(repository.getAll().length, 825);
     });
     await test('duplicate Equipment ID fails closed', async () => {
         const source = clonedSource();
@@ -118,16 +118,16 @@ async function main() {
     });
     await test('index counts are complete and diagnostic-only', async () => {
         assert.deepStrictEqual(repository.getState().indexCounts, {
-            equipmentById: 786,
-            equipmentByExactName: 786,
+            equipmentById: 825,
+            equipmentByExactName: 825,
             equipmentByGroup: 3,
             equipmentByType: 27,
             equipmentBySlot: 16,
             equipmentByClass: 8,
-            relationByEquipment: 741,
-            diagnosticsByEquipment: 786,
-            unresolvedByEquipment: 786,
-            searchableText: 786
+            relationByEquipment: 777,
+            diagnosticsByEquipment: 814,
+            unresolvedByEquipment: 814,
+            searchableText: 825
         });
     });
 

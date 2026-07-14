@@ -3,6 +3,7 @@
 const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
+const vm = require('vm');
 const { createEquipmentRepository, URLS, INDEX_URL } = require('../js/wiki-equipment-data.js');
 const { createEquipmentViewAdapter } = require('../js/wiki-equipment-view-adapter.js');
 const { SEARCH_FIXTURES } = require('../js/wiki-equipment-shadow-adapter.js');
@@ -22,6 +23,18 @@ const index = indexDocument.records;
 const byId = new Map(index.map(record => [record.equipmentId, record]));
 const details = detailNames.flatMap(name => JSON.parse(documents[`data/equipment/${name}`]).records);
 const detailById = new Map(details.map(record => [record.equipmentId, record]));
+const equipmentModeFunction = html.match(/function isEquipmentDataViewEnabled\(\) \{[\s\S]*?\n        \}/);
+assert(equipmentModeFunction, 'isEquipmentDataViewEnabled was not found');
+
+function equipmentModeEnabled(search, defaultEnabled = true) {
+    return vm.runInNewContext(`(${equipmentModeFunction[0]})()`, {
+        URLSearchParams,
+        window: {
+            EQUIPMENT_DATA_VIEW_ENABLED: defaultEnabled,
+            location: { search }
+        }
+    });
+}
 
 const FIXTURES = Object.freeze({
     weapon: 'relic_amp_staff',
@@ -35,11 +48,11 @@ const FIXTURES = Object.freeze({
     craftRelation: 'acc_134'
 });
 const TYPE_COUNTS = Object.freeze({
-    armor: 86, belt: 28, blunt: 20, boots: 36, bow: 20, chain_sword: 11, claw: 21,
-    cloak: 43, crossbow: 12, dagger: 17, dual_blade: 19, earring: 39, gloves: 38,
-    greaves: 12, helmet: 57, kiringku: 11, necklace: 31, one_hand_sword: 71,
-    other_weapon: 7, ring: 40, shield: 57, spear: 8, staff: 31, tshirt: 10,
-    two_hand_blunt: 18, two_hand_spear: 18, two_hand_sword: 25
+    armor: 88, belt: 28, blunt: 21, boots: 37, bow: 23, chain_sword: 12, claw: 22,
+    cloak: 45, crossbow: 12, dagger: 17, dual_blade: 20, earring: 42, gloves: 40,
+    greaves: 12, helmet: 58, kiringku: 11, necklace: 34, one_hand_sword: 74,
+    other_weapon: 7, ring: 43, shield: 63, spear: 8, staff: 33, tshirt: 11,
+    two_hand_blunt: 18, two_hand_spear: 18, two_hand_sword: 27
 });
 
 function cloneDocuments() {
@@ -83,8 +96,17 @@ async function main() {
         process.stdout.write(`ok ${passed} - ${name}\n`);
     }
 
-    await test('feature flag remains disabled by default', async () => assert(html.includes('window.EQUIPMENT_DATA_VIEW_ENABLED = false;')));
-    await test('only equipmentData=1 enables the Dataset view', async () => assert(html.includes("get('equipmentData') === '1'")));
+    await test('published feature flag enables Dataset view by default', async () => assert(html.includes('window.EQUIPMENT_DATA_VIEW_ENABLED = true;')));
+    await test('no equipmentData parameter uses Dataset mode', async () => assert.strictEqual(equipmentModeEnabled(''), true));
+    await test('equipmentData=1 remains a compatible Dataset mode', async () => assert.strictEqual(equipmentModeEnabled('?equipmentData=1'), true));
+    await test('equipmentData=0 forces legacy mode', async () => assert.strictEqual(equipmentModeEnabled('?equipmentData=0'), false));
+    await test('equipmentData=0 skips index fetch and retains 786 legacy records', async () => {
+        const disabledCalls = [];
+        const instance = await makeAdapter(documents, disabledCalls);
+        if (equipmentModeEnabled('?equipmentData=0')) await instance.adapter.load();
+        assert.deepStrictEqual(disabledCalls, []);
+        assert.strictEqual(legacyEquipment.length, 786);
+    });
     await test('initial dependency is the relative index path', async () => assert.strictEqual(INDEX_URL, 'data/equipment/equipment-index.json'));
     await test('all sixteen Detail shard dependencies are present', async () => assert.strictEqual(detailNames.filter(name => fs.existsSync(path.join(ROOT, 'data/equipment', name))).length, 16));
     await test('diagnostics and unresolved paths are relative', async () => {
@@ -98,12 +120,12 @@ async function main() {
     await test('relative paths resolve under a project subpath', async () => {
         assert.strictEqual(new URL(INDEX_URL, 'https://example.test/Idle-lineage-wiki/wiki.html').pathname, '/Idle-lineage-wiki/data/equipment/equipment-index.json');
     });
-    await test('index has 786 Equipment summaries', async () => assert.strictEqual(index.length, 786));
-    await test('Detail shards cover exactly 786 Equipment entities', async () => assert.strictEqual(detailById.size, 786));
-    await test('weapon count is 309', async () => assert.strictEqual(index.filter(x => x.equipmentGroup === 'weapon').length, 309));
-    await test('armor count is 339', async () => assert.strictEqual(index.filter(x => x.equipmentGroup === 'armor').length, 339));
-    await test('accessory count is 138', async () => assert.strictEqual(index.filter(x => x.equipmentGroup === 'accessory').length, 138));
-    await test('all 27 equipmentType filters have records', async () => assert.strictEqual(new Set(index.map(x => x.equipmentType)).size, 27));
+    await test('index has 825 Equipment summaries', async () => assert.strictEqual(index.length, 825));
+    await test('Detail shards cover exactly 825 Equipment entities', async () => assert.strictEqual(detailById.size, 825));
+    await test('weapon count is 324', async () => assert.strictEqual(index.filter(x => x.equipmentGroup === 'weapon').length, 324));
+    await test('armor count is 354', async () => assert.strictEqual(index.filter(x => x.equipmentGroup === 'armor').length, 354));
+    await test('accessory count is 147', async () => assert.strictEqual(index.filter(x => x.equipmentGroup === 'accessory').length, 147));
+    await test('27 resolved equipmentType filters plus one unresolved type are present', async () => assert.strictEqual(new Set(index.map(x => x.equipmentType)).size, 28));
     await test('all equipmentType filter counts match the RC baseline', async () => {
         Object.entries(TYPE_COUNTS).forEach(([type, count]) => assert.strictEqual(index.filter(x => x.equipmentType === type).length, count, type));
     });
@@ -121,7 +143,7 @@ async function main() {
         assert(!calls.includes(URLS.diagnostics));
         assert(!calls.includes(URLS.unresolved));
     });
-    await test('repository index contains 786 IDs', async () => assert.strictEqual(repository.getState().indexCounts.equipmentById, 786));
+    await test('repository index contains 825 IDs', async () => assert.strictEqual(repository.getState().indexCounts.equipmentById, 825));
     await test('all fixed search fixtures return results', async () => SEARCH_FIXTURES.forEach(query => assert(adapter.search(query).length > 0, query)));
     await test('ID search is case-insensitive', async () => assert(adapter.search('ACC_116').some(x => x.id === 'acc_116')));
     await test('full Chinese name search works', async () => assert(adapter.search('傳送控制戒指').some(x => x.id === 'acc_116')));
@@ -179,6 +201,12 @@ async function main() {
     await test('close removes only the equipment query', async () => assert(html.includes("url.searchParams.delete('equipment')")));
     await test('Back and Forward are connected through popstate', async () => assert(html.includes("window.addEventListener('popstate'")));
     await test('Monster relation navigation preserves Dataset flag', async () => assert(accessory.sources.some(source => /equipmentData=1&amp;tab=monster/.test(source))));
+    await test('new Equipment deep links do not require equipmentData=1', async () => assert(!html.includes("searchParams.set('equipmentData', '1')")));
+    await test('published initialization keeps Monster, Craft and Cards connected', async () => {
+        assert(html.includes('await initCraftWikiWithFallback();'));
+        assert(html.includes('initCardsGuide();'));
+        assert(html.includes('window.MonsterWikiView.init()'));
+    });
     await test('initialization renders legacy UI before awaiting the index', async () => {
         const start = html.indexOf('const equipmentDataInitialization = initEquipmentDataViewIfEnabled();');
         const legacyRender = html.indexOf('initEquipWiki();', start);
@@ -204,6 +232,16 @@ async function main() {
         const source = cloneDocuments(); source[INDEX_URL] = '{';
         const instance = await makeAdapter(source);
         assert.strictEqual(await instance.adapter.load(), false);
+    });
+    await test('index fallback paths produce zero captured console errors', async () => {
+        const consoleErrors = [];
+        for (const invalid of [null, '{']) {
+            const source = cloneDocuments();
+            if (invalid == null) delete source[INDEX_URL]; else source[INDEX_URL] = invalid;
+            const instance = await makeAdapter(source);
+            try { assert.strictEqual(await instance.adapter.load(), false); } catch (error) { consoleErrors.push(error); }
+        }
+        assert.deepStrictEqual(consoleErrors, []);
     });
     await test('invalid index envelope falls back cleanly', async () => {
         const source = cloneDocuments(); source[INDEX_URL] = JSON.stringify({ dataset: 'wrong', records: [] });
@@ -254,7 +292,10 @@ async function main() {
     await test('player-facing copy does not label Equipment UI Alpha or Beta', async () => {
         assert(!/>[^<]*(?:Equipment UI )?(?:Alpha|Beta)[^<]*</i.test(html));
     });
-    await test('RC changes do not default-enable the Dataset view', async () => assert(!html.includes('window.EQUIPMENT_DATA_VIEW_ENABLED = true;')));
+    await test('Publish keeps Dataset default-on and explicit legacy fallback', async () => {
+        assert.strictEqual(equipmentModeEnabled(''), true);
+        assert.strictEqual(equipmentModeEnabled('?equipmentData=0'), false);
+    });
 
     process.stdout.write(`Equipment UI RC tests passed: ${passed}/${passed}\n`);
 }

@@ -1,0 +1,199 @@
+{
+  "branch": "main",
+  "domains": [
+    "card",
+    "craft",
+    "drop",
+    "equipment",
+    "item",
+    "map",
+    "monster",
+    "system"
+  ],
+  "files": [
+    {
+      "domains": [
+        "equipment",
+        "monster",
+        "system"
+      ],
+      "extractionPurpose": "Confirm module loading order, cache-token cross-checks, and the deployed entrypoint without treating HTML as a Domain owner.",
+      "notes": [],
+      "ownerType": "entrypoint",
+      "path": "index.html",
+      "required": true,
+      "role": "entrypoint_evidence"
+    },
+    {
+      "domains": [
+        "equipment",
+        "item",
+        "map",
+        "monster"
+      ],
+      "extractionPurpose": "Extract canonical Monster, Map, Item, and Equipment definitions; also locate the authoritative version field for each manifest run.",
+      "notes": [],
+      "ownerType": "domain_owner",
+      "path": "js/00-data.js",
+      "required": true,
+      "role": "canonical_owner"
+    },
+    {
+      "domains": [
+        "drop"
+      ],
+      "extractionPurpose": "Extract canonical base drop owners and drop entries.",
+      "notes": [],
+      "ownerType": "domain_owner",
+      "path": "js/01-drops-config.js",
+      "required": true,
+      "role": "canonical_owner"
+    },
+    {
+      "domains": [
+        "equipment"
+      ],
+      "extractionPurpose": "Verify derived stat recomputation and Equipment formula usage without owning canonical base values.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/02-stats-recompute.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "equipment",
+        "monster"
+      ],
+      "extractionPurpose": "Trace combat consumption of Monster stats and Equipment mechanics.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/03-combat-core.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "equipment",
+        "monster"
+      ],
+      "extractionPurpose": "Trace attack, proc, and damage interactions used by Monster and Equipment records.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/04-combat-attack.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "drop",
+        "monster"
+      ],
+      "extractionPurpose": "Separate base drop definitions from kill-time modifiers and progression behavior.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/05-kill-progression.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "equipment"
+      ],
+      "extractionPurpose": "Trace Equipment status and ally interactions without treating runtime state as canonical Equipment data.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/06-status-allies.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "equipment"
+      ],
+      "extractionPurpose": "Trace Equipment-linked skill and proc behavior.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/07-skills-cast.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "equipment"
+      ],
+      "extractionPurpose": "Verify equip restrictions, instance handling, and runtime application rules.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/08-items-equip.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "equipment"
+      ],
+      "extractionPurpose": "Extract the ID-based WEAPON_TAGS input used by the approved Equipment classification mapping.",
+      "notes": [],
+      "ownerType": "classification_source",
+      "path": "js/10-ui-tabs.js",
+      "required": true,
+      "role": "classification_owner"
+    },
+    {
+      "domains": [
+        "map",
+        "monster"
+      ],
+      "extractionPurpose": "Verify Map labels, navigation groups, spawn presentation, and hidden-map runtime behavior.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/11-world-map.js",
+      "required": true,
+      "role": "runtime_evidence"
+    },
+    {
+      "domains": [
+        "craft"
+      ],
+      "extractionPurpose": "Compare upstream Craft behavior with the separately owned Wiki Craft dataset.",
+      "notes": [
+        "This file is parity evidence and is not the current Wiki Craft canonical owner."
+      ],
+      "ownerType": "evidence_source",
+      "path": "js/14-craft-pandora.js",
+      "required": true,
+      "role": "parity_evidence"
+    },
+    {
+      "domains": [
+        "card",
+        "monster"
+      ],
+      "extractionPurpose": "Verify Card-to-Monster projections and Monster-derived Card values.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/15-cards.js",
+      "required": true,
+      "role": "parity_evidence"
+    },
+    {
+      "domains": [
+        "equipment"
+      ],
+      "extractionPurpose": "Verify Equipment detail presentation and interaction behavior without owning canonical Equipment values.",
+      "notes": [],
+      "ownerType": "evidence_source",
+      "path": "js/19-equipment-window.js",
+      "required": true,
+      "role": "runtime_evidence"
+    }
+  ],
+  "inventoryVersion": "1.0.0",
+  "notes": [
+    "This stable inventory defines source responsibilities and does not identify a release or source snapshot.",
+    "Per-run hashes, source revision, version identity, and retrieval time belong to Source Manifest artifacts."
+  ],
+  "ownerType": "upstream_repository",
+  "repository": "https://github.com/shines871/idle-lineage-class"
+}

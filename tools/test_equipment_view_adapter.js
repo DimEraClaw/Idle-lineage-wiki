@@ -4,6 +4,7 @@ const assert = require('assert');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
+const vm = require('vm');
 const { createEquipmentRepository, URLS, INDEX_URL } = require('../js/wiki-equipment-data.js');
 const { createEquipmentViewAdapter, toReadModel } = require('../js/wiki-equipment-view-adapter.js');
 const { SEARCH_FIXTURES } = require('../js/wiki-equipment-shadow-adapter.js');
@@ -21,6 +22,18 @@ const documents = Object.fromEntries([...Object.values(URLS), ...viewUrls].map(u
 const indexDocument = JSON.parse(documents[INDEX_URL]);
 const accDetailUrl = indexDocument.records.find(record => record.equipmentId === 'acc_116').detailLocator;
 const sameShardEquipmentId = indexDocument.records.find(record => record.detailLocator === accDetailUrl && record.equipmentId !== 'acc_116').equipmentId;
+const equipmentModeFunction = html.match(/function isEquipmentDataViewEnabled\(\) \{[\s\S]*?\n        \}/);
+assert(equipmentModeFunction, 'isEquipmentDataViewEnabled was not found');
+
+function equipmentModeEnabled(search, defaultEnabled = true) {
+    return vm.runInNewContext(`(${equipmentModeFunction[0]})()`, {
+        URLSearchParams,
+        window: {
+            EQUIPMENT_DATA_VIEW_ENABLED: defaultEnabled,
+            location: { search }
+        }
+    });
+}
 
 function fetchFrom(source, calls) {
     return async url => {
@@ -57,19 +70,19 @@ async function main() {
     const legacyHash = hash(legacy);
     await test('view load succeeds', async () => assert.strictEqual(await adapter.load(), true));
     await test('initial view fetches only equipment-index.json', async () => assert.deepStrictEqual(calls, [INDEX_URL]));
-    await test('view exposes 786 equipment records', async () => assert.strictEqual(adapter.getAll().length, 786));
+    await test('view exposes 825 equipment records', async () => assert.strictEqual(adapter.getAll().length, 825));
     await test('repository is ready after equipment-only load', async () => assert.strictEqual(repository.getState().ready, true));
     await test('diagnostics are not ready initially', async () => assert.strictEqual(repository.getState().diagnosticsReady, false));
     await test('adapter source is Dataset', async () => assert.strictEqual(adapter.getState().source, 'dataset'));
-    await test('adapter count is 786', async () => assert.strictEqual(adapter.getState().count, 786));
+    await test('adapter count is 825', async () => assert.strictEqual(adapter.getState().count, 825));
     await test('summary index excludes full verification and relations', async () => {
         const summary = repository.getEquipmentById('acc_116');
         assert.strictEqual(summary.verification, undefined);
         assert.strictEqual(summary.relations, undefined);
     });
-    await test('weapon count remains 309', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'weapon').length, 309));
-    await test('armor count remains 339', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'armor').length, 339));
-    await test('accessory count remains 138', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'accessory').length, 138));
+    await test('weapon count is 324', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'weapon').length, 324));
+    await test('armor count is 354', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'armor').length, 354));
+    await test('accessory count is 147', async () => assert.strictEqual(adapter.getAll().filter(x => x.equipmentGroup === 'accessory').length, 147));
     await test('equipment ID maps to legacy id', async () => assert.strictEqual(adapter.getById('acc_116').id, 'acc_116'));
     await test('displayName maps to name', async () => assert.strictEqual(adapter.getById('acc_116').name, '傳送控制戒指'));
     await test('itemType maps to type', async () => assert.strictEqual(adapter.getById('acc_116').type, 'acc'));
@@ -131,7 +144,7 @@ async function main() {
         assert.strictEqual(await instance.adapter.load(), true);
         assert.strictEqual(await instance.adapter.getDetail('acc_116'), null);
         assert.strictEqual(instance.adapter.getState().ready, true);
-        assert.strictEqual(instance.adapter.getAll().length, 786);
+        assert.strictEqual(instance.adapter.getAll().length, 825);
     });
     await test('Detail parse error is local and keeps cards searchable', async () => {
         const source = cloneDocuments();
@@ -192,7 +205,7 @@ async function main() {
         const result = await instance.adapter.ensureDiagnostics('acc_116');
         assert.strictEqual(result.ready, false);
         assert.strictEqual(instance.adapter.getState().ready, true);
-        assert.strictEqual(instance.adapter.getAll().length, 786);
+        assert.strictEqual(instance.adapter.getAll().length, 825);
     });
     await test('optional unresolved 404 still permits diagnostics', async () => {
         const source = cloneDocuments();
@@ -207,8 +220,41 @@ async function main() {
         toReadModel(record, legacyEquipment.find(x => x.id === record.equipmentId));
         assert.strictEqual(hash(record), before);
     });
-    await test('wiki defines the feature flag disabled by default', async () => assert(html.includes('window.EQUIPMENT_DATA_VIEW_ENABLED = false;')));
-    await test('wiki enables only exact equipmentData=1', async () => assert(html.includes("get('equipmentData') === '1'")));
+    await test('wiki defines the Dataset view enabled by default', async () => assert(html.includes('window.EQUIPMENT_DATA_VIEW_ENABLED = true;')));
+    await test('no equipmentData parameter enables Dataset mode', async () => assert.strictEqual(equipmentModeEnabled(''), true));
+    await test('equipmentData=1 remains Dataset-compatible', async () => assert.strictEqual(equipmentModeEnabled('?equipmentData=1'), true));
+    await test('equipmentData=0 forces legacy mode', async () => assert.strictEqual(equipmentModeEnabled('?equipmentData=0'), false));
+    await test('equipmentData=0 does not fetch the Equipment index', async () => {
+        const disabledCalls = [];
+        const instance = await makeAdapter(documents, disabledCalls);
+        if (equipmentModeEnabled('?equipmentData=0')) await instance.adapter.load();
+        assert.deepStrictEqual(disabledCalls, []);
+        assert.strictEqual(legacyEquipment.length, 786);
+    });
+    await test('default mode fetches the Equipment index and exposes 825 records', async () => {
+        const defaultCalls = [];
+        const instance = await makeAdapter(documents, defaultCalls);
+        if (equipmentModeEnabled('')) await instance.adapter.load();
+        assert.deepStrictEqual(defaultCalls, [INDEX_URL]);
+        assert.strictEqual(instance.adapter.getAll().length, 825);
+    });
+    await test('published deep links do not inject equipmentData=1', async () => assert(!html.includes("searchParams.set('equipmentData', '1')")));
+    await test('legacy, Monster, Craft and Cards initialization remains connected', async () => {
+        assert(html.includes('initEquipWiki();'));
+        assert(html.includes('await initCraftWikiWithFallback();'));
+        assert(html.includes('initCardsGuide();'));
+        assert(html.includes('window.MonsterWikiView.init()'));
+    });
+    await test('index failures remain rejection-free with zero captured errors', async () => {
+        const errors = [];
+        for (const invalid of [null, '{']) {
+            const source = cloneDocuments();
+            if (invalid == null) delete source[INDEX_URL]; else source[INDEX_URL] = invalid;
+            const instance = await makeAdapter(source, []);
+            try { assert.strictEqual(await instance.adapter.load(), false); } catch (error) { errors.push(error); }
+        }
+        assert.deepStrictEqual(errors, []);
+    });
     await test('wiki contains Equipment deep-link parameter handling', async () => assert(html.includes("searchParams.set('equipment', item.id)")));
     await test('wiki restores deep links without creating history entries', async () => assert(html.includes("openDetailModal(equipmentId, { updateHistory: false })")));
     await test('wiki has popstate navigation handling', async () => assert(html.includes("window.addEventListener('popstate'")));

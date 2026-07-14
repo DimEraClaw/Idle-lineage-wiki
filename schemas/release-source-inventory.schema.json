@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dim-era-claw.github.io/idle-lineage-wiki/schemas/release-source-inventory.schema.json",
+  "title": "Release Upstream Source Inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["inventoryVersion", "repository", "branch", "domains", "ownerType", "files", "notes"],
+  "properties": {
+    "inventoryVersion": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "repository": {
+      "type": "string",
+      "const": "https://github.com/shines871/idle-lineage-class"
+    },
+    "branch": {
+      "type": "string",
+      "const": "main"
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/domain" }
+    },
+    "ownerType": {
+      "const": "upstream_repository"
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/sourceFile" }
+    },
+    "notes": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  },
+  "$defs": {
+    "domain": {
+      "enum": ["card", "craft", "drop", "equipment", "item", "map", "monster", "system"]
+    },
+    "sourceFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "domains", "role", "required", "ownerType", "extractionPurpose", "notes"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\)(?!.*//)[^\\u0000]+$"
+        },
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/domain" }
+        },
+        "role": {
+          "enum": ["canonical_owner", "classification_owner", "runtime_evidence", "parity_evidence", "entrypoint_evidence"]
+        },
+        "required": { "type": "boolean" },
+        "ownerType": {
+          "enum": ["domain_owner", "classification_source", "evidence_source", "entrypoint"]
+        },
+        "extractionPurpose": { "type": "string", "minLength": 1 },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

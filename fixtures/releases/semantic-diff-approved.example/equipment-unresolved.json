@@ -1,0 +1,1 @@
+{"dataset":"equipment_unresolved","records":[{"id":"equipment_diagnostic_eq_safe_safe","code":"equipment_safe_enhance_unresolved","equipmentId":"eq_safe","fieldPath":"safeEnhance.safeLevel","blocking":false,"status":"unresolved","candidates":[]}],"schemaVersion":"1.0.0"}

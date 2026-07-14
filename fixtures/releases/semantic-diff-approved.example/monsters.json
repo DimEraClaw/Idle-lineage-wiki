@@ -1,0 +1,14 @@
+{
+  "dataset": "monsters",
+  "records": [
+    {"monsterId":"de_train_hellslave","displayName":"地獄奴隸","level":40,"hp":500,"boss":false,"mapRef":[{"entityType":"map","entityId":"training"}],"dropTableRef":{"entityType":"dropTable","entityId":"drop_hellslave"},"status":"complete","verification":{"source":"approved#mobs.de_train_hellslave"},"version":{"sourceRevision":"1111111111111111111111111111111111111111"}},
+    {"monsterId":"monster_boss","displayName":"Boss Flag","level":50,"hp":1000,"boss":false,"mapRef":[],"dropTableRef":null,"status":"complete"},
+    {"monsterId":"monster_display","displayName":"Old Label","level":10,"hp":100,"boss":false,"mapRef":[],"dropTableRef":null,"status":"complete"},
+    {"monsterId":"monster_drop","displayName":"Drop Relation","level":20,"hp":200,"boss":false,"mapRef":[],"dropTableRef":{"entityType":"dropTable","entityId":"drop_old"},"status":"complete"},
+    {"monsterId":"monster_hp","displayName":"HP Target","level":30,"hp":300,"boss":false,"mapRef":[],"dropTableRef":null,"status":"complete"},
+    {"monsterId":"monster_map","displayName":"Map Relation","level":20,"hp":200,"boss":false,"mapRef":[{"entityType":"map","entityId":"map_a"}],"dropTableRef":null,"status":"complete"},
+    {"monsterId":"monster_provenance","displayName":"Evidence Target","level":10,"hp":100,"boss":false,"mapRef":[],"dropTableRef":null,"status":"complete","verification":{"source":"approved#monster_provenance"},"version":{"sourceRevision":"1111111111111111111111111111111111111111"}},
+    {"monsterId":"monster_removed","displayName":"Removed Monster","level":10,"hp":100,"boss":false,"mapRef":[],"dropTableRef":null,"status":"complete"}
+  ],
+  "schemaVersion": "1.0.0"
+}

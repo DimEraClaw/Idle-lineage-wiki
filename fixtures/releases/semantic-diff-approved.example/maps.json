@@ -1,0 +1,1 @@
+{"dataset":"maps","records":[{"mapId":"map_a","displayName":"Old Map Label","monsterRefs":[{"entityType":"monster","entityId":"monster_map"}],"bossRefs":[],"status":"complete","verification":{"source":"approved#map_a"}},{"mapId":"map_removed","displayName":"Removed Map","monsterRefs":[],"bossRefs":[],"status":"complete"}],"schemaVersion":"1.0.0"}

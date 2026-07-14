@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dim-era-claw.github.io/idle-lineage-wiki/schemas/semantic-release-diff.schema.json",
+  "title": "Semantic Release Diff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "diffVersion",
+    "approvedVersion",
+    "candidateVersion",
+    "approvedSourceRevision",
+    "candidateSourceRevision",
+    "generatedFrom",
+    "domains",
+    "summary",
+    "review",
+    "diagnostics"
+  ],
+  "properties": {
+    "diffVersion": { "const": "1.0.0" },
+    "approvedVersion": { "type": "string", "minLength": 1 },
+    "candidateVersion": { "type": "string", "minLength": 1 },
+    "approvedSourceRevision": { "$ref": "#/$defs/fullSha" },
+    "candidateSourceRevision": { "$ref": "#/$defs/fullSha" },
+    "generatedFrom": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approvedFiles", "candidateFiles"],
+      "properties": {
+        "approvedFiles": { "$ref": "#/$defs/relativePaths" },
+        "candidateFiles": { "$ref": "#/$defs/relativePaths" }
+      }
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": { "$ref": "#/$defs/domainDiff" }
+    },
+    "summary": { "$ref": "#/$defs/summary" },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "humanReviewRequired", "blockingChangeIds", "blockingDiagnosticCodes"],
+      "properties": {
+        "status": { "enum": ["auto_verified", "review_required", "blocked"] },
+        "humanReviewRequired": { "type": "boolean" },
+        "blockingChangeIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "blockingDiagnosticCodes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "diagnostics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "domain", "blocking", "message"],
+        "properties": {
+          "code": { "type": "string", "minLength": 1 },
+          "domain": { "$ref": "#/$defs/domainName" },
+          "blocking": { "type": "boolean" },
+          "message": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "fullSha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+    "domainName": { "enum": ["monster", "map", "drop", "equipment"] },
+    "relativePaths": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\)[^\\u0000]+$"
+      }
+    },
+    "fieldChange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "category", "approvedValue", "candidateValue"],
+      "properties": {
+        "path": { "type": "string", "pattern": "^/" },
+        "category": { "enum": ["canonical", "relation", "display", "technical", "verification"] },
+        "approvedValue": true,
+        "candidateValue": true
+      }
+    },
+    "changeRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["changeId", "domain", "entityType", "entityId", "changeType", "fieldChanges", "reviewStatus", "blocking", "evidence", "notes"],
+      "properties": {
+        "changeId": { "type": "string", "pattern": "^change_[a-z0-9_.-]+(?:_[a-z0-9_.-]+)*$" },
+        "domain": { "$ref": "#/$defs/domainName" },
+        "entityType": { "enum": ["monster", "map", "dropTable", "equipment"] },
+        "entityId": { "type": "string", "minLength": 1 },
+        "changeType": {
+          "enum": ["added", "removed", "modified", "relation_changed", "unresolved_added", "unresolved_resolved", "conflict", "technical_only", "display_only", "data_corrected"]
+        },
+        "fieldChanges": { "type": "array", "items": { "$ref": "#/$defs/fieldChange" } },
+        "reviewStatus": { "enum": ["auto_verified", "review_required", "blocked", "approved", "rejected"] },
+        "blocking": { "type": "boolean" },
+        "evidence": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "domainDiff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "entityType", "approvedCount", "candidateCount", "added", "removed", "modified", "unchangedCount", "unresolvedAdded", "unresolvedResolved", "conflicts", "technicalOnly"],
+      "properties": {
+        "domain": { "$ref": "#/$defs/domainName" },
+        "entityType": { "enum": ["monster", "map", "dropTable", "equipment"] },
+        "approvedCount": { "type": "integer", "minimum": 0 },
+        "candidateCount": { "type": "integer", "minimum": 0 },
+        "added": { "$ref": "#/$defs/changeRecords" },
+        "removed": { "$ref": "#/$defs/changeRecords" },
+        "modified": { "$ref": "#/$defs/changeRecords" },
+        "unchangedCount": { "type": "integer", "minimum": 0 },
+        "unresolvedAdded": { "$ref": "#/$defs/changeRecords" },
+        "unresolvedResolved": { "$ref": "#/$defs/changeRecords" },
+        "conflicts": { "$ref": "#/$defs/changeRecords" },
+        "technicalOnly": { "$ref": "#/$defs/changeRecords" }
+      }
+    },
+    "changeRecords": { "type": "array", "items": { "$ref": "#/$defs/changeRecord" } },
+    "perDomain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["domain", "added", "removed", "modified", "relationChanged", "unresolvedAdded", "unresolvedResolved", "conflicts", "blocking", "technicalOnly"],
+      "properties": {
+        "domain": { "$ref": "#/$defs/domainName" },
+        "added": { "type": "integer", "minimum": 0 },
+        "removed": { "type": "integer", "minimum": 0 },
+        "modified": { "type": "integer", "minimum": 0 },
+        "relationChanged": { "type": "integer", "minimum": 0 },
+        "unresolvedAdded": { "type": "integer", "minimum": 0 },
+        "unresolvedResolved": { "type": "integer", "minimum": 0 },
+        "conflicts": { "type": "integer", "minimum": 0 },
+        "blocking": { "type": "integer", "minimum": 0 },
+        "technicalOnly": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["totalAdded", "totalRemoved", "totalModified", "totalRelationChanged", "totalUnresolvedAdded", "totalUnresolvedResolved", "totalConflicts", "totalBlocking", "totalReviewRequired", "perDomain"],
+      "properties": {
+        "totalAdded": { "type": "integer", "minimum": 0 },
+        "totalRemoved": { "type": "integer", "minimum": 0 },
+        "totalModified": { "type": "integer", "minimum": 0 },
+        "totalRelationChanged": { "type": "integer", "minimum": 0 },
+        "totalUnresolvedAdded": { "type": "integer", "minimum": 0 },
+        "totalUnresolvedResolved": { "type": "integer", "minimum": 0 },
+        "totalConflicts": { "type": "integer", "minimum": 0 },
+        "totalBlocking": { "type": "integer", "minimum": 0 },
+        "totalReviewRequired": { "type": "integer", "minimum": 0 },
+        "perDomain": { "type": "array", "items": { "$ref": "#/$defs/perDomain" } }
+      }
+    }
+  }
+}

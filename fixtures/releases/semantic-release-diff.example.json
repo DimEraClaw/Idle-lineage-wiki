@@ -1,0 +1,721 @@
+{
+  "approvedSourceRevision": "1111111111111111111111111111111111111111",
+  "approvedVersion": "wiki-v1.0.0",
+  "candidateSourceRevision": "2222222222222222222222222222222222222222",
+  "candidateVersion": "v3.4.17-candidate",
+  "diagnostics": [],
+  "diffVersion": "1.0.0",
+  "domains": [
+    {
+      "added": [
+        {
+          "blocking": false,
+          "changeId": "change_monster_sanct_hellslave_added",
+          "changeType": "added",
+          "domain": "monster",
+          "entityId": "sanct_hellslave",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [],
+          "reviewStatus": "auto_verified"
+        }
+      ],
+      "approvedCount": 8,
+      "candidateCount": 8,
+      "conflicts": [
+        {
+          "blocking": true,
+          "changeId": "change_monster_legacy_monster_name_hellslave_conflict",
+          "changeType": "conflict",
+          "domain": "monster",
+          "entityId": "legacy_monster_name_hellslave",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [
+            "Multiple formal targets exist; no target was selected automatically."
+          ],
+          "reviewStatus": "blocked"
+        }
+      ],
+      "domain": "monster",
+      "entityType": "monster",
+      "modified": [
+        {
+          "blocking": false,
+          "changeId": "change_monster_monster_boss_modified",
+          "changeType": "modified",
+          "domain": "monster",
+          "entityId": "monster_boss",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": false,
+              "candidateValue": true,
+              "category": "canonical",
+              "path": "/boss"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_monster_monster_display_display_only",
+          "changeType": "display_only",
+          "domain": "monster",
+          "entityId": "monster_display",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": "Old Label",
+              "candidateValue": "New Label",
+              "category": "display",
+              "path": "/displayName"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_monster_monster_drop_relation_changed",
+          "changeType": "relation_changed",
+          "domain": "monster",
+          "entityId": "monster_drop",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": "drop_old",
+              "candidateValue": "drop_new",
+              "category": "relation",
+              "path": "/dropTableRef/entityId"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_monster_monster_hp_modified",
+          "changeType": "modified",
+          "domain": "monster",
+          "entityId": "monster_hp",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": 300,
+              "candidateValue": 350,
+              "category": "canonical",
+              "path": "/hp"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_monster_monster_map_relation_changed",
+          "changeType": "relation_changed",
+          "domain": "monster",
+          "entityId": "monster_map",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": {
+                "entityId": "map_a",
+                "entityType": "map"
+              },
+              "candidateValue": {
+                "state": "missing"
+              },
+              "category": "relation",
+              "path": "/mapRef/ref:map:map_a"
+            },
+            {
+              "approvedValue": {
+                "state": "missing"
+              },
+              "candidateValue": {
+                "entityId": "map_b",
+                "entityType": "map"
+              },
+              "category": "relation",
+              "path": "/mapRef/ref:map:map_b"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        }
+      ],
+      "removed": [
+        {
+          "blocking": false,
+          "changeId": "change_monster_monster_removed_removed",
+          "changeType": "removed",
+          "domain": "monster",
+          "entityId": "monster_removed",
+          "entityType": "monster",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [
+            "Removal requires coverage and source-scope review before publication."
+          ],
+          "reviewStatus": "review_required"
+        }
+      ],
+      "technicalOnly": [
+        {
+          "blocking": false,
+          "changeId": "change_monster_de_train_hellslave_technical_only",
+          "changeType": "technical_only",
+          "domain": "monster",
+          "entityId": "de_train_hellslave",
+          "entityType": "monster",
+          "evidence": [
+            "approved#mobs.de_train_hellslave",
+            "candidate#mobs.de_train_hellslave"
+          ],
+          "fieldChanges": [
+            {
+              "approvedValue": "approved#mobs.de_train_hellslave",
+              "candidateValue": "candidate#mobs.de_train_hellslave",
+              "category": "verification",
+              "path": "/verification/source"
+            },
+            {
+              "approvedValue": "1111111111111111111111111111111111111111",
+              "candidateValue": "2222222222222222222222222222222222222222",
+              "category": "verification",
+              "path": "/version/sourceRevision"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "auto_verified"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_monster_monster_provenance_technical_only",
+          "changeType": "technical_only",
+          "domain": "monster",
+          "entityId": "monster_provenance",
+          "entityType": "monster",
+          "evidence": [
+            "approved#monster_provenance",
+            "candidate#monster_provenance"
+          ],
+          "fieldChanges": [
+            {
+              "approvedValue": "approved#monster_provenance",
+              "candidateValue": "candidate#monster_provenance",
+              "category": "verification",
+              "path": "/verification/source"
+            },
+            {
+              "approvedValue": "1111111111111111111111111111111111111111",
+              "candidateValue": "2222222222222222222222222222222222222222",
+              "category": "verification",
+              "path": "/version/sourceRevision"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "auto_verified"
+        }
+      ],
+      "unchangedCount": 0,
+      "unresolvedAdded": [],
+      "unresolvedResolved": []
+    },
+    {
+      "added": [
+        {
+          "blocking": false,
+          "changeId": "change_map_map_new_added",
+          "changeType": "added",
+          "domain": "map",
+          "entityId": "map_new",
+          "entityType": "map",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [],
+          "reviewStatus": "auto_verified"
+        }
+      ],
+      "approvedCount": 2,
+      "candidateCount": 2,
+      "conflicts": [],
+      "domain": "map",
+      "entityType": "map",
+      "modified": [
+        {
+          "blocking": false,
+          "changeId": "change_map_map_a_modified",
+          "changeType": "modified",
+          "domain": "map",
+          "entityId": "map_a",
+          "entityType": "map",
+          "evidence": [
+            "approved#map_a",
+            "candidate#map_a"
+          ],
+          "fieldChanges": [
+            {
+              "approvedValue": "Old Map Label",
+              "candidateValue": "New Map Label",
+              "category": "display",
+              "path": "/displayName"
+            },
+            {
+              "approvedValue": {
+                "state": "missing"
+              },
+              "candidateValue": {
+                "entityId": "sanct_hellslave",
+                "entityType": "monster"
+              },
+              "category": "relation",
+              "path": "/monsterRefs/ref:monster:sanct_hellslave"
+            },
+            {
+              "approvedValue": "approved#map_a",
+              "candidateValue": "candidate#map_a",
+              "category": "verification",
+              "path": "/verification/source"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        }
+      ],
+      "removed": [
+        {
+          "blocking": false,
+          "changeId": "change_map_map_removed_removed",
+          "changeType": "removed",
+          "domain": "map",
+          "entityId": "map_removed",
+          "entityType": "map",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [
+            "Removal requires coverage and source-scope review before publication."
+          ],
+          "reviewStatus": "review_required"
+        }
+      ],
+      "technicalOnly": [],
+      "unchangedCount": 0,
+      "unresolvedAdded": [],
+      "unresolvedResolved": []
+    },
+    {
+      "added": [
+        {
+          "blocking": false,
+          "changeId": "change_drop_drop_new_added",
+          "changeType": "added",
+          "domain": "drop",
+          "entityId": "drop_new",
+          "entityType": "dropTable",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [],
+          "reviewStatus": "auto_verified"
+        }
+      ],
+      "approvedCount": 2,
+      "candidateCount": 2,
+      "conflicts": [],
+      "domain": "drop",
+      "entityType": "dropTable",
+      "modified": [
+        {
+          "blocking": false,
+          "changeId": "change_drop_drop_a_modified",
+          "changeType": "modified",
+          "domain": "drop",
+          "entityId": "drop_a",
+          "entityType": "dropTable",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": 2,
+              "candidateValue": 3,
+              "category": "relation",
+              "path": "/entries/dropEntryId:entry_2/probability/value"
+            },
+            {
+              "approvedValue": {
+                "state": "missing"
+              },
+              "candidateValue": {
+                "conditions": [],
+                "dropEntryId": "entry_3",
+                "itemRef": {
+                  "entityId": "item_c",
+                  "entityType": "item"
+                },
+                "probability": {
+                  "basis": 100,
+                  "unit": "percent",
+                  "value": 1
+                },
+                "quantity": {
+                  "max": 1,
+                  "min": 1
+                },
+                "runtimeModifiers": [
+                  {
+                    "kind": "event",
+                    "multiplier": 2
+                  }
+                ],
+                "status": "partial"
+              },
+              "category": "relation",
+              "path": "/entries/dropEntryId:entry_3"
+            },
+            {
+              "approvedValue": "complete",
+              "candidateValue": "partial",
+              "category": "canonical",
+              "path": "/status"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        }
+      ],
+      "removed": [
+        {
+          "blocking": false,
+          "changeId": "change_drop_drop_removed_removed",
+          "changeType": "removed",
+          "domain": "drop",
+          "entityId": "drop_removed",
+          "entityType": "dropTable",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [
+            "Removal requires coverage and source-scope review before publication."
+          ],
+          "reviewStatus": "review_required"
+        }
+      ],
+      "technicalOnly": [],
+      "unchangedCount": 0,
+      "unresolvedAdded": [],
+      "unresolvedResolved": []
+    },
+    {
+      "added": [
+        {
+          "blocking": false,
+          "changeId": "change_equipment_eq_new_added",
+          "changeType": "added",
+          "domain": "equipment",
+          "entityId": "eq_new",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [],
+          "reviewStatus": "auto_verified"
+        }
+      ],
+      "approvedCount": 6,
+      "candidateCount": 6,
+      "conflicts": [
+        {
+          "blocking": true,
+          "changeId": "change_equipment_equipment_diagnostic_eq_zero_price_conflict",
+          "changeType": "conflict",
+          "domain": "equipment",
+          "entityId": "equipment_diagnostic_eq_zero_price",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [
+            "Multiple formal targets exist; no target was selected automatically."
+          ],
+          "reviewStatus": "blocked"
+        }
+      ],
+      "domain": "equipment",
+      "entityType": "equipment",
+      "modified": [
+        {
+          "blocking": false,
+          "changeId": "change_equipment_eq_class_modified",
+          "changeType": "modified",
+          "domain": "equipment",
+          "entityId": "eq_class",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": "one_hand_sword",
+              "candidateValue": "two_hand_sword",
+              "category": "canonical",
+              "path": "/equipmentType"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_equipment_eq_relation_relation_changed",
+          "changeType": "relation_changed",
+          "domain": "equipment",
+          "entityId": "eq_relation",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": {
+                "state": "missing"
+              },
+              "candidateValue": {
+                "entityId": "sanct_hellslave",
+                "entityType": "monster"
+              },
+              "category": "relation",
+              "path": "/relations/ref:monster:sanct_hellslave"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_equipment_eq_safe_modified",
+          "changeType": "modified",
+          "domain": "equipment",
+          "entityId": "eq_safe",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": null,
+              "candidateValue": 4,
+              "category": "canonical",
+              "path": "/safeEnhance/safeLevel"
+            },
+            {
+              "approvedValue": "unresolved",
+              "candidateValue": "resolved",
+              "category": "canonical",
+              "path": "/safeEnhance/status"
+            },
+            {
+              "approvedValue": "partial",
+              "candidateValue": "complete",
+              "category": "canonical",
+              "path": "/status"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        },
+        {
+          "blocking": false,
+          "changeId": "change_equipment_eq_zero_modified",
+          "changeType": "modified",
+          "domain": "equipment",
+          "entityId": "eq_zero",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [
+            {
+              "approvedValue": null,
+              "candidateValue": 0,
+              "category": "canonical",
+              "path": "/baseStats/ac/value"
+            },
+            {
+              "approvedValue": "unresolved",
+              "candidateValue": "explicit_zero",
+              "category": "canonical",
+              "path": "/baseStats/ac/valueState"
+            },
+            {
+              "approvedValue": "partial",
+              "candidateValue": "complete",
+              "category": "canonical",
+              "path": "/status"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "review_required"
+        }
+      ],
+      "removed": [
+        {
+          "blocking": true,
+          "changeId": "change_equipment_eq_removed_removed",
+          "changeType": "removed",
+          "domain": "equipment",
+          "entityId": "eq_removed",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [
+            "Removal requires coverage and source-scope review before publication."
+          ],
+          "reviewStatus": "blocked"
+        }
+      ],
+      "technicalOnly": [
+        {
+          "blocking": false,
+          "changeId": "change_equipment_eq_provenance_technical_only",
+          "changeType": "technical_only",
+          "domain": "equipment",
+          "entityId": "eq_provenance",
+          "entityType": "equipment",
+          "evidence": [
+            "approved#eq_provenance",
+            "candidate#eq_provenance"
+          ],
+          "fieldChanges": [
+            {
+              "approvedValue": "approved#eq_provenance",
+              "candidateValue": "candidate#eq_provenance",
+              "category": "verification",
+              "path": "/verification/source"
+            }
+          ],
+          "notes": [],
+          "reviewStatus": "auto_verified"
+        }
+      ],
+      "unchangedCount": 0,
+      "unresolvedAdded": [
+        {
+          "blocking": true,
+          "changeId": "change_equipment_equipment_diagnostic_eq_new_req_unresolved_added",
+          "changeType": "unresolved_added",
+          "domain": "equipment",
+          "entityId": "equipment_diagnostic_eq_new_req",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [],
+          "reviewStatus": "blocked"
+        }
+      ],
+      "unresolvedResolved": [
+        {
+          "blocking": false,
+          "changeId": "change_equipment_equipment_diagnostic_eq_safe_safe_unresolved_resolved",
+          "changeType": "unresolved_resolved",
+          "domain": "equipment",
+          "entityId": "equipment_diagnostic_eq_safe_safe",
+          "entityType": "equipment",
+          "evidence": [],
+          "fieldChanges": [],
+          "notes": [
+            "The original unresolved identity or field path is retained by change identity."
+          ],
+          "reviewStatus": "review_required"
+        }
+      ]
+    }
+  ],
+  "generatedFrom": {
+    "approvedFiles": [
+      "drop_tables.json",
+      "equipment-unresolved.json",
+      "equipments.json",
+      "maps.json",
+      "monster-unresolved.json",
+      "monsters.json"
+    ],
+    "candidateFiles": [
+      "drop_tables.json",
+      "equipment-unresolved.json",
+      "equipments.json",
+      "maps.json",
+      "monster-unresolved.json",
+      "monsters.json"
+    ]
+  },
+  "review": {
+    "blockingChangeIds": [
+      "change_equipment_eq_removed_removed",
+      "change_equipment_equipment_diagnostic_eq_new_req_unresolved_added",
+      "change_equipment_equipment_diagnostic_eq_zero_price_conflict",
+      "change_monster_legacy_monster_name_hellslave_conflict"
+    ],
+    "blockingDiagnosticCodes": [],
+    "humanReviewRequired": true,
+    "status": "blocked"
+  },
+  "summary": {
+    "perDomain": [
+      {
+        "added": 1,
+        "blocking": 1,
+        "conflicts": 1,
+        "domain": "monster",
+        "modified": 3,
+        "relationChanged": 2,
+        "removed": 1,
+        "technicalOnly": 2,
+        "unresolvedAdded": 0,
+        "unresolvedResolved": 0
+      },
+      {
+        "added": 1,
+        "blocking": 0,
+        "conflicts": 0,
+        "domain": "map",
+        "modified": 1,
+        "relationChanged": 0,
+        "removed": 1,
+        "technicalOnly": 0,
+        "unresolvedAdded": 0,
+        "unresolvedResolved": 0
+      },
+      {
+        "added": 1,
+        "blocking": 0,
+        "conflicts": 0,
+        "domain": "drop",
+        "modified": 1,
+        "relationChanged": 0,
+        "removed": 1,
+        "technicalOnly": 0,
+        "unresolvedAdded": 0,
+        "unresolvedResolved": 0
+      },
+      {
+        "added": 1,
+        "blocking": 3,
+        "conflicts": 1,
+        "domain": "equipment",
+        "modified": 3,
+        "relationChanged": 1,
+        "removed": 1,
+        "technicalOnly": 1,
+        "unresolvedAdded": 1,
+        "unresolvedResolved": 1
+      }
+    ],
+    "totalAdded": 4,
+    "totalBlocking": 4,
+    "totalConflicts": 2,
+    "totalModified": 8,
+    "totalRelationChanged": 3,
+    "totalRemoved": 4,
+    "totalReviewRequired": 19,
+    "totalUnresolvedAdded": 1,
+    "totalUnresolvedResolved": 1
+  }
+}

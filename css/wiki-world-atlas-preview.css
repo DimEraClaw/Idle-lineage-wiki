@@ -1,0 +1,701 @@
+:root {
+    --accent-blue: #3b82f6;
+    --accent-gold: #c2933d;
+}
+
+html[data-world-atlas="enabled"] #tab-content-world {
+    padding: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html[data-world-atlas="enabled"] #btn-tab-equip,
+html[data-world-atlas="enabled"] #btn-tab-craft,
+html[data-world-atlas="enabled"] #btn-tab-cards,
+html[data-world-atlas="enabled"] #btn-tab-monster {
+    display: none !important;
+}
+
+.world-atlas-shell {
+    display: grid;
+    grid-template-columns: minmax(210px, 250px) minmax(0, 1fr);
+    gap: 16px;
+    min-height: calc(100vh - 92px);
+    width: 100%;
+}
+
+.world-atlas-regions,
+.world-atlas-main {
+    min-width: 0;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.world-atlas-regions {
+    position: sticky;
+    top: 16px;
+    align-self: start;
+    height: calc(100vh - 92px);
+    max-height: calc(100vh - 92px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.world-atlas-regions h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    flex-shrink: 0;
+}
+
+.world-atlas-region-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.world-atlas-region-button {
+    appearance: none;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: rgba(148, 163, 184, 0.06);
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 9px;
+    text-align: left;
+}
+
+.world-atlas-region-button span {
+    display: block;
+    margin-top: 3px;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    line-height: 1.35;
+}
+
+.world-atlas-region-button:hover,
+.world-atlas-region-button.active {
+    border-color: var(--accent-blue);
+    background: rgba(59, 130, 246, 0.13);
+}
+
+.world-atlas-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.world-atlas-header h2,
+.world-atlas-header p {
+    margin: 0 0 4px;
+}
+
+.world-atlas-search {
+    flex: 1 1 340px;
+    min-width: 0;
+}
+
+.world-atlas-search input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.world-atlas-region-summary {
+    color: var(--text-secondary);
+    margin: -6px 0 14px;
+}
+
+.world-atlas-map-accordion {
+    background: rgba(15, 23, 42, 0.45);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: clip;
+}
+
+.world-atlas-map-accordion > summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 12px 14px;
+    list-style: none;
+}
+
+.world-atlas-map-accordion > summary::-webkit-details-marker {
+    display: none;
+}
+
+.world-atlas-map-accordion > summary::before {
+    content: "▸";
+    color: var(--accent-blue);
+}
+
+.world-atlas-map-accordion[open] > summary::before {
+    content: "▾";
+}
+
+.world-atlas-map-counts {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-size: 0.78rem;
+    white-space: nowrap;
+}
+
+.world-atlas-map-body {
+    border-top: 1px solid var(--border-color);
+    padding: 12px;
+}
+
+.world-atlas-entity-group + .world-atlas-entity-group {
+    margin-top: 18px;
+}
+
+.world-atlas-entity-group h4 {
+    margin: 0 0 8px;
+}
+
+.world-atlas-monster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+}
+
+.world-atlas-monster-card {
+    min-width: 0;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 11px;
+}
+
+.world-atlas-monster-card.is-boss {
+    border-color: var(--accent-gold);
+}
+
+.world-atlas-monster-detail.is-boss h2 {
+    color: var(--accent-gold);
+}
+
+.world-atlas-card-head,
+.world-atlas-detail-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.world-atlas-image-button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.world-atlas-monster-icon,
+.world-atlas-modal-image,
+.world-atlas-monster-image {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.world-atlas-monster-icon,
+.world-atlas-modal-image {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    border-radius: 10px;
+    background: rgba(59, 130, 246, 0.12);
+    overflow: visible;
+}
+
+.world-atlas-modal-image {
+    width: 104px;
+    height: 104px;
+    flex-basis: 104px;
+}
+
+.world-atlas-monster-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center;
+}
+
+.world-atlas-item-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.world-atlas-image-fallback {
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.world-atlas-card-name {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    padding: 0;
+    text-align: left;
+}
+
+.world-atlas-card-labels {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 4px;
+}
+
+.world-atlas-boss-badge,
+.world-atlas-unresolved,
+.world-atlas-npc-purpose {
+    display: inline-flex;
+    border: 1px solid rgba(245, 158, 11, 0.45);
+    border-radius: 999px;
+    color: var(--accent-gold);
+    font-size: 0.7rem;
+    padding: 2px 7px;
+}
+
+.world-atlas-card-stats,
+.world-atlas-modal-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    margin: 10px 0;
+    font-size: 0.78rem;
+}
+
+.world-atlas-card-stats span,
+.world-atlas-modal-stats span {
+    background: rgba(148, 163, 184, 0.08);
+    border-radius: 6px;
+    padding: 4px 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.world-atlas-monster-card.is-boss .world-atlas-card-name {
+    color: var(--accent-gold);
+}
+
+.world-atlas-card-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 6px;
+    margin: 8px 0;
+}
+
+.world-atlas-feature-tag {
+    font-size: 0.74rem;
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+.world-atlas-feature-tag-none {
+    font-size: 0.74rem;
+    color: var(--text-secondary);
+}
+
+.world-atlas-card-drops {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 8px;
+}
+
+.world-atlas-card-drops-label {
+    font-size: 0.74rem;
+    color: var(--text-secondary);
+}
+
+.world-atlas-card-drops-none {
+    font-size: 0.74rem;
+    color: var(--text-secondary);
+}
+
+.world-atlas-card-drop-btn {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.world-atlas-card-drop-btn .world-atlas-item-image {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    border-radius: 5px;
+    background: rgba(148, 163, 184, 0.08);
+    border: 1px solid var(--border-color);
+}
+
+.world-atlas-card-drop-btn:hover .world-atlas-item-image {
+    border-color: var(--accent-blue);
+    background: rgba(59, 130, 246, 0.15);
+}
+
+
+.world-atlas-npc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 8px;
+}
+
+.world-atlas-npc-card {
+    min-width: 0;
+    background: rgba(148, 163, 184, 0.06);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.world-atlas-npc-card p {
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+.world-atlas-search-group {
+    margin-bottom: 16px;
+}
+
+.world-atlas-search-list,
+.world-atlas-recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 7px;
+}
+
+.world-atlas-search-result,
+.world-atlas-recipe-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    appearance: none;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.58);
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 9px;
+    text-align: left;
+}
+
+.world-atlas-search-result span {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-size: 0.74rem;
+}
+
+.world-atlas-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1200;
+    background: rgba(2, 6, 23, 0.78);
+    backdrop-filter: blur(2px);
+}
+
+.world-atlas-modal {
+    position: fixed;
+    z-index: 1210;
+    inset: 7vh max(16px, calc((100vw - 860px) / 2));
+    max-height: 86vh;
+    overflow-y: auto;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+}
+
+.world-atlas-modal[hidden],
+.world-atlas-modal-overlay[hidden],
+.world-atlas-tooltip[hidden] {
+    display: none;
+}
+
+.world-atlas-modal-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: var(--panel-bg);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 16px;
+}
+
+.world-atlas-modal-header h2 {
+    margin: 0;
+}
+
+.world-atlas-modal-close {
+    appearance: none;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    background: rgba(148, 163, 184, 0.08);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.world-atlas-modal-content {
+    padding: 16px;
+}
+
+.world-atlas-modal-content details {
+    border-top: 1px dashed var(--border-color);
+    padding: 9px 0;
+}
+
+.world-atlas-modal-content summary {
+    cursor: pointer;
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+body.world-atlas-modal-open {
+    overflow: hidden;
+}
+
+.world-atlas-drop-list {
+    display: grid;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.world-atlas-drop-row {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 8px;
+    appearance: none;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.48);
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 6px;
+    text-align: left;
+}
+
+.world-atlas-item-image {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 34px;
+    border-radius: 6px;
+    background: rgba(148, 163, 184, 0.08);
+}
+
+.world-atlas-modal-item-image {
+    width: 76px;
+    height: 76px;
+    flex-basis: 76px;
+}
+
+.world-atlas-drop-rate {
+    color: var(--accent-gold);
+    white-space: nowrap;
+}
+
+.world-atlas-tooltip {
+    position: fixed;
+    z-index: 1300;
+    width: min(320px, calc(100vw - 16px));
+    max-height: none;
+    overflow: visible;
+    pointer-events: none;
+    background: #0b1220;
+    border: 1px solid rgba(96, 165, 250, 0.45);
+    border-radius: 10px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+    padding: 11px;
+}
+
+.world-atlas-tooltip-inner {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 6px 9px;
+    align-items: center;
+}
+
+.world-atlas-tooltip-inner .recipe-meta,
+.world-atlas-tooltip-inner p {
+    grid-column: 1 / -1;
+    margin: 0;
+}
+
+.world-atlas-mobile-regions {
+    display: none;
+}
+
+.world-atlas-error,
+.world-atlas-empty {
+    color: var(--text-secondary);
+    padding: 18px;
+    text-align: center;
+}
+
+@media (max-width: 850px) {
+    .world-atlas-shell {
+        display: block;
+    }
+
+    .world-atlas-regions {
+        display: none;
+    }
+
+    .world-atlas-mobile-regions {
+        display: block;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #tab-content-world {
+        padding: 8px;
+    }
+
+    .world-atlas-main {
+        padding: 10px;
+    }
+
+    .world-atlas-monster-grid,
+    .world-atlas-npc-grid,
+    .world-atlas-search-list,
+    .world-atlas-recipe-list {
+        grid-template-columns: 1fr;
+    }
+
+    .world-atlas-card-stats,
+    .world-atlas-modal-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .world-atlas-map-accordion > summary {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .world-atlas-map-counts {
+        width: 100%;
+        margin-left: 22px;
+        white-space: normal;
+    }
+
+    .world-atlas-modal {
+        inset: 5vh 0 0;
+        max-height: 95vh;
+        border-radius: 14px 14px 0 0;
+    }
+
+    .world-atlas-tooltip {
+        left: 8px !important;
+        right: 8px;
+        bottom: 8px;
+        top: auto !important;
+        width: auto;
+        pointer-events: auto;
+    }
+
+    .world-atlas-drop-row {
+        grid-template-columns: 34px minmax(0, 1fr) auto;
+    }
+
+    .world-atlas-unresolved {
+        grid-column: 2 / -1;
+        justify-self: start;
+    }
+}
+
+/* --- Sprint RC-1E: Item Drop Decorations & Hover scale/glow effects --- */
+.world-atlas-item-image {
+    transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1), border-color 180ms cubic-bezier(0.16, 1, 0.3, 1), background-color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid var(--border-color) !important;
+}
+
+.world-atlas-item-image.is-relic {
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 0 6px rgba(59, 130, 246, 0.5) !important;
+    background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+.world-atlas-item-image.is-legendary {
+    border-color: var(--accent-gold) !important;
+    box-shadow: none !important;
+    background-color: rgba(194, 147, 61, 0.08) !important;
+}
+
+.world-atlas-item-image.is-general {
+    border-color: var(--border-color) !important;
+    box-shadow: none !important;
+}
+
+/* Hover scales and glow changes */
+/* Relic Hover */
+.world-atlas-item-image.is-relic:hover,
+.world-atlas-card-drop-btn:hover .world-atlas-item-image.is-relic,
+.world-atlas-drop-row:hover .world-atlas-item-image.is-relic,
+.world-atlas-recipe-item:hover .world-atlas-item-image.is-relic {
+    transform: scale(1.00) !important;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.8) !important;
+    border-color: #60a5fa !important;
+}
+
+/* Legendary Hover */
+.world-atlas-item-image.is-legendary:hover,
+.world-atlas-card-drop-btn:hover .world-atlas-item-image.is-legendary,
+.world-atlas-drop-row:hover .world-atlas-item-image.is-legendary,
+.world-atlas-recipe-item:hover .world-atlas-item-image.is-legendary {
+    transform: scale(1.05) !important;
+    box-shadow: none !important;
+    border-color: var(--accent-gold) !important;
+}
+
+/* General Hover */
+.world-atlas-item-image.is-general:hover,
+.world-atlas-card-drop-btn:hover .world-atlas-item-image.is-general,
+.world-atlas-drop-row:hover .world-atlas-item-image.is-general,
+.world-atlas-recipe-item:hover .world-atlas-item-image.is-general {
+    transform: scale(1.00) !important;
+    box-shadow: none !important;
+}
+

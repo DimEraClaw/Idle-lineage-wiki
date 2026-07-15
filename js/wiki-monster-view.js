@@ -24,6 +24,7 @@
     }
 
     function normalizeMode(value) {
+        if (value === 'region' && global.MonsterMergedPreview && global.MonsterMergedPreview.isEnabled()) return 'region';
         return value === 'drop' ? 'drop' : 'monster';
     }
 
@@ -131,7 +132,9 @@
     }
 
     function renderSearchResults() {
-        if (currentMode === 'drop') renderDropResults(currentSearch);
+        if (currentMode === 'region' && global.MonsterMergedPreview) {
+            global.MonsterMergedPreview.renderRegionMode(currentSearch);
+        } else if (currentMode === 'drop') renderDropResults(currentSearch);
         else renderMonsterResults(currentSearch);
     }
 
@@ -215,6 +218,9 @@
         technical.appendChild(element('summary', '', '技術資訊'));
         appendMeta(technical, 'Monster ID', detail.monster.monsterId);
         host.appendChild(technical);
+        if (global.MonsterMergedPreview && global.MonsterMergedPreview.isEnabled()) {
+            global.MonsterMergedPreview.enhanceMonsterDetail(detail, host);
+        }
         return true;
     }
 
@@ -225,7 +231,11 @@
             button.setAttribute('aria-pressed', String(selected));
         });
         const input = document.getElementById('search-monster');
-        if (input) input.placeholder = currentMode === 'drop' ? '搜尋物品名稱或 Item ID' : '搜尋怪物名稱或 Monster ID';
+        if (input) {
+            input.placeholder = currentMode === 'drop'
+                ? '搜尋物品名稱或 Item ID'
+                : currentMode === 'region' ? '搜尋地區、地圖或怪物名稱' : '搜尋怪物名稱或 Monster ID';
+        }
     }
 
     function applyState(state) {
@@ -244,7 +254,7 @@
                 renderSearchResults();
             }
             renderMonster(currentMonsterId);
-        } else {
+        } else if (currentMode !== 'region') {
             renderEmptyDetail();
         }
     }
@@ -258,7 +268,8 @@
 
     function closeDetail(historyMode) {
         currentMonsterId = null;
-        renderEmptyDetail();
+        if (currentMode === 'region' && global.MonsterMergedPreview) global.MonsterMergedPreview.renderRegionMode(currentSearch);
+        else renderEmptyDetail();
         writeUrlState(historyMode || 'push');
     }
 
@@ -267,7 +278,7 @@
         currentMonsterId = null;
         updateModeControls();
         renderSearchResults();
-        renderEmptyDetail();
+        if (currentMode !== 'region') renderEmptyDetail();
         writeUrlState(historyMode || 'push');
     }
 

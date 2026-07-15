@@ -58,8 +58,14 @@
         if (!target || !target.entityId || !target.entityType) return null;
         const targetId = escapeHtml(target.entityId);
         if (relation.relationType === 'monster_drop' && target.entityType === 'monster') {
-            const href = '?equipmentData=1&amp;tab=monster&amp;monster=' + encodeURIComponent(target.entityId);
-            return '【掉落】<a href="' + href + '" data-entity-type="monster" data-entity-id="' + targetId + '">' + targetId + '</a>';
+            let displayName = '怪物名稱尚未建立';
+            if (typeof window !== 'undefined' && window.MonsterWikiData && typeof window.MonsterWikiData.getMonsterById === 'function') {
+                const mob = window.MonsterWikiData.getMonsterById(target.entityId);
+                if (mob && mob.displayName) {
+                    displayName = mob.displayName;
+                }
+            }
+            return '【掉落】<span data-entity-type="monster" data-entity-id="' + targetId + '">' + escapeHtml(displayName) + '</span>';
         }
         if (relation.relationType === 'craft_result') {
             return '【製作結果】' + escapeHtml(relation.relationRef && relation.relationRef.entityId || target.entityId);

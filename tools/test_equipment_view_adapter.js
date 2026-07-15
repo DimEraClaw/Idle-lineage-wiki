@@ -94,7 +94,7 @@ async function main() {
     await test('entityRef is retained', async () => assert.deepStrictEqual(adapter.getById('acc_116').entityRef, { entityId: 'acc_116', entityType: 'equipment' }));
     const accDetail = await adapter.getDetail('acc_116');
     await test('formal relations are retained after lazy Detail load', async () => assert(accDetail.relations.length > 0));
-    await test('Monster relation uses Entity ID navigation', async () => assert(accDetail.sources.some(x => /tab=monster&amp;monster=/.test(x))));
+    await test('Monster relation uses Entity ID navigation', async () => assert(accDetail.sources.some(x => /data-entity-type="monster" data-entity-id=/.test(x))));
     await test('relation HTML does not contain onclick', async () => assert(accDetail.sources.every(source => !/onclick/i.test(source))));
     await test('Craft relations do not invent a navigation URL', async () => {
         const detail = await adapter.getDetail('wpn_emperor_blade');

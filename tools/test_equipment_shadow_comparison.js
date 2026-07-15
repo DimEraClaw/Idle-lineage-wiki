@@ -8,7 +8,7 @@ const { createEquipmentRepository, URLS } = require('../js/wiki-equipment-data.j
 const adapter = require('../js/wiki-equipment-shadow-adapter.js');
 
 const ROOT = path.resolve(__dirname, '..');
-const html = fs.readFileSync(path.join(ROOT, 'wiki.html'), 'utf8');
+const html = fs.readFileSync(path.join(ROOT, 'wiki.html'), 'utf8').replace(/\r\n/g, '\n');
 const match = html.match(/const EQUIP_DATA = (\[.*?\]);\r?\n/s);
 assert(match, 'EQUIP_DATA literal was not found');
 const legacy = JSON.parse(match[1]);

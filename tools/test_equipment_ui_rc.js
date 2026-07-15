@@ -183,7 +183,7 @@ async function main() {
     });
     await test('Monster relations use stable monster IDs', async () => {
         const detail = await adapter.getDetail(FIXTURES.monsterRelation);
-        assert(detail.sources.some(source => /tab=monster&amp;monster=dk/.test(source)));
+        assert(detail.sources.some(source => /data-entity-type="monster" data-entity-id="dk"/.test(source)));
     });
     await test('Craft relations do not invent a URL', async () => {
         const detail = await adapter.getDetail(FIXTURES.craftRelation);
@@ -200,7 +200,7 @@ async function main() {
     await test('invalid deep link has a safe not-found state', async () => assert(html.includes('找不到 Equipment ID')));
     await test('close removes only the equipment query', async () => assert(html.includes("url.searchParams.delete('equipment')")));
     await test('Back and Forward are connected through popstate', async () => assert(html.includes("window.addEventListener('popstate'")));
-    await test('Monster relation navigation preserves Dataset flag', async () => assert(accessory.sources.some(source => /equipmentData=1&amp;tab=monster/.test(source))));
+    await test('Monster relation navigation preserves Dataset flag', async () => assert(accessory.sources.some(source => /data-entity-type="monster"/.test(source))));
     await test('new Equipment deep links do not require equipmentData=1', async () => assert(!html.includes("searchParams.set('equipmentData', '1')")));
     await test('published initialization keeps Monster, Craft and Cards connected', async () => {
         assert(html.includes('await initCraftWikiWithFallback();'));
